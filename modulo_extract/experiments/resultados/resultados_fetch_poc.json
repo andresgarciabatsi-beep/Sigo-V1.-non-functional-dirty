@@ -1,0 +1,486 @@
+{
+  "configuracion": {
+    "metodologia": "httpx/selectolax -> crawl4ai (condicional)",
+    "tiendas_en_json": 16,
+    "tiendas_analizadas": 16,
+    "seleccion": "orden original"
+  },
+  "resumen": {
+    "completos": 3,
+    "parciales": 12,
+    "sin_datos": 1,
+    "navegador_usado": 4,
+    "tiempo_total_segundos": 35.74
+  },
+  "resultados": [
+    {
+      "sitio": "Tecnit",
+      "url_producto": "https://tecnit.com.ec/producto/base-enfriadora-argom-para-laptop-17-usb-inclinable-5-niveles-con-1-vent-led/",
+      "url_final": "https://tecnit.com.ec/producto/base-enfriadora-argom-para-laptop-17-usb-inclinable-5-niveles-con-1-vent-led/",
+      "http_status": 200,
+      "nombre": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+      "precio": null,
+      "moneda": null,
+      "disponibilidad": null,
+      "stock_cantidad": null,
+      "descripcion": null,
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "html:h1"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "precio",
+        "disponibilidad",
+        "especificaciones"
+      ],
+      "estrategia": "httpx+crawl4ai",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 5.14
+    },
+    {
+      "sitio": "Tecnomega Store",
+      "url_producto": "https://tecnomegastore.ec/product/pc-asus-14-essential-intel-n150-exp-ddr5-4800-a-16gb-m2-wifi-hdmi-lan-usb-c-usb-a-90AR00M2-M001P0?code=COPASUR00M2M01P",
+      "url_final": "https://tecnomegastore.ec/product/pc-asus-14-essential-intel-n150-exp-ddr5-4800-a-16gb-m2-wifi-hdmi-lan-usb-c-usb-a-90AR00M2-M001P0?code=COPASUR00M2M01P",
+      "http_status": 200,
+      "nombre": "NUC ASUS 14 Essential INTEL N150 EXP-DDR5-4800 A 16GB M.2 WIFI HDMI LAN USB-C USB-A",
+      "precio": "226.15",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "NUC ASUS 14 Essential INTEL N150 EXP-DDR5-4800 A 16GB M.2 WIFI HDMI LAN USB-C USB-A",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 0.44
+    },
+    {
+      "sitio": "Grupo Electrostore",
+      "url_producto": "https://www.grupoelectrostore.com/producto/cable-hdmi-a-mini-hdmi-1m/",
+      "url_final": "https://www.grupoelectrostore.com/producto/cable-hdmi-a-mini-hdmi-1m/",
+      "http_status": 200,
+      "nombre": "CABLE HDMI A MINI HDMI 1M",
+      "precio": null,
+      "moneda": null,
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Especificaciones. Longitud: 1m Tipo de cable: HDMI estándar a Mini HDMI Dispositivos compatibles: Videocámara Mini HDMI, Laptop, Ordenador personal, Monitor, Portátil, Televisión, Proyector, Tablet, Cámara Calidad de la imagen: 1440p, 1080p, 1080i, 720p, 480p Velocidad de transferencia de datos: 10,2 Gigabits por segundo &amp;nbsp;",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "precio",
+        "especificaciones"
+      ],
+      "estrategia": "httpx+crawl4ai",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 4.42
+    },
+    {
+      "sitio": "Megatrónica",
+      "url_producto": "https://megatronica.cc/producto/arduino-uno-q-abx00162-qualcomm-qrb2210/",
+      "url_final": "https://megatronica.cc/producto/arduino-uno-q-abx00162-qualcomm-qrb2210/",
+      "http_status": 200,
+      "nombre": "Arduino UNO Q ABX00162 Qualcomm QRB2210 con Linux, IA, WiFi, Bluetooth y STM32",
+      "precio": "99.53",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "El Arduino UNO Q ABX00162 es una placa de desarrollo avanzada que combina la facilidad de uso del ecosistema Arduino con la potencia de procesamiento necesaria para aplicaciones modernas. Su arquitectura híbrida integra dos unidades de procesamiento independientes: Un procesador Qualcomm QRB2210 capaz de ejecutar Linux Debian, procesamiento de datos, aplicaciones avanzadas e inteligencia artificial. Un microcontrolador STM32U585 basado en ARM Cortex-M33, encargado del control preciso de sensores, motores y dispositivos electrónicos en tiempo real. Esta combinación permite desarrollar proyectos donde se necesita potencia informática y control electrónico al mismo tiempo, sin la necesidad de utilizar múltiples placas. Es una excelente opción para desarrolladores, estudiantes, ingenieros y fabricantes que buscan crear soluciones de nueva generación en robótica, automatización, IoT y sistemas inteligentes.",
+      "especificaciones": {
+        "Cantidad": "Precio",
+        "1 - 4": "$99.53",
+        "5 - 10": "$94.55",
+        "11 - 20": "$89.58",
+        "21 - 50": "$84.60",
+        "51 - 100": "$74.65"
+      },
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad",
+        "especificaciones": "html:table[tr > 2 celdas]"
+      },
+      "conflictos": {},
+      "faltantes": [],
+      "estrategia": "httpx",
+      "estado": "COMPLETO",
+      "error": null,
+      "duracion_segundos": 1.58
+    },
+    {
+      "sitio": "MundoTek",
+      "url_producto": "https://mundotek.com.ec/producto/camara-360-cs-h8c-r100-1j4wh8c-1080p-pantilt-exterior-ezviz-l-4mm/",
+      "url_final": "https://mundotek.com.ec/producto/camara-360-cs-h8c-r100-1j4wh8c-1080p-pantilt-exterior-ezviz-l-4mm/",
+      "http_status": 200,
+      "nombre": "Camara 360 CS-H8C-R100-1J4WH8C 1080p PANTILT EXTERIOR EZVIZ L 4MM - MundoTek.com.ec | Mayoristas en Tecnología",
+      "precio": "80.00",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": null,
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 1.51
+    },
+    {
+      "sitio": "EkuStore",
+      "url_producto": "https://ekustore.com/products/notebook-hp-amd-r3-7320u",
+      "url_final": "https://ekustore.com/products/notebook-hp-amd-r3-7320u",
+      "http_status": 200,
+      "nombre": "LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS",
+      "precio": null,
+      "moneda": null,
+      "disponibilidad": null,
+      "stock_cantidad": null,
+      "descripcion": "Pantalla 15,6\", Procesador AMD Ryzen 3 R3-7320U, 8GB RAM LPDDR5-5500Mhz, 256GB SSD, FreeDOS 3.0, batería 11h 15min",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "html:h1",
+        "descripcion": "html:meta[name=\"description\"]"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "precio",
+        "disponibilidad",
+        "especificaciones"
+      ],
+      "estrategia": "httpx+crawl4ai",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 2.58
+    },
+    {
+      "sitio": "AV Electronics",
+      "url_producto": "https://avelectronics.cc/producto/heltec-esp32-915mhz-lora/",
+      "url_final": "https://avelectronics.cc/producto/heltec-esp32-915mhz-lora/",
+      "http_status": 200,
+      "nombre": "Heltec ESP32 915MHz LoRa",
+      "precio": "39.99",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Módulo ESP32 con LoRa a 915MHz para comunicación inalámbrica.",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 0.77
+    },
+    {
+      "sitio": "Setcom",
+      "url_producto": "https://setcom.com.ec/producto/bandeja-de-distribucion-odf-24p-completa-incluye-adaptadores-y-pigtail-sc-upc/",
+      "url_final": "https://setcom.com.ec/producto/bandeja-de-distribucion-odf-24p-completa-incluye-adaptadores-y-pigtail-sc-upc/",
+      "http_status": 200,
+      "nombre": "BANDEJA DE DISTRIBUCIÓN ODF 24P COMPLETA INCLUYE ADAPTADORES Y PIGTAIL SC/ UPC - Setcom Cia Ltda",
+      "precio": "50.00",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "ODF (Optical Distribution Frame) de 12 y 24 puertos (12P y 24P) es un marco de distribución óptica utilizado en instalaciones de fibra óptica para organizar, proteger y gestionar las conexiones de fibra DIO 12FO – con riel. Incluye: Bandejas, kit de accesorios para montaje en rack, 12 adaptadores SC/UPC, 12 pigtails SC/UPC, G657A2, 900 μm, LSZH (cubierta amarilla), LSZH (con búfer ajustado), 1 metro.",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 2.06
+    },
+    {
+      "sitio": "Tecnosmart",
+      "url_producto": "https://www.tecnosmart.com.ec/producto/notebook-acer-aspire-a15-51m-99w4/",
+      "url_final": "https://www.tecnosmart.com.ec/producto/notebook-acer-aspire-a15-51m-99w4/",
+      "http_status": 200,
+      "nombre": "Laptop Acer Aspire A15-51M-99W4 | Core i9-13900H | 16GB DDR5 | 512GB | 15.6\" | Grist",
+      "precio": "1050.99",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "P/N: NX.JQYAL.002 Procesador Intel Core i9-13900H Ram 16GB RAM DDR5 Almacenamiento 512GB SSD Pantalla 15.6\" FHD LED LCD Windows y Office instalado (No incluye licencias) Color Gris Acero",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 0.47
+    },
+    {
+      "sitio": "Steren Ecuador",
+      "url_producto": "https://www.steren.com.ec/cable-de-alimentacion-y-senal-para-cctv-de-18-m.html",
+      "url_final": "https://www.steren.com.ec/cable-de-alimentacion-y-senal-para-cctv-de-18-m.html",
+      "http_status": 200,
+      "nombre": "Cable de alimentación y señal para CCTV de 18 m",
+      "precio": "14.98",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Conecta tus cámaras de seguridad al DVR con este cable que tiene 2 líneas de transmisión. Incorpora 1 conector macho BNC en ambos extremos para video, así como plug y jack invertidos para alimentación. Su longitud es de 18 m, por lo que podrás hacer el tendido del cable cómodamente al realizar la instalación.",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 0.4
+    },
+    {
+      "sitio": "Siglo 21",
+      "url_producto": "https://siglo21.net/producto/PPMONGAMXG27AQDMES20260911122200/",
+      "url_final": "https://siglo21.net/producto/PPMONGAMXG27AQDMES20260911122200/",
+      "http_status": 200,
+      "nombre": "MONITOR ASUS/XG27AQDMES ROG STRIX OLED 27PULG QHD 2560X1440 240HZ HDMI 90LM0C80-B011I1",
+      "precio": "536.63",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Pantalla: 27 PULG Resolución: 2560x1440 Curvo: NA Puerto USB: NA Puerto Vga: NA Puerto HDMI: SI Accesorios que incluye: NA Dimensiones(L/Al/An): 47x78x18.6 CM Peso: 9 KG",
+      "especificaciones": {
+        "Pantalla:": "27 PULG",
+        "Resolución:": "2560×1440",
+        "Curvo:": "NA",
+        "Puerto USB:": "NA",
+        "Puerto Vga:": "NA",
+        "Puerto HDMI:": "SI",
+        "Accesorios que incluye:": "NA",
+        "Dimensiones(L/Al/An):": "47x78x18.6 CM",
+        "Peso:": "9 KG"
+      },
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad",
+        "especificaciones": "html:table[tr > 2 celdas]"
+      },
+      "conflictos": {},
+      "faltantes": [],
+      "estrategia": "httpx",
+      "estado": "COMPLETO",
+      "error": null,
+      "duracion_segundos": 5.8
+    },
+    {
+      "sitio": "Computron",
+      "url_producto": "https://www.computron.com.ec/producto/laptop-hp-ci3-100u-1-2ghz-8gb-512gb-ssd-natural-silver-15-6fhd-w11-2/?_gl=1*1feuque*_up*MQ..*_ga*NjUzNDcyNzQ1LjE3OTMyMDY0MzI.*_ga_WM3PMXN900*czE3OTMyMDY0MjEkbzEkZzAkdDE3OTMyMDY0MjEkajYwJGwwJGgxOTYzMTY0OTg.",
+      "url_final": "https://www.computron.com.ec/producto/laptop-hp-ci3-100u-1-2ghz-8gb-512gb-ssd-natural-silver-15-6fhd-w11-2/?_gl=1*1feuque*_up*MQ..*_ga*NjUzNDcyNzQ1LjE3OTMyMDY0MzI.*_ga_WM3PMXN900*czE3OTMyMDY0MjEkbzEkZzAkdDE3OTMyMDY0MjEkajYwJGwwJGgxOTYzMTY0OTg.",
+      "http_status": 200,
+      "nombre": "Laptop CI3-100U 1.2GHZ-8GB-512GB Ssd-natural SILVER-15.6\"FHD-W11 HP | Comprar en Computron",
+      "precio": "626.08",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Pantalla: 15.6\" FHD IPS, antirreflejante, 1920 × 1080, 250 nits. Procesador: Intel® Core™ 3 100U, hasta 4.7 GHz, 6 núcleos, 8 hilos, 10 MB de caché L3.. Envíos a todo Ecuador.",
+      "especificaciones": {
+        "pa_screen_size": "15.6",
+        "pa_storage": "512GB",
+        "pa_processor": "INTEL CORE I3",
+        "pa_asset_type": "LAPTOPS",
+        "pa_ram_memory": "8GB",
+        "Peso": "2780 kg",
+        "Dimensiones": "30 × 48,5 × 6,5 cm",
+        "Tamaño de Pantalla": "15.6",
+        "Almacenamiento": "512GB",
+        "Procesador": "INTEL CORE I3",
+        "Tipo": "LAPTOPS",
+        "Memoria RAM": "8GB"
+      },
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad",
+        "especificaciones": "jsonld:Product.additionalProperty"
+      },
+      "conflictos": {},
+      "faltantes": [],
+      "estrategia": "httpx",
+      "estado": "COMPLETO",
+      "error": null,
+      "duracion_segundos": 1.88
+    },
+    {
+      "sitio": "Tecnomade",
+      "url_producto": "https://www.tecnomade.com.ec/producto/monitor-20-aoc-hdmi",
+      "url_final": "https://www.tecnomade.com.ec/producto/monitor-20-aoc-hdmi",
+      "http_status": 200,
+      "nombre": "Monitor AOC 20\" HDMI LED",
+      "precio": "65.00",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Marca AOC Modelo 20E1H Tipo de Pantalla: LED Tamaño de Pantalla: 19.5″ Tipo de Panel TN Resolución Máxima: 1600 x 900 Relación de Aspecto: 16:9 Angulo de Visión H = 170, V = 160 Colores Desplegables: 16.7 M Contraste Dinámico: 20000000:1 Brillo; 250 cd/m Tiempo de Respuesta: 5 ms Frecuencia de Actualización: 60Hz Contraste: 1000:1 Entrada HDMI: 1 Entrada VGA: 1 Salida de Audio (3.5mm): 1",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 0.47
+    },
+    {
+      "sitio": "NoviComPu",
+      "url_producto": "https://www.novicompu.com/laptop-env-book-pro-max-n4020-8gb-256gb-14-1%E2%80%9D-fhd-/p",
+      "url_final": "https://www.novicompu.com/laptop-env-book-pro-max-n4020-8gb-256gb-14-1%E2%80%9D-fhd-/p",
+      "http_status": 200,
+      "nombre": null,
+      "precio": null,
+      "moneda": null,
+      "disponibilidad": null,
+      "stock_cantidad": null,
+      "descripcion": "Los precios mas bajos de Ecuador, electrónicos, computadoras, celulares, artículos de hogar, artículos deportivos y mucho más.",
+      "especificaciones": {},
+      "evidencias": {
+        "descripcion": "html:meta[name=\"description\"]"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "nombre",
+        "precio",
+        "disponibilidad",
+        "especificaciones"
+      ],
+      "estrategia": "httpx+crawl4ai",
+      "estado": "SIN_DATOS",
+      "error": null,
+      "duracion_segundos": 2.8099999999999996
+    },
+    {
+      "sitio": "PuntoCom",
+      "url_producto": "https://puntocomstore.ec/producto/438/",
+      "url_final": "https://puntocomstore.ec/producto/438/",
+      "http_status": 200,
+      "nombre": "MONITOR TEROS DE 27\"",
+      "precio": "359.99",
+      "moneda": "USD",
+      "disponibilidad": "InStock",
+      "stock_cantidad": null,
+      "descripcion": "Pantalla: TE-2766G / 27\" Pulg FHD/ 1920x1080 / 180Hz / Pantalla: Curva / HDMI",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 0.52
+    },
+    {
+      "sitio": "PC Actual Ecuador",
+      "url_producto": "https://pcactualecuador.com/product/monitor-32ur500kb-lg-31-5inch-led-ultrawide-3840x2160-4k-hdmi-dp-60hz-freesync-speakers-black/",
+      "url_final": "https://pcactualecuador.com/product/monitor-32ur500kb-lg-31-5inch-led-ultrawide-3840x2160-4k-hdmi-dp-60hz-freesync-speakers-black/",
+      "http_status": 200,
+      "nombre": "MONITOR 32UR500KB LG 31.5INCH LED ULTRAWIDE 3840X2160 4K HDMI DP 60HZ FREESYNC SPEAKERS BLACK",
+      "precio": "400.00",
+      "moneda": "USD",
+      "disponibilidad": "OutOfStock",
+      "stock_cantidad": null,
+      "descripcion": "Tamaño de pantalla 31.5 Inch Resolución 3840 x 2160 Relación de Aspecto 16:9 Pixel Pitch 0.06053 x 0.18159 Brillo (Min.) / (Typ.) 200 cd/m² / 250nits Gama de Colores (Typ.) DCI-P3 90% (CIE1976) Profundidad de Color (número de colores) 1.07B Relación de contraste (Min.) 2100:1 Relación de contraste (Typ.) 3000:1 Tiempo de respuesta (ms) 4ms (GtG at Faster) Angulo de Visión (CR≥10) 178º(R/L), 178º(U/D) Tasa de actualización (Max) Hz 60",
+      "especificaciones": {},
+      "evidencias": {
+        "nombre": "jsonld:Product.name",
+        "descripcion": "jsonld:Product.description",
+        "precio": "jsonld:Product.offers.precio",
+        "moneda": "jsonld:Product.offers.moneda",
+        "disponibilidad": "jsonld:Product.offers.disponibilidad"
+      },
+      "conflictos": {},
+      "faltantes": [
+        "especificaciones"
+      ],
+      "estrategia": "httpx",
+      "estado": "PARCIAL",
+      "error": null,
+      "duracion_segundos": 1.73
+    }
+  ]
+}

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TT8QH35T');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='robots' content='max-image-preview:large' />
+
+<!-- Google Tag Manager by PYS -->
+    <script type="rocketlazyloadscript" data-cfasync="false" data-pagespeed-no-defer>
+	    window.dataLayerPYS = window.dataLayerPYS || [];
+	</script>
+<!-- End Google Tag Manager by PYS --><script type="rocketlazyloadscript" data-rocket-type='application/javascript'  id='pys-version-script'>console.log('PixelYourSite Free version 11.4.2.1');</script>
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Techno Prime &raquo; Comentario Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15&#8243;, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY del feed" href="https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://technoprimec.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftechnoprimec.com%2Fproduct%2Fpantalla-tactil-aon-allmax900w-ao-ao-1011-pty%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://technoprimec.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftechnoprimec.com%2Fproduct%2Fpantalla-tactil-aon-allmax900w-ao-ao-1011-pty%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='font-awesome-css' href='https://technoprimec.com/wp-content/plugins/woocommerce-ajax-filters/berocket/assets/css/font-awesome.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='berocket_aapf_widget-style-css' href='https://technoprimec.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/css/widget.css?ver=3.3' media='all' />
+<link rel='stylesheet' id='select2-css' href='https://technoprimec.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/css/select2.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='jquery-ui-datepick-css' href='https://technoprimec.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/css/jquery-ui.min.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='berocket_aapf_widget-scroll-style-css' href='https://technoprimec.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/css/Scrollbar.min.css?ver=3.3' media='all' />
+<link rel='stylesheet' id='berocket_aapf_widget-themes-css' href='https://technoprimec.com/wp-content/plugins/woocommerce-ajax-filters/assets/frontend/css/themes.css?ver=7.1.3' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='contact-form-7-css' href='https://technoprimec.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.2.1' media='all' />
+<link rel='stylesheet' id='photoswipe-css' href='https://technoprimec.com/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=11.2.0' media='all' />
+<link rel='stylesheet' id='photoswipe-default-skin-css' href='https://technoprimec.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=11.2.0' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css' href='https://technoprimec.com/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=11.2.0' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='https://technoprimec.com/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=11.2.0' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css' href='https://technoprimec.com/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=11.2.0' media='all' />
+<style id="woocommerce-inline-inline-css">
+.woocommerce form .form-row .required { visibility: visible; }
+/*# sourceURL=woocommerce-inline-inline-css */
+</style>
+<link rel='stylesheet' id='jervis-landing-page-css-css' href='https://technoprimec.com/wp-content/themes/technoPrime/build/modules/index.css?ver=1793285500' media='all' />
+<link rel='stylesheet' id='jose-main-style-css' href='https://technoprimec.com/wp-content/themes/technoPrime/style.css?ver=1793285500' media='all' />
+<script id="jquery-core-js-extra">window.addEventListener('DOMContentLoaded', function() {
+var pysFacebookRest = {"restApiUrl":"https://technoprimec.com/wp-json/pys-facebook/v1/event","debug":""};
+//# sourceURL=jquery-core-js-extra
+});</script>
+<script id="jquery-core-js" src="https://technoprimec.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" defer></script>
+<script type="rocketlazyloadscript" id="jquery-migrate-js" src="https://technoprimec.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" defer></script>
+<script type="rocketlazyloadscript" id="jquery-js-after">window.addEventListener('DOMContentLoaded', function() {
+if (typeof (window.wpfReadyList) == "undefined") {
+			var v = jQuery.fn.jquery;
+			if (v && parseInt(v) >= 3 && window.self === window.top) {
+				var readyList=[];
+				window.originalReadyMethod = jQuery.fn.ready;
+				jQuery.fn.ready = function(){
+					if(arguments.length && arguments.length > 0 && typeof arguments[0] === "function") {
+						readyList.push({"c": this, "a": arguments});
+					}
+					return window.originalReadyMethod.apply( this, arguments );
+				};
+				window.wpfReadyList = readyList;
+			}}
+//# sourceURL=jquery-js-after
+});</script>
+<script type="rocketlazyloadscript" data-wp-strategy="defer" id="wc-jquery-blockui-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.11.2.0" defer></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_view_cart":"Ver carrito","cart_url":"https://technoprimec.com/https-technoprimec-com-carrito/","is_cart":"","cart_redirect_after_add":"no"};
+//# sourceURL=wc-add-to-cart-js-extra
+</script>
+<script type="rocketlazyloadscript" data-wp-strategy="defer" defer id="wc-add-to-cart-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=11.2.0"></script>
+<script data-wp-strategy="defer" defer id="wc-zoom-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.11.2.0"></script>
+<script data-wp-strategy="defer" defer id="wc-flexslider-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.11.2.0"></script>
+<script data-wp-strategy="defer" defer id="wc-photoswipe-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.11.2.0"></script>
+<script data-wp-strategy="defer" defer id="wc-photoswipe-ui-default-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.11.2.0"></script>
+<script id="wc-single-product-js-extra">
+var wc_single_product_params = {"i18n_required_rating_text":"Por favor elige una puntuaci\u00f3n","i18n_rating_options":["1 of 5 stars","2 of 5 stars","3 of 5 stars","4 of 5 stars","5 of 5 stars"],"i18n_product_gallery_trigger_text":"View full-screen image gallery","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+//# sourceURL=wc-single-product-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="wc-single-product-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=11.2.0"></script>
+<script type="rocketlazyloadscript" data-wp-strategy="defer" id="wc-js-cookie-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.11.2.0" defer></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Fragmento de código de Google Analytics añadido por Site Kit -->
+<script type="rocketlazyloadscript" id="google_gtagjs-js" src="https://www.googletagmanager.com/gtag/js?id=GT-WVJRGZZF&l=dataLayerPYS" async></script>
+<script type="rocketlazyloadscript" id="google_gtagjs-js-after">
+window.dataLayerPYS = window.dataLayerPYS || [];function gtag(){dataLayerPYS.push(arguments);}
+gtag("set","linker",{"domains":["technoprimec.com"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-WVJRGZZF", {"googlesitekit_post_type":"product"});
+ window._googlesitekit = window._googlesitekit || {}; window._googlesitekit.throttledEvents = []; window._googlesitekit.gtagEvent = (name, data) => { var key = JSON.stringify( { name, data } ); if ( !! window._googlesitekit.throttledEvents[ key ] ) { return; } window._googlesitekit.throttledEvents[ key ] = true; setTimeout( () => { delete window._googlesitekit.throttledEvents[ key ]; }, 5 ); gtag( "event", name, { ...data, event_source: "site-kit" } ); }; 
+//# sourceURL=google_gtagjs-js-after
+</script>
+<link rel="https://api.w.org/" href="https://technoprimec.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://technoprimec.com/wp-json/wp/v2/product/21302" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://technoprimec.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.3" />
+<meta name="generator" content="WooCommerce 11.2.0" />
+<link rel="canonical" href="https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/" />
+<link rel='shortlink' href='https://technoprimec.com/?p=21302' />
+<meta name="generator" content="Site Kit by Google 1.189.0" /><meta name="ti-site-data" content="eyJyIjoiMTowITc6MCEzMDowIiwibyI6Imh0dHBzOlwvXC90ZWNobm9wcmltZWMuY29tP3RpLW9ubGluZS11c2Vycy1nb29nbGU9MSZhbXA7cD0lMkZwcm9kdWN0JTJGcGFudGFsbGEtdGFjdGlsLWFvbi1hbGxtYXg5MDB3LWFvLWFvLTEwMTEtcHR5JTJGJmFtcDtfd3Bub25jZT05NmQxNzllMDNjIn0=" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="https://technoprimec.com/wp-content/uploads/2022/10/cropped-Diseño-sin-título-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://technoprimec.com/wp-content/uploads/2022/10/cropped-Diseño-sin-título-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://technoprimec.com/wp-content/uploads/2022/10/cropped-Diseño-sin-título-180x180.png" />
+<meta name="msapplication-TileImage" content="https://technoprimec.com/wp-content/uploads/2022/10/cropped-Diseño-sin-título-270x270.png" />
+<style id="wp-custom-css">
+/* ==========================================================================
+   FORZADO DE ANCHO COMPLETO EN CATÁLOGO (98% PANTALLA)
+   ========================================================================== */
+body.woocommerce #content-wrap,
+body.woocommerce-page #content-wrap,
+body.tax-product_cat #content-wrap,
+body.archive #content-wrap,
+#content-wrap,
+#content-wrap.container,
+.container,
+#primary,
+#content,
+.site-main {
+    width: 100% !important;
+    max-width: 98% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+}
+
+/* Banner de categoría de extremo a extremo */
+.woocommerce-products-header,
+.term-description,
+.category-banner,
+.term-description img,
+.category-banner img {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Barra de filtros de extremo a extremo */
+.tp-catalog-filter-bar {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Rejilla de productos fluida en pantalla completa */
+.woocommerce ul.products {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important;
+    gap: 24px !important;
+}
+
+
+
+</style>
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="wp-singular product-template-default single single-product postid-21302 wp-theme-technoPrime theme-technoPrime woocommerce woocommerce-page woocommerce-no-js">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT8QH35T"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- ALERTA DE AÑADIDO AL CARRITO -->
+<div class="addToCart__Alert hidden">
+    <p class="alert__message">Añadido al carrito</p>
+</div>
+
+<!-- ENCABEZADO TECHNOPRIME (HEADER) -->
+<header class="header__main-clean">
+    <div class="tp-cyber-nav-row">
+        
+        <!-- LOGO PRINCIPAL -->
+        <div class="header__image flex items-center">
+            <a href="https://technoprimec.com/" class="flex items-center">
+                <img style="max-height: 42px; width: auto;" src="https://technoprimec.com/wp-content/themes/technoPrime/assets/pics/Logo.png" alt="Techno Prime">
+            </a>
+        </div>
+
+        <!-- MENÚ PRINCIPAL -->
+        <nav class="nav-menu" id="site-navigation">
+            <ul id="menu-dropdown-menu" class="tp-main-menu"><li id="menu-item-180" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor menu-item-has-children menu-item-180"><a href="https://technoprimec.com/categoria-producto/marcas/">Marcas</a>
+<ul class="sub-menu">
+	<li id="menu-item-3493" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3493"><a href="https://technoprimec.com/categoria-producto/marcas/amazon/">Amazon</a></li>
+	<li id="menu-item-17214" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17214"><a href="https://technoprimec.com/categoria-producto/marcas/ampace/">Ampace</a></li>
+	<li id="menu-item-21066" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-21066"><a href="https://technoprimec.com/categoria-producto/marcas/aon/">AON</a></li>
+	<li id="menu-item-3480" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3480"><a href="https://technoprimec.com/categoria-producto/marcas/apc/">APC</a></li>
+	<li id="menu-item-3621" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3621"><a href="https://technoprimec.com/categoria-producto/marcas/apple/">Apple</a></li>
+	<li id="menu-item-9419" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9419"><a href="https://technoprimec.com/categoria-producto/marcas/artecma/">Artecma</a></li>
+	<li id="menu-item-3479" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3479"><a href="https://technoprimec.com/categoria-producto/marcas/aruba/">Aruba</a></li>
+	<li id="menu-item-3487" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3487"><a href="https://technoprimec.com/categoria-producto/marcas/brother/">Brother</a></li>
+	<li id="menu-item-3476" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3476"><a href="https://technoprimec.com/categoria-producto/marcas/dahua/">Dahua</a></li>
+	<li id="menu-item-182" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-182"><a href="https://technoprimec.com/categoria-producto/marcas/epson/">Epson</a></li>
+	<li id="menu-item-183" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-183"><a href="https://technoprimec.com/categoria-producto/marcas/hp/">Hp</a></li>
+	<li id="menu-item-3478" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3478"><a href="https://technoprimec.com/categoria-producto/marcas/hpe/">Hpe</a></li>
+	<li id="menu-item-6570" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-6570"><a href="https://technoprimec.com/categoria-producto/marcas/hyundai/">Hyundai</a></li>
+	<li id="menu-item-18430" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-18430"><a href="https://technoprimec.com/categoria-producto/marcas/imou/">Imou</a></li>
+	<li id="menu-item-8029" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8029"><a href="https://technoprimec.com/categoria-producto/marcas/kaspersky/">Kaspersky</a></li>
+	<li id="menu-item-8032" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8032"><a href="https://technoprimec.com/categoria-producto/marcas/lenovo-marcas/">Lenovo</a></li>
+	<li id="menu-item-184" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-184"><a href="https://technoprimec.com/categoria-producto/marcas/lexmark/">Lexmark</a></li>
+	<li id="menu-item-12488" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12488"><a href="https://technoprimec.com/categoria-producto/marcas/linkys/">Linksys</a></li>
+	<li id="menu-item-17643" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17643"><a href="https://technoprimec.com/categoria-producto/marcas/movisun/">Movisun</a></li>
+	<li id="menu-item-12489" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12489"><a href="https://technoprimec.com/categoria-producto/marcas/multilaser/">Multilaser</a></li>
+	<li id="menu-item-17315" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-17315"><a href="https://technoprimec.com/category/norton/">Norton</a></li>
+	<li id="menu-item-3481" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3481"><a href="https://technoprimec.com/categoria-producto/marcas/pioneer/">Pioneer</a></li>
+	<li id="menu-item-3491" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3491"><a href="https://technoprimec.com/categoria-producto/marcas/samsung/">Samsung</a></li>
+	<li id="menu-item-17215" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17215"><a href="https://technoprimec.com/categoria-producto/marcas/sigma/">Sigma</a></li>
+	<li id="menu-item-3945" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3945"><a href="https://technoprimec.com/categoria-producto/marcas/targus/">Targus</a></li>
+	<li id="menu-item-16221" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-16221"><a href="https://technoprimec.com/categoria-producto/marcas/tcl/">TCL</a></li>
+	<li id="menu-item-8025" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8025"><a href="https://technoprimec.com/categoria-producto/marcas/toshiba/">Toshiba</a></li>
+	<li id="menu-item-21067" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-21067"><a href="https://technoprimec.com/categoria-producto/marcas/ubiquiti/">Ubiquiti</a></li>
+	<li id="menu-item-3489" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3489"><a href="https://technoprimec.com/categoria-producto/marcas/vertiv/">Vertiv</a></li>
+</ul>
+</li>
+<li id="menu-item-186" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor menu-item-has-children menu-item-186"><a href="https://technoprimec.com/categoria-producto/productos/">Productos</a>
+<ul class="sub-menu">
+	<li id="menu-item-3499" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3499"><a href="https://technoprimec.com/categoria-producto/productos/accesorios/">Accesorios</a></li>
+	<li id="menu-item-9404" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9404"><a href="https://technoprimec.com/categoria-producto/productos/access-point/">Access Point</a></li>
+	<li id="menu-item-8044" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8044"><a href="https://technoprimec.com/categoria-producto/productos/anti-virus/">Anti-virus</a></li>
+	<li id="menu-item-3506" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3506"><a href="https://technoprimec.com/categoria-producto/productos/audifonos-auriculares/">Audífonos/Auriculares</a></li>
+	<li id="menu-item-3474" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3474"><a href="https://technoprimec.com/categoria-producto/productos/camaras/">Cámaras</a></li>
+	<li id="menu-item-9514" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9514"><a href="https://technoprimec.com/categoria-producto/productos/computadoras/">Computadoras</a></li>
+	<li id="menu-item-190" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current_page_parent menu-item-190"><a href="https://technoprimec.com/categoria-producto/productos/scanners/">Escaners</a></li>
+	<li id="menu-item-18295" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-18295"><a href="https://technoprimec.com/categoria-producto/productos/fibra-optica/">Fibra Óptica</a></li>
+	<li id="menu-item-17216" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-17216"><a href="https://technoprimec.com/categoria-producto/productos/generadores/">Generadores</a></li>
+	<li id="menu-item-187" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-187"><a href="https://technoprimec.com/categoria-producto/productos/impresoras/">Impresoras</a></li>
+	<li id="menu-item-188" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-188"><a href="https://technoprimec.com/categoria-producto/productos/laptops/">Laptop</a></li>
+	<li id="menu-item-3509" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3509"><a href="https://technoprimec.com/categoria-producto/productos/memorias-discos-duros/">Memorias &amp; Discos Duros</a></li>
+	<li id="menu-item-8046" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8046"><a href="https://technoprimec.com/categoria-producto/productos/mochilas/">Mochilas</a></li>
+	<li id="menu-item-189" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-189"><a href="https://technoprimec.com/categoria-producto/productos/monitores/">Monitores</a></li>
+	<li id="menu-item-3510" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3510"><a href="https://technoprimec.com/categoria-producto/productos/plotters/">Plotters</a></li>
+	<li id="menu-item-9410" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9410"><a href="https://technoprimec.com/categoria-producto/productos/procesadores/">Procesadores</a></li>
+	<li id="menu-item-9400" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9400"><a href="https://technoprimec.com/categoria-producto/productos/productos-ergonomicos/">Productos Ergonómicos</a></li>
+	<li id="menu-item-9399" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9399"><a href="https://technoprimec.com/categoria-producto/productos/productos-de-seguridad/">Productos de Seguridad</a></li>
+	<li id="menu-item-3504" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3504"><a href="https://technoprimec.com/categoria-producto/productos/proyectores/">Proyectores</a></li>
+	<li id="menu-item-8042" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8042"><a href="https://technoprimec.com/categoria-producto/productos/puntos-de-venta/">Puntos de Venta</a></li>
+	<li id="menu-item-3507" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3507"><a href="https://technoprimec.com/categoria-producto/productos/servidores/">Servidores</a></li>
+	<li id="menu-item-3503" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3503"><a href="https://technoprimec.com/categoria-producto/productos/switches/">Switches</a></li>
+	<li id="menu-item-9398" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-9398"><a href="https://technoprimec.com/categoria-producto/productos/suministros-de-impresion/">Suministros de Impresión</a></li>
+	<li id="menu-item-8045" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8045"><a href="https://technoprimec.com/categoria-producto/productos/televisores/">Televisores</a></li>
+	<li id="menu-item-191" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-191"><a href="https://technoprimec.com/categoria-producto/productos/tablets/">Tablets</a></li>
+	<li id="menu-item-3502" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3502"><a href="https://technoprimec.com/categoria-producto/productos/ups/">UPS</a></li>
+</ul>
+</li>
+<li id="menu-item-192" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-192"><a href="https://technoprimec.com/categoria-producto/utilidad/">Utilidad</a>
+<ul class="sub-menu">
+	<li id="menu-item-3482" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-3482"><a href="https://technoprimec.com/categoria-producto/utilidad/educacion/">Educación</a></li>
+	<li id="menu-item-194" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-194"><a href="https://technoprimec.com/categoria-producto/utilidad/hogar/">Hogar</a></li>
+	<li id="menu-item-195" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-195"><a href="https://technoprimec.com/categoria-producto/utilidad/empresa/">Empresa</a></li>
+	<li id="menu-item-193" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-193"><a href="https://technoprimec.com/categoria-producto/utilidad/gamer/">Gamer</a></li>
+	<li id="menu-item-8035" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-8035"><a href="https://technoprimec.com/categoria-producto/utilidad/oficina-en-casa/">Oficina en casa</a></li>
+</ul>
+</li>
+<li id="menu-item-207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-207"><a href="https://technoprimec.com/contactanos/">Contacto</a></li>
+<li id="menu-item-19512" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19512"><a href="https://technoprimec.com/blog/">blog</a></li>
+<li id="menu-item-19514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-19514"><a href="https://api.whatsapp.com/send?phone=593986188193&#038;text=Hola,%20solicito%20más%20información%20de%20sus%20productos">WhatsApp</a></li>
+</ul>        </nav>
+
+        <!-- ACCIONES DERECHAS: BUSCADOR CÁPSULA Y CARRITO -->
+        <div class="tp-header-right-actions">
+            
+            <!-- BUSCADOR CÁPSULA -->
+            <div class="tp-live-search-wrap">
+                <form role="search" method="get" class="search-form tp-search-form-live" action="https://technoprimec.com/">
+                    <div class="searchBox-premium-container">
+                        <input type="search" class="search-field tp-live-search-input" placeholder="Buscar hardware..." value="" name="s" autocomplete="off" required />
+                        <button type="submit" aria-label="Buscar" class="tp-search-submit-btn">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- CAJA DE RESULTADOS FLOTANTE -->
+                <div class="tp-search-results-box"></div>
+            </div>
+
+            <!-- BOTÓN CARRITO CON CONTADOR FLOTANTE -->
+                            <a href="https://technoprimec.com/https-technoprimec-com-carrito/" class="tp-cart-icon-btn" aria-label="Ver Carrito">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="tp-cart-badge-count cartCounterHolder">
+                        0                    </span>
+                </a>
+            
+        </div>
+
+    </div>
+</header>
+
+<!-- SCRIPTS: BÚSQUEDA AJAX EN TIEMPO REAL -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+    var searchInput = document.querySelector('.tp-live-search-input');
+    var wrap = document.querySelector('.tp-live-search-wrap');
+    var resultsBox = document.querySelector('.tp-search-results-box');
+    var timer;
+
+    if (searchInput && resultsBox) {
+        searchInput.addEventListener('input', function() {
+            clearTimeout(timer);
+            var query = this.value.trim();
+
+            if (query.length < 2) {
+                resultsBox.innerHTML = '';
+                resultsBox.classList.remove('is-active');
+                return;
+            }
+
+            timer = setTimeout(function() {
+                var formData = new FormData();
+                formData.append('action', 'tp_live_search');
+                formData.append('keyword', query);
+
+                fetch('https://technoprimec.com/wp-admin/admin-ajax.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(function(res) { return res.json(); })
+                .then(function(data) {
+                    if (data.success && data.data.html) {
+                        resultsBox.innerHTML = data.data.html;
+                        resultsBox.classList.add('is-active');
+                    } else {
+                        resultsBox.innerHTML = '';
+                        resultsBox.classList.remove('is-active');
+                    }
+                })
+                .catch(function(err) { console.error('Error Search:', err); });
+            }, 180);
+        });
+
+        document.addEventListener('click', function(e) {
+            if (wrap && !wrap.contains(e.target)) {
+                resultsBox.classList.remove('is-active');
+            }
+        });
+    }
+});
+</script>
+<!-- ESTILOS EXCLUSIVOS PARA TABLAS Y PESTAÑAS TÉCNICAS EN FICHA INDIVIDUAL -->
+<style type="text/css">
+	/* Contenedor principal de la ficha fluida */
+	.woocommerce div.product {
+		width: 100% !important;
+		max-width: 100% !important;
+		box-sizing: border-box !important;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+	}
+
+	/* Tablas de especificaciones técnicas */
+	.woocommerce table.shop_attributes {
+		border: 1px solid #e2e8f0 !important;
+		border-radius: 12px !important;
+		overflow: hidden !important;
+		border-collapse: separate !important;
+		background: #ffffff !important;
+		margin-bottom: 30px !important;
+		box-shadow: 0 4px 6px -1px rgba(0,0,0,0.01) !important;
+		width: 100% !important;
+	}
+	.woocommerce table.shop_attributes th {
+		background-color: #f8fafc !important;
+		color: #061126 !important;
+		font-weight: 700 !important;
+		padding: 12px 16px !important;
+		border-bottom: 1px solid #e2e8f0 !important;
+		border-right: 1px solid #e2e8f0 !important;
+		font-size: 13.5px !important;
+		text-transform: uppercase !important;
+		letter-spacing: 0.5px !important;
+		width: 35% !important;
+	}
+	.woocommerce table.shop_attributes td {
+		padding: 12px 16px !important;
+		color: #334155 !important;
+		font-style: normal !important;
+		font-size: 14px !important;
+		border-bottom: 1px solid #e2e8f0 !important;
+	}
+	.woocommerce table.shop_attributes tr:last-child th,
+	.woocommerce table.shop_attributes tr:last-child td {
+		border-bottom: none !important;
+	}
+
+	/* Pestañas (Tabs) inferiores de información */
+	.woocommerce div.product .woocommerce-tabs ul.tabs {
+		border: none !important;
+		padding: 0 !important;
+		margin: 0 0 20px 0 !important;
+		display: flex !important;
+		gap: 8px !important;
+		background: transparent !important;
+		overflow-x: auto !important;
+	}
+	.woocommerce div.product .woocommerce-tabs ul.tabs li {
+		background: #ffffff !important;
+		border: 1px solid #e2e8f0 !important;
+		border-radius: 8px !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		transition: all 0.2s ease !important;
+	}
+	.woocommerce div.product .woocommerce-tabs ul.tabs li a {
+		color: #475569 !important;
+		font-weight: 600 !important;
+		padding: 10px 20px !important;
+		display: block !important;
+		font-size: 14px !important;
+		text-decoration: none !important;
+	}
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+		background: #061126 !important;
+		border-color: #061126 !important;
+	}
+	.woocommerce div.product .woocommerce-tabs ul.tabs li.active a {
+		color: #ffffff !important;
+	}
+	.woocommerce div.product .woocommerce-tabs .panel {
+		background: #ffffff !important;
+		border: 1px solid #e2e8f0 !important;
+		border-radius: 16px !important;
+		padding: 30px !important;
+		box-shadow: 0 4px 12px rgba(0,0,0,0.01) !important;
+	}
+</style>
+
+<div class="tp-apple-container tp-apple-single-wrapper">
+	<div id="primary" class="content-area"><main id="main" class="site-main" role="main"><nav class="woocommerce-breadcrumb" aria-label="Breadcrumb"><a href="https://technoprimec.com">Inicio</a>&nbsp;&#47;&nbsp;<a href="https://technoprimec.com/categoria-producto/marcas/">Marcas</a>&nbsp;&#47;&nbsp;<a href="https://technoprimec.com/categoria-producto/marcas/aon/">AON</a>&nbsp;&#47;&nbsp;Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15&#8243;, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY</nav>
+			
+		<div class="woocommerce-notices-wrapper"></div>
+<div id="product-21302" class="tp-single-product-canvas product type-product post-21302 status-publish first instock product_cat-aon product_cat-monitores product_tag-puntos-de-venta has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+
+    <!-- ESTRUCTURA PRINCIPAL DE 2 COLUMNAS CON FOTO FIJA -->
+    <div class="tp-single-product-main-grid">
+        
+        <!-- COLUMNA IZQUIERDA: GALERÍA DE FOTOS Y ZOOM DINÁMICO -->
+        <div class="tp-product-gallery-column">
+            <div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<div class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-100x100.png" data-thumb-alt="Pantalla Táctil Aon AllMax-900W, frontal" data-thumb-srcset="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png 500w"  data-thumb-sizes="(max-width: 100px) 100vw, 100px" class="woocommerce-product-gallery__image"><a href="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png"><img width="500" height="500" src="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png" class="wp-post-image" alt="Pantalla Táctil Aon AllMax-900W, frontal" data-caption="" data-src="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png" data-large_image="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png" data-large_image_width="500" data-large_image_height="500" decoding="async" fetchpriority="high" srcset="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png 500w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-56x56.png 56w" sizes="(max-width: 500px) 100vw, 500px" /></a></div><div data-thumb="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-100x100.png" data-thumb-alt="Pantalla Táctil Aon AllMax-900W" data-thumb-srcset="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio.png 500w"  data-thumb-sizes="(max-width: 100px) 100vw, 100px" class="woocommerce-product-gallery__image"><a href="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio.png"><img width="500" height="500" src="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio.png" class="" alt="Pantalla Táctil Aon AllMax-900W" data-caption="" data-src="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio.png" data-large_image="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio.png" data-large_image_width="500" data-large_image_height="500" decoding="async" srcset="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio.png 500w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye_uio-56x56.png 56w" sizes="(max-width: 500px) 100vw, 500px" /></a></div><div data-thumb="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-100x100.png" data-thumb-alt="Pantalla Táctil Aon AllMax-900W, lateral" data-thumb-srcset="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png 500w"  data-thumb-sizes="(max-width: 100px) 100vw, 100px" class="woocommerce-product-gallery__image"><a href="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png"><img width="500" height="500" src="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png" class="" alt="Pantalla Táctil Aon AllMax-900W, lateral" data-caption="" data-src="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png" data-large_image="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png" data-large_image_width="500" data-large_image_height="500" decoding="async" srcset="https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png 500w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-56x56.png 56w" sizes="(max-width: 500px) 100vw, 500px" /></a></div><div data-thumb="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-100x100.png" data-thumb-alt="Imagen TECHNOPRIME" data-thumb-srcset="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500.png 501w"  data-thumb-sizes="(max-width: 100px) 100vw, 100px" class="woocommerce-product-gallery__image"><a href="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500.png"><img width="501" height="500" src="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500.png" class="" alt="Imagen TECHNOPRIME" data-caption="" data-src="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500.png" data-large_image="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500.png" data-large_image_width="501" data-large_image_height="500" decoding="async" loading="lazy" srcset="https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500.png 501w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2023/12/Tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_gye_ecuador_500_x_500-56x56.png 56w" sizes="auto, (max-width: 501px) 100vw, 501px" /></a></div>	</div>
+</div>
+        </div>
+
+        <!-- COLUMNA DERECHA: INFORMACIÓN Y DETALLES DEL PRODUCTO -->
+        <div class="tp-product-summary-column summary entry-summary">
+                            <div class="tp-product-sku-badge">
+                    SKU: <span>AO-AO-1011-PTY</span>
+                </div>
+            
+            <h1 class="product_title entry-title">Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15&#8243;, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY</h1><p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol" translate="no" dir="auto">&#36;</span>1,000.00</bdi></span> <small class="woocommerce-price-suffix"></small></p>
+<div class="woocommerce-product-details__short-description">
+	<p>La pantalla AllMax-900W, número de parte AO-AO-1011-PTY, es un terminal profesional todo en uno, moderno, robusto y funcional, diseñado para ofrecer un rendimiento eficiente en puntos de venta y diferentes entornos comerciales. Incorpora un potente procesador Intel Core i5 de 11.ª generación, acompañado de 8 GB de memoria RAM DDR4 y un rápido SSD de 256 GB, proporcionando una operación ágil, estable y confiable. Su pantalla TFT LED de 15 pulgadas, con resolución de 1024 × 768, integra tecnología táctil capacitiva proyectiva para brindar una interacción precisa e intuitiva. El equipo incluye Windows 11 Pro preinstalado y una amplia variedad de conexiones, entre ellas HDMI, VGA, cuatro puertos USB, dos puertos COM, Gigabit Ethernet y conexiones de audio. Además, admite diferentes características opcionales como pantalla para cliente de 9,7 pulgadas, lector de tarjetas magnéticas, puerto RJ11 para cajón de efectivo, WiFi y Bluetooth 4.0. Su compatibilidad con montaje VESA 75 × 75 mm aporta mayor flexibilidad para diferentes instalaciones profesionales.</p>
+</div>
+
+	
+	<form class="cart" action="https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/" method="post" enctype='multipart/form-data'>
+		
+		<div class="quantity">
+		<label class="screen-reader-text" for="quantity_6ae35d7c89bd3">Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15&quot;, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY cantidad</label>
+	<input
+		type="number"
+				id="quantity_6ae35d7c89bd3"
+		class="input-text qty text"
+		name="quantity"
+		value="1"
+		aria-label="Cantidad de productos"
+				min="1"
+							step="1"
+			placeholder=""
+			inputmode="numeric"
+			autocomplete="off"
+			/>
+	</div>
+
+		<button type="submit" name="add-to-cart" value="21302" class="single_add_to_cart_button button alt">Añadir al carrito</button>
+
+			</form>
+
+	
+        <div class="tp-enterprise-trust-box">
+            <div class="tp-trust-card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <div class="tp-trust-text">
+                    <strong>Garantía Oficial</strong>
+                    <span>100% de fábrica</span>
+                </div>
+            </div>
+            <div class="tp-trust-card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                <div class="tp-trust-text">
+                    <strong>Envíos Nacionales</strong>
+                    <span>A todo el Ecuador</span>
+                </div>
+            </div>
+            <div class="tp-trust-card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                <div class="tp-trust-text">
+                    <strong>Atención PYMES</strong>
+                    <span>Asesoría corporativa</span>
+                </div>
+            </div>
+        </div>
+        <div class="product_meta">
+
+	
+	
+		<span class="sku_wrapper">SKU: <span class="sku">AO-AO-1011-PTY</span></span>
+
+	
+	<span class="posted_in">Categorías: <a href="https://technoprimec.com/categoria-producto/marcas/aon/" rel="tag">AON</a>, <a href="https://technoprimec.com/categoria-producto/productos/monitores/" rel="tag">Monitores</a></span>
+	<span class="tagged_as">Etiqueta: <a href="https://technoprimec.com/etiqueta-producto/puntos-de-venta/" rel="tag">Puntos de venta</a></span>
+	
+</div>
+        </div>
+
+    </div>
+
+    <!-- SECCIÓN INFERIOR: PESTAÑAS DE DESCRIPCIÓN Y VALORACIONES -->
+    <div class="tp-single-product-bottom-section">
+        
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li role="presentation" class="description_tab" id="tab-title-description">
+					<a href="#tab-description" role="tab" aria-controls="tab-description">
+						Descripción					</a>
+				</li>
+							<li role="presentation" class="reviews_tab" id="tab-title-reviews">
+					<a href="#tab-reviews" role="tab" aria-controls="tab-reviews">
+						Valoraciones (0)					</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+				<div class="tp-clean-description-wrapper">&nbsp;
+<p class="isSelectedEnd"><strong>Procesador y sistema operativo:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">Procesador: Intel Core i5 de 11.ª generación</li>
+ 	<li class="isSelectedEnd">Sistema operativo: Windows 11 Pro preinstalado</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Memoria y almacenamiento:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">Memoria RAM: 8 GB DDR4</li>
+ 	<li class="isSelectedEnd">Almacenamiento: SSD de 256 GB</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Pantalla:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">Tamaño: 15 pulgadas</li>
+ 	<li class="isSelectedEnd">Tecnología: TFT LED con retroiluminación</li>
+ 	<li class="isSelectedEnd">Resolución: 1024 × 768 píxeles</li>
+ 	<li class="isSelectedEnd">Tecnología táctil: Pantalla táctil capacitiva proyectiva</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Salidas de video:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">HDMI: 1 puerto para configuración i3 e i5</li>
+ 	<li class="isSelectedEnd">VGA: 1 puerto para configuraciones J1900, i3 e i5</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Puertos USB:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">4 puertos USB para configuraciones i3 e i5</li>
+ 	<li class="isSelectedEnd">6 puertos USB para configuración J1900</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Puertos y conectividad:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">Puertos COM: 2</li>
+ 	<li class="isSelectedEnd">LAN: 1 × Gigabit Ethernet RJ45</li>
+ 	<li class="isSelectedEnd">Salida de línea de audio: 1</li>
+ 	<li class="isSelectedEnd">Entrada de micrófono: 1</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Alimentación:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">Entrada de alimentación: CA 100–240 V / 50–60 Hz</li>
+ 	<li class="isSelectedEnd">Salida de potencia: CC 12 V / 5 A</li>
+ 	<li class="isSelectedEnd">Adaptador de corriente: 12 V / 5 A</li>
+</ul>
+&nbsp;
+<p class="isSelectedEnd"><strong>Características opcionales:</strong></p>
+
+<ul>
+ 	<li class="isSelectedEnd">Pantalla para cliente: 9,7 pulgadas</li>
+ 	<li class="isSelectedEnd">Puerto para cajón de efectivo: 1 × RJ11</li>
+ 	<li class="isSelectedEnd">Lector de tarjetas magnéticas: ISO Track 1, 2 y 3</li>
+ 	<li class="isSelectedEnd">Conectividad inalámbrica: WiFi 802.11 b/g/n de 2,4 GHz, canal único</li>
+ 	<li class="isSelectedEnd">Bluetooth: 4.0</li>
+</ul>
+&nbsp;
+
+<strong>Montaje:</strong>
+<ul>
+ 	<li>Compatibilidad VESA: 75 × 75 mm</li>
+</ul>
+
+<a href="https://aonhome.com/business/wp-content/uploads/sites/3/2025/07/ALLMAX-900W.pdf" target="blank">
+<button id="botondescarga" class="button">Descarga la ficha técnica aqui</button></a></div>			</div>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+				<div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">
+			Valoraciones		</h2>
+
+					<p class="woocommerce-noreviews">No hay valoraciones aún.</p>
+			</div>
+
+			<div id="review_form_wrapper">
+			<div id="review_form">
+					<div id="respond" class="comment-respond">
+		<span id="reply-title" class="comment-reply-title" role="heading" aria-level="3">Sé el primero en valorar &ldquo;Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15&#8243;, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY&rdquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/#respond" style="display:none;">Cancelar la respuesta</a></small></span><form action="https://technoprimec.com/wp-comments-post.php" method="post" id="commentform" class="comment-form"><p class="comment-notes"><span id="email-notes">Tu dirección de correo electrónico no será publicada.</span> <span class="required-field-message">Los campos obligatorios están marcados con <span class="required">*</span></span></p><div class="comment-form-rating"><label for="rating" id="comment-form-rating-label">Tu puntuación&nbsp;<span class="required">*</span></label><select name="rating" id="rating" required>
+						<option value="">Puntuar&hellip;</option>
+						<option value="5">Perfecto</option>
+						<option value="4">Bueno</option>
+						<option value="3">Normal</option>
+						<option value="2">No está tan mal</option>
+						<option value="1">Muy pobre</option>
+					</select></div><p class="comment-form-comment"><label for="comment">Tu valoración&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p><p class="comment-form-author"><label for="author">Nombre&nbsp;<span class="required">*</span></label><input id="author" name="author" type="text" autocomplete="name" value="" size="30" required /></p>
+<p class="comment-form-email"><label for="email">Correo electrónico&nbsp;<span class="required">*</span></label><input id="email" name="email" type="email" autocomplete="email" value="" size="30" required /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Enviar" /> <input type='hidden' name='comment_post_ID' value='21302' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+				</div>
+		</div>
+	
+	<div class="clear"></div>
+</div>
+			</div>
+		
+			</div>
+
+
+	<section class="related products">
+
+					<h2>Productos relacionados</h2>
+				<ul class="products columns-4">
+
+			
+					<li class="product type-product post-18840 status-publish first instock product_cat-educacion product_cat-empresa product_cat-gamer product_cat-hogar product_cat-hp product_cat-monitores product_cat-oficina-en-casa product_tag-serie-3-pro has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://technoprimec.com/product/monitor-hp-serie3pro-322pf-9u5b0utaba/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://technoprimec.com/wp-content/uploads/2025/12/Monitor_HP_322pf_FHD_9U5B0UTABA_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Monitor HP Serie 3 Pro 322pf, Frontal" decoding="async" loading="lazy" srcset="https://technoprimec.com/wp-content/uploads/2025/12/Monitor_HP_322pf_FHD_9U5B0UTABA_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2025/12/Monitor_HP_322pf_FHD_9U5B0UTABA_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2025/12/Monitor_HP_322pf_FHD_9U5B0UTABA_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2025/12/Monitor_HP_322pf_FHD_9U5B0UTABA_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2025/12/Monitor_HP_322pf_FHD_9U5B0UTABA_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png 500w" sizes="auto, (max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Monitor HP Serie 3 Pro 322pf, FHD, 21.5&#8243;, IPS, 250 nits, HDMI, DisplayPort, VESA, 9U5B0UT#ABA</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol" translate="no" dir="auto">&#36;</span>260.00</bdi></span> <small class="woocommerce-price-suffix"></small></span>
+</a><a href="/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/?add-to-cart=18840" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_18840" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="18840" data-product_sku="9U5B0UT#ABA" aria-label="Add to cart: &ldquo;Monitor HP Serie 3 Pro 322pf, FHD, 21.5&quot;, IPS, 250 nits, HDMI, DisplayPort, VESA, 9U5B0UT#ABA&rdquo;" rel="nofollow" data-success_message="&ldquo;Monitor HP Serie 3 Pro 322pf, FHD, 21.5&quot;, IPS, 250 nits, HDMI, DisplayPort, VESA, 9U5B0UT#ABA&rdquo; has been added to your cart" role="button">Añadir al carrito</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_18840" class="screen-reader-text">
+			</span>
+</li>
+
+			
+					<li class="product type-product post-21270 status-publish instock product_cat-aon product_cat-monitores product_tag-puntos-de-venta has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://technoprimec.com/product/pantalla-tactil-aon-alltouch307-aoi37w1182pty/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch307_1AOI37W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Pantalla Táctil Aon ALLTouch-307" decoding="async" loading="lazy" srcset="https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch307_1AOI37W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch307_1AOI37W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch307_1AOI37W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch307_1AOI37W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch307_1AOI37W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png 500w" sizes="auto, (max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Pantalla Táctil Aon ALLTouch-307, 15.6&#8243;, Full HD, Intel Core i3 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I37W1182-PTY</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol" translate="no" dir="auto">&#36;</span>760.00</bdi></span> <small class="woocommerce-price-suffix"></small></span>
+</a><a href="/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/?add-to-cart=21270" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_21270" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="21270" data-product_sku="AO-I37W1182-PTY" aria-label="Add to cart: &ldquo;Pantalla Táctil Aon ALLTouch-307, 15.6&quot;, Full HD, Intel Core i3 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I37W1182-PTY&rdquo;" rel="nofollow" data-success_message="&ldquo;Pantalla Táctil Aon ALLTouch-307, 15.6&quot;, Full HD, Intel Core i3 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I37W1182-PTY&rdquo; has been added to your cart" role="button">Añadir al carrito</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_21270" class="screen-reader-text">
+			</span>
+</li>
+
+			
+					<li class="product type-product post-20451 status-publish instock product_cat-dahua product_cat-educacion product_cat-empresa product_cat-monitores product_cat-oficina-en-casa product_tag-videowall has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://technoprimec.com/product/pantalla-videowall-dahua-55-dhils550udmuf/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://technoprimec.com/wp-content/uploads/2026/06/Dahua_DHILS550UDMUF_Videowall_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Pantalla Videowall Dahua 55&quot;, frontal" decoding="async" loading="lazy" srcset="https://technoprimec.com/wp-content/uploads/2026/06/Dahua_DHILS550UDMUF_Videowall_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/06/Dahua_DHILS550UDMUF_Videowall_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/06/Dahua_DHILS550UDMUF_Videowall_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/06/Dahua_DHILS550UDMUF_Videowall_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2026/06/Dahua_DHILS550UDMUF_Videowall_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png 500w" sizes="auto, (max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Pantalla Videowall Dahua 55&#8243;, Full HD, Panel ADS Industrial, Bisel Ultradelgado 1.7 mm, 500 cd/m², Daisy Chain HDMI/DP, Operación 24/7, DHI-LS550UDM-UF</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol" translate="no" dir="auto">&#36;</span>2,215.00</bdi></span> <small class="woocommerce-price-suffix"></small></span>
+</a><a href="/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/?add-to-cart=20451" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_20451" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="20451" data-product_sku="DHI-LS550UDM-UF" aria-label="Add to cart: &ldquo;Pantalla Videowall Dahua 55&quot;, Full HD, Panel ADS Industrial, Bisel Ultradelgado 1.7 mm, 500 cd/m², Daisy Chain HDMI/DP, Operación 24/7, DHI-LS550UDM-UF&rdquo;" rel="nofollow" data-success_message="&ldquo;Pantalla Videowall Dahua 55&quot;, Full HD, Panel ADS Industrial, Bisel Ultradelgado 1.7 mm, 500 cd/m², Daisy Chain HDMI/DP, Operación 24/7, DHI-LS550UDM-UF&rdquo; has been added to your cart" role="button">Añadir al carrito</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_20451" class="screen-reader-text">
+			</span>
+</li>
+
+			
+					<li class="product type-product post-21298 status-publish last instock product_cat-aon product_cat-monitores product_tag-puntos-de-venta has-post-thumbnail taxable shipping-taxable purchasable product-type-simple">
+	<a href="https://technoprimec.com/product/pantalla-tactil-aon-alltouch507-aoi57w1182pty/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch507_AOI57W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Pantalla Táctil Aon ALLTouch-507, frontal" decoding="async" loading="lazy" srcset="https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch507_AOI57W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-300x300.png 300w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch507_AOI57W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-100x100.png 100w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch507_AOI57W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-150x150.png 150w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch507_AOI57W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye-56x56.png 56w, https://technoprimec.com/wp-content/uploads/2026/09/ALLTouch507_AOI57W1182PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador_gye.png 500w" sizes="auto, (max-width: 300px) 100vw, 300px" /><h2 class="woocommerce-loop-product__title">Pantalla Táctil Aon ALLTouch-507, Pantalla Táctil, 15.6&#8243;, Full HD, Intel Core i5 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I57W1182-PTY</h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol" translate="no" dir="auto">&#36;</span>785.00</bdi></span> <small class="woocommerce-price-suffix"></small></span>
+</a><a href="/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/?add-to-cart=21298" aria-describedby="woocommerce_loop_add_to_cart_link_describedby_21298" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="21298" data-product_sku="AO-I57W1182-PTY" aria-label="Add to cart: &ldquo;Pantalla Táctil Aon ALLTouch-507, Pantalla Táctil, 15.6&quot;, Full HD, Intel Core i5 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I57W1182-PTY&rdquo;" rel="nofollow" data-success_message="&ldquo;Pantalla Táctil Aon ALLTouch-507, Pantalla Táctil, 15.6&quot;, Full HD, Intel Core i5 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I57W1182-PTY&rdquo; has been added to your cart" role="button">Añadir al carrito</a>	<span id="woocommerce_loop_add_to_cart_link_describedby_21298" class="screen-reader-text">
+			</span>
+</li>
+
+			
+		</ul>
+
+	</section>
+	    </div>
+
+</div>
+
+
+<!-- SCRIPT DE SEGUIMIENTO DINÁMICO DE CURSOR PARA EL ZOOM EN TIEMPO REAL -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+    function initDynamicZoom() {
+        const galleryContainers = document.querySelectorAll('.tp-product-gallery-column .woocommerce-product-gallery__image');
+        
+        galleryContainers.forEach(function(container) {
+            const img = container.querySelector('img');
+            if (!img) return;
+
+            container.addEventListener('mousemove', function(e) {
+                const rect = container.getBoundingClientRect();
+                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                
+                img.style.transformOrigin = `${x}% ${y}%`;
+            });
+
+            container.addEventListener('mouseleave', function() {
+                img.style.transformOrigin = 'center center';
+            });
+        });
+    }
+
+    initDynamicZoom();
+
+    if (typeof jQuery !== 'undefined') {
+        jQuery('.woocommerce-product-gallery').on('woocommerce_gallery_reset_slide_position woocommerce_gallery_init_zoom', function() {
+            setTimeout(initDynamicZoom, 100);
+        });
+    }
+});
+</script>
+	
+	</main></div></div>
+
+
+<!-- PIE DE PÁGINA ENTERPRISE FULL WIDTH -->
+<footer class="tp-enterprise-footer">
+    <div class="tp-footer-container">
+        <div class="tp-footer-grid">
+            
+            <!-- Columna 1: Marca & Identidad -->
+            <div class="tp-footer-col tp-footer-brand">
+                <a href="https://technoprimec.com/">
+                    <img src="https://technoprimec.com/wp-content/themes/technoPrime/assets/pics/Logo.png" alt="Techno Prime" class="tp-footer-logo">
+                </a>
+                <p class="tp-footer-desc">
+                    Proveedores líderes de hardware enterprise, laptops, servidores y soluciones tecnológicas en Quito y todo el Ecuador.
+                </p>
+                <div class="tp-footer-badge">
+                    <span class="tp-badge-dot"></span> Tienda Oficial Quito - Ecuador
+                </div>
+            </div>
+
+            <!-- Columna 2: Contacto & PYMES -->
+            <div class="tp-footer-col">
+                <h4 class="tp-footer-title">Contacto & PYMES</h4>
+                <ul class="tp-footer-links">
+                    <li><a href="https://technoprimec.com/contacto/">Contacto Directo</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=593986188193&text=Hola%20TechnoPrime,%20deseo%20consultar%20sobre%20un%20producto" target="_blank" rel="noopener noreferrer">Atención por WhatsApp</a></li>
+                    <li><a href="https://technoprimec.com/contacto/">Solicitud de Crédito Corporativo</a></li>
+                    <li><a href="tel:+593986188193">Línea Telefónica Directa</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Navegación -->
+            <div class="tp-footer-col">
+                <h4 class="tp-footer-title">Navegación</h4>
+                <ul class="tp-footer-links">
+                    <li><a href="https://technoprimec.com/">Inicio</a></li>
+                    <li><a href="https://technoprimec.com/nosotros/">Sobre Nosotros</a></li>
+                    <li><a href="https://technoprimec.com/blog/">Blog & Noticias Tech</a></li>
+                    <li><a href="https://technoprimec.com/preguntas-frecuentes/">Preguntas Frecuentes</a></li>
+                    <li><a href="https://technoprimec.com/tienda/">Promociones Especiales</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Legal & Políticas -->
+            <div class="tp-footer-col">
+                <h4 class="tp-footer-title">Legal & Políticas</h4>
+                <ul class="tp-footer-links">
+                    <li><a href="https://technoprimec.com/politicas-de-envio/">Políticas de Envío y Entrega</a></li>
+                    <li><a href="https://technoprimec.com/terminos-y-condiciones/">Términos y Condiciones</a></li>
+                    <li><a href="https://technoprimec.com/politica-de-privacidad/">Políticas de Privacidad</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BARRA INFERIOR DE COPYRIGHT -->
+    <div class="tp-footer-bottom">
+        <div class="tp-footer-bottom-container">
+            <p>&copy; 2026 Techno Prime. Todos los derechos reservados.</p>
+            <span class="tp-footer-tag">Ecuador &bull; Hardware & Enterprise Solutions</span>
+        </div>
+    </div>
+</footer>
+
+<!-- BOTÓN FLOTANTE DE WHATSAPP -->
+<a href="https://api.whatsapp.com/send?phone=593986188193&text=Hola%20TechnoPrime,%20deseo%20asesor%20comercial" class="tp-whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat de WhatsApp">
+    <span class="tp-whatsapp-tooltip">¿Necesitas ayuda? <strong>Escríbenos</strong></span>
+    <div class="tp-whatsapp-icon-wrap">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+    </div>
+</a>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/technoPrime/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org/","@graph":[{"@context":"https://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"name":"Inicio","@id":"https://technoprimec.com"}},{"@type":"ListItem","position":2,"item":{"name":"Marcas","@id":"https://technoprimec.com/categoria-producto/marcas/"}},{"@type":"ListItem","position":3,"item":{"name":"AON","@id":"https://technoprimec.com/categoria-producto/marcas/aon/"}},{"@type":"ListItem","position":4,"item":{"name":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15&amp;#8243;, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","@id":"https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/"}}]},{"@context":"https://schema.org/","@type":"Product","@id":"https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/#product","name":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15\", Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","url":"https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/","description":"La pantalla AllMax-900W, n\u00famero de parte AO-AO-1011-PTY, es un terminal profesional todo en uno, moderno, robusto y funcional, dise\u00f1ado para ofrecer un rendimiento eficiente en puntos de venta y diferentes entornos comerciales. Incorpora un potente procesador Intel Core i5 de 11.\u00aa generaci\u00f3n, acompa\u00f1ado de 8 GB de memoria RAM DDR4 y un r\u00e1pido SSD de 256 GB, proporcionando una operaci\u00f3n \u00e1gil, estable y confiable. Su pantalla TFT LED de 15 pulgadas, con resoluci\u00f3n de 1024 \u00d7 768, integra tecnolog\u00eda t\u00e1ctil capacitiva proyectiva para brindar una interacci\u00f3n precisa e intuitiva. El equipo incluye Windows 11 Pro preinstalado y una amplia variedad de conexiones, entre ellas HDMI, VGA, cuatro puertos USB, dos puertos COM, Gigabit Ethernet y conexiones de audio. Adem\u00e1s, admite diferentes caracter\u00edsticas opcionales como pantalla para cliente de 9,7 pulgadas, lector de tarjetas magn\u00e9ticas, puerto RJ11 para caj\u00f3n de efectivo, WiFi y Bluetooth 4.0. Su compatibilidad con montaje VESA 75 \u00d7 75 mm aporta mayor flexibilidad para diferentes instalaciones profesionales.","image":"https://technoprimec.com/wp-content/uploads/2026/09/AllMax900W_AOAO1011PTY_tecnologia_technoprimec_tecnologiaecuador_tecnologiauio_quito_ecuador.png","sku":"AO-AO-1011-PTY","offers":[{"@type":"Offer","priceSpecification":[{"@type":"UnitPriceSpecification","price":"1000.00","priceCurrency":"USD","validThrough":"2027-12-31","valueAddedTaxIncluded":true}],"priceValidUntil":"2027-12-31","availability":"https://schema.org/InStock","url":"https://technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/","seller":{"@type":"Organization","name":"Techno Prime","url":"https://technoprimec.com"},"price":"1000.00","priceCurrency":"USD"}]}]}</script><div id='pys_ajax_events'></div>        <script type="rocketlazyloadscript">
+            var node = document.getElementsByClassName('woocommerce-message')[0];
+            if(node && document.getElementById('pys_late_event')) {
+                var messageText = node.textContent.trim();
+                if(!messageText) {
+                    node.style.display = 'none';
+                }
+            }
+        </script>
+        <noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=512201618519643&ev=ViewContent&noscript=1&cd%5Bcontent_ids%5D=%5B%2221302%22%5D&cd%5Bcontent_type%5D=product&cd%5Btags%5D=Puntos+de+venta&cd%5Bcontent_name%5D=Pantalla+T%C3%A1ctil+Aon+AllMax-900W%2C+Terminal+Todo+en+Uno%2C+15%22%2C+Intel+Core+i5+Gen11%2C+8+GB+DDR4%2C+SSD+256+GB%2C+Pantalla+T%C3%A1ctil%2C+Windows+11+Pro%2C+AO-AO-1011-PTY&cd%5Bcategory_name%5D=AON%2C+Monitores&cd%5Bvalue%5D=1000&cd%5Bcurrency%5D=USD&cd%5Bcontents%5D=%5B%7B%22id%22%3A%2221302%22%2C%22quantity%22%3A1%7D%5D&cd%5Bproduct_price%5D=1000&cd%5Bpage_title%5D=Pantalla+T%C3%A1ctil+Aon+AllMax-900W%2C+Terminal+Todo+en+Uno%2C+15%22%2C+Intel+Core+i5+Gen11%2C+8+GB+DDR4%2C+SSD+256+GB%2C+Pantalla+T%C3%A1ctil%2C+Windows+11+Pro%2C+AO-AO-1011-PTY&cd%5Bpost_type%5D=product&cd%5Bpost_id%5D=21302&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=technoprimec.com%2Fproduct%2Fpantalla-tactil-aon-allmax900w-ao-ao-1011-pty%2F" alt=""></noscript>
+<noscript><img height="1" width="1" style="display: none;" src="https://www.facebook.com/tr?id=512201618519643&ev=PageView&noscript=1&cd%5Bpage_title%5D=Pantalla+T%C3%A1ctil+Aon+AllMax-900W%2C+Terminal+Todo+en+Uno%2C+15%22%2C+Intel+Core+i5+Gen11%2C+8+GB+DDR4%2C+SSD+256+GB%2C+Pantalla+T%C3%A1ctil%2C+Windows+11+Pro%2C+AO-AO-1011-PTY&cd%5Bpost_type%5D=product&cd%5Bpost_id%5D=21302&cd%5Bplugin%5D=PixelYourSite&cd%5Buser_role%5D=guest&cd%5Bevent_url%5D=technoprimec.com%2Fproduct%2Fpantalla-tactil-aon-allmax900w-ao-ao-1011-pty%2F" alt=""></noscript>
+
+<div id="photoswipe-fullscreen-dialog" class="pswp" tabindex="-1" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Full screen image">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--zoom" aria-label="Ampliar/Reducir"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Cambiar a pantalla completa"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Compartir"></button>
+				<button class="pswp__button pswp__button--close" aria-label="Cerrar (Esc)"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Anterior (flecha izquierda)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Siguiente (flecha derecha)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script type="rocketlazyloadscript" id="wp-hooks-js" src="https://technoprimec.com/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js" src="https://technoprimec.com/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script type="rocketlazyloadscript" id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script type="rocketlazyloadscript" id="swv-js" src="https://technoprimec.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=6.2.1" defer></script>
+<script type="rocketlazyloadscript" id="contact-form-7-js-before">
+var wpcf7 = {
+    "api": {
+        "root": "https:\/\/technoprimec.com\/wp-json\/",
+        "namespace": "contact-form-7\/v1"
+    },
+    "cached": 1
+};
+//# sourceURL=contact-form-7-js-before
+</script>
+<script type="rocketlazyloadscript" id="contact-form-7-js" src="https://technoprimec.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=6.2.1" defer></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"/wp-admin/admin-ajax.php","wc_ajax_url":"/?wc-ajax=%%endpoint%%","i18n_password_show":"Show password","i18n_password_hide":"Hide password"};
+//# sourceURL=woocommerce-js-extra
+</script>
+<script type="rocketlazyloadscript" data-wp-strategy="defer" id="woocommerce-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=11.2.0" defer></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/tienda/|/categoria-producto/|/(?:.+/)?feed(?:/(?:.+/?)?)?$/|/(?:.+/)?embed/|/finalizar-compra/|/https-technoprimec-com-carrito/|/mi-cuenta/|/(index\\.php/)?wp\\-json(/.*|$)/|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://technoprimec.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script type="rocketlazyloadscript" id="sourcebuster-js-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=11.2.0" defer></script>
+<script id="wc-order-attribution-js-extra">
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https://technoprimec.com/wp-admin/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+//# sourceURL=wc-order-attribution-js-extra
+</script>
+<script type="rocketlazyloadscript" id="wc-order-attribution-js" src="https://technoprimec.com/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=11.2.0" defer></script>
+<script type="rocketlazyloadscript" id="jquery-bind-first-js" defer src="https://technoprimec.com/wp-content/plugins/pixelyoursite/dist/scripts/jquery.bind-first-0.2.3.min.js?ver=0.2.3"></script>
+<script type="rocketlazyloadscript" id="js-cookie-pys-js" defer src="https://technoprimec.com/wp-content/plugins/pixelyoursite/dist/scripts/js.cookie-2.1.3.min.js?ver=2.1.3"></script>
+<script type="rocketlazyloadscript" id="js-sha256-js" defer src="https://technoprimec.com/wp-content/plugins/pixelyoursite/dist/scripts/sha256.js?ver=0.11.0"></script>
+<script id="pys-js-extra">
+var pysOptions = {"staticEvents":{"facebook":{"woo_view_content":[{"delay":0,"type":"static","name":"ViewContent","pixelIds":["512201618519643"],"eventID":"6b3b0058-9c6a-45fe-af81-36b5656b7864","params":{"content_ids":["21302"],"content_type":"product","tags":"Puntos de venta","content_name":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15\", Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","category_name":"AON, Monitores","value":"1000","currency":"USD","contents":[{"id":"21302","quantity":1}],"product_price":"1000","page_title":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15\", Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","post_type":"product","post_id":21302,"plugin":"PixelYourSite","user_role":"guest","event_url":"technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/"},"e_id":"woo_view_content","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":"","order_key":""}],"init_event":[{"delay":0,"type":"static","ajaxFire":false,"name":"PageView","pixelIds":["512201618519643"],"eventID":"96049663-8036-4984-be97-d1bed46037b2","params":{"page_title":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15\", Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","post_type":"product","post_id":21302,"plugin":"PixelYourSite","user_role":"guest","event_url":"technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/"},"e_id":"init_event","ids":[],"hasTimeWindow":false,"timeWindow":0,"woo_order":"","edd_order":"","order_key":""}]},"ga":{"woo_view_content":[{"delay":0,"type":"static","name":"view_item","trackingIds":["GT-WVJRGZZF"],"eventID":"6b3b0058-9c6a-45fe-af81-36b5656b7864","params":{"event_category":"ecommerce","currency":"USD","items":[{"item_id":"21302","item_name":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15\", Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","quantity":1,"price":"1000","item_category":"Monitores","item_category2":"AON"}],"value":"1000","page_title":"Pantalla T\u00e1ctil Aon AllMax-900W, Terminal Todo en Uno, 15\", Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla T\u00e1ctil, Windows 11 Pro, AO-AO-1011-PTY","post_type":"product","post_id":21302,"plugin":"PixelYourSite","user_role":"guest","event_url":"technoprimec.com/product/pantalla-tactil-aon-allmax900w-ao-ao-1011-pty/"},"e_id":"woo_view_content","ids":[],"hasTimeWindow":false,"timeWindow":0,"pixelIds":[],"woo_order":"","edd_order":"","order_key":""}]}},"dynamicEvents":[],"triggerEvents":[],"triggerEventTypes":[],"facebook":{"pixelIds":["512201618519643"],"advancedMatching":{"external_id":"deacfdbccdefdebaeeafcbc"},"advancedMatchingEnabled":true,"removeMetadata":true,"wooVariableAsSimple":false,"serverApiEnabled":true,"metaEnabledCapiPixels":["512201618519643"],"sendEventId":true,"send_external_id":null,"enabled_medical":false,"do_not_track_medical_param":["event_url","post_title","page_title","landing_page","content_name","categories","category_name","tags"],"meta_ldu":false},"ga":{"trackingIds":["GT-WVJRGZZF"],"commentEventEnabled":true,"downloadEnabled":true,"formEventEnabled":true,"crossDomainEnabled":false,"crossDomainAcceptIncoming":false,"crossDomainDomains":[],"isDebugEnabled":{"1":"index_0"},"serverContainerUrls":{"GT-WVJRGZZF":{"enable_server_container":"","server_container_url":"","transport_url":""}},"additionalConfig":{"GT-WVJRGZZF":{"first_party_collection":true}},"disableAdvertisingFeatures":false,"disableAdvertisingPersonalization":false,"wooVariableAsSimple":true,"custom_page_view_event":false},"debug":"","siteUrl":"https://technoprimec.com","ajaxUrl":"https://technoprimec.com/wp-admin/admin-ajax.php","ajax_event":"b15f3b9e99","enable_remove_download_url_param":"1","cookie_duration":"7","last_visit_duration":"60","enable_success_send_form":"","ajaxForServerEvent":"1","ajaxForServerStaticEvent":"1","useSendBeacon":"1","send_external_id":"1","external_id_expire":"180","track_cookie_for_subdomains":"1","google_consent_mode":"1","consent_mode_cmp_active":"","data_persistency":"keep_data","gdpr":{"ajax_enabled":false,"all_disabled_by_api":false,"facebook_disabled_by_api":false,"analytics_disabled_by_api":false,"google_ads_disabled_by_api":false,"pinterest_disabled_by_api":false,"bing_disabled_by_api":false,"reddit_disabled_by_api":false,"openai_disabled_by_api":false,"externalID_disabled_by_api":false,"facebook_prior_consent_enabled":true,"analytics_prior_consent_enabled":true,"google_ads_prior_consent_enabled":null,"pinterest_prior_consent_enabled":true,"bing_prior_consent_enabled":true,"openai_prior_consent_enabled":true,"cookiebot_integration_enabled":false,"cookiebot_facebook_consent_category":"marketing","cookiebot_analytics_consent_category":"statistics","cookiebot_tiktok_consent_category":"marketing","cookiebot_google_ads_consent_category":"marketing","cookiebot_pinterest_consent_category":"marketing","cookiebot_bing_consent_category":"marketing","cookiebot_openai_consent_category":"marketing","consent_magic_integration_enabled":false,"real_cookie_banner_integration_enabled":false,"cookie_notice_integration_enabled":false,"cookie_law_info_integration_enabled":false,"analytics_storage":{"enabled":true,"value":"granted","filter":false},"ad_storage":{"enabled":true,"value":"granted","filter":false},"ad_user_data":{"enabled":true,"value":"granted","filter":false},"ad_personalization":{"enabled":true,"value":"granted","filter":false}},"cookie":{"disabled_all_cookie":false,"disabled_start_session_cookie":false,"disabled_advanced_form_data_cookie":false,"disabled_landing_page_cookie":false,"disabled_first_visit_cookie":false,"disabled_trafficsource_cookie":false,"disabled_utmTerms_cookie":false,"disabled_utmId_cookie":false},"tracking_analytics":{"TrafficLanding":"","TrafficUtms":[],"TrafficUtmsId":[]},"GATags":{"ga_datalayer_type":"default","ga_datalayer_name":"dataLayerPYS"},"woo":{"enabled":true,"enabled_save_data_to_orders":true,"addToCartOnButtonEnabled":true,"addToCartOnButtonValueEnabled":true,"addToCartOnButtonValueOption":"price","singleProductId":21302,"removeFromCartSelector":"form.woocommerce-cart-form .remove","addToCartCatchMethod":"add_cart_hook","is_order_received_page":false,"containOrderId":false},"edd":{"enabled":false},"cache_bypass":"1793285500"};
+//# sourceURL=pys-js-extra
+</script>
+<script type="rocketlazyloadscript" id="pys-js" defer src="https://technoprimec.com/wp-content/plugins/pixelyoursite/dist/scripts/public.js?ver=11.4.2.1"></script>
+<script type="rocketlazyloadscript" id="googlesitekit-events-provider-contact-form-7-js" src="https://technoprimec.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-contact-form-7-fac2a8013ba5ba355cd0.js" defer></script>
+<script type="rocketlazyloadscript" id="googlesitekit-events-provider-content-events-js-before">
+window._googlesitekit = window._googlesitekit || {};
+window._googlesitekit.contentEvents = {"postID":21302,"isReadableSinglePost":false,"hasVimeoEmbed":false,"wordCount":0,"estimatedReadTimeSeconds":0,"isLastPageOfMultiPagePost":false,"readTimeThresholdPercent":85,"minimumReadTimeSeconds":5};
+//# sourceURL=googlesitekit-events-provider-content-events-js-before
+</script>
+<script type="rocketlazyloadscript" id="googlesitekit-events-provider-content-events-js" src="https://technoprimec.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-content-events-6b04077d00f0d606ba42.js" defer></script>
+<script type="rocketlazyloadscript" id="googlesitekit-events-provider-woocommerce-js-before">
+window._googlesitekit.wcdata = window._googlesitekit.wcdata || {};
+window._googlesitekit.wcdata.products = [{"id":18840,"name":"Monitor HP Serie 3 Pro 322pf, FHD, 21.5\", IPS, 250 nits, HDMI, DisplayPort, VESA, 9U5B0UT#ABA","categories":[{"name":"Educaci\u00f3n"},{"name":"Empresa"},{"name":"Gamer"},{"name":"Hogar"},{"name":"Hp"}],"price":26000},{"id":21270,"name":"Pantalla T\u00e1ctil Aon ALLTouch-307, 15.6\", Full HD, Intel Core i3 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I37W1182-PTY","categories":[{"name":"AON"},{"name":"Monitores"}],"price":76000},{"id":20451,"name":"Pantalla Videowall Dahua 55\", Full HD, Panel ADS Industrial, Bisel Ultradelgado 1.7 mm, 500 cd\/m\u00b2, Daisy Chain HDMI\/DP, Operaci\u00f3n 24\/7, DHI-LS550UDM-UF","categories":[{"name":"Dahua"},{"name":"Educaci\u00f3n"},{"name":"Empresa"},{"name":"Monitores"},{"name":"Oficina en casa"}],"price":221500},{"id":21298,"name":"Pantalla T\u00e1ctil Aon ALLTouch-507, Pantalla T\u00e1ctil, 15.6\", Full HD, Intel Core i5 Gen7, 8 GB DDR4, SSD 128 GB, WiFi 5G, Bluetooth 5.0, Windows 11, AO-I57W1182-PTY","categories":[{"name":"AON"},{"name":"Monitores"}],"price":78500}];
+window._googlesitekit.wcdata.add_to_cart = null;
+window._googlesitekit.wcdata.currency = "USD";
+window._googlesitekit.wcdata.currencyMinorUnit = 2;
+window._googlesitekit.wcdata.eventsToTrack = ["add_to_cart","purchase"];
+//# sourceURL=googlesitekit-events-provider-woocommerce-js-before
+</script>
+<script type="rocketlazyloadscript" id="googlesitekit-events-provider-woocommerce-js" src="https://technoprimec.com/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-woocommerce-86c5a3ff303665006998.js" defer></script>
+<script type="rocketlazyloadscript" id="jquery-ui-core-js-before">window.addEventListener('DOMContentLoaded', function() {
+jQuery.uiBackCompat = true;
+//# sourceURL=jquery-ui-core-js-before
+});</script>
+<script type="rocketlazyloadscript" id="jquery-ui-core-js" src="https://technoprimec.com/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2" defer></script>
+<script type="rocketlazyloadscript" id="jquery-ui-mouse-js" src="https://technoprimec.com/wp-includes/js/jquery/ui/mouse.min.js?ver=1.14.2" defer></script>
+<script type="rocketlazyloadscript" id="jquery-ui-slider-js" src="https://technoprimec.com/wp-includes/js/jquery/ui/slider.min.js?ver=1.14.2" defer></script>
+<script data-wp-strategy="defer" defer id="add_to_cart_script-js" src="https://technoprimec.com/wp-content/themes/technoPrime/build/modules/add-to-cart.js?ver=1793285500"></script>
+<script data-wp-strategy="defer" defer id="search-header-icon-js" src="https://technoprimec.com/wp-content/themes/technoPrime/build/modules/search.js?ver=1793285500"></script>
+<script id="jervis-landing-page-js-js-extra">
+var contact_form_ajax = {"ajax_url":"https://technoprimec.com/wp-admin/admin-ajax.php"};
+//# sourceURL=jervis-landing-page-js-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="jervis-landing-page-js-js" src="https://technoprimec.com/wp-content/themes/technoPrime/build/modules/index.js?ver=1793285500"></script>
+<script data-wp-strategy="defer" defer id="product-rating-js" src="https://technoprimec.com/wp-content/themes/technoPrime/build/modules/ratingProduct.js?ver=1793285500"></script>
+<script data-wp-strategy="defer" defer id="product-add-to-cart-js" src="https://technoprimec.com/wp-content/themes/technoPrime/build/modules/add-to-cart-product.js?ver=1793285500"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://technoprimec.com/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://technoprimec.com/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://technoprimec.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->

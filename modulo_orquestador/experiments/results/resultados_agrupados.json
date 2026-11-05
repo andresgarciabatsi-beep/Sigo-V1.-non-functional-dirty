@@ -1,0 +1,145 @@
+[
+  {
+    "numero_item": 1,
+    "nombre_item": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s",
+    "tiendas": [
+      {
+        "tienda": "Tecnomega Store",
+        "dominio": "tecnomegastore.ec",
+        "mercado": "Nacionales",
+        "prioridad": 1,
+        "urls": [
+          "https://tecnomegastore.ec/product/disco-duro-duro-western-digital-ssd-my-passport-2tb-usb-3.2-gen-2-type-c-externo-gray-WDBAGF0020BGY-WESN?code=HDDWDIBAGF020BG",
+          "https://tecnomegastore.ec/searchi/1/1tb",
+          "https://tecnomegastore.ec/searchi/1/Ssd"
+        ]
+      },
+      {
+        "tienda": "Tecnosmart",
+        "dominio": "tecnosmart.com.ec",
+        "mercado": "Nacionales",
+        "prioridad": 1,
+        "urls": [
+          "https://www.tecnosmart.com.ec/producto/ssd-externo-kingston-xs1000-1tb-usb-3-2-gen-2-1050mb-s-read-1000mb-s-write-sxs1000-1000g/"
+        ]
+      },
+      {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "mercado": "Estados Unidos",
+        "prioridad": 2,
+        "urls": [
+          "https://www.ebay.com/itm/136596601125"
+        ]
+      },
+      {
+        "tienda": "Alibaba",
+        "dominio": "alibaba.com",
+        "mercado": "China",
+        "prioridad": 3,
+        "urls": [
+          "https://www.alibaba.com/product-detail/Ssd-hard-disk-1TB-up-to_1601971517489.html",
+          "https://www.alibaba.com/countrysearch/CN/1tb-ssd.html"
+        ]
+      },
+      {
+        "tienda": "AliExpress",
+        "dominio": "aliexpress.com",
+        "mercado": "China",
+        "prioridad": 3,
+        "urls": [
+          "https://www.aliexpress.com/item/1005006744787422.html"
+        ]
+      }
+    ]
+  },
+  {
+    "numero_item": 2,
+    "nombre_item": "Tarjeta microSDXC 512GB UHS-I U3 V30 A2",
+    "tiendas": [
+      {
+        "tienda": "Steren Ecuador",
+        "dominio": "steren.com.ec",
+        "mercado": "Nacionales",
+        "prioridad": 1,
+        "urls": [
+          "https://www.steren.com.ec/memoria-microsd-de-512-gb-sandisk-clase-u3-v30-a2.html",
+          "https://www.steren.com.ec/memoria-microsd-xc-de-512-gb-clase-u3-v30-a2-con-adaptador-sd.html"
+        ]
+      },
+      {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "mercado": "Estados Unidos",
+        "prioridad": 2,
+        "urls": [
+          "https://www.amazon.com/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B07P7M6K35",
+          "https://www.amazon.com/-/es/SanDisk-SDSQXA1-512G-GN6MA-Tarjeta-microSDXC-adaptador/dp/B07P7M6K35"
+        ]
+      },
+      {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "mercado": "Estados Unidos",
+        "prioridad": 2,
+        "urls": [
+          "https://www.ebay.com/p/24055155057",
+          "https://www.ebay.com/p/9091040806"
+        ]
+      },
+      {
+        "tienda": "Alibaba",
+        "dominio": "alibaba.com",
+        "mercado": "China",
+        "prioridad": 3,
+        "urls": [
+          "https://www.alibaba.com/product-detail/Best-Selling-512GB-Micro-SDXC-UHS_11000035099113.html",
+          "https://www.alibaba.com/product-detail/512GB-Superior-Micro-SDXC-UHS-I_1601925846035.html"
+        ]
+      },
+      {
+        "tienda": "AliExpress",
+        "dominio": "aliexpress.com",
+        "mercado": "China",
+        "prioridad": 3,
+        "urls": [
+          "https://www.aliexpress.com/item/1005007468963303.html"
+        ]
+      }
+    ]
+  },
+  {
+    "numero_item": 3,
+    "nombre_item": "Monitor curvo 31.5 pulgadas QHD 2560x1440 VA 180Hz",
+    "tiendas": [
+      {
+        "tienda": "Tecnomega Store",
+        "dominio": "tecnomegastore.ec",
+        "mercado": "Nacionales",
+        "prioridad": 1,
+        "urls": [
+          "https://tecnomegastore.ec/searchi/1/monitores"
+        ]
+      },
+      {
+        "tienda": "NoviComPu",
+        "dominio": "novicompu.com",
+        "mercado": "Nacionales",
+        "prioridad": 1,
+        "urls": [
+          "https://www.novicompu.com/computadoras/pc-de-escritorio/monitores"
+        ]
+      },
+      {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "mercado": "Estados Unidos",
+        "prioridad": 2,
+        "urls": [
+          "https://www.amazon.com/Monitor-FreeSync-Refresh-ED323QU-P2bmiipx/dp/B0FJS6DJVX",
+          "https://www.amazon.com/Monitor-FreeSync-Speakers-XZ320QU-S3bmiiphx/dp/B0CRF7J5S7"
+        ]
+      }
+    ]
+  }
+]

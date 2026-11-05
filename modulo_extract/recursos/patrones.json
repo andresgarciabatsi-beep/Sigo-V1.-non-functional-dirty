@@ -1,0 +1,618 @@
+
+{
+  "version": "1.1",
+  "descripcion": "Catálogo SIGO Fetch v1: patrones de 91 páginas (30 originales, 1 adicional, 60 nuevas). Configurable y ampliable. Los patrones generan candidatos; no validan semánticamente su contenido.",
+  "campos": {
+    "nombre": [
+      {
+        "fuente": "html",
+        "selector": "h1.product_title",
+        "prioridad": 100
+      },
+      {
+        "fuente": "html",
+        "selector": "h1.product-title",
+        "prioridad": 96
+      },
+      {
+        "fuente": "html",
+        "selector": "#productName h1",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "h1#title",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "h1.pname",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "h1.product-name",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "h3.product_title",
+        "prioridad": 95
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "productName",
+        "prioridad": 94
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "name",
+        "prioridad": 92
+      },
+      {
+        "fuente": "html",
+        "selector": "h1.page-title",
+        "prioridad": 90
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "Name",
+        "prioridad": 90
+      },
+      {
+        "fuente": "microdata",
+        "tipo": "Product",
+        "ruta": "properties.name",
+        "prioridad": 86
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "og:title",
+        "prioridad": 75
+      },
+      {
+        "fuente": "meta",
+        "clave": "twitter:title",
+        "prioridad": 65
+      },
+      {
+        "fuente": "html",
+        "selector": "h1",
+        "prioridad": 60
+      },
+      {
+        "fuente": "meta",
+        "clave": "title",
+        "prioridad": 35
+      },
+      {
+        "fuente": "html",
+        "selector": "title",
+        "prioridad": 34,
+        "observacion": "Respaldo cuando el navegador o Lexbor reubica title fuera de head (MCI). Validar identidad del producto."
+      }
+    ],
+    "precio": [
+      {
+        "fuente": "html",
+        "selector": ".product-info-main .price",
+        "prioridad": 108
+      },
+      {
+        "fuente": "html",
+        "selector": ".product-prices .current-price",
+        "prioridad": 106
+      },
+      {
+        "fuente": "html",
+        "selector": ".summary.entry-summary p.price",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": "p.price",
+        "prioridad": 100
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "items.0.sellers.0.commertialOffer.Price",
+        "prioridad": 98
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "offers.price",
+        "prioridad": 98
+      },
+      {
+        "fuente": "html",
+        "selector": ".priceflex",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "div.tm-source-woo-price",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "span.electro-price",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "span.price",
+        "prioridad": 95
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "priceRange.sellingPrice.lowPrice",
+        "prioridad": 93
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "Offers.Price",
+        "prioridad": 92
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "offers.priceSpecification.price",
+        "prioridad": 92
+      },
+      {
+        "fuente": "html",
+        "selector": "span.unitPrice",
+        "prioridad": 90
+      },
+      {
+        "fuente": "microdata",
+        "tipo": "Product",
+        "ruta": "properties.offers.properties.price",
+        "prioridad": 90
+      },
+      {
+        "fuente": "html",
+        "selector": ".summary .price",
+        "prioridad": 89,
+        "observacion": "Puede tener múltiples coincidencias, incluidas tarjetas relacionadas; validar producto principal."
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "product:price:amount",
+        "prioridad": 88
+      },
+      {
+        "fuente": "html",
+        "selector": "span[itemprop=\"price\"]",
+        "prioridad": 87
+      },
+      {
+        "fuente": "html",
+        "selector": "meta[itemprop=\"price\"]",
+        "atributo": "content",
+        "prioridad": 86,
+        "observacion": "Si el valor no está en texto, leer el atributo content."
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "og:price:amount",
+        "prioridad": 86
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "og:product:price",
+        "prioridad": 86
+      },
+      {
+        "fuente": "html",
+        "selector": "span.a-offscreen",
+        "prioridad": 85
+      },
+      {
+        "fuente": "html",
+        "selector": "div.module_price",
+        "prioridad": 80
+      },
+      {
+        "fuente": "html",
+        "selector": ".price",
+        "prioridad": 65
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "offers.lowPrice",
+        "prioridad": 62,
+        "observacion": "Mínimo de rango, no necesariamente importe de una variante concreta."
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "offers.highPrice",
+        "prioridad": 58,
+        "observacion": "Máximo de rango, no necesariamente importe de una variante concreta."
+      }
+    ],
+    "disponibilidad": [
+      {
+        "fuente": "html",
+        "selector": ".product-info-main .stock",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": "#product-availability",
+        "prioridad": 102
+      },
+      {
+        "fuente": "html",
+        "selector": ".summary .stock",
+        "prioridad": 102
+      },
+      {
+        "fuente": "html",
+        "selector": "div.tm-source-woo-stock",
+        "prioridad": 100
+      },
+      {
+        "fuente": "html",
+        "selector": "p.stock.in-stock",
+        "prioridad": 100
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "items.0.sellers.0.commertialOffer.AvailableQuantity",
+        "prioridad": 98
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "offers.inventoryLevel.value",
+        "prioridad": 97
+      },
+      {
+        "fuente": "html",
+        "selector": "div.availability",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "div.tecnit-disponibilidad",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "p.ast-stock-detail",
+        "prioridad": 95
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "offers.availability",
+        "prioridad": 92
+      },
+      {
+        "fuente": "html",
+        "selector": "div.stock",
+        "prioridad": 90
+      },
+      {
+        "fuente": "html",
+        "selector": "span.stockok",
+        "prioridad": 90
+      },
+      {
+        "fuente": "html",
+        "selector": "span[itemprop=\"availability\"]",
+        "prioridad": 90
+      },
+      {
+        "fuente": "html",
+        "selector": "link[itemprop=\"availability\"]",
+        "atributo": "href",
+        "prioridad": 86,
+        "observacion": "link no contiene texto: leer href, que puede ser una URL schema.org/InStock."
+      },
+      {
+        "fuente": "microdata",
+        "tipo": "Product",
+        "ruta": "properties.offers.properties.availability",
+        "prioridad": 85
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "product:availability",
+        "prioridad": 80
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "og:availability",
+        "prioridad": 78
+      },
+      {
+        "fuente": "html",
+        "selector": ".stock",
+        "prioridad": 75
+      }
+    ],
+    "descripcion": [
+      {
+        "fuente": "html",
+        "selector": "#description",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": ".product.attribute.description",
+        "prioridad": 103
+      },
+      {
+        "fuente": "html",
+        "selector": "#tab-description",
+        "prioridad": 100
+      },
+      {
+        "fuente": "html",
+        "selector": ".product-description",
+        "prioridad": 99
+      },
+      {
+        "fuente": "html",
+        "selector": "#product_tabs_description_tabbed",
+        "prioridad": 96
+      },
+      {
+        "fuente": "html",
+        "selector": ".woocommerce-Tabs-panel--description",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "#desc",
+        "prioridad": 91
+      },
+      {
+        "fuente": "html",
+        "selector": "#short_description",
+        "prioridad": 90
+      },
+      {
+        "fuente": "html",
+        "selector": "div.el-content.uk-panel",
+        "prioridad": 90
+      },
+      {
+        "fuente": "html",
+        "selector": "div.description.box",
+        "prioridad": 89
+      },
+      {
+        "fuente": "html",
+        "selector": ".woocommerce-product-details__short-description",
+        "prioridad": 88
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "description",
+        "prioridad": 88
+      },
+      {
+        "fuente": "html",
+        "selector": "#detail",
+        "prioridad": 85
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "Description",
+        "prioridad": 78
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "description",
+        "prioridad": 78
+      },
+      {
+        "fuente": "microdata",
+        "tipo": "Product",
+        "ruta": "properties.description",
+        "prioridad": 76
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "og:description",
+        "prioridad": 65
+      },
+      {
+        "fuente": "meta",
+        "clave": "description",
+        "prioridad": 60
+      },
+      {
+        "fuente": "meta",
+        "clave": "twitter:description",
+        "prioridad": 55
+      }
+    ],
+    "especificaciones": [
+      {
+        "fuente": "html",
+        "selector": "#Specification",
+        "prioridad": 110
+      },
+      {
+        "fuente": "html",
+        "selector": "#tab-technical-details-content",
+        "prioridad": 110
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "specificationGroups",
+        "prioridad": 108
+      },
+      {
+        "fuente": "html",
+        "selector": "#Features",
+        "prioridad": 107
+      },
+      {
+        "fuente": "html",
+        "selector": "#product_tabs_specs",
+        "prioridad": 107
+      },
+      {
+        "fuente": "html",
+        "selector": "#especificaciones",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": "#key-attributes",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": "#product-parameters",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": "#technical-details",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": ".product-specifications",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": ".tecnit-spec-list",
+        "prioridad": 105
+      },
+      {
+        "fuente": "html",
+        "selector": ".woocommerce-product-attributes",
+        "prioridad": 105,
+        "observacion": "Posible mezcla de atributos técnicos y dimensiones de empaque: candidato, no ficha validada."
+      },
+      {
+        "fuente": "html",
+        "selector": ".bl-puck-block--spec-table",
+        "prioridad": 104
+      },
+      {
+        "fuente": "html",
+        "selector": "#featuresSpecs",
+        "prioridad": 103
+      },
+      {
+        "fuente": "html",
+        "selector": "#product-attributes",
+        "prioridad": 103,
+        "observacion": "DigiKey: comprobar que el contenedor pertenece al producto principal."
+      },
+      {
+        "fuente": "html",
+        "selector": "table.specifications",
+        "prioridad": 103
+      },
+      {
+        "fuente": "html",
+        "selector": "#productOverview_feature_div",
+        "prioridad": 100
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "additionalProperty",
+        "prioridad": 100
+      },
+      {
+        "fuente": "html",
+        "selector": "#feature-bullets",
+        "prioridad": 98
+      },
+      {
+        "fuente": "html",
+        "selector": "#tab-specifications-mobile",
+        "prioridad": 96,
+        "estado": "pendiente_de_verificacion",
+        "observacion": "Robocraze: citado en informe, pero sin coincidencia directa en hallazgos_html_ampliado.json. Puede incluir Package Includes; extraer como texto candidato."
+      },
+      {
+        "fuente": "html",
+        "selector": "div.tm-source-woo-description",
+        "prioridad": 95
+      },
+      {
+        "fuente": "html",
+        "selector": "#product_tabs_description_tabbed",
+        "prioridad": 88,
+        "observacion": "Puede contener detalles técnicos en descripción, sin sección independiente."
+      },
+      {
+        "fuente": "html",
+        "selector": "#description",
+        "prioridad": 84
+      },
+      {
+        "fuente": "html",
+        "selector": "#tab-description",
+        "prioridad": 84
+      },
+      {
+        "fuente": "html",
+        "selector": ".product.attribute.description",
+        "prioridad": 84
+      },
+      {
+        "fuente": "html",
+        "selector": ".product-description",
+        "prioridad": 81
+      },
+      {
+        "fuente": "html",
+        "selector": "#detail",
+        "prioridad": 78
+      },
+      {
+        "fuente": "html",
+        "selector": ".zbotic-specs-section",
+        "prioridad": 76,
+        "observacion": "Puede incluir SKU, stock o peso de paquete, no solo especificaciones del equipo."
+      },
+      {
+        "fuente": "html",
+        "selector": ".woocommerce-product-details__short-description",
+        "prioridad": 72
+      },
+      {
+        "fuente": "json_embebido",
+        "ruta": "description",
+        "prioridad": 62
+      },
+      {
+        "fuente": "jsonld",
+        "tipo": "Product",
+        "ruta": "description",
+        "prioridad": 57
+      },
+      {
+        "fuente": "opengraph",
+        "clave": "og:description",
+        "prioridad": 45
+      },
+      {
+        "fuente": "meta",
+        "clave": "description",
+        "prioridad": 43
+      }
+    ]
+  }
+}

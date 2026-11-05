@@ -1,0 +1,2351 @@
+<!doctype html>
+<html lang="es" class="no-js">
+<head><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),yt=(l,r)=>{for(let f=l;f;f=Object.getPrototypeOf(f)){let y=Object.getOwnPropertyDescriptor(f,r);if(y)return y}throw new TypeError(`${r} is not defined`)},u=(l,r)=>s(yt(l,r).get),B=(l,r)=>s(yt(l,r).set);var Se=s(String.prototype.endsWith),k=s(RegExp.prototype.exec),Re=/^_(self|top|parent)$/i,xe=/(^|\s)noreferrer(\s|$)/i,ht=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,Pe=/^(never|default|always|origin-when-crossorigin)$/i,Et=/^(no-referrer|same-origin|never)$/i,mt=l=>{let r=`.${l}`;return f=>f===l||Se(f,r)},wt=(l,r,f)=>l!==void 0&&(l.protocol==="https:"||l.protocol==="http:")&&l.origin!==r&&!f(l.hostname),bt=(l,r,f)=>l!==null&&k(xe,l)!==null?!0:r!==null&&k(ht,r)!==null?k(Et,r)!==null:f,_t=(l,r)=>k(ht,l)!==null||k(Pe,l)!==null?k(Et,l)!==null:r,A=(l,{metaKey:r,ctrlKey:f,shiftKey:y,button:S})=>l&&k(Re,l)===null?l:r||f||y||S===1?"_blank":"";var Le="http://www.w3.org/2000/svg",Oe="http://www.w3.org/1999/xlink",G=["rel","referrerpolicy","download","ping","hreflang","type"];function kt(l){let r=window;if(r.top!==r)return;let f=document,y=r.navigation,S=location.origin,v=URL,q=u(v.prototype,"href"),vt=u(v.prototype,"origin"),Nt=u(v.prototype,"protocol"),St=u(v.prototype,"hostname"),Y=s(Event.prototype.preventDefault),Rt=s(Event.prototype.stopPropagation),j=s(Event.prototype.stopImmediatePropagation),V=s(Event.prototype.composedPath),xt=u(Event.prototype,"type"),Pt=u(Event.prototype,"cancelable"),X=u(Event.prototype,"defaultPrevented"),Lt=u(Event.prototype,"bubbles"),Ot=u(Event.prototype,"currentTarget"),At=u(Event.prototype,"eventPhase"),{CAPTURING_PHASE:It}=Event,z=u(Event.prototype,"cancelBubble"),Tt=B(Event.prototype,"cancelBubble"),Wt=u(MouseEvent.prototype,"button"),Mt=u(MouseEvent.prototype,"metaKey"),Ct=u(MouseEvent.prototype,"ctrlKey"),Dt=u(MouseEvent.prototype,"shiftKey"),Ft=y&&u(NavigateEvent.prototype,"destination"),Ht=y&&u(NavigationDestination.prototype,"url"),J=y&&u(NavigateEvent.prototype,"navigationType"),$t=y&&u(NavigateEvent.prototype,"formData"),Q=y&&"sourceElement"in NavigateEvent.prototype?u(NavigateEvent.prototype,"sourceElement"):void 0,m=s(Element.prototype.getAttribute),Kt=s(Element.prototype.getAttributeNS),I=s(Element.prototype.setAttribute),Ut=u(Element.prototype,"localName"),Bt=u(Element.prototype,"namespaceURI"),Gt=s(Document.prototype.querySelector),qt=s(Document.prototype.querySelectorAll),Yt=u(NodeList.prototype,"length"),jt=s(NodeList.prototype.item),T=u(Node.prototype,"baseURI"),Vt=s(Document.prototype.createElement),Xt=s(HTMLElement.prototype.click),zt=s(r.open),Jt=s(location.assign),Qt=s(location.replace),Zt=encodeURIComponent,te=s(String.prototype.startsWith),Z=s(r.setTimeout),ee=s(r.addEventListener),ne=s(r.removeEventListener),tt=s(EventTarget.prototype.addEventListener),et=s(EventTarget.prototype.removeEventListener),nt=Object.defineProperties,ot=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,r];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:u(n[o],t),set:B(n[o],t)}}catch{}return e},oe={click:ot("onclick"),auxclick:ot("onauxclick")},rt=WeakMap,re=WeakSet,st=s(WeakMap.prototype.get),se=s(WeakMap.prototype.set),ce=s(WeakMap.prototype.delete),ie=s(WeakSet.prototype.add),ae=s(WeakSet.prototype.has),le=mt(l.site),ct=q(new v(l.exitPath,S)),ue=`${ct}?`,P=(t,e)=>{try{let n=new v(t,e);return{href:q(n),origin:vt(n),protocol:Nt(n),hostname:St(n)}}catch{return}},pe=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${ct}?q=${Zt(t.href)}&trigger=${e}${o}`},it=()=>{let t=qt(f,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Yt(t);n+=1)e=_t(m(jt(t,n),"content"),e);return e},at=(t,e,{target:n,noReferrer:o,replaces:i})=>{let d=pe(t,e,o);if(n){zt(r,d,n,"noopener");return}(i?Qt:Jt)(location,d)},W=t=>wt(t,S,le),L=0,M,C=!1,fe=t=>{if(L>0){M=t;return}t()},de=t=>{if(L-=1,t&&(C=!0),L>0)return;let e=C?void 0:M;M=void 0,C=!1,e&&e()},ge=t=>t!==void 0&&te(t.href,ue),lt=t=>{try{return Ut(t)}catch{return}},ut=t=>bt(m(t,"rel"),m(t,"referrerpolicy"),it()),ye=t=>{let e=Q?Q(t):null,n=e===null?void 0:lt(e);return n==="a"||n==="area"?ut(e):it()},he=t=>{let e=P(Ht(Ft(t)));if(ge(e)){j(t);return}if(!Pt(t)||J(t)==="traverse"||!W(e)||$t(t)!==null)return;Y(t);let n={target:"",noReferrer:ye(t),replaces:J(t)==="replace"};fe(()=>at(e,"navigate",n))},R=t=>{let e=m(t,"href");return e===null&&Bt(t)===Le?Kt(t,Oe,"href"):e},Ee=t=>{let e=V(t);for(let n=0;n<e.length;n+=1){let o=e[n],i=lt(o);if(i==="a"||i==="area"){let d=R(o);if(d!==null)return{node:o,href:d}}}},D=t=>{let e=m(t,"target");if(e!==null)return e;let n=Gt(f,"base[target]");return n?m(n,"target"):""},me=t=>{try{return{metaKey:Mt(t),ctrlKey:Ct(t),shiftKey:Dt(t),button:Wt(t)}}catch{return}},pt=new re,we=t=>{let e=!1,n=()=>{e=!0},o=()=>e||ae(pt,t);return nt(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:i=>{i||n()}}}),o},be={click:new rt,auxclick:new rt},_e=(t,e)=>{let n=oe[t],o=be[t],i=[],d=p=>{for(let a=0;a<i.length;a+=1)if(i[a]===p)return!0;return!1},w=(p,a,E)=>{let g=s(E);function O(_){let x=g(this,_);return x===!1&&typeof _=="object"&&_!==null&&ie(pt,_),x}return{target:p,accessor:a,handler:E,wrapper:O,inFlight:0}},b=()=>{for(let p=0;p<e.length;p+=1)for(let a=0;a<n.length;a+=1){let E;try{E=n[a].get(e[p])}catch{continue}if(typeof E=="function"){let g=st(o,e[p]);(!g||g.wrapper!==E)&&(g=w(e[p],n[a],E),n[a].set(e[p],g.wrapper),se(o,e[p],g)),d(g)||(g.inFlight+=1,i[i.length]=g)}break}};return b(),{wrap:b,unwrap:()=>{for(let p=0;p<i.length;p+=1){let a=i[p];a.inFlight-=1,!(a.inFlight>0)&&(st(o,a.target)===a&&ce(o,a.target),a.accessor.get(a.target)===a.wrapper&&a.accessor.set(a.target,a.handler))}}}},ft=(t,e,n)=>{let o=R(t),i=o===null?void 0:P(o,T(f));if(!W(i))return;let d={target:A(D(t),n),noReferrer:ut(t),replaces:!1};return{inWindow:d.target==="",go:()=>at(i,e,d)}},dt=t=>{let e=R(t);if(e===null||m(t,"download")===null)return!1;let n=P(e,T(f));return n!==void 0&&(n.origin===S||n.protocol==="blob:"||n.protocol==="data:")},ke=(t,e)=>R(t)!==null&&!dt(t)&&A(D(t),e)==="",ve=(t,e)=>{let n=R(t);if(n===null)return!1;let o=Vt(f,"a"),i=A(D(t),e);I(o,"href",n),I(o,"target",i||"_self");for(let d=0;d<G.length;d+=1){let w=m(t,G[d]);w!==null&&I(o,G[d],w)}return Xt(o),i===""&&!dt(t)},Ne=(t,e,n,o)=>{L+=1;let i=V(t),d=i.length-1,w=0,b=!1,F=!1,p=c=>{F||(F=!0,de(c))},a=c=>{if(b)return;b=!0;let N=X(t),h=N?void 0:ft(n,e,o),U;!N&&(h||c)&&(Y(t),U=we(t)),Z(r,()=>{if(!U){p(!X(t)&&ke(n,o));return}if(U()){p(!1);return}if(c&&(h=ft(n,e,o),!h)){p(ve(n,o));return}h.go(),p(h.inWindow)},0)},E=(c,N)=>{for(let h=0;h<i.length;h+=1)if(i[h]===c)return N===It?d-h:i.length+h;return-1},g=()=>{E(Ot(t),At(t))<=w&&a(!0)},O=c=>{c===t&&a(!1)},_=_e(e,i),x=c=>N=>{if(N===t){if(w=c,z(t)){a(!1);return}_.wrap()}},H=[],$=[],K=Lt(t);if(K){for(let c=0;c<d;c+=1)H[c]=x(d-c),$[c]=x(i.length+c),tt(i[c],e,H[c],!0),tt(i[c],e,$[c],!1);ee(r,e,O,!1)}if(Z(r,()=>{if(b||p(!1),b=!0,_.unwrap(),!!K){for(let c=0;c<d;c+=1)et(i[c],e,H[c],!0),et(i[c],e,$[c],!1);ne(r,e,O,!1)}},0),!K){a(!0);return}nt(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{g(),Rt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{a(!0),j(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>z(t),set:c=>{c&&g(),Tt(t,c)}}})},gt=t=>{let e=xt(t),n=me(t);if(!n||e==="auxclick"&&n.button!==1)return;let o=Ee(t);!o||!W(P(o.href,T(f)))||Ne(t,e,o.node,n)};y?.addEventListener("navigate",he,!0),r.addEventListener("click",gt,!0),r.addEventListener("auxclick",gt,!0)}kt({"site":"ekustore.com","exitPath":"\/url"});})();
+//# sourceURL=exit-interstitial.js
+</script>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#55C0D2"><title>LAPTOP 15.6&quot; AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS &ndash; Ekustore</title><meta name="description" content="Pantalla 15,6&quot;, Procesador AMD Ryzen 3 R3-7320U, 8GB RAM LPDDR5-5500Mhz, 256GB SSD, FreeDOS 3.0, batería 11h 15min"><link rel="canonical" href="https://ekustore.com/products/notebook-hp-amd-r3-7320u"><link rel="icon" type="image/svg+xml" href="//ekustore.com/cdn/shop/t/14/assets/icon-ekustore.svg?v=140336485886214746081787715569">
+    <link rel="apple-touch-icon" href="//ekustore.com/cdn/shop/t/14/assets/icon-ekustore.svg?v=140336485886214746081787715569"><script>document.documentElement.classList.remove('no-js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>[data-marca]{--azul: #55C0D2;
+      --azul-prof: #3B90AF;
+      --azul-vivo: #10ACBA;
+      --cta-text: #FFFFFF;--font-body: 'Manrope', system-ui, sans-serif;
+      --font-head: 'Sora', 'Manrope', sans-serif;
+    }</style>
+  <link href="//ekustore.com/cdn/shop/t/14/assets/ekustore-theme.css?v=64093518688774285731793215810" rel="stylesheet" type="text/css" media="all" />
+<link href="//ekustore.com/cdn/shop/t/14/assets/eku-banners.css?v=91392772006980159751788937759" rel="stylesheet" type="text/css" media="all" />
+<link href="//ekustore.com/cdn/shop/t/14/assets/eku-carrusel-sangre.css?v=64492595868381606611789156388" rel="stylesheet" type="text/css" media="all" />
+<link href="//ekustore.com/cdn/shop/t/14/assets/eku-grupo.css?v=158449163587982745871789248833" rel="stylesheet" type="text/css" media="all" />
+
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="google-site-verification" content="ggm7LuIu7qhfoFqAX8ga50aq9o5HIU6G7kTOa-EB2Wk">
+<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/74973085936/digital_wallets/dialog">
+<link rel="ucp" href="/.well-known/ucp" version="2026-08-25"><link rel="buy" href="/cart/50309417304304:1?ucp/version=2026-08-25" payment=""><link rel="alternate" type="application/json+oembed" href="https://ekustore.com/products/notebook-hp-amd-r3-7320u.oembed">
+<script async="async" src="/checkouts/internal/preloads.js?locale=es-EC"></script>
+<script id="shopify-features" type="application/json">{"accessToken":"f2a27e4d3503e1ce1bb4439855104280","betas":["rich-media-storefront-analytics"],"domain":"ekustore.com","predictiveSearch":true,"shopId":74973085936,"locale":"es"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "hkcjit-a2.myshopify.com";
+Shopify.locale = "es";
+Shopify.currency = {"active":"USD","rate":"1.0"};
+Shopify.country = "EC";
+Shopify.theme = {"name":"Ekustore Mundial 2026 (nuevo)","id":166079037680,"schema_name":"Ekustore Mundial 2026","schema_version":"1.0.0","theme_store_id":null,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};
+Shopify.cdnHost = "ekustore.com/cdn";
+Shopify.routes = Shopify.routes || {};
+Shopify.routes.root = "/";
+Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";
+Shopify.SignInWithShop = Shopify.SignInWithShop || {};
+Shopify.SignInWithShop.User = Shopify.SignInWithShop.User || {};
+Shopify.SignInWithShop.User.recognized = false;</script>
+<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
+<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  window.Shopify.SignInWithShop = window.Shopify.SignInWithShop || {};
+  window.Shopify.SignInWithShop.assetMetrics = { sampleRate: 0.25 };
+  window.Shopify.SignInWithShop.eligible = true;
+</script>
+<script id="shop-js-analytics" type="application/json">{"pageType":"product"}</script>
+<script defer="defer" async type="module" src="https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.es.esm.js"></script>
+<script type="module">
+  await import("https://cdn.shopify.com/shopifycloud/shop-js/modules/v2/loader.init-shop-cart-sync.es.esm.js");
+
+  window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true,"backendHost":"ZWt1c3RvcmUuY29t"});
+
+</script>
+<script>
+  window.Shopify = window.Shopify || {};
+  if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
+  window.Shopify.featureAssets['shop-js'] = {"avatar":["modules/v2/loader.avatar.es.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.es.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.es.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.es.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.es.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.es.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.es.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.es.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.es.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.es.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.es.esm.js"],"listener":["modules/v2/loader.listener.es.esm.js"],"pay-button":["modules/v2/loader.pay-button.es.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.es.esm.js"],"shop-button":["modules/v2/loader.shop-button.es.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.es.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.es.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.es.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.es.esm.js"],"shop-login":["modules/v2/loader.shop-login.es.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.es.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.es.esm.js"]};
+</script>
+<script id="__st">var __st={"a":74973085936,"offset":-18000,"reqid":"45d783ba-5f4f-4396-a66a-583e0a50ed80-1793285472","pageurl":"ekustore.com\/products\/notebook-hp-amd-r3-7320u","u":"48e2699a8aab","p":"product","rtyp":"product","rid":10220873974000};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protegido por hCaptcha',privacyText:'Privacidad',termsText:'Términos'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
+<script integrity="sha256-FYHzja/5XSmzkjz6zHj7s4rACJGFuVoYZdumgoO2Ecs=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//ekustore.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-ed94c51f.js" crossorigin="anonymous"></script>
+<script>(function () {var userAgent = navigator.userAgent;var platform = navigator.platform;var maxTouchPoints = navigator.maxTouchPoints || 0;var isIOS = /iPad|iPhone|iPod/.test(platform) || (platform === 'MacIntel' && maxTouchPoints > 1);var isMacSafari = platform.indexOf('Mac') === 0 && /Safari/.test(userAgent) && !/Chrome|Chromium|CriOS|FxiOS|Edg|OPR|Android/.test(userAgent);var isAppleSafari = isIOS || isMacSafari;if (isAppleSafari) {fetch('/sf_private_access_tokens' + location.search).catch(function () {});}function browserMajorVersion(pattern) {var match = userAgent.match(pattern);return match ? parseInt(match[1], 10) : null;}function shouldLoadAutosizesPolyfill() {if (!window.PerformanceObserver?.supportedEntryTypes?.includes('paint')) {return false;}var chromeVersion = browserMajorVersion(/Chrome\/(\d+)/);if (chromeVersion !== null) {return chromeVersion < 126;}var firefoxVersion = browserMajorVersion(/Firefox\/(\d+)/);if (firefoxVersion !== null) {return firefoxVersion < 150;}var safariVersion = isAppleSafari ? browserMajorVersion(/Version\/(\d+).*Safari\//) : null;if (safariVersion !== null) {return safariVersion < 27;}return true;}if (shouldLoadAutosizesPolyfill()) {var autosizesScript = document.createElement('script');autosizesScript.async = true;autosizesScript.crossOrigin = 'anonymous';autosizesScript.src = "//ekustore.com/cdn/shopifycloud/storefront/assets/storefront/autosizes-84416378.js";(document.head || document.documentElement).appendChild(autosizesScript);}window.ShopifyAnalytics = window.ShopifyAnalytics || {};window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {};(function () {var LONG_FRAME_THRESHOLD = 50;var longAnimationFrames = [];var activeRafId = null;function collectLongFrames() {var previousTime = null;function rafMonitor(now) {if (activeRafId === null) {return;}var delta = now - previousTime;if (delta > LONG_FRAME_THRESHOLD) {longAnimationFrames.push({startTime: previousTime,endTime: now,});}previousTime = now;activeRafId = requestAnimationFrame(rafMonitor);}previousTime = performance.now();activeRafId = requestAnimationFrame(rafMonitor);}if (!window.PerformanceObserver?.supportedEntryTypes?.includes('long-animation-frame')) {collectLongFrames();var timeoutId = setTimeout(function () {cancelAnimationFrame(activeRafId);}, 10000);window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection) {if (stopCollection === undefined) {stopCollection = false;}if (stopCollection) {clearTimeout(timeoutId);cancelAnimationFrame(activeRafId);}return longAnimationFrames;};}})();})();</script><script id="shopify-origin-trials" async="async" integrity="sha256-qJbe/jEZBHtr5W/BlA2cKAz3vkXu6vJQyLjgvgCC86g=" src="//cdn.shopify.com/shopifycloud/storefront/assets/storefront/origin_trials-318ab40a.js" crossorigin="anonymous" onload="window.__shopifyOriginTrialsDone = true" onerror="window.__shopifyOriginTrialsDone = true"></script>
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/ekustore.com\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.dynamic.init">var Shopify=Shopify||{};Shopify.PaymentButton=Shopify.PaymentButton||{isStorefrontPortableWallets:!0,init:function(){window.Shopify.PaymentButton.init=function(){};var t=document.createElement("script");t.src="https://ekustore.com/cdn/shopifycloud/portable-wallets/latest/portable-wallets.es.js",t.type="module",document.head.appendChild(t)}};
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
+  function portableWalletsHideBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.add("hidden"),t.setAttribute("aria-hidden","true"),n.removeEventListener("click",e))}function portableWalletsShowBuyerConsent(e){var t=document.getElementById("shopify-buyer-consent"),n=document.getElementById("shopify-subscription-policy-button");t&&n&&(t.classList.remove("hidden"),t.removeAttribute("aria-hidden"),n.addEventListener("click",e))}window.Shopify?.PaymentButton&&(window.Shopify.PaymentButton.hideBuyerConsent=portableWalletsHideBuyerConsent,window.Shopify.PaymentButton.showBuyerConsent=portableWalletsShowBuyerConsent);
+</script>
+<script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
+</script>
+
+<script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+<meta property="og:image" content="https://cdn.shopify.com/s/files/1/0749/7308/5936/files/c8c51d1ff2abee8d1b00e325ac86a024.jpg?v=1787712765" />
+<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0749/7308/5936/files/c8c51d1ff2abee8d1b00e325ac86a024.jpg?v=1787712765" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:alt" content="Notebook Hp Amd R3-7320U" />
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<script>
+  window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
+</script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 74973085936,storefrontBaseUrl: "https://ekustore.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://ekustore.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["7b21cf0b","4c64608a"],webPixelsConfigList: [{"id":"2865660144","configuration":"{\"subdomain\": \"hkcjit-a2\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"758ea797b55b404ecf751b68ca31599b","type":"APP","apiClientId":1615517,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":[]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"2615869680","configuration":"{\"config\":\"{\\\"google_tag_ids\\\":[\\\"GT-WRCRWK7C\\\"],\\\"target_country\\\":\\\"ZZ\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":\\\"MC-3WS615QYQ2\\\"},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":\\\"MC-3WS615QYQ2\\\"},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":\\\"MC-3WS615QYQ2\\\"}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a3321ca85cf5aaf6b57585fcd8d67b3a","type":"APP","apiClientId":1780363,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"1176568048","configuration":"{\"webPixelName\":\"Judge.me\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"8acc938b1a30dc7624e304493ca567d7","type":"APP","apiClientId":683015,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Ekustore","paymentSettings":{"currencyCode":"USD"},"myshopifyDomain":"hkcjit-a2.myshopify.com","countryCode":"EC","storefrontUrl":"https:\/\/ekustore.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[{"price":{"amount":551.0,"currencyCode":"USD"},"product":{"title":"LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS","vendor":"HP","id":"10220873974000","untranslatedTitle":"LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS","url":"\/products\/notebook-hp-amd-r3-7320u","type":"Laptops"},"id":"50309417304304","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/c8c51d1ff2abee8d1b00e325ac86a024.jpg?v=1787712765"},"sku":"HPTGLPR37320U26","title":"Default Title","untranslatedTitle":"Default Title"}],"products":[{"id":"10220873974000","handle":"notebook-hp-amd-r3-7320u","isCollective":null,"title":"LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS","type":"Laptops","untranslatedTitle":"LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS","url":"\/products\/notebook-hp-amd-r3-7320u","vendor":"HP","remoteShopId":null,"variants":[{"id":"50309417304304","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/c8c51d1ff2abee8d1b00e325ac86a024.jpg?v=1787712765"},"price":{"amount":551.0,"currencyCode":"USD"},"sku":"HPTGLPR37320U26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323554140400","handle":"base-siig-ac-ce-mt3311","isCollective":null,"title":"BASE SIIG AC CE-MT3311","type":"Bases","untranslatedTitle":"BASE SIIG AC CE-MT3311","url":"\/products\/base-siig-ac-ce-mt3311","vendor":"SIIG","remoteShopId":null,"variants":[{"id":"50530277622000","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/a0b1ba3f7065b98f7558be7fb4c38d26.jpg?v=1790256001"},"price":{"amount":90.37,"currencyCode":"USD"},"sku":"SIIIDBSMT3311S26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323553747184","handle":"parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1","isCollective":null,"title":"PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE","type":"Parlantes","untranslatedTitle":"PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE","url":"\/products\/parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1","vendor":"RCA","remoteShopId":null,"variants":[{"id":"50530275983600","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/415056171165a9cae26517c0c161f3c6_4157514d-2998-4d83-9e9f-768b8f3733aa.jpg?v=1790255979"},"price":{"amount":28.11,"currencyCode":"USD"},"sku":"RCIDPLRCA5RCA526","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323549028592","handle":"soporte-movil-tv-r12-1","isCollective":null,"title":"SOPORTE MOVIL TV R12","type":"Bases","untranslatedTitle":"SOPORTE MOVIL TV R12","url":"\/products\/soporte-movil-tv-r12-1","vendor":"SIN MARCA","remoteShopId":null,"variants":[{"id":"50530270314736","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/cd676fd904c59abe75161f90cc07b54f_9f93a424-ab6c-4b4a-92b5-159f1627ca8c.jpg?v=1790255880"},"price":{"amount":295.75,"currencyCode":"USD"},"sku":"MPTGBSR1226","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323532185840","handle":"dron-dji-mini-4k-drone-fly-more-combo-1","isCollective":null,"title":"DRON DJI MINI 4K DRONE FLY MORE COMBO","type":"Drones","untranslatedTitle":"DRON DJI MINI 4K DRONE FLY MORE COMBO","url":"\/products\/dron-dji-mini-4k-drone-fly-more-combo-1","vendor":"DJI","remoteShopId":null,"variants":[{"id":"50530247540976","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/3ad7a6b67c5df0af6bf25c57a72142cb_b595a162-2711-45ec-a197-1c2b5b051eee.jpg?v=1790255501"},"price":{"amount":740.45,"currencyCode":"USD"},"sku":"DJIDDRDRONDJ26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10220964282608","handle":"mouse-xtrike-me-gm-226-bk-7-bot-7200dpi-driver-programable-rgb-13-efectos-usb-2-0-garantia-12-meses","isCollective":null,"title":"MOUSE XTRIKE ME GM-226 BK 7 BOT. 7200DPI DRIVER PROGRAMABLE, RGB 13 EFECTOS USB 2,0 GARANTIA 12 MESES","type":"Perifericos","untranslatedTitle":"MOUSE XTRIKE ME GM-226 BK 7 BOT. 7200DPI DRIVER PROGRAMABLE, RGB 13 EFECTOS USB 2,0 GARANTIA 12 MESES","url":"\/products\/mouse-xtrike-me-gm-226-bk-7-bot-7200dpi-driver-programable-rgb-13-efectos-usb-2-0-garantia-12-meses","vendor":"XTRIKE ME","remoteShopId":null,"variants":[{"id":"50309548114160","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/c77515924bc8513d334814aefcc14d5e.jpg?v=1787715136"},"price":{"amount":5.66,"currencyCode":"USD"},"sku":"XMPSPFGM22626","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10220871516400","handle":"impresora-todo-en-uno-hp-smart-tank-720-6uu46a","isCollective":null,"title":"IMPRESORA HP SMART TANK 720 | TODO EN UNO","type":"Impresoras","untranslatedTitle":"IMPRESORA HP SMART TANK 720 | TODO EN UNO","url":"\/products\/impresora-todo-en-uno-hp-smart-tank-720-6uu46a","vendor":"HP","remoteShopId":null,"variants":[{"id":"50309414846704","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/b9adff97c7d1b26870a5c316bf9ffed0.jpg?v=1787712683"},"price":{"amount":304.43,"currencyCode":"USD"},"sku":"HPNXIM720AIO26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10220837568752","handle":"epson-ecotank-l6370-impresora-multifuncional-a-color-wi-fi-y-duplex","isCollective":null,"title":"IMPRESORA EPSON ECOTANK L6370 | MULTIFUNCIÓN | WI-FI DUAL BAND + ETHERNET","type":"Impresoras","untranslatedTitle":"IMPRESORA EPSON ECOTANK L6370 | MULTIFUNCIÓN | WI-FI DUAL BAND + ETHERNET","url":"\/products\/epson-ecotank-l6370-impresora-multifuncional-a-color-wi-fi-y-duplex","vendor":"EPSON","remoteShopId":null,"variants":[{"id":"50309357469936","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/a860911656e15d6e2e727f6a0199cdd7.jpg?v=1787711603"},"price":{"amount":646.56,"currencyCode":"USD"},"sku":"EPNXIML637026","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10211327049968","handle":"led-smart-tv-55-uhd-4k-webos-2025","isCollective":null,"title":"LED SMART TV 65\" LG - AI PROCESSOR 4K QNED WEBOS RE:NEW","type":"Televisores","untranslatedTitle":"LED SMART TV 65\" LG - AI PROCESSOR 4K QNED WEBOS RE:NEW","url":"\/products\/led-smart-tv-55-uhd-4k-webos-2025","vendor":"LG","remoteShopId":null,"variants":[{"id":"50263721738480","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/LGCVTVSMART00526.jpg?v=1786824800"},"price":{"amount":866.21,"currencyCode":"USD"},"sku":"LGCVTVSMART00526","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10211288056048","handle":"soporte-2-monitores-m052-13-a-32-8kg-por-brazo-montaje-en-escritorio-abrazadera-tipo-c-negro","isCollective":null,"title":"SOPORTE 2 MONITORES M052 13\" A 32\" 8KG POR BRAZO, MONTAJE EN ESCRITORIO, ABRAZADERA TIPO-C NEGRO","type":"Bases","untranslatedTitle":"SOPORTE 2 MONITORES M052 13\" A 32\" 8KG POR BRAZO, MONTAJE EN ESCRITORIO, ABRAZADERA TIPO-C NEGRO","url":"\/products\/soporte-2-monitores-m052-13-a-32-8kg-por-brazo-montaje-en-escritorio-abrazadera-tipo-c-negro","vendor":"SIN MARCA","remoteShopId":null,"variants":[{"id":"50263602266352","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/MPPSMTM05226.jpg?v=1786818209"},"price":{"amount":29.72,"currencyCode":"USD"},"sku":"MPPSBSM05226","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10372093509872","handle":"teclado-mouse-jedel-wireless-ws681","isCollective":null,"title":"TECLADO + MOUSE JEDEL WIRELESS WS681","type":"Perifericos","untranslatedTitle":"TECLADO + MOUSE JEDEL WIRELESS WS681","url":"\/products\/teclado-mouse-jedel-wireless-ws681","vendor":"JEDEL","remoteShopId":null,"variants":[{"id":"50687205441776","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/5b2b5e22af7d59ef23b60f10f12b6833.jpg?v=1793224893"},"price":{"amount":15.0,"currencyCode":"USD"},"sku":"JDISPFWS68126","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10370793341168","handle":"tecnoglobal","isCollective":null,"title":"tecnoglobal","type":"General","untranslatedTitle":"tecnoglobal","url":"\/products\/tecnoglobal","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50671759294704","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/a8e0193698a099acae96da8c45eb6519.jpg?v=1793138460"},"price":{"amount":25.13,"currencyCode":"USD"},"sku":"MPTG00426","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10356496105712","handle":"klip-xtreme-encourage-kbk-750-de-modo-dual-bluetooth-y-2-4-ghz","isCollective":null,"title":"Klip Xtreme Encourage KBK-750 de modo dual (Bluetooth y 2.4 GHz).","type":"Perifericos","untranslatedTitle":"Klip Xtreme Encourage KBK-750 de modo dual (Bluetooth y 2.4 GHz).","url":"\/products\/klip-xtreme-encourage-kbk-750-de-modo-dual-bluetooth-y-2-4-ghz","vendor":"KLIP XTREME","remoteShopId":null,"variants":[{"id":"50615428153584","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/46984194ef895cb0f533a3967db974bb.jpg?v=1792101678"},"price":{"amount":26.69,"currencyCode":"USD"},"sku":"KLCSPFENCOURAG26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10356496040176","handle":"teclado-klip-xtreme-inalambrico-plegable-con-panel-tactil-bluetooth","isCollective":null,"title":"teclado klip xtreme inalámbrico plegable con panel táctil bluetooth","type":"General","untranslatedTitle":"teclado klip xtreme inalámbrico plegable con panel táctil bluetooth","url":"\/products\/teclado-klip-xtreme-inalambrico-plegable-con-panel-tactil-bluetooth","vendor":"KLIP XTREME","remoteShopId":null,"variants":[{"id":"50615428022512","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/b89ca3288a6ace62911a2c25af5664c8.jpg?v=1792101675"},"price":{"amount":33.65,"currencyCode":"USD"},"sku":"KLCSTECLADO26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10354793316592","handle":"soporte-doble-para-monitor-f5d-series","isCollective":null,"title":"Soporte doble para monitor F5D Series","type":"General","untranslatedTitle":"Soporte doble para monitor F5D Series","url":"\/products\/soporte-doble-para-monitor-f5d-series","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50608424845552","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/e62006ff64978057a8b983f26f4c5732.jpg?v=1791928889"},"price":{"amount":68.52,"currencyCode":"USD"},"sku":"MPSCF5DSERIES26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10354793283824","handle":"soporte-para-monitor-f5-series","isCollective":null,"title":"Soporte para monitor F5 Series","type":"General","untranslatedTitle":"Soporte para monitor F5 Series","url":"\/products\/soporte-para-monitor-f5-series","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50608424812784","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/ac79b8dd7c013e26573dde39ae09120b.jpg?v=1791928886"},"price":{"amount":40.55,"currencyCode":"USD"},"sku":"MPSCF5SERIES26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10349555876080","handle":"silla-ergonomica-oc1-pro","isCollective":null,"title":"Silla ergonómica OC1 Pro","type":"Sillas Ergonómicas","untranslatedTitle":"Silla ergonómica OC1 Pro","url":"\/products\/silla-ergonomica-oc1-pro","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50590664753392","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/17a4af9fe5f9abaed0f4cb792ebacf13.jpg?v=1791496891"},"price":{"amount":191.95,"currencyCode":"USD"},"sku":"MPSCSEOC1PRO26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10347251007728","handle":"silla-ergonomica-oc1-lite","isCollective":null,"title":"Silla ergonómica OC1 Lite","type":"Sillas Ergonómicas","untranslatedTitle":"Silla ergonómica OC1 Lite","url":"\/products\/silla-ergonomica-oc1-lite","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50581376598256","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/4d8fc71b87542c254175f4ca7b8c41bb.jpg?v=1791410511"},"price":{"amount":159.94,"currencyCode":"USD"},"sku":"MPSCSEOC1LITE26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10347250942192","handle":"escritorio-elevable-e5-lite","isCollective":null,"title":"Escritorio elevable E5 Lite","type":"Escritorios Elevables","untranslatedTitle":"Escritorio elevable E5 Lite","url":"\/products\/escritorio-elevable-e5-lite","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50581376467184","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/6530f6b0957799c8455dfbe71103b0f4.jpg?v=1791410507"},"price":{"amount":547.57,"currencyCode":"USD"},"sku":"MPESE5LITE26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10347250876656","handle":"escritorio-elevable-electrico","isCollective":null,"title":"Escritorio Elevable Eléctrico","type":"Escritorios Elevables","untranslatedTitle":"Escritorio Elevable Eléctrico","url":"\/products\/escritorio-elevable-electrico","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50581376401648","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/55d71f995045b697002c9d9684c81026.jpg?v=1791410499"},"price":{"amount":368.3,"currencyCode":"USD"},"sku":"MPSCESEN126","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10347250909424","handle":"escritorio-elevable-electrico-e1-pro","isCollective":null,"title":"Escritorio Elevable Eléctrico E1 Pro","type":"Escritorios Elevables","untranslatedTitle":"Escritorio Elevable Eléctrico E1 Pro","url":"\/products\/escritorio-elevable-electrico-e1-pro","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50581376434416","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/402417a0033d508b51d04b91e41b4c32.jpg?v=1791410503"},"price":{"amount":490.97,"currencyCode":"USD"},"sku":"MPSCESE1PRO26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10347250811120","handle":"escritorio-elevable-fq2-1260","isCollective":null,"title":"Escritorio elevable FQ2-1260","type":"Escritorios Elevables","untranslatedTitle":"Escritorio elevable FQ2-1260","url":"\/products\/escritorio-elevable-fq2-1260","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50581376368880","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/b59329da5c0e614b339e20fcc6f36c08.jpg?v=1791410496"},"price":{"amount":296.71,"currencyCode":"USD"},"sku":"MPSCESFQ2126026","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10346164519152","handle":"pantalla-interactiva-android-edla-4k-de-75","isCollective":null,"title":"Pantalla interactiva Android EDLA 4K de 75\"","type":"Pantallas","untranslatedTitle":"Pantalla interactiva Android EDLA 4K de 75\"","url":"\/products\/pantalla-interactiva-android-edla-4k-de-75","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50575972794608","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/7accf2d07631521c760af44858f877f1.jpg?v=1791324097"},"price":{"amount":2193.37,"currencyCode":"USD"},"sku":"MPTG00326","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10339311747312","handle":"pareja-de-video-balum-5mp-jr-cf903","isCollective":null,"title":"PAREJA DE VIDEO BALUM 5MP JR-CF903","type":"General","untranslatedTitle":"PAREJA DE VIDEO BALUM 5MP JR-CF903","url":"\/products\/pareja-de-video-balum-5mp-jr-cf903","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50553582878960","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/a4e66dabea395d1b341600fcb5cca098.jpg?v=1790719268"},"price":{"amount":2.44,"currencyCode":"USD"},"sku":"MPTG26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10339311780080","handle":"adaptador-de-corriente-dahua-dc12v-1a","isCollective":null,"title":"Adaptador de Corriente Dahua DC12V 1A","type":"General","untranslatedTitle":"Adaptador de Corriente Dahua DC12V 1A","url":"\/products\/adaptador-de-corriente-dahua-dc12v-1a","vendor":"Ekustore","remoteShopId":null,"variants":[{"id":"50553582911728","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/21a0e1c3765b583fc940f5b4dd8e566f.jpg?v=1790719271"},"price":{"amount":3.27,"currencyCode":"USD"},"sku":"MPTG00226","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10338275393776","handle":"smartwatch-ultra3-max-pantalla-hd-2-02","isCollective":null,"title":"SMARTWATCH ULTRA3 MAX PANTALLA HD 2.02\"","type":"Wearables","untranslatedTitle":"SMARTWATCH ULTRA3 MAX PANTALLA HD 2.02\"","url":"\/products\/smartwatch-ultra3-max-pantalla-hd-2-02","vendor":"SIN MARCA","remoteShopId":null,"variants":[{"id":"50551067214064","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/917b41bef9e4ffc7ab4b073abbf6ab6a_5c66f65d-ded0-458d-b192-ecf2ab2ab718.jpg?v=1790632947"},"price":{"amount":6.66,"currencyCode":"USD"},"sku":"MPIPWEULTRA326","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10220905332976","handle":"adaptador-europeo-plug-plano-blanco","isCollective":null,"title":"ADAPTADOR EUROPEO PLUG PLANO BLANCO","type":"Adaptador","untranslatedTitle":"ADAPTADOR EUROPEO PLUG PLANO BLANCO","url":"\/products\/adaptador-europeo-plug-plano-blanco","vendor":"SIN MARCA","remoteShopId":null,"variants":[{"id":"50309454627056","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/69a1ead307f1939cb12ea89b485d5c25.jpg?v=1787713716"},"price":{"amount":0.66,"currencyCode":"USD"},"sku":"MPIDADADAPTA26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323557941488","handle":"ventilador-xtech-tuuli-gaming-xta-161-para-laptop-6-ventiladores-led-usb","isCollective":null,"title":"VENTILADOR XTECH TUULI GAMING XTA-161 PARA LAPTOP 6 VENTILADORES LED USB","type":"Accesorios","untranslatedTitle":"VENTILADOR XTECH TUULI GAMING XTA-161 PARA LAPTOP 6 VENTILADORES LED USB","url":"\/products\/ventilador-xtech-tuuli-gaming-xta-161-para-laptop-6-ventiladores-led-usb","vendor":"XTECH","remoteShopId":null,"variants":[{"id":"50530282504432","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/078631b896f24fb86676a43cbae2d86b.jpg?v=1790256080"},"price":{"amount":20.93,"currencyCode":"USD"},"sku":"XTIDACXTA00226","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556958448","handle":"tablet-xiaomi-redmi-pad-2-11-4gb-ram-128gb-9000mah-grey","isCollective":null,"title":"TABLET XIAOMI REDMI PAD 2 11\" | 4GB RAM | 128GB | 9000MAH | GREY","type":"Tablets","untranslatedTitle":"TABLET XIAOMI REDMI PAD 2 11\" | 4GB RAM | 128GB | 9000MAH | GREY","url":"\/products\/tablet-xiaomi-redmi-pad-2-11-4gb-ram-128gb-9000mah-grey","vendor":"XIAOMI","remoteShopId":null,"variants":[{"id":"50530281521392","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/db2282096c9ce4125b76a705c14012ce_bfdcb18b-7f46-4aa5-b072-724ddab50d7a.jpg?v=1790256074"},"price":{"amount":229.89,"currencyCode":"USD"},"sku":"XIIDTBTABLE00126","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556892912","handle":"proyector-wanbo-by-xiaomi-mozart-1-pro1200-lumenes-ansi-compatible-4k-en-linea-sistema-operativo-google-tv-mas-inteligente-bajo-nivel-de-ruido-altavoz-de-graves-profundos-de-20-w-altavoces-10-x-1","isCollective":null,"title":"PROYECTOR WANBO BY XIAOMI MOZART 1 PRO1200 LÚMENES ANSI COMPATIBLE 4K EN LÍNEA, SISTEMA OPERATIVO GOOGLE TV MÁS INTELIGENTE, BAJO NIVEL DE RUIDO, ALTAVOZ DE GRAVES PROFUNDOS DE 20 W, ALTAVOCES: 10 X","type":"Proyectores","untranslatedTitle":"PROYECTOR WANBO BY XIAOMI MOZART 1 PRO1200 LÚMENES ANSI COMPATIBLE 4K EN LÍNEA, SISTEMA OPERATIVO GOOGLE TV MÁS INTELIGENTE, BAJO NIVEL DE RUIDO, ALTAVOZ DE GRAVES PROFUNDOS DE 20 W, ALTAVOCES: 10 X","url":"\/products\/proyector-wanbo-by-xiaomi-mozart-1-pro1200-lumenes-ansi-compatible-4k-en-linea-sistema-operativo-google-tv-mas-inteligente-bajo-nivel-de-ruido-altavoz-de-graves-profundos-de-20-w-altavoces-10-x-1","vendor":"XIAOMI","remoteShopId":null,"variants":[{"id":"50530281455856","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/62b74171af78d2fd2de7b7b0cb18f723_ad5b7a2d-f93a-4b39-903d-4bbeddf6ca9c.jpg?v=1790256072"},"price":{"amount":633.01,"currencyCode":"USD"},"sku":"XIIDPYMO25026","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323557613808","handle":"ventilador-xtech-xta-156-para-laptop-15-6-pulgadas-2-ventiladores-led-azul-2-usb","isCollective":null,"title":"VENTILADOR XTECH XTA-156 PARA LAPTOP 15.6 PULGADAS 2 VENTILADORES LED AZUL 2 USB","type":"Accesorios","untranslatedTitle":"VENTILADOR XTECH XTA-156 PARA LAPTOP 15.6 PULGADAS 2 VENTILADORES LED AZUL 2 USB","url":"\/products\/ventilador-xtech-xta-156-para-laptop-15-6-pulgadas-2-ventiladores-led-azul-2-usb","vendor":"XTECH","remoteShopId":null,"variants":[{"id":"50530282176752","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/72194004a88045c763e6ae7a6af79051.jpg?v=1790256077"},"price":{"amount":13.36,"currencyCode":"USD"},"sku":"XTIDACXTA00126","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556860144","handle":"tableta-digitalizadora-wacom-one-pen-small-bluetooth-5-1-usb-c-negra","isCollective":null,"title":"TABLETA DIGITALIZADORA WACOM ONE PEN SMALL | BLUETOOTH 5.1 | USB-C | NEGRA","type":"Tablets","untranslatedTitle":"TABLETA DIGITALIZADORA WACOM ONE PEN SMALL | BLUETOOTH 5.1 | USB-C | NEGRA","url":"\/products\/tableta-digitalizadora-wacom-one-pen-small-bluetooth-5-1-usb-c-negra","vendor":"WACOM","remoteShopId":null,"variants":[{"id":"50530281423088","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/89257c5422dbec38dc6911f3e727302d_cbba873f-0884-48b7-97cc-93d62c241e3d.jpg?v=1790256069"},"price":{"amount":138.28,"currencyCode":"USD"},"sku":"WCIDTBCTC4110W26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556827376","handle":"pantalla-interactiva-viewsonic-viewboard-ifp6534-65-pulgadas-4k-ultra-hd","isCollective":null,"title":"PANTALLA INTERACTIVA VIEWSONIC VIEWBOARD IFP6534 65 PULGADAS 4K ULTRA HD","type":"Pantallas","untranslatedTitle":"PANTALLA INTERACTIVA VIEWSONIC VIEWBOARD IFP6534 65 PULGADAS 4K ULTRA HD","url":"\/products\/pantalla-interactiva-viewsonic-viewboard-ifp6534-65-pulgadas-4k-ultra-hd","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50530281390320","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/c6284cd61867823c31c7baefaaa73bf5_ef551e05-a10e-4f63-9152-0655b5d5b3ef.jpg?v=1790256066"},"price":{"amount":1698.09,"currencyCode":"USD"},"sku":"VITGPAPANTAL26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556761840","handle":"pantalla-interactiva-viewsonic-viewboard-ifp7551-75-pulgadas-4k-uhd-android","isCollective":null,"title":"PANTALLA INTERACTIVA VIEWSONIC VIEWBOARD IFP7551 75 PULGADAS 4K UHD ANDROID","type":"Pantallas","untranslatedTitle":"PANTALLA INTERACTIVA VIEWSONIC VIEWBOARD IFP7551 75 PULGADAS 4K UHD ANDROID","url":"\/products\/pantalla-interactiva-viewsonic-viewboard-ifp7551-75-pulgadas-4k-uhd-android","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50530281324784","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/972454158b2e0ba84efbd0348884cc8c_17961857-d040-4a1d-a55e-2bb0d62c2a63.jpg?v=1790256063"},"price":{"amount":2264.12,"currencyCode":"USD"},"sku":"VITGPAIFP726","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556663536","handle":"viewsonic-19-wxga-1366x768p-monitor-with-hdmi-vga","isCollective":null,"title":"VIEWSONIC 19\" WXGA 1366X768P MONITOR WITH HDMI, VGA","type":"Pantallas","untranslatedTitle":"VIEWSONIC 19\" WXGA 1366X768P MONITOR WITH HDMI, VGA","url":"\/products\/viewsonic-19-wxga-1366x768p-monitor-with-hdmi-vga","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50530281226480","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/9c5feba0c2c3026f5e36d69a4b554552_59bb204f-672b-4d78-b707-3ce94706e5c9.jpg?v=1790256058"},"price":{"amount":106.13,"currencyCode":"USD"},"sku":"VINXPAVIEWS00126","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556729072","handle":"pantalla-interactiva-viewsonic-viewboard-ifp6535-65-pulgadas-4k-uhd","isCollective":null,"title":"PANTALLA INTERACTIVA VIEWSONIC VIEWBOARD IFP6535 65 PULGADAS 4K UHD","type":"Pantallas","untranslatedTitle":"PANTALLA INTERACTIVA VIEWSONIC VIEWBOARD IFP6535 65 PULGADAS 4K UHD","url":"\/products\/pantalla-interactiva-viewsonic-viewboard-ifp6535-65-pulgadas-4k-uhd","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50530281292016","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/6e0ddb4c1f6a05fcedf345e05ec21913_305ab231-a1a4-4e43-a134-1dcedb596d22.jpg?v=1790256061"},"price":{"amount":1698.09,"currencyCode":"USD"},"sku":"VITGPAIFP626","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556598000","handle":"monitor-viewsonic-va220-h-22-pulgadas-full-hd-100hz","isCollective":null,"title":"MONITOR VIEWSONIC VA220-H 22 PULGADAS FULL HD 100HZ","type":"Pantallas","untranslatedTitle":"MONITOR VIEWSONIC VA220-H 22 PULGADAS FULL HD 100HZ","url":"\/products\/monitor-viewsonic-va220-h-22-pulgadas-full-hd-100hz","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50530280079600","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/8604a5d23e266086d83dd3a1e83cd599_afd44c06-9aae-4bfb-9878-5e3e5bf8682b.jpg?v=1790256052"},"price":{"amount":226.79,"currencyCode":"USD"},"sku":"VINXPA1080PW26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556565232","handle":"protector-de-sobretensiones-ethernet","isCollective":null,"title":"PROTECTOR DE SOBRETENSIONES ETHERNET","type":"Redes","untranslatedTitle":"PROTECTOR DE SOBRETENSIONES ETHERNET","url":"\/products\/protector-de-sobretensiones-ethernet","vendor":"UNIFI","remoteShopId":null,"variants":[{"id":"50530280046832","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/f6546cc62ec7281cbc06aa1770644bba_5cba44a4-2d38-419f-8173-b4e855cda475.jpg?v=1790256049"},"price":{"amount":19.03,"currencyCode":"USD"},"sku":"UNTGRDETHERN26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556630768","handle":"monitor-gamer-viewsonic-vx3218-pc-mhd-32-pulgadas-curvo-full-hd-180hz","isCollective":null,"title":"MONITOR GAMER VIEWSONIC VX3218-PC-MHD 32 PULGADAS CURVO FULL HD 180HZ","type":"Pantallas","untranslatedTitle":"MONITOR GAMER VIEWSONIC VX3218-PC-MHD 32 PULGADAS CURVO FULL HD 180HZ","url":"\/products\/monitor-gamer-viewsonic-vx3218-pc-mhd-32-pulgadas-curvo-full-hd-180hz","vendor":"VIEWSONIC","remoteShopId":null,"variants":[{"id":"50530280112368","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/f388033cdbf8a73c7afb1b0f578dda7b_2d1720d5-7158-4db7-8a51-a69c12d7909f.jpg?v=1790256055"},"price":{"amount":456.94,"currencyCode":"USD"},"sku":"VINXPA180HZG26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556401392","handle":"adaptador-wifi-tp-link-archer-t3u-plus-ac1300-dual-band-2-4ghz-400mpbs-y-5ghz-867mbps-mu-mimo-usb-3-1","isCollective":null,"title":"ADAPTADOR WIFI TP-LINK ARCHER T3U PLUS AC1300 DUAL BAND 2.4GHZ: 400MPBS Y 5GHZ: 867MBPS MU-MIMO USB 3.0","type":"Redes","untranslatedTitle":"ADAPTADOR WIFI TP-LINK ARCHER T3U PLUS AC1300 DUAL BAND 2.4GHZ: 400MPBS Y 5GHZ: 867MBPS MU-MIMO USB 3.0","url":"\/products\/adaptador-wifi-tp-link-archer-t3u-plus-ac1300-dual-band-2-4ghz-400mpbs-y-5ghz-867mbps-mu-mimo-usb-3-1","vendor":"TP-LINK","remoteShopId":null,"variants":[{"id":"50530279882992","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/df77a47d3b4260c5cb65fab1f6267279_e66217bb-ebc3-41ed-a260-33bf3bd0e2f4.jpg?v=1790256039"},"price":{"amount":20.09,"currencyCode":"USD"},"sku":"TPPSRDAC126","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556368624","handle":"adaptador-de-internet-tp-link-ue300c-usb-c-to-rj45-gigabit-1","isCollective":null,"title":"ADAPTADOR DE INTERNET TP-LINK UE300C USB-C TO RJ45 GIGABIT","type":"Adaptador","untranslatedTitle":"ADAPTADOR DE INTERNET TP-LINK UE300C USB-C TO RJ45 GIGABIT","url":"\/products\/adaptador-de-internet-tp-link-ue300c-usb-c-to-rj45-gigabit-1","vendor":"TP-LINK","remoteShopId":null,"variants":[{"id":"50530279850224","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/bee8fda6e5ace01bd41a5a05ae8d6d64_3de128e9-2828-45d0-971a-6199b9761cee.jpg?v=1790256036"},"price":{"amount":17.12,"currencyCode":"USD"},"sku":"TPPSADUE300C26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556335856","handle":"adaptador-de-internet-tp-link-ue306-usb-3-0-to-rj45-gigabit-1","isCollective":null,"title":"ADAPTADOR DE INTERNET TP-LINK UE306 USB 3.0 TO RJ45 GIGABIT","type":"Adaptador","untranslatedTitle":"ADAPTADOR DE INTERNET TP-LINK UE306 USB 3.0 TO RJ45 GIGABIT","url":"\/products\/adaptador-de-internet-tp-link-ue306-usb-3-0-to-rj45-gigabit-1","vendor":"TP-LINK","remoteShopId":null,"variants":[{"id":"50530279817456","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/c678179733140653e2e28a73cac46290_136af82e-f882-4d32-88b5-792edf119ffb.jpg?v=1790256033"},"price":{"amount":14.87,"currencyCode":"USD"},"sku":"TPPSADUE26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556434160","handle":"adaptador-wifi-tp-link-tl-wn823n-300mbps-usb","isCollective":null,"title":"ADAPTADOR WIFI TP-LINK TL-WN823N 300MBPS USB","type":"Redes","untranslatedTitle":"ADAPTADOR WIFI TP-LINK TL-WN823N 300MBPS USB","url":"\/products\/adaptador-wifi-tp-link-tl-wn823n-300mbps-usb","vendor":"TP-LINK","remoteShopId":null,"variants":[{"id":"50530279915760","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/0f0893f3b9d538ec14680d1d09178bec.jpg?v=1790256042"},"price":{"amount":10.05,"currencyCode":"USD"},"sku":"TPPSRDWN823N26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556303088","handle":"adaptador-de-red-tipo-c-a-rj45-tp-link-ue300c-3-0-10-100-1000","isCollective":null,"title":"ADAPTADOR DE RED TIPO C A RJ45 TP-LINK UE300C 3.0 10\/100\/1000","type":"Adaptador","untranslatedTitle":"ADAPTADOR DE RED TIPO C A RJ45 TP-LINK UE300C 3.0 10\/100\/1000","url":"\/products\/adaptador-de-red-tipo-c-a-rj45-tp-link-ue300c-3-0-10-100-1000","vendor":"TP-LINK","remoteShopId":null,"variants":[{"id":"50530279784688","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/545f883cfa2d7eb3255c8ec71e6595bb.jpg?v=1790256031"},"price":{"amount":17.27,"currencyCode":"USD"},"sku":"TPIDADUE300C26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556008176","handle":"bobima-cat-5-exterior-305-metros","isCollective":null,"title":"BOBIMA CAT 5 EXTERIOR 305 METROS","type":"Cable_Red","untranslatedTitle":"BOBIMA CAT 5 EXTERIOR 305 METROS","url":"\/products\/bobima-cat-5-exterior-305-metros","vendor":"TUREON","remoteShopId":null,"variants":[{"id":"50530279489776","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/33196c86d961f4e7087a292b1ee6f96e_db0f51a7-2c4e-473a-b2af-6e1ed923cbf8.jpg?v=1790256025"},"price":{"amount":53.77,"currencyCode":"USD"},"sku":"TNTGCRCAT500226","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323555451120","handle":"monitor-teros-te-2415s-24-plano-ips-gaming-1920x1080-fhd-120hz-1ms-dp-hdmi-displayport-1","isCollective":null,"title":"MONITOR TEROS TE-2415S 24” PLANO IPS GAMING 1920X1080 FHD 120HZ - 1MS DP - HDMI - DISPLAYPORT","type":"Pantallas","untranslatedTitle":"MONITOR TEROS TE-2415S 24” PLANO IPS GAMING 1920X1080 FHD 120HZ - 1MS DP - HDMI - DISPLAYPORT","url":"\/products\/monitor-teros-te-2415s-24-plano-ips-gaming-1920x1080-fhd-120hz-1ms-dp-hdmi-displayport-1","vendor":"TEROS","remoteShopId":null,"variants":[{"id":"50530278932720","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/43b47142d96ee37c9cf244c69ed6180e_132d87c7-a1d7-4b19-bfbf-3ad84e49fc00.jpg?v=1790256020"},"price":{"amount":221.74,"currencyCode":"USD"},"sku":"TDIDPATE2415S26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323556204784","handle":"bobina-cat6-interior-60-cobre","isCollective":null,"title":"BOBINA CAT6 INTERIOR 60% COBRE","type":"Cable_Red","untranslatedTitle":"BOBINA CAT6 INTERIOR 60% COBRE","url":"\/products\/bobina-cat6-interior-60-cobre","vendor":"TUREON","remoteShopId":null,"variants":[{"id":"50530279719152","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/e8e4a03f506ed1e0436b44b558c1fbbc.jpg?v=1790256028"},"price":{"amount":52.36,"currencyCode":"USD"},"sku":"TNTGCRCAT626","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323555516656","handle":"mochila-para-laptop-targus-15-6-backpack-negro-1","isCollective":null,"title":"MOCHILA PARA LAPTOP TARGUS 15.6\" BACKPACK NEGRO","type":"Mochilas","untranslatedTitle":"MOCHILA PARA LAPTOP TARGUS 15.6\" BACKPACK NEGRO","url":"\/products\/mochila-para-laptop-targus-15-6-backpack-negro-1","vendor":"TARGUS","remoteShopId":null,"variants":[{"id":"50530278998256","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/644055df7eedc5e1775e1afb49706424_834ef31f-5e5d-444b-9b39-232511822dcf.jpg?v=1790256022"},"price":{"amount":20.17,"currencyCode":"USD"},"sku":"TFIDMOTBB581DI26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323554369776","handle":"ventilador-speedmind-smcos8870-rgb-para-laptop-con-hub-usb-y-soporte-para-celular","isCollective":null,"title":"VENTILADOR SPEEDMIND SMCOS8870 RGB PARA LAPTOP CON HUB USB Y SOPORTE PARA CELULAR","type":"Accesorios","untranslatedTitle":"VENTILADOR SPEEDMIND SMCOS8870 RGB PARA LAPTOP CON HUB USB Y SOPORTE PARA CELULAR","url":"\/products\/ventilador-speedmind-smcos8870-rgb-para-laptop-con-hub-usb-y-soporte-para-celular","vendor":"SPEEDMIND","remoteShopId":null,"variants":[{"id":"50530277851376","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/c8f77fbeca2162be61aa15cea64980cd_7b6dc298-2b0c-4326-9ac4-e932dc6a0b74.jpg?v=1790256011"},"price":{"amount":10.53,"currencyCode":"USD"},"sku":"SVIDACSMCOS26","title":"Default Title","untranslatedTitle":"Default Title"}]},{"id":"10323555057904","handle":"monitor-teros-te-1916s-19-5-tn-plano-hd-1600x900-75hz-hdmi-incluye-cable-black-1","isCollective":null,"title":"MONITOR TEROS TE-1916S 19.5” TN PLANO HD 1600X900 75HZ HDMI INCLUYE CABLE BLACK","type":"Pantallas","untranslatedTitle":"MONITOR TEROS TE-1916S 19.5” TN PLANO HD 1600X900 75HZ HDMI INCLUYE CABLE BLACK","url":"\/products\/monitor-teros-te-1916s-19-5-tn-plano-hd-1600x900-75hz-hdmi-incluye-cable-black-1","vendor":"TEROS","remoteShopId":null,"variants":[{"id":"50530278539504","image":{"src":"\/\/ekustore.com\/cdn\/shop\/files\/00be4bfca8e45c818ee2aea8b4c6b6bb_0310f11a-e908-4699-bb97-55f94b7514a4.jpg?v=1790256017"},"price":{"amount":85.12,"currencyCode":"USD"},"sku":"TDIDPATE1916S26","title":"Default Title","untranslatedTitle":"Default Title"}]}],"purchasingCompany":null},},"https://ekustore.com/cdn","56a6403cw68eaaf33p29d38119m7a4be5ca",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"166079037680","themePublished":"true","eventMetadataId":"d9887f8e-e1fc-4a36-88cd-7c1485263ec0","pageType":"product","resourceId":"10220873974000","shopId":"74973085936","storefrontBaseUrl":"https:\/\/ekustore.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"7b21cf0b\", \"4c64608a\"]","isMerchantRequest":"false","hashVersion":"56a6403cw68eaaf33p29d38119m7a4be5ca","publish":"custom","events":"[[\"page_viewed\",{}],[\"product_viewed\",{\"productVariant\":{\"price\":{\"amount\":551.0,\"currencyCode\":\"USD\"},\"product\":{\"title\":\"LAPTOP 15.6\\\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS\",\"vendor\":\"HP\",\"id\":\"10220873974000\",\"untranslatedTitle\":\"LAPTOP 15.6\\\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS\",\"url\":\"\/products\/notebook-hp-amd-r3-7320u\",\"type\":\"Laptops\"},\"id\":\"50309417304304\",\"image\":{\"src\":\"\/\/ekustore.com\/cdn\/shop\/files\/c8c51d1ff2abee8d1b00e325ac86a024.jpg?v=1787712765\"},\"sku\":\"HPTGLPR37320U26\",\"title\":\"Default Title\",\"untranslatedTitle\":\"Default Title\"}}]]"});})();</script><script>
+  window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+  window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+  window.ShopifyAnalytics.meta.currency = 'USD';
+  var meta = {"product":{"id":10220873974000,"gid":"gid:\/\/shopify\/Product\/10220873974000","vendor":"HP","type":"Laptops","handle":"notebook-hp-amd-r3-7320u","variants":[{"id":50309417304304,"price":55100,"name":"LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS","public_title":null,"sku":"HPTGLPR37320U26"}],"remote":false},"page":{"pageType":"product","resourceType":"product","resourceId":10220873974000,"requestId":"45d783ba-5f4f-4396-a66a-583e0a50ed80-1793285472"}};
+  for (var attr in meta) {
+    window.ShopifyAnalytics.meta[attr] = meta[attr];
+  }
+</script>
+<script class="analytics">
+  (function () {
+    var customDocumentWrite = function(content) {
+      var jquery = null;
+
+      if (window.jQuery) {
+        jquery = window.jQuery;
+      } else if (window.Checkout && window.Checkout.$) {
+        jquery = window.Checkout.$;
+      }
+
+      if (jquery) {
+        jquery('body').append(content);
+      }
+    };
+
+    var hasLoggedConversion = function(token) {
+      if (token) {
+        return document.cookie.indexOf('loggedConversion=' + token) !== -1;
+      }
+      return false;
+    }
+
+    var setCookieIfConversion = function(token) {
+      if (token) {
+        var twoMonthsFromNow = new Date(Date.now());
+        twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+        document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
+      }
+    }
+
+    var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+    window.ShopifyAnalytics.lib.trekkie = window.trekkie;
+    if (trekkie.integrations) {
+      return;
+    }
+    trekkie.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+      'trackForm',
+      'trackLink'
+    ];
+    trekkie.factory = function(method) {
+      return function() {
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        trekkie.push(args);
+        if (method == 'track' || method == 'page') {
+          var pageUrl;
+          try {
+            pageUrl = window.location.href;
+          } catch (e) {}
+          var pageReferrer;
+          try {
+            pageReferrer = document.referrer;
+          } catch (e) {}
+          try {
+            if (window.__TREKKIE_SHIM_QUEUE == null) {
+              window.__TREKKIE_SHIM_QUEUE = [];
+            }
+            window.__TREKKIE_SHIM_QUEUE.push({
+              from: 'trekkie-stub',
+              method: method,
+              args: args.slice(1),
+              pageContext: {
+                url: pageUrl,
+                referrer: pageReferrer
+              }
+            });
+          } catch (e) {
+            // no-op
+          }
+        }
+        return trekkie;
+      };
+    };
+    for (var i = 0; i < trekkie.methods.length; i++) {
+      var key = trekkie.methods[i];
+      trekkie[key] = trekkie.factory(key);
+    }
+    trekkie.load = function(config) {
+      trekkie.config = config || {};
+      trekkie.config.initialDocumentCookie = document.cookie;
+      var first = document.getElementsByTagName('script')[0];
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.onerror = function(e) {
+  var scriptFallback = document.createElement('script');
+  scriptFallback.type = 'text/javascript';
+  scriptFallback.onerror = function(error) {
+          var Monorail = {
+      produce: function produce(monorailDomain, schemaId, payload) {
+        var currentMs = new Date().getTime();
+        var event = {
+          schema_id: schemaId,
+          payload: payload,
+          metadata: {
+            event_created_at_ms: currentMs,
+            event_sent_at_ms: currentMs
+          }
+        };
+        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+      },
+      sendRequest: function sendRequest(endpointUrl, payload) {
+        // Try the sendBeacon API
+        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+          var blobData = new window.Blob([payload], {
+            type: 'text/plain'
+          });
+
+          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+            return true;
+          } // sendBeacon was not successful
+
+        } // XHR beacon
+
+        var xhr = new XMLHttpRequest();
+
+        try {
+          xhr.open('POST', endpointUrl);
+          xhr.setRequestHeader('Content-Type', 'text/plain');
+          xhr.send(payload);
+        } catch (e) {
+          console.log(e);
+        }
+
+        return false;
+      },
+      isIos12: function isIos12() {
+        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+      }
+    };
+    Monorail.produce('monorail-edge.shopifysvc.com',
+      'trekkie_storefront_load_errors/1.1',
+      {shop_id: 74973085936,
+      theme_id: 166079037680,
+      app_name: "storefront",
+      context_url: window.location.href,
+      source_url: "//ekustore.com/cdn/s/trekkie.storefront.25c1cbbda0e2f0b638912871b921232f1392e9e9.min.js"});
+
+  };
+  scriptFallback.async = true;
+  scriptFallback.src = '//ekustore.com/cdn/s/trekkie.storefront.25c1cbbda0e2f0b638912871b921232f1392e9e9.min.js';
+  first.parentNode.insertBefore(scriptFallback, first);
+};
+script.async = true;
+script.src = '//ekustore.com/cdn/s/trekkie.storefront.25c1cbbda0e2f0b638912871b921232f1392e9e9.min.js';
+first.parentNode.insertBefore(script, first);
+
+    };
+    trekkie.load(
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":74973085936,"isMerchantRequest":null,"themeId":166079037680,"themeCityHash":"3430325236675031600","contentLanguage":"es","currency":"USD","eventMetadataId":"d9887f8e-e1fc-4a36-88cd-7c1485263ec0"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["7b21cf0b","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+    );
+
+    var loaded = false;
+    trekkie.ready(function() {
+      if (loaded) return;
+      loaded = true;
+
+      window.ShopifyAnalytics.lib = window.trekkie;
+
+      var originalDocumentWrite = document.write;
+      document.write = customDocumentWrite;
+      try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+      document.write = originalDocumentWrite;
+
+      var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
+      var token = match? match[1]: undefined;
+      if (!hasLoggedConversion(token)) {
+        setCookieIfConversion(token);
+        window.ShopifyAnalytics.lib.track("Viewed Product",{"currency":"USD","variantId":50309417304304,"productId":10220873974000,"productGid":"gid:\/\/shopify\/Product\/10220873974000","name":"LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS","price":"551.00","sku":"HPTGLPR37320U26","brand":"HP","variant":null,"category":"Laptops","nonInteraction":true,"remote":false,"available":true},undefined,undefined,{"shopifyEmitted":true});
+      }
+    });
+
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"product","resourceType":"product","resourceId":10220873974000,"requestId":"45d783ba-5f4f-4396-a66a-583e0a50ed80-1793285472","shopifyEmitted":true});
+
+    var eventsListenerScript = document.createElement('script');
+    eventsListenerScript.async = true;
+    eventsListenerScript.src = "//ekustore.com/cdn/shopifycloud/storefront/assets/shop_events_listener-4e26a9ce.js";
+    document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+})();</script>
+<script
+  defer
+  src="https://ekustore.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.13.1.min.js"
+  data-application="storefront-renderer"
+  data-shop-id="74973085936"
+  data-render-region="gcp-us-east1"
+  data-page-type="product"
+  data-theme-instance-id="166079037680"
+  data-theme-name="Ekustore Mundial 2026"
+  data-theme-version="1.0.0"
+  data-monorail-region="shop_domain"
+  data-resource-timing-sampling-rate="10"
+  data-shs="true"
+  data-shs-beacon="true"
+  data-shs-export-with-fetch="true"
+  data-shs-logs-sample-rate="1"
+  data-shs-beacon-endpoint="https://ekustore.com/api/collect"
+></script>
+<meta name="shopify-y" content="142e70f1-188a-4fbc-9446-f42ec8351d9f" data-expiration="1824843072000"><meta name="shopify-s" content="4d8f8b8f-2bb0-4f0d-9ddb-a9c61e212e9a" data-expiration="1793287272000"><meta name="request-id" content="45d783ba-5f4f-4396-a66a-583e0a50ed80-1793285472"        >
+</head>
+<body data-marca="ekustore"><svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<defs>
+  <style>
+    symbol { fill: none; stroke: currentColor; stroke-width: 1.8;
+             stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+</defs>
+
+<symbol id="ico-adaptador" viewBox="0 0 24 24">
+  <rect x="2.5" y="9.5" width="7" height="5" rx="1"/>
+  <path d="M9.5 12h4l4-4"/>
+  <rect x="16" y="4.5" width="5.5" height="5.5" rx="1" transform="rotate(45 18.75 7.25)"/>
+</symbol>
+
+<symbol id="ico-camaras" viewBox="0 0 24 24">
+  <circle cx="12" cy="8" r="4.5"/>
+  <circle cx="12" cy="8" r="1.8"/>
+  <path d="M7.5 12.5v3.5a2 2 0 002 2h5a2 2 0 002-2v-3.5"/>
+  <path d="M12 18v3M9 21h6"/>
+</symbol>
+
+<symbol id="ico-fuente_pc" viewBox="0 0 24 24">
+  <rect x="5" y="3" width="14" height="9" rx="1.5"/>
+  <path d="M9 3V1.5M15 3V1.5"/>
+  <path d="M12 12v4a3 3 0 003 3h2"/>
+</symbol>
+
+<symbol id="ico-hubs" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="5"/>
+  <path d="M12 7V3M12 17v4M7 12H3M17 12h4"/>
+  <circle cx="12" cy="12" r="1.3"/>
+</symbol>
+
+<symbol id="ico-software" viewBox="0 0 24 24">
+  <rect x="3.5" y="3" width="17" height="14" rx="2"/>
+  <path d="M8 20.5h8M12 17v3.5"/>
+  <path d="M9 8.5l2 2 4-4"/>
+</symbol>
+
+<symbol id="ico-electrodomestico" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="8.5"/>
+  <circle cx="12" cy="12" r="3"/>
+  <path d="M12 3.5v3M12 17.5v3"/>
+  <path d="M6.5 8.5h2"/>
+</symbol>
+
+<symbol id="ico-grabadores" viewBox="0 0 24 24">
+  <rect x="6.5" y="3" width="11" height="18" rx="1.5"/>
+  <path d="M6.5 12h11"/>
+  <circle cx="9.5" cy="7.5" r="1.3"/>
+  <circle cx="9.5" cy="16.5" r="1.3"/>
+</symbol>
+
+<symbol id="ico-cerradura" viewBox="0 0 24 24">
+  <rect x="3" y="10" width="5" height="10" rx="1"/>
+  <path d="M8 12h13"/>
+  <path d="M11 12v2M15 12v2M19 12v2"/>
+  <path d="M5.5 13.5h.01"/>
+</symbol>
+
+<symbol id="ico-componentes" viewBox="0 0 24 24">
+  <rect x="2" y="8.5" width="20" height="8" rx="1.5"/>
+  <path d="M6 11.5h.01M10 11.5h.01M14 11.5h.01M18 11.5h.01"/>
+  <path d="M8 14h8"/>
+</symbol>
+
+<symbol id="ico-motor" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="4"/>
+  <path d="M12 8V4M12 16v4M8 12H4M16 12h4"/>
+  <path d="M9 5.5h6M9 18.5h6"/>
+</symbol>
+
+<symbol id="ico-gabinetes" viewBox="0 0 24 24">
+  <rect x="4" y="3" width="16" height="18" rx="1.5"/>
+  <path d="M12 3v18"/>
+  <path d="M10 12h.01M14 12h.01"/>
+</symbol>
+
+<symbol id="ico-film-se" viewBox="0 0 24 24">
+  <path d="M4 4h16v16H8z"/>
+  <path d="M4 4v10l4-4z"/>
+  <path d="M12 9l4 4M16 9l-4 4"/>
+</symbol>
+
+<symbol id="ico-post" viewBox="0 0 24 24">
+  <rect x="3" y="4.5" width="18" height="11" rx="2"/>
+  <path d="M9 20h6M12 15.5v4.5"/>
+</symbol>
+
+<symbol id="ico-laptops" viewBox="0 0 24 24">
+  <rect x="4" y="5" width="16" height="11" rx="1.5"/>
+  <path d="M2 19h20"/>
+</symbol>
+
+<symbol id="ico-discos" viewBox="0 0 24 24">
+  <ellipse cx="12" cy="5.5" rx="8" ry="2.8"/>
+  <path d="M4 5.5v4c0 1.6 3.6 2.8 8 2.8s8-1.2 8-2.8v-4"/>
+  <path d="M4 13v4c0 1.6 3.6 2.8 8 2.8s8-1.2 8-2.8v-4"/>
+</symbol>
+
+<symbol id="ico-impresoras" viewBox="0 0 24 24">
+  <path d="M7 9V4h10v5"/>
+  <rect x="4" y="9" width="16" height="7" rx="1.5"/>
+  <path d="M7 16h10v4H7z"/>
+</symbol>
+
+<symbol id="ico-audio" viewBox="0 0 24 24">
+  <path d="M4 14v-2a8 8 0 0116 0v2"/>
+  <rect x="2.5" y="13.5" width="4" height="6.5" rx="1.5"/>
+  <rect x="17.5" y="13.5" width="4" height="6.5" rx="1.5"/>
+</symbol>
+
+<symbol id="ico-celulares" viewBox="0 0 24 24">
+  <rect x="7" y="2.5" width="10" height="19" rx="2.5"/>
+  <path d="M11 18.5h2"/>
+</symbol>
+
+<symbol id="ico-redes" viewBox="0 0 24 24">
+  <rect x="3" y="13" width="18" height="7" rx="2"/>
+  <path d="M7 16.5h.01M10.5 16.5h.01"/>
+  <path d="M8 10a5.5 5.5 0 018 0"/>
+  <path d="M5.5 7a9 9 0 0113 0"/>
+</symbol>
+
+<symbol id="ico-refrigeracion" viewBox="0 0 24 24">
+  <rect x="6" y="2.5" width="12" height="17" rx="2"/>
+  <path d="M6 8.5h12"/>
+  <path d="M9 4.5v2.5M9 11v4"/>
+  <path d="M8.5 19.5v2M15.5 19.5v2"/>
+</symbol>
+
+<symbol id="ico-lavado" viewBox="0 0 24 24">
+  <rect x="4" y="3" width="16" height="18" rx="2"/>
+  <circle cx="12" cy="14" r="4"/>
+  <path d="M7.5 6.5h.01M11 6.5h.01"/>
+</symbol>
+
+<symbol id="ico-cocinas" viewBox="0 0 24 24">
+  <rect x="4" y="4" width="16" height="17" rx="2"/>
+  <path d="M4 11h16"/>
+  <circle cx="8.5" cy="7.5" r="1.3"/>
+  <circle cx="15.5" cy="7.5" r="1.3"/>
+</symbol>
+
+<symbol id="ico-climatizacion" viewBox="0 0 24 24">
+  <rect x="3" y="4" width="18" height="7" rx="2"/>
+  <path d="M6.5 8h11"/>
+  <path d="M8 14.5c0 1.5 1 1.5 1 3M12 14.5c0 1.5 1 1.5 1 3M16 14.5c0 1.5 1 1.5 1 3"/>
+</symbol>
+
+<symbol id="ico-parlantes" viewBox="0 0 24 24">
+  <path d="M3 9.5h3.5L11 5.5v13L6.5 14.5H3z"/>
+  <path d="M15 9a4.5 4.5 0 010 6"/>
+  <path d="M18 6.5a8 8 0 010 11"/>
+</symbol>
+
+<symbol id="ico-bases" viewBox="0 0 24 24">
+  <path d="M3.5 4v16"/>
+  <path d="M3.5 12h5v-4.5"/>
+  <rect x="8.5" y="3.5" width="12" height="9.5" rx="1.5"/>
+  <path d="M14.5 13v7M11 20h7"/>
+</symbol>
+
+<symbol id="ico-camara-se" viewBox="0 0 24 24">
+  <path d="M4 4h16"/>
+  <path d="M12 4v2.5"/>
+  <path d="M5.5 13.5a6.5 6.5 0 0113 0z"/>
+  <circle cx="12" cy="11" r="2.2"/>
+  <path d="M8 17.5l-2 3M16 17.5l2 3"/>
+</symbol>
+
+<symbol id="ico-lectores" viewBox="0 0 24 24">
+  <path d="M12 3.5a8 8 0 018 8v3"/>
+  <path d="M12 8a3.5 3.5 0 013.5 3.5v4"/>
+  <path d="M12 12v4"/>
+  <path d="M4 14v-2.5A8 8 0 019 4.3"/>
+  <path d="M8.5 14v-2.5a3.5 3.5 0 011-2.4"/>
+</symbol>
+
+<symbol id="ico-seguridad" viewBox="0 0 24 24">
+  <path d="M12 2.5l7 3v6c0 4.5-3 8-7 10-4-2-7-5.5-7-10v-6z"/>
+  <path d="M9 12l2 2 4-4"/>
+</symbol>
+
+<symbol id="ico-energia" viewBox="0 0 24 24">
+  <rect x="4" y="6" width="15" height="12" rx="2"/>
+  <path d="M21 10v4"/>
+  <path d="M12 8.5l-2.5 4H12l-.5 3 3-4.5H12z"/>
+</symbol>
+
+<symbol id="ico-telefonia" viewBox="0 0 24 24">
+  <path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 006 6l1.5-2 4 1.5v3a1.8 1.8 0 01-2 1.8C12.6 20.3 3.7 11.4 3 6a1.8 1.8 0 011.8-2z"/>
+</symbol>
+
+<symbol id="ico-herramientas" viewBox="0 0 24 24">
+  <path d="M15.5 4a4 4 0 105 5l-9.5 9.5a2.5 2.5 0 01-3.5-3.5z"/>
+  <path d="M6.5 17.5h.01"/>
+</symbol>
+
+<symbol id="ico-maquinaria" viewBox="0 0 24 24">
+  <path d="M10 2.5h4l.4 2.6 2.3 1.3 2.4-1.1 2 3.4-1.9 1.8v2.6l1.9 1.8-2 3.4-2.4-1.1-2.3 1.3-.4 2.6h-4l-.4-2.6-2.3-1.3-2.4 1.1-2-3.4L4.5 14v-2.6L2.6 9.6l2-3.4 2.4 1.1 2.3-1.3z"/>
+  <circle cx="12" cy="12" r="3"/>
+</symbol>
+
+<symbol id="ico-solar" viewBox="0 0 24 24">
+  <path d="M3.5 19.5l3-9h11l3 9z"/>
+  <path d="M12 10.5v9"/>
+  <path d="M5.2 15h13.6"/>
+  <circle cx="18" cy="5" r="2"/>
+  <path d="M18 1.2v1M14.2 5h1M20.8 5h1"/>
+</symbol>
+
+<symbol id="ico-juguetes" viewBox="0 0 24 24">
+  <rect x="3" y="12.5" width="11" height="8" rx="1.2"/>
+  <path d="M6 12.5v-1.8a1.4 1.4 0 012.8 0v1.8"/>
+  <rect x="10" y="3.5" width="11" height="8" rx="1.2"/>
+  <path d="M13 3.5V1.7a1.4 1.4 0 012.8 0v1.8"/>
+</symbol>
+
+<symbol id="ico-default" viewBox="0 0 24 24">
+  <path d="M20.6 12.4l-8.2 8.2a2 2 0 01-2.8 0l-6.2-6.2a2 2 0 010-2.8l8.2-8.2a2 2 0 011.4-.6H19a2 2 0 012 2v6.2a2 2 0 01-.4 1.4z"/>
+  <circle cx="16.5" cy="7.5" r="1.2"/>
+</symbol>
+
+</svg>
+
+  <script>
+window.ekuFav=(function(){
+  var KEY='eku_favoritos_v1';
+  var CID=null;
+
+  function leer(){
+    try{ return JSON.parse(localStorage.getItem(KEY)||'[]'); }catch(_){ return []; }
+  }
+  function escribir(l){
+    try{ localStorage.setItem(KEY,JSON.stringify(l)); }catch(_){}
+    pintarContador(l.length);
+  }
+  function tiene(h){ return leer().some(function(x){return x.handle===h;}); }
+
+  function alternar(datos){
+    var l=leer(), i=l.findIndex(function(x){return x.handle===datos.handle;});
+    var activo;
+    if(i>=0){ l.splice(i,1); activo=false; }
+    else { l.unshift({handle:datos.handle,titulo:datos.titulo,precio:datos.precio,
+                      img:datos.img,url:datos.url,ts:Date.now()}); activo=true; }
+    escribir(l);
+    sincronizar(l);
+    return activo;
+  }
+
+  /* Si el cliente tiene sesión, deja constancia en su perfil.
+     Sin cuenta activa esto no hace nada y no rompe nada. */
+  function sincronizar(l){
+    if(!CID) return;
+    try{
+      fetch('/apps/ekustore/favoritos',{method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({customer_id:CID,favoritos:l.map(function(x){return x.handle;})})
+      }).catch(function(){});
+    }catch(_){}
+  }
+
+  function pintarContador(n){
+    document.querySelectorAll('[data-fav-count]').forEach(function(el){
+      el.textContent=n;
+      el.style.display = n>0 ? '' : 'none';
+    });
+  }
+
+  /* Marca los corazones que ya están guardados al cargar la página */
+  function restaurar(){
+    var l=leer();
+    document.querySelectorAll('.fav[data-handle]').forEach(function(f){
+      var on=l.some(function(x){return x.handle===f.dataset.handle;});
+      f.classList.toggle('on',on);
+      f.setAttribute('aria-pressed',on?'true':'false');
+      f.setAttribute('aria-label',on?'Quitar de favoritos':'Guardar en favoritos');
+    });
+    pintarContador(l.length);
+  }
+
+  document.addEventListener('DOMContentLoaded',restaurar);
+  if(document.readyState!=='loading') restaurar();
+
+  return {leer:leer,tiene:tiene,alternar:alternar,restaurar:restaurar,
+          contar:function(){return leer().length;},
+          limpiar:function(){escribir([]);}};
+})();
+</script>
+
+  <script>
+window.ekuStats=(function(){
+  var KEY='eku_interacciones_v1';
+  var PESO={ver:1,carrito:5,compra:15};
+
+  function leer(){ try{return JSON.parse(localStorage.getItem(KEY)||'{}');}catch(_){return {};} }
+  function guardar(d){ try{localStorage.setItem(KEY,JSON.stringify(d));}catch(_){} }
+
+  function registrar(handle,tipo){
+    if(!handle) return;
+    var d=leer(), p=PESO[tipo]||1;
+    if(!d[handle]) d[handle]={ver:0,carrito:0,compra:0,score:0,ts:0};
+    d[handle][tipo]=(d[handle][tipo]||0)+1;
+    d[handle].score=(d[handle].score||0)+p;
+    d[handle].ts=Date.now();
+    guardar(d);
+    enviar(handle,tipo);
+  }
+
+  /* Envío al backend (silencioso si no existe todavía) */
+  function enviar(handle,tipo){
+    try{
+      if(!window.EKU_STATS_ENDPOINT) return;
+      fetch(window.EKU_STATS_ENDPOINT,{method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({handle:handle,tipo:tipo,ts:Date.now()})}).catch(function(){});
+    }catch(_){}
+  }
+
+  /* Ranking local ordenado por score */
+  function ranking(n){
+    var d=leer();
+    return Object.keys(d).map(function(h){return {handle:h,score:d[h].score,det:d[h]};})
+             .sort(function(a,b){return b.score-a.score;}).slice(0,n||20);
+  }
+
+  /* --- Registro automático --- */
+  registrar('notebook-hp-amd-r3-7320u','ver');
+
+  document.addEventListener('submit',function(e){
+    var f=e.target.closest('form[data-ajax-cart]');
+    if(!f) return;
+    var h=f.getAttribute('data-handle');
+    if(h) registrar(h,'carrito');
+  },true);
+
+  return {registrar:registrar,ranking:ranking,leer:leer,
+          limpiar:function(){guardar({});}};
+})();
+</script>
+
+  <div id="shopify-section-announcement" class="shopify-section"><div class="topbar">
+  <div class="mq"><span>Tecnología original con garantía</span><span>Cotiza en línea y un asesor te atiende</span><span>Factura electrónica SRI</span><span>12 meses de garantía</span><span>Envío a todo Ecuador (costo aparte)</span></div>
+</div>
+
+
+</div>
+  <div id="shopify-section-header" class="shopify-section"><script>
+(function(){
+  if(window.matchMedia('(hover:none)').matches || ('ontouchstart' in window)
+     || navigator.maxTouchPoints>0){
+    document.documentElement.classList.add('es-tactil');
+  }
+})();
+</script><header class="site-header">
+  <div class="wrap htop">
+    <button class="mnavbtn" data-mnav-open aria-label="Abrir menú de categorías" aria-expanded="false">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <a href="/" class="logo" aria-label="Ekustore · inicio"><img src="//ekustore.com/cdn/shop/t/14/assets/logo-ekustore.svg?v=142792277470829768881787715567" alt="Ekustore" width="119" height="42"></a>
+    <form action="/search" method="get" class="search" role="search">
+      <input type="search" name="q" placeholder="Busca laptops, cámaras…" value="">
+      <button type="submit"><svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>Buscar</button>
+    </form>
+    <div class="hicons">
+      <a href="/pages/favoritos" class="hfav" aria-label="Mis favoritos"><svg viewBox="0 0 24 24" width="21" height="21"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg><span class="hfav-n" data-fav-count>0</span></a>
+      <a href="/account"><svg viewBox="0 0 24 24" width="21" height="21"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>Mi cuenta</a>
+      <a href="/cart" class="cart"><svg viewBox="0 0 24 24" width="21" height="21"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M3 3h2l2 12h11l2-8H6"/></svg>Carrito<span class="badge" id="cartBadge" hidden></span></a>
+    </div>
+  </div>
+
+  <nav class="megabar" aria-label="Categorías">
+    <div class="wrap megawrap"><div class="megaitem" tabindex="0">
+          <a class="megatop" href="/collections/laptops">
+            <span class="mmbub"><svg class="megaicon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-laptops"></use></svg>
+            </span>
+            <span class="mmtxt">
+              <b>Computadoras</b>
+              <i>395 productos</i>
+            </span>
+          </a>
+
+          <div class="megapanel">
+            <div class="mmwrap">
+              <div class="mmcols"><a class="megalink" href="/collections/laptops">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/></svg></span>
+                      <span class="ml-nom">Laptops</span>
+                      <span class="ml-num">164</span>
+                    </a><a class="megalink" href="/collections/computadoras">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 6h6M9 10h6"/></svg></span>
+                      <span class="ml-nom">Desktop</span>
+                      <span class="ml-num">47</span>
+                    </a><a class="megalink" href="/collections/procesadores">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M10 2v5M14 2v5M10 17v5M14 17v5M2 10h5M2 14h5M17 10h5M17 14h5"/></svg></span>
+                      <span class="ml-nom">Procesadores</span>
+                      <span class="ml-num">26</span>
+                    </a><a class="megalink" href="/collections/tarjetas-madres">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="8" y="8" width="6" height="6" rx="1"/><path d="M17 8v3M17 14v3"/></svg></span>
+                      <span class="ml-nom">Motherboard</span>
+                      <span class="ml-num">14</span>
+                    </a><a class="megalink" href="/collections/tarjetas-de-video">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="7" width="20" height="10" rx="2"/><circle cx="8" cy="12" r="2.2"/><circle cx="16" cy="12" r="2.2"/></svg></span>
+                      <span class="ml-nom">Tarjeta de video</span>
+                      <span class="ml-num">10</span>
+                    </a><a class="megalink" href="/collections/fuente_pc">
+                      <span class="ml-ico"><svg class="megaicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#ico-fuente_pc"></use></svg></span>
+                      <span class="ml-nom">Fuente de poder</span>
+                      <span class="ml-num">40</span>
+                    </a><a class="megalink" href="/collections/cases">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M9 6h6M9 9h6"/><circle cx="12" cy="16" r="2"/></svg></span>
+                      <span class="ml-nom">Cases</span>
+                      <span class="ml-num">59</span>
+                    </a><a class="megalink" href="/collections/coolers">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="2"/><path d="M12 10c0-4-1-8 2-8s2 6-2 8M14 12c4 0 8-1 8 2s-6 2-8-2M12 14c0 4 1 8-2 8s-2-6 2-8M10 12c-4 0-8 1-8-2s6-2 8 2"/></svg></span>
+                      <span class="ml-nom">Coolers</span>
+                      <span class="ml-num">34</span>
+                    </a><a class="megalink" href="/collections/software">
+                      <span class="ml-ico"><svg class="megaicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#ico-software"></use></svg></span>
+                      <span class="ml-nom">Software</span>
+                      <span class="ml-num">1</span>
+                    </a><a class="megalink mm-vertodo" href="/collections/laptops">
+                  <span class="ml-nom">Ver todo en Computadoras</span>
+                  <span class="ml-num">395</span>
+                </a>
+              </div>
+              <div class="mmdest">
+                <span class="mmeyebrow">Destacado</span>
+                <h4>Computadoras</h4>
+                <p>Laptops, desktop, componentes y accesorios</p>
+                <img src="//ekustore.com/cdn/shop/t/14/assets/cat-laptops.png?v=45946489882073887141787709387" alt="Computadoras" loading="lazy">
+                <a class="mmcta" href="/collections/laptops">Ver Computadoras
+                  <svg viewBox="0 0 24 24" width="15" height="15"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div><div class="megaitem" tabindex="0">
+          <a class="megatop" href="/collections/discos">
+            <span class="mmbub"><svg class="megaicon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-discos"></use></svg>
+            </span>
+            <span class="mmtxt">
+              <b>Almacenamiento</b>
+              <i>236 productos</i>
+            </span>
+          </a>
+
+          <div class="megapanel">
+            <div class="mmwrap">
+              <div class="mmcols"><a class="megalink" href="/collections/discos">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M18.4 18.4l-3.5-3.5"/></svg></span>
+                      <span class="ml-nom">Almacenamiento</span>
+                      <span class="ml-num">96</span>
+                    </a><a class="megalink" href="/collections/memorias">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="7" width="20" height="10" rx="1.5"/><path d="M6 17v3M10 17v3M14 17v3M18 17v3M6 11h12"/></svg></span>
+                      <span class="ml-nom">Memorias</span>
+                      <span class="ml-num">53</span>
+                    </a><a class="megalink" href="/collections/hubs">
+                      <span class="ml-ico"><svg class="megaicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#ico-hubs"></use></svg></span>
+                      <span class="ml-nom">Hubs</span>
+                      <span class="ml-num">28</span>
+                    </a><a class="megalink" href="/collections/adaptador">
+                      <span class="ml-ico"><svg class="megaicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#ico-adaptador"></use></svg></span>
+                      <span class="ml-nom">Adaptador</span>
+                      <span class="ml-num">59</span>
+                    </a><a class="megalink mm-vertodo" href="/collections/discos">
+                  <span class="ml-nom">Ver todo en Almacenamiento</span>
+                  <span class="ml-num">236</span>
+                </a>
+              </div>
+              <div class="mmdest">
+                <span class="mmeyebrow">Destacado</span>
+                <h4>Almacenamiento</h4>
+                <p>Discos, memorias, hubs y adaptadores</p>
+                <img src="//ekustore.com/cdn/shop/t/14/assets/catimg-almacenamiento.png?v=131378523082904092141787777012" alt="Almacenamiento" loading="lazy">
+                <a class="mmcta" href="/collections/discos">Ver Almacenamiento
+                  <svg viewBox="0 0 24 24" width="15" height="15"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div><div class="megaitem" tabindex="0">
+          <a class="megatop" href="/collections/impresoras">
+            <span class="mmbub"><svg class="megaicon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-impresoras"></use></svg>
+            </span>
+            <span class="mmtxt">
+              <b>Impresión</b>
+              <i>389 productos</i>
+            </span>
+          </a>
+
+          <div class="megapanel">
+            <div class="mmwrap">
+              <div class="mmcols"><a class="megalink" href="/collections/impresoras">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1.5"/><path d="M6 17h12v4H6z"/></svg></span>
+                      <span class="ml-nom">Impresoras</span>
+                      <span class="ml-num">80</span>
+                    </a><a class="megalink" href="/collections/insumos">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M12 2s6 7 6 11a6 6 0 01-12 0c0-4 6-11 6-11z"/></svg></span>
+                      <span class="ml-nom">Insumos</span>
+                      <span class="ml-num">309</span>
+                    </a><a class="megalink mm-vertodo" href="/collections/impresoras">
+                  <span class="ml-nom">Ver todo en Impresión</span>
+                  <span class="ml-num">389</span>
+                </a>
+              </div>
+              <div class="mmdest">
+                <span class="mmeyebrow">Destacado</span>
+                <h4>Impresión</h4>
+                <p>Impresoras, insumos y punto de venta</p>
+                <img src="//ekustore.com/cdn/shop/t/14/assets/catimg-impresion.png?v=100356544310996078201787777014" alt="Impresión" loading="lazy">
+                <a class="mmcta" href="/collections/impresoras">Ver Impresión
+                  <svg viewBox="0 0 24 24" width="15" height="15"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div><div class="megaitem" tabindex="0">
+          <a class="megatop" href="/collections/audio">
+            <span class="mmbub"><svg class="megaicon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-audio"></use></svg>
+            </span>
+            <span class="mmtxt">
+              <b>Audio y video</b>
+              <i>595 productos</i>
+            </span>
+          </a>
+
+          <div class="megapanel">
+            <div class="mmwrap">
+              <div class="mmcols"><a class="megalink" href="/collections/audio">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="2" y="14" width="4.5" height="7" rx="1.5"/><rect x="17.5" y="14" width="4.5" height="7" rx="1.5"/></svg></span>
+                      <span class="ml-nom">Audio</span>
+                      <span class="ml-num">172</span>
+                    </a><a class="megalink" href="/collections/parlantes">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="6" y="2" width="12" height="20" rx="2"/><circle cx="12" cy="15" r="3.2"/><circle cx="12" cy="6.5" r="1.4"/></svg></span>
+                      <span class="ml-nom">Parlantes</span>
+                      <span class="ml-num">177</span>
+                    </a><a class="megalink" href="/collections/tv">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="5" width="20" height="13" rx="2"/><path d="M8 21h8"/></svg></span>
+                      <span class="ml-nom">Televisores</span>
+                      <span class="ml-num">91</span>
+                    </a><a class="megalink" href="/collections/pantallas">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
+                      <span class="ml-nom">Pantallas</span>
+                      <span class="ml-num">80</span>
+                    </a><a class="megalink" href="/collections/proyectores">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="7" width="20" height="11" rx="2"/><circle cx="9" cy="12.5" r="3"/><path d="M17 11h2"/></svg></span>
+                      <span class="ml-nom">Proyectores</span>
+                      <span class="ml-num">52</span>
+                    </a><a class="megalink" href="/collections/camaras">
+                      <span class="ml-ico"><svg class="megaicon" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#ico-camaras"></use></svg></span>
+                      <span class="ml-nom">Camaras</span>
+                      <span class="ml-num">20</span>
+                    </a><a class="megalink" href="/collections/fotografia">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="6" width="20" height="14" rx="2"/><circle cx="12" cy="13" r="3.5"/><path d="M8 6l1.5-2h5L16 6"/></svg></span>
+                      <span class="ml-nom">Fotografia</span>
+                      <span class="ml-num">1</span>
+                    </a><a class="megalink" href="/collections/drones">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="9" y="9" width="6" height="6" rx="1.5"/><circle cx="5" cy="5" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/></svg></span>
+                      <span class="ml-nom">Drones</span>
+                      <span class="ml-num">2</span>
+                    </a><a class="megalink mm-vertodo" href="/collections/audio">
+                  <span class="ml-nom">Ver todo en Audio y video</span>
+                  <span class="ml-num">595</span>
+                </a>
+              </div>
+              <div class="mmdest">
+                <span class="mmeyebrow">Destacado</span>
+                <h4>Audio y video</h4>
+                <p>Parlantes, TV, pantallas y proyectores</p>
+                <img src="//ekustore.com/cdn/shop/t/14/assets/catimg-audio-video.png?v=71805507458427662451787777015" alt="Audio y video" loading="lazy">
+                <a class="mmcta" href="/collections/audio">Ver Audio y video
+                  <svg viewBox="0 0 24 24" width="15" height="15"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div><div class="megaitem" tabindex="0">
+          <a class="megatop" href="/collections/celulares">
+            <span class="mmbub"><svg class="megaicon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-celulares"></use></svg>
+            </span>
+            <span class="mmtxt">
+              <b>Movilidad</b>
+              <i>220 productos</i>
+            </span>
+          </a>
+
+          <div class="megapanel">
+            <div class="mmwrap">
+              <div class="mmcols"><a class="megalink" href="/collections/celulares">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18.5h2"/></svg></span>
+                      <span class="ml-nom">Celulares</span>
+                      <span class="ml-num">31</span>
+                    </a><a class="megalink" href="/collections/tablets">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M10 18.5h4"/></svg></span>
+                      <span class="ml-nom">Tablets</span>
+                      <span class="ml-num">19</span>
+                    </a><a class="megalink" href="/collections/wearables">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="7" y="6" width="10" height="12" rx="2.5"/><path d="M9 6V3h6v3M9 18v3h6v-3"/></svg></span>
+                      <span class="ml-nom">Wearables</span>
+                      <span class="ml-num">46</span>
+                    </a><a class="megalink" href="/collections/cargadores">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="6" y="3" width="12" height="18" rx="2"/><path d="M13 8l-3 5h4l-3 4"/></svg></span>
+                      <span class="ml-nom">Cargadores</span>
+                      <span class="ml-num">108</span>
+                    </a><a class="megalink" href="/collections/mochilas">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M5 9a7 7 0 0114 0v11H5z"/><path d="M9 9V6a3 3 0 016 0v3M9 15h6"/></svg></span>
+                      <span class="ml-nom">Mochilas</span>
+                      <span class="ml-num">16</span>
+                    </a><a class="megalink mm-vertodo" href="/collections/celulares">
+                  <span class="ml-nom">Ver todo en Movilidad</span>
+                  <span class="ml-num">220</span>
+                </a>
+              </div>
+              <div class="mmdest">
+                <span class="mmeyebrow">Destacado</span>
+                <h4>Movilidad</h4>
+                <p>Celulares, tablets, wearables y cargadores</p>
+                <img src="//ekustore.com/cdn/shop/t/14/assets/catimg-celulares.png?v=96979839378821103911787777017" alt="Movilidad" loading="lazy">
+                <a class="mmcta" href="/collections/celulares">Ver Movilidad
+                  <svg viewBox="0 0 24 24" width="15" height="15"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div><div class="megaitem" tabindex="0">
+          <a class="megatop" href="/collections/redes">
+            <span class="mmbub"><svg class="megaicon" width="19" height="19" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-redes"></use></svg>
+            </span>
+            <span class="mmtxt">
+              <b>Conectividad</b>
+              <i>666 productos</i>
+            </span>
+          </a>
+
+          <div class="megapanel">
+            <div class="mmwrap">
+              <div class="mmcols"><a class="megalink" href="/collections/redes">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="2" y="13" width="20" height="7" rx="2"/><path d="M6 17h.01M10 17h.01M12 13V8M8 8h8"/></svg></span>
+                      <span class="ml-nom">Redes</span>
+                      <span class="ml-num">153</span>
+                    </a><a class="megalink" href="/collections/cable_red">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M8 3h8v6l-2 2v5h-4v-5L8 9z"/><path d="M10 21h4"/></svg></span>
+                      <span class="ml-nom">Cable de red</span>
+                      <span class="ml-num">49</span>
+                    </a><a class="megalink" href="/collections/cables">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 3v6a5 5 0 0010 0V3"/><path d="M9 3v3M15 3v3M12 14v7"/></svg></span>
+                      <span class="ml-nom">Cables</span>
+                      <span class="ml-num">178</span>
+                    </a><a class="megalink" href="/collections/ups">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M13 9l-3 4h4l-3 4"/></svg></span>
+                      <span class="ml-nom">Ups</span>
+                      <span class="ml-num">53</span>
+                    </a><a class="megalink" href="/collections/perifericos">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="8" y="2" width="8" height="14" rx="4"/><path d="M12 2v5M12 20v2"/></svg></span>
+                      <span class="ml-nom">Periféricos</span>
+                      <span class="ml-num">170</span>
+                    </a><a class="megalink" href="/collections/accesorios">
+                      <span class="ml-ico"><svg viewBox="0 0 24 24" width="14" height="14"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/></svg></span>
+                      <span class="ml-nom">Accesorios</span>
+                      <span class="ml-num">63</span>
+                    </a><a class="megalink mm-vertodo" href="/collections/redes">
+                  <span class="ml-nom">Ver todo en Conectividad</span>
+                  <span class="ml-num">666</span>
+                </a>
+              </div>
+              <div class="mmdest">
+                <span class="mmeyebrow">Destacado</span>
+                <h4>Conectividad</h4>
+                <p>Redes, cables, UPS y periféricos</p>
+                <img src="//ekustore.com/cdn/shop/t/14/assets/cat-redes.png?v=18518423879175787121787709393" alt="Conectividad" loading="lazy">
+                <a class="mmcta" href="/collections/redes">Ver Conectividad
+                  <svg viewBox="0 0 24 24" width="15" height="15"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              </div>
+            </div>
+          </div>
+        </div></div>
+  </nav>
+</header>
+
+<div class="mm-scrim" data-mm-scrim aria-hidden="true"></div>
+<script>
+(function(){
+  var bar=document.querySelector('.megawrap'); if(!bar) return;
+  var scrim=document.querySelector('[data-mm-scrim]'), t;
+  function open(){ document.body.classList.add('mm-open'); if(scrim) scrim.classList.add('on'); }
+  function close(){ document.body.classList.remove('mm-open'); if(scrim) scrim.classList.remove('on'); }
+  bar.querySelectorAll('.megaitem').forEach(function(it){
+    if(!it.querySelector('.megapanel')) return;
+    it.addEventListener('mouseenter',function(){ clearTimeout(t); open(); });
+    it.addEventListener('focusin',function(){ clearTimeout(t); open(); });
+  });
+  bar.addEventListener('mouseleave',function(){ t=setTimeout(close,240); });
+  bar.addEventListener('mouseenter',function(){ clearTimeout(t); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') close(); });
+  window.addEventListener('scroll',close,{passive:true});
+  if(scrim) scrim.addEventListener('mouseenter',close);
+})();
+</script>
+
+
+<div class="mnav-ov" data-mnav-ov></div>
+<aside class="mnav" data-mnav aria-label="Menú de categorías" aria-hidden="true">
+  <div class="mnav-head">
+    <span class="mnav-tit">Categorías</span>
+    <button class="mnav-x" data-mnav-close aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" width="19" height="19"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <form class="mnav-buscar" action="/search" method="get" role="search">
+    <svg viewBox="0 0 24 24" width="17" height="17"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    <input type="search" name="q" placeholder="Buscar productos..." aria-label="Buscar">
+  </form>
+
+  <nav class="mnav-body"><div class="mnav-grupo" data-mnav-grupo>
+        <button class="mnav-fam" data-mnav-tog aria-expanded="false">
+          <span class="mnav-bub"><svg class="megaicon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-laptops"></use></svg>
+          </span>
+          <span class="mnav-nom">Computadoras</span>
+          <span class="mnav-n">395</span>
+          <svg class="mnav-flecha" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mnav-subs"><a class="mnav-sub" href="/collections/laptops">
+                <span>Laptops</span><em>164</em>
+              </a><a class="mnav-sub" href="/collections/computadoras">
+                <span>Desktop</span><em>47</em>
+              </a><a class="mnav-sub" href="/collections/procesadores">
+                <span>Procesadores</span><em>26</em>
+              </a><a class="mnav-sub" href="/collections/tarjetas-madres">
+                <span>Motherboard</span><em>14</em>
+              </a><a class="mnav-sub" href="/collections/tarjetas-de-video">
+                <span>Tarjeta de video</span><em>10</em>
+              </a><a class="mnav-sub" href="/collections/fuente_pc">
+                <span>Fuente de poder</span><em>40</em>
+              </a><a class="mnav-sub" href="/collections/cases">
+                <span>Cases</span><em>59</em>
+              </a><a class="mnav-sub" href="/collections/coolers">
+                <span>Coolers</span><em>34</em>
+              </a><a class="mnav-sub" href="/collections/software">
+                <span>Software</span><em>1</em>
+              </a><a class="mnav-sub mnav-todo" href="/collections/laptops">
+            <span>Ver todo en Computadoras</span><em>395</em>
+          </a>
+        </div>
+      </div><div class="mnav-grupo" data-mnav-grupo>
+        <button class="mnav-fam" data-mnav-tog aria-expanded="false">
+          <span class="mnav-bub"><svg class="megaicon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-discos"></use></svg>
+          </span>
+          <span class="mnav-nom">Almacenamiento</span>
+          <span class="mnav-n">236</span>
+          <svg class="mnav-flecha" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mnav-subs"><a class="mnav-sub" href="/collections/discos">
+                <span>Almacenamiento</span><em>96</em>
+              </a><a class="mnav-sub" href="/collections/memorias">
+                <span>Memorias</span><em>53</em>
+              </a><a class="mnav-sub" href="/collections/hubs">
+                <span>Hubs</span><em>28</em>
+              </a><a class="mnav-sub" href="/collections/adaptador">
+                <span>Adaptador</span><em>59</em>
+              </a><a class="mnav-sub mnav-todo" href="/collections/discos">
+            <span>Ver todo en Almacenamiento</span><em>236</em>
+          </a>
+        </div>
+      </div><div class="mnav-grupo" data-mnav-grupo>
+        <button class="mnav-fam" data-mnav-tog aria-expanded="false">
+          <span class="mnav-bub"><svg class="megaicon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-impresoras"></use></svg>
+          </span>
+          <span class="mnav-nom">Impresión</span>
+          <span class="mnav-n">389</span>
+          <svg class="mnav-flecha" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mnav-subs"><a class="mnav-sub" href="/collections/impresoras">
+                <span>Impresoras</span><em>80</em>
+              </a><a class="mnav-sub" href="/collections/insumos">
+                <span>Insumos</span><em>309</em>
+              </a><a class="mnav-sub mnav-todo" href="/collections/impresoras">
+            <span>Ver todo en Impresión</span><em>389</em>
+          </a>
+        </div>
+      </div><div class="mnav-grupo" data-mnav-grupo>
+        <button class="mnav-fam" data-mnav-tog aria-expanded="false">
+          <span class="mnav-bub"><svg class="megaicon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-audio"></use></svg>
+          </span>
+          <span class="mnav-nom">Audio y video</span>
+          <span class="mnav-n">595</span>
+          <svg class="mnav-flecha" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mnav-subs"><a class="mnav-sub" href="/collections/audio">
+                <span>Audio</span><em>172</em>
+              </a><a class="mnav-sub" href="/collections/parlantes">
+                <span>Parlantes</span><em>177</em>
+              </a><a class="mnav-sub" href="/collections/tv">
+                <span>Televisores</span><em>91</em>
+              </a><a class="mnav-sub" href="/collections/pantallas">
+                <span>Pantallas</span><em>80</em>
+              </a><a class="mnav-sub" href="/collections/proyectores">
+                <span>Proyectores</span><em>52</em>
+              </a><a class="mnav-sub" href="/collections/camaras">
+                <span>Camaras</span><em>20</em>
+              </a><a class="mnav-sub" href="/collections/fotografia">
+                <span>Fotografia</span><em>1</em>
+              </a><a class="mnav-sub" href="/collections/drones">
+                <span>Drones</span><em>2</em>
+              </a><a class="mnav-sub mnav-todo" href="/collections/audio">
+            <span>Ver todo en Audio y video</span><em>595</em>
+          </a>
+        </div>
+      </div><div class="mnav-grupo" data-mnav-grupo>
+        <button class="mnav-fam" data-mnav-tog aria-expanded="false">
+          <span class="mnav-bub"><svg class="megaicon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-celulares"></use></svg>
+          </span>
+          <span class="mnav-nom">Movilidad</span>
+          <span class="mnav-n">220</span>
+          <svg class="mnav-flecha" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mnav-subs"><a class="mnav-sub" href="/collections/celulares">
+                <span>Celulares</span><em>31</em>
+              </a><a class="mnav-sub" href="/collections/tablets">
+                <span>Tablets</span><em>19</em>
+              </a><a class="mnav-sub" href="/collections/wearables">
+                <span>Wearables</span><em>46</em>
+              </a><a class="mnav-sub" href="/collections/cargadores">
+                <span>Cargadores</span><em>108</em>
+              </a><a class="mnav-sub" href="/collections/mochilas">
+                <span>Mochilas</span><em>16</em>
+              </a><a class="mnav-sub mnav-todo" href="/collections/celulares">
+            <span>Ver todo en Movilidad</span><em>220</em>
+          </a>
+        </div>
+      </div><div class="mnav-grupo" data-mnav-grupo>
+        <button class="mnav-fam" data-mnav-tog aria-expanded="false">
+          <span class="mnav-bub"><svg class="megaicon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><use href="#ico-redes"></use></svg>
+          </span>
+          <span class="mnav-nom">Conectividad</span>
+          <span class="mnav-n">666</span>
+          <svg class="mnav-flecha" viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mnav-subs"><a class="mnav-sub" href="/collections/redes">
+                <span>Redes</span><em>153</em>
+              </a><a class="mnav-sub" href="/collections/cable_red">
+                <span>Cable de red</span><em>49</em>
+              </a><a class="mnav-sub" href="/collections/cables">
+                <span>Cables</span><em>178</em>
+              </a><a class="mnav-sub" href="/collections/ups">
+                <span>Ups</span><em>53</em>
+              </a><a class="mnav-sub" href="/collections/perifericos">
+                <span>Periféricos</span><em>170</em>
+              </a><a class="mnav-sub" href="/collections/accesorios">
+                <span>Accesorios</span><em>63</em>
+              </a><a class="mnav-sub mnav-todo" href="/collections/redes">
+            <span>Ver todo en Conectividad</span><em>666</em>
+          </a>
+        </div>
+      </div></nav>
+
+  <div class="mnav-pie">
+    <a class="mnav-wa" href="https://wa.me/593939482839" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="17" height="17"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2z"/></svg>
+      Consultar por WhatsApp
+    </a>
+    <div class="mnav-sellos">
+      <span>Envío a todo Ecuador</span><span>Factura SRI</span><span>Cotiza en línea</span>
+    </div>
+  </div>
+</aside>
+
+<script>
+(function(){
+  var pn=document.querySelector('[data-mnav]'), ov=document.querySelector('[data-mnav-ov]');
+  if(!pn) return;
+  var btn=document.querySelector('[data-mnav-open]');
+  function abrir(){pn.classList.add('on');ov.classList.add('on');pn.setAttribute('aria-hidden','false');
+    if(btn)btn.setAttribute('aria-expanded','true');document.body.style.overflow='hidden';}
+  function cerrar(){pn.classList.remove('on');ov.classList.remove('on');pn.setAttribute('aria-hidden','true');
+    if(btn)btn.setAttribute('aria-expanded','false');document.body.style.overflow='';}
+  document.querySelectorAll('[data-mnav-open]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();abrir();});});
+  document.querySelectorAll('[data-mnav-close]').forEach(function(b){b.addEventListener('click',cerrar);});
+  ov.addEventListener('click',cerrar);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')cerrar();});
+  /* acordeon: solo un grupo abierto a la vez */
+  pn.querySelectorAll('[data-mnav-tog]').forEach(function(b){
+    b.addEventListener('click',function(){
+      var g=b.closest('[data-mnav-grupo]'), ya=g.classList.contains('on');
+      pn.querySelectorAll('[data-mnav-grupo].on').forEach(function(o){
+        o.classList.remove('on'); o.querySelector('[data-mnav-tog]').setAttribute('aria-expanded','false');
+      });
+      if(!ya){ g.classList.add('on'); b.setAttribute('aria-expanded','true'); }
+    });
+  });
+  /* si se agranda la pantalla, cerrar */
+  window.addEventListener('resize',function(){ if(window.innerWidth>900) cerrar(); });
+})();
+</script>
+
+</div>
+
+  <main role="main">
+    <div id="shopify-section-template--23608763121904__main" class="shopify-section"><div class="wrap">
+  <div class="crumbs">
+    <a href="/">Inicio</a>› <a href="/collections/sitio-ekustore">Catalogo Ekustore</a>› <b>LAPTOP 15.6" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS</b>
+  </div>
+
+  <div class="pdp">
+    <!-- GALERÍA con zoom -->
+    <div class="galeria">
+      <div class="gmain" id="gmain"><span class="gfav fav" role="button" tabindex="0" aria-pressed="false" aria-label="Guardar en favoritos" ><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg></span>
+        <span class="gzoomhint"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>Pasa el cursor para ampliar</span><img id="gimg" src="//ekustore.com/cdn/shop/files/c8c51d1ff2abee8d1b00e325ac86a024.jpg?v=1787712765&width=900" alt="LAPTOP 15.6&quot; AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS"></div></div>
+
+    <!-- BUY BOX -->
+    <div class="info">
+      <div class="brandline">
+        <span class="brandtag">HP</span>
+        <span class="stockok">Disponibilidad confirmada en tu proforma</span>
+      </div>
+      <h1 class="pname">LAPTOP 15.6" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS</h1>
+      <div class="rating"><span class="st">★★★★★</span> 4.8 <a href="#tab-r">reseñas</a></div>
+      <div class="sku">SKU: HPTGLPR37320U26 · Garantía 12 meses</div>
+
+      <div class="pricebox">
+        <div class="priceflex">
+          <span class="pnow">$551.00</span></div>
+        <div class="ivnote">Precio final · IVA 15% incluido</div>
+        <div class="ivbreak"><span>Base imponible: $479.13</span><span>IVA 15%: $71.87</span></div>
+        <div class="cuotas"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>Paga hasta en 12 cuotas con tarjeta de crédito</div>
+      </div>
+
+      
+<form method="post" action="/cart/add" id="product_form_10220873974000" accept-charset="UTF-8" class="shopify-product-form" enctype="multipart/form-data" data-ajax-cart="true"><input type="hidden" name="form_type" value="product" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="id" value="50309417304304"><div class="qtyrow">
+          <div class="qty">
+            <button type="button" onclick="ekuQ(-1)">−</button>
+            <input id="qty" name="quantity" value="1" readonly>
+            <button type="button" onclick="ekuQ(1)">+</button>
+          </div>
+          <span class="qtylbl">Un asesor confirma disponibilidad y envío</span>
+        </div>
+        <div class="ctas">
+          <button type="submit" class="btn btn-cart"><svg viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M3 3h2l2 12h11l2-8H6"/></svg>Agregar a mi solicitud</button>
+          <a class="btn btn-wa" href="https://wa.me/593939482839?text=Hola%2C+me+interesa%3A+LAPTOP+15.6%22+AMD+RYZEN+3+7320U+8GB+LPDDR5+256GB+SSD+FREEDOS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2z"/></svg>Consultar por WhatsApp</a>
+        </div><input type="hidden" name="product-id" value="10220873974000" /><input type="hidden" name="section-id" value="template--23608763121904__main" /></form><div class="gar">
+        <div class="garit"><svg viewBox="0 0 24 24"><path d="M5 8l7-5 7 5v6c0 4-3 6-7 8-4-2-7-4-7-8z"/></svg>Garantía 12 meses</div>
+        <div class="garit"><svg viewBox="0 0 24 24"><rect x="1" y="6" width="15" height="11" rx="2"/><path d="M16 9h4l3 3v5h-7"/><circle cx="6" cy="18" r="2"/><circle cx="19" cy="18" r="2"/></svg>Envío a todo Ecuador</div>
+        <div class="garit"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Producto 100% original</div>
+        <div class="garit"><svg viewBox="0 0 24 24"><path d="M4 4h16v12H5.2L4 17.5z"/><path d="M8 9h8M8 12h5"/></svg>Factura electrónica SRI</div>
+      </div>
+      <div class="pagos"><span>Formas de pago:</span><span class="pchip">Tarjetas</span><span class="pchip">Transferencia</span><span class="pchip">Efectivo</span></div>
+    </div>
+  </div>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <div class="tabnav">
+      <button class="tabbtn on" onclick="ekuTab('d',this)">Descripción</button>
+      <button class="tabbtn" onclick="ekuTab('e',this)">Envío y garantía</button>
+      <button class="tabbtn" onclick="ekuTab('r',this)">Reseñas</button>
+    </div>
+    <div class="tabpanel on pdp-desc" id="tab-d">Pantalla 15,6", Procesador AMD Ryzen 3 R3-7320U, 8GB RAM LPDDR5-5500Mhz, 256GB SSD, FreeDOS 3.0, batería 11h 15min</div>
+    <div class="tabpanel pdp-desc" id="tab-e">
+      <h3>Envío</h3>
+      <p>Envío a todo el Ecuador. Despacho en 24-48h para productos en stock. El pago se confirma <b>antes del envío</b>. También puedes cotizar en línea y comprar directamente en nuestras oficinas.</p>
+      <h3>Garantía</h3>
+      <p>12 meses de garantía por defectos de fábrica. Producto 100% original con <b>factura electrónica SRI</b>. Devoluciones conforme a la Ley Orgánica de Defensa del Consumidor del Ecuador.</p>
+    </div>
+    <div class="tabpanel pdp-desc" id="tab-r">
+      <p><span style="color:var(--amar);font-size:16px">★★★★★</span> <b>4.8 de 5</b> · valoración de clientes.</p>
+    </div>
+  </div>
+
+  <!-- CROSS-SELL --><div class="sec2" style="margin-top:50px">
+      <div class="sechead"><h2 style="font-size:22px">Completa tu setup</h2></div>
+      <div class="grid"><div class="card reveal">
+  <a class="cardlink" href="/products/base-siig-ac-ce-mt3311" aria-label="BASE SIIG AC CE-MT3311" tabindex="-1"></a>
+  <div class="fav" role="button" tabindex="0" aria-pressed="false" aria-label="Guardar en favoritos" data-handle="base-siig-ac-ce-mt3311" data-titulo="BASE SIIG AC CE-MT3311" data-precio="$90.37" data-url="/products/base-siig-ac-ce-mt3311" data-img="//ekustore.com/cdn/shop/files/a0b1ba3f7065b98f7558be7fb4c38d26.jpg?v=1790256001&width=400"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg></div><div class="imgwrap"><a href="/products/base-siig-ac-ce-mt3311" class="img"><img src="//ekustore.com/cdn/shop/files/a0b1ba3f7065b98f7558be7fb4c38d26.jpg?v=1790256001&width=400" alt="BASE SIIG AC CE-MT3311" loading="lazy"></a>
+  </div>
+  <div class="b">
+    <div class="brand">SIIG</div>
+    <a href="/products/base-siig-ac-ce-mt3311" class="nm">BASE SIIG AC CE-MT3311</a><div class="row">
+      <span class="pr">$90.37
+<small>IVA incluido</small>
+      </span>
+      <a href="/products/base-siig-ac-ce-mt3311" class="add" aria-label="Ver producto"><svg class="add-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.2l2.6 12.4a2 2 0 002 1.6h8.9a2 2 0 002-1.6L21.5 7H6"/></svg></a>
+    </div>
+      <div class="quick"><form method="post" action="/cart/add" data-ajax-cart class="qform">
+          <input type="hidden" name="id" value="50530277622000">
+          <div class="qty" data-qty>
+            <button type="button" class="qminus" data-q="-" aria-label="Quitar una unidad de BASE SIIG AC CE-MT3311" disabled>−</button>
+            <input type="number" name="quantity" value="1" min="1" max="99" inputmode="numeric"
+                   aria-label="Cantidad de BASE SIIG AC CE-MT3311">
+            <button type="button" class="qplus" data-q="+" aria-label="Agregar una unidad de BASE SIIG AC CE-MT3311">+</button>
+          </div>
+          <button type="submit" class="qadd" aria-label="Agregar BASE SIIG AC CE-MT3311 al carrito">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M3 3h2l2 12h11l2-8H6"/></svg>
+            <span class="lbl-txt">Agregar</span>
+            <span class="chk"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M4 12.5l5.2 5.2L20 7"/></svg>Agregado</span>
+          </button>
+        </form></div>
+
+  </div>
+</div>
+
+<div class="card reveal">
+  <a class="cardlink" href="/products/parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1" aria-label="PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE" tabindex="-1"></a>
+  <div class="fav" role="button" tabindex="0" aria-pressed="false" aria-label="Guardar en favoritos" data-handle="parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1" data-titulo="PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE" data-precio="$28.11" data-url="/products/parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1" data-img="//ekustore.com/cdn/shop/files/415056171165a9cae26517c0c161f3c6_4157514d-2998-4d83-9e9f-768b8f3733aa.jpg?v=1790255979&width=400"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg></div><div class="imgwrap"><a href="/products/parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1" class="img"><img src="//ekustore.com/cdn/shop/files/415056171165a9cae26517c0c161f3c6_4157514d-2998-4d83-9e9f-768b8f3733aa.jpg?v=1790255979&width=400" alt="PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE" loading="lazy"></a>
+  </div>
+  <div class="b">
+    <div class="brand">RCA</div>
+    <a href="/products/parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1" class="nm">PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE</a><div class="row">
+      <span class="pr">$28.11
+<small>IVA incluido</small>
+      </span>
+      <a href="/products/parlante-rca-multifuncion-despertador-cargador-inalambrico-despertador-recargable-1" class="add" aria-label="Ver producto"><svg class="add-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.2l2.6 12.4a2 2 0 002 1.6h8.9a2 2 0 002-1.6L21.5 7H6"/></svg></a>
+    </div>
+      <div class="quick"><form method="post" action="/cart/add" data-ajax-cart class="qform">
+          <input type="hidden" name="id" value="50530275983600">
+          <div class="qty" data-qty>
+            <button type="button" class="qminus" data-q="-" aria-label="Quitar una unidad de PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE" disabled>−</button>
+            <input type="number" name="quantity" value="1" min="1" max="99" inputmode="numeric"
+                   aria-label="Cantidad de PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE">
+            <button type="button" class="qplus" data-q="+" aria-label="Agregar una unidad de PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE">+</button>
+          </div>
+          <button type="submit" class="qadd" aria-label="Agregar PARLANTE RCA MULTIFUNCION DESPERTADOR CARGADOR INALAMBRICO DESPERTADOR RECARGABLE al carrito">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M3 3h2l2 12h11l2-8H6"/></svg>
+            <span class="lbl-txt">Agregar</span>
+            <span class="chk"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M4 12.5l5.2 5.2L20 7"/></svg>Agregado</span>
+          </button>
+        </form></div>
+
+  </div>
+</div>
+
+<div class="card reveal">
+  <a class="cardlink" href="/products/soporte-movil-tv-r12-1" aria-label="SOPORTE MOVIL TV R12" tabindex="-1"></a>
+  <div class="fav" role="button" tabindex="0" aria-pressed="false" aria-label="Guardar en favoritos" data-handle="soporte-movil-tv-r12-1" data-titulo="SOPORTE MOVIL TV R12" data-precio="$295.75" data-url="/products/soporte-movil-tv-r12-1" data-img="//ekustore.com/cdn/shop/files/cd676fd904c59abe75161f90cc07b54f_9f93a424-ab6c-4b4a-92b5-159f1627ca8c.jpg?v=1790255880&width=400"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg></div><div class="imgwrap"><a href="/products/soporte-movil-tv-r12-1" class="img"><img src="//ekustore.com/cdn/shop/files/cd676fd904c59abe75161f90cc07b54f_9f93a424-ab6c-4b4a-92b5-159f1627ca8c.jpg?v=1790255880&width=400" alt="SOPORTE MOVIL TV R12" loading="lazy"></a>
+  </div>
+  <div class="b">
+    <div class="brand">SIN MARCA</div>
+    <a href="/products/soporte-movil-tv-r12-1" class="nm">SOPORTE MOVIL TV R12</a><div class="row">
+      <span class="pr">$295.75
+<small>IVA incluido</small>
+      </span>
+      <a href="/products/soporte-movil-tv-r12-1" class="add" aria-label="Ver producto"><svg class="add-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.2l2.6 12.4a2 2 0 002 1.6h8.9a2 2 0 002-1.6L21.5 7H6"/></svg></a>
+    </div>
+      <div class="quick"><form method="post" action="/cart/add" data-ajax-cart class="qform">
+          <input type="hidden" name="id" value="50530270314736">
+          <div class="qty" data-qty>
+            <button type="button" class="qminus" data-q="-" aria-label="Quitar una unidad de SOPORTE MOVIL TV R12" disabled>−</button>
+            <input type="number" name="quantity" value="1" min="1" max="99" inputmode="numeric"
+                   aria-label="Cantidad de SOPORTE MOVIL TV R12">
+            <button type="button" class="qplus" data-q="+" aria-label="Agregar una unidad de SOPORTE MOVIL TV R12">+</button>
+          </div>
+          <button type="submit" class="qadd" aria-label="Agregar SOPORTE MOVIL TV R12 al carrito">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M3 3h2l2 12h11l2-8H6"/></svg>
+            <span class="lbl-txt">Agregar</span>
+            <span class="chk"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M4 12.5l5.2 5.2L20 7"/></svg>Agregado</span>
+          </button>
+        </form></div>
+
+  </div>
+</div>
+
+<div class="card reveal">
+  <a class="cardlink" href="/products/dron-dji-mini-4k-drone-fly-more-combo-1" aria-label="DRON DJI MINI 4K DRONE FLY MORE COMBO" tabindex="-1"></a>
+  <div class="fav" role="button" tabindex="0" aria-pressed="false" aria-label="Guardar en favoritos" data-handle="dron-dji-mini-4k-drone-fly-more-combo-1" data-titulo="DRON DJI MINI 4K DRONE FLY MORE COMBO" data-precio="$740.45" data-url="/products/dron-dji-mini-4k-drone-fly-more-combo-1" data-img="//ekustore.com/cdn/shop/files/3ad7a6b67c5df0af6bf25c57a72142cb_b595a162-2711-45ec-a197-1c2b5b051eee.jpg?v=1790255501&width=400"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg></div><div class="imgwrap"><a href="/products/dron-dji-mini-4k-drone-fly-more-combo-1" class="img"><img src="//ekustore.com/cdn/shop/files/3ad7a6b67c5df0af6bf25c57a72142cb_b595a162-2711-45ec-a197-1c2b5b051eee.jpg?v=1790255501&width=400" alt="DRON DJI MINI 4K DRONE FLY MORE COMBO" loading="lazy"></a>
+  </div>
+  <div class="b">
+    <div class="brand">DJI</div>
+    <a href="/products/dron-dji-mini-4k-drone-fly-more-combo-1" class="nm">DRON DJI MINI 4K DRONE FLY MORE COMBO</a><div class="row">
+      <span class="pr">$740.45
+<small>IVA incluido</small>
+      </span>
+      <a href="/products/dron-dji-mini-4k-drone-fly-more-combo-1" class="add" aria-label="Ver producto"><svg class="add-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="21" r="1.4"/><circle cx="19" cy="21" r="1.4"/><path d="M2.5 3h2.2l2.6 12.4a2 2 0 002 1.6h8.9a2 2 0 002-1.6L21.5 7H6"/></svg></a>
+    </div>
+      <div class="quick"><form method="post" action="/cart/add" data-ajax-cart class="qform">
+          <input type="hidden" name="id" value="50530247540976">
+          <div class="qty" data-qty>
+            <button type="button" class="qminus" data-q="-" aria-label="Quitar una unidad de DRON DJI MINI 4K DRONE FLY MORE COMBO" disabled>−</button>
+            <input type="number" name="quantity" value="1" min="1" max="99" inputmode="numeric"
+                   aria-label="Cantidad de DRON DJI MINI 4K DRONE FLY MORE COMBO">
+            <button type="button" class="qplus" data-q="+" aria-label="Agregar una unidad de DRON DJI MINI 4K DRONE FLY MORE COMBO">+</button>
+          </div>
+          <button type="submit" class="qadd" aria-label="Agregar DRON DJI MINI 4K DRONE FLY MORE COMBO al carrito">
+            <svg viewBox="0 0 24 24" width="14" height="14"><path d="M3 3h2l2 12h11l2-8H6"/></svg>
+            <span class="lbl-txt">Agregar</span>
+            <span class="chk"><svg viewBox="0 0 24 24" width="14" height="14"><path d="M4 12.5l5.2 5.2L20 7"/></svg>Agregado</span>
+          </button>
+        </form></div>
+
+  </div>
+</div>
+
+</div>
+    </div></div>
+
+<script>
+function ekuQ(n){var i=document.getElementById('qty');i.value=Math.max(1,parseInt(i.value||1)+n);}
+function ekuTab(id,btn){document.querySelectorAll('.tabbtn').forEach(function(b){b.classList.remove('on');});btn.classList.add('on');document.querySelectorAll('.tabpanel').forEach(function(p){p.classList.remove('on');});document.getElementById('tab-'+id).classList.add('on');}
+function ekuThumb(el,src){document.querySelectorAll('.gthumb').forEach(function(x){x.classList.remove('on');});el.classList.add('on');document.getElementById('gimg').src=src;}
+(function(){
+  var main=document.getElementById('gmain'), img=document.getElementById('gimg');
+  if(!main||!img) return;
+  main.addEventListener('mouseenter',function(){main.classList.add('zooming');});
+  main.addEventListener('mouseleave',function(){main.classList.remove('zooming');img.style.transformOrigin='center center';});
+  main.addEventListener('mousemove',function(e){
+    if(!main.classList.contains('zooming')) return;
+    var r=main.getBoundingClientRect();
+    var x=Math.max(0,Math.min(100,((e.clientX-r.left)/r.width)*100));
+    var y=Math.max(0,Math.min(100,((e.clientY-r.top)/r.height)*100));
+    img.style.transformOrigin=x+'% '+y+'%';
+  });
+})();
+</script>
+
+
+</div>
+  </main>
+
+  
+
+<section class="eku-grupo" aria-labelledby="eku-grupo-titulo">
+  <div class="eku-grupo__cabecera">
+    <span class="eku-grupo__kicker">GRUPO EKUSTORE</span>
+    <h2 class="eku-grupo__titulo" id="eku-grupo-titulo">
+      Nuestras otras tiendas
+    </h2>
+    <p class="eku-grupo__bajada">
+      Somos cinco tiendas especializadas con un mismo respaldo: garantía oficial, factura electrónica y envío a todo el Ecuador. Estas son las otras cuatro.
+    </p>
+  </div>
+
+  <ul class="eku-grupo__lista"><li class="eku-grupo__item" data-sitio="ekustore">
+        <a class="eku-grupo__enlace"
+           href="https://ekustore.com"
+           rel="noopener"
+           aria-label="Visitar Ekustore — Tecnología y computación">
+          <span class="eku-grupo__marco">
+            <img class="eku-grupo__logo"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekustore-tinta.png?v=87049716545918738231789071434"
+                 alt="Ekustore"
+                 width="220" height="52"
+                 decoding="async">
+            <img class="eku-grupo__logo--color"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekustore-color.png?v=173647360000422700141789248628"
+                 alt="" aria-hidden="true"
+                 width="220" height="52"
+                 decoding="async" loading="lazy">
+          </span>
+          <span class="eku-grupo__rubro">Tecnología y computación</span>
+        </a>
+      </li><li class="eku-grupo__item" data-sitio="ekuhogar">
+        <a class="eku-grupo__enlace"
+           href="https://ekuhogar.com"
+           rel="noopener"
+           aria-label="Visitar EkuHogar — Línea blanca y electrodomésticos">
+          <span class="eku-grupo__marco">
+            <img class="eku-grupo__logo"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekuhogar-tinta.png?v=143608384383526094031789071435"
+                 alt="EkuHogar"
+                 width="220" height="52"
+                 decoding="async">
+            <img class="eku-grupo__logo--color"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekuhogar-color.png?v=171341070716474068941789248629"
+                 alt="" aria-hidden="true"
+                 width="220" height="52"
+                 decoding="async" loading="lazy">
+          </span>
+          <span class="eku-grupo__rubro">Línea blanca y electrodomésticos</span>
+        </a>
+      </li><li class="eku-grupo__item" data-sitio="ekusecurity">
+        <a class="eku-grupo__enlace"
+           href="https://ekusecurity.com"
+           rel="noopener"
+           aria-label="Visitar EkuSecurity — Videovigilancia, redes y accesos">
+          <span class="eku-grupo__marco">
+            <img class="eku-grupo__logo"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekusecurity-tinta.png?v=80563644632405673641789071437"
+                 alt="EkuSecurity"
+                 width="220" height="52"
+                 decoding="async">
+            <img class="eku-grupo__logo--color"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekusecurity-color.png?v=28464429560673455201789248631"
+                 alt="" aria-hidden="true"
+                 width="220" height="52"
+                 decoding="async" loading="lazy">
+          </span>
+          <span class="eku-grupo__rubro">Videovigilancia, redes y accesos</span>
+        </a>
+      </li><li class="eku-grupo__item" data-sitio="ekutools">
+        <a class="eku-grupo__enlace"
+           href="https://ekutools.com"
+           rel="noopener"
+           aria-label="Visitar EkuTools — Energía solar y herramienta">
+          <span class="eku-grupo__marco">
+            <img class="eku-grupo__logo"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekutools-tinta.png?v=48180544839092035671789071438"
+                 alt="EkuTools"
+                 width="220" height="52"
+                 decoding="async">
+            <img class="eku-grupo__logo--color"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekutools-color.png?v=97791732256969815531789248633"
+                 alt="" aria-hidden="true"
+                 width="220" height="52"
+                 decoding="async" loading="lazy">
+          </span>
+          <span class="eku-grupo__rubro">Energía solar y herramienta</span>
+        </a>
+      </li><li class="eku-grupo__item" data-sitio="ekuplay">
+        <a class="eku-grupo__enlace"
+           href="https://ekuplay.com"
+           rel="noopener"
+           aria-label="Visitar EkuPlay — Movilidad y juego electrónico">
+          <span class="eku-grupo__marco">
+            <img class="eku-grupo__logo"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekuplay-tinta.png?v=117919064579209639111789071440"
+                 alt="EkuPlay"
+                 width="220" height="52"
+                 decoding="async">
+            <img class="eku-grupo__logo--color"
+                 src="//ekustore.com/cdn/shop/t/14/assets/ekuplay-color.png?v=151744040811357809321789248634"
+                 alt="" aria-hidden="true"
+                 width="220" height="52"
+                 decoding="async" loading="lazy">
+          </span>
+          <span class="eku-grupo__rubro">Movilidad y juego electrónico</span>
+        </a>
+      </li></ul>
+</section>
+
+
+  <div id="shopify-section-footer" class="shopify-section"><footer class="site-footer">
+  <div class="wrap">
+    <div class="fcols">
+      <div><strong style="font-size:22px;color:var(--azul)">Ekustore</strong><p>Tu tienda de tecnología, hogar inteligente y seguridad en Ecuador. Precios bajos, envío nacional y cotización en línea.</p>
+        <div class="fpay"><span>Efectivo</span><span>Transferencia</span><span>Tarjeta</span></div>
+        <div class="fsocial">
+          <a href="https://www.instagram.com/ekustoreec" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://www.facebook.com/ekustoreuio" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M15 3h-3a4 4 0 00-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a><a href="https://wa.me/593939482839" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2z"/></svg></a>
+        </div>
+      </div><div>
+          <h4>Comprar</h4><a href="/collections/computadoras">Computadoras</a>
+            <a href="/collections/laptops">Laptops</a>
+            <a href="/collections/camaras">Seguridad</a>
+            <a href="/collections/redes">Redes</a><a href="/collections">Ver todo</a>
+        </div>
+        <div>
+          <h4>Ayuda y Políticas</h4>
+          <a href="/pages/envios">Política de envíos</a>
+          <a href="/pages/devoluciones">Devoluciones y garantía</a>
+          <a href="/pages/pagos">Formas de pago</a>
+          <a href="/pages/factura">Factura electrónica</a>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <a href="https://wa.me/593939482839" target="_blank" rel="noopener">+593 93 948 2839</a>
+          <a href="mailto:info@ekustore.com">info@ekustore.com</a>
+          <a href="/#contacto">Quito · Guayaquil · Loja</a>
+        </div></div>
+    <div class="fiscal">
+      Comprobantes electrónicos autorizados por el SRI · Precios incluyen IVA 15% · Envíos a nivel nacional · Derecho de devolución conforme a la Ley Orgánica de Defensa del Consumidor (Ecuador).
+    </div>
+    <div class="fbtm">© 2026 Ekustore · Ecuador</div>
+  </div>
+</footer>
+
+
+</div>
+  <nav class="mbar" aria-label="Navegación rápida">
+  <a href="/">
+    <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></svg>
+    Inicio
+  </a>
+  <a href="/collections">
+    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+    Categorías
+  </a>
+  <a href="/search" aria-label="Buscar">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+    Buscar
+  </a>
+  <a href="/pages/favoritos">
+    <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-9.5-9A5 5 0 0112 5a5 5 0 019.5 7C19 16.5 12 21 12 21z"/></svg>
+    <span class="mb-badge" data-fav-count></span>
+    Favoritos
+  </a>
+  <a href="/cart">
+    <svg viewBox="0 0 24 24"><path d="M3 3h2l2 12h11l2-8H6"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/></svg>
+    <span class="mb-badge" data-cart-count></span>
+    Carrito
+  </a>
+</nav>
+
+  <div id="shopify-section-whatsapp-float" class="shopify-section"><a href="https://wa.me/593939482839" class="wafloat" title="Escríbenos por WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2z"/><path d="M8 9c0 4 3 7 7 7"/></svg>
+</a>
+
+
+</div>
+  <div id="shopify-section-cart-drawer" class="shopify-section"><div class="cart-hot" data-cart-hot aria-hidden="true"></div>
+
+<button class="cart-tab" data-cart-open aria-label="Ver carrito">
+  <svg viewBox="0 0 24 24" width="22" height="22"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M3 3h2l2 12h11l2-8H6"/></svg>
+  <span class="ct-n" data-cart-count hidden></span>
+  <span class="ct-lbl">SOLICITUD</span>
+</button>
+
+<div class="cart-ov" data-cart-ov></div>
+
+<aside class="cart-drawer" data-cart-drawer aria-label="Carrito de compras">
+  <div class="cd-head">
+    <h3>Tu solicitud <span data-cart-title-n>(0)</span></h3>
+    <button class="cd-close" data-cart-close aria-label="Cerrar carrito">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+
+  <div class="cd-inner" data-cart-inner><div class="cd-empty">
+        <svg viewBox="0 0 24 24" width="52" height="52"><circle cx="9" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M3 3h2l2 12h11l2-8H6"/></svg>
+        <p>Tu solicitud está vacía</p>
+        <a class="cd-ver" href="/collections">Ver productos</a>
+      </div></div>
+  <div class="cd-load" data-cart-load><span class="cd-spin"></span></div>
+</aside>
+
+<script>
+(function(){
+  var dr=document.querySelector('[data-cart-drawer]'),
+      ov=document.querySelector('[data-cart-ov]'),
+      hot=document.querySelector('[data-cart-hot]'),
+      inner=document.querySelector('[data-cart-inner]'),
+      load=document.querySelector('[data-cart-load]');
+  if(!dr) return;
+  var hoverTimer;
+  function open(){dr.classList.add('on');ov.classList.add('on');document.body.style.overflow='hidden';}
+  function close(){dr.classList.remove('on');ov.classList.remove('on');document.body.style.overflow='';}
+  document.querySelectorAll('[data-cart-open]').forEach(function(b){
+    b.addEventListener('click',function(e){e.preventDefault();open();});
+  });
+  document.querySelectorAll('[data-cart-close]').forEach(function(b){b.addEventListener('click',close);});
+  ov.addEventListener('click',close);
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+  if(hot && window.matchMedia('(hover:hover)').matches){
+    hot.addEventListener('mouseenter',function(){hoverTimer=setTimeout(open,220);});
+    hot.addEventListener('mouseleave',function(){clearTimeout(hoverTimer);});
+  }
+
+  function busy(b){ if(load) load.classList.toggle('on',b); }
+
+  /* Redibuja el panel tras cambiar el carrito (sin recargar la página) */
+  function refresh(){
+    fetch('?section_id=cart-drawer',{headers:{'X-Requested-With':'XMLHttpRequest'}})
+      .then(function(r){return r.text();})
+      .then(function(html){
+        var tmp=document.createElement('div'); tmp.innerHTML=html;
+        var nuevo=tmp.querySelector('[data-cart-inner]');
+        if(nuevo && inner){ inner.innerHTML=nuevo.innerHTML; bind(); }
+        return fetch('/cart.js').then(function(r){return r.json();});
+      })
+      .then(function(c){
+        /* NO escribir los contadores aqui: pinta() (theme.liquid) es el punto
+           unico y aplica las reglas -- vacio en cero, mostrar/ocultar el badge
+           del menu y animar solo cuando el numero cambia. Escribir por nuestra
+           cuenta dejaba un "0" pegado y el badge invisible con productos. */
+        if(typeof window.ekuPintaCarrito==='function'){
+          window.ekuPintaCarrito(c.item_count);
+        }else{
+          document.dispatchEvent(new CustomEvent('eku:cart-updated',
+                                                 {detail:{item_count:c.item_count}}));
+        }
+        var t=document.querySelector('[data-cart-title-n]');
+        if(t) t.textContent='('+c.item_count+')';
+      })
+      .catch(function(){ location.reload(); })
+      .finally(function(){ busy(false); });
+  }
+
+  function cambiar(line,qty){
+    busy(true);
+    fetch('/cart/change.js',{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({line:line,quantity:qty})
+    }).then(refresh).catch(function(){ busy(false); location.reload(); });
+  }
+
+  /* Listener DELEGADO: bind() enganchaba los botones existentes al cargar,
+     pero con el carrito vacio no hay ninguno; los que nacen despues quedaban
+     muertos y el "+"/"-" no hacia nada. Delegando en 'inner' el enlace
+     sobrevive a cada redibujado. */
+  inner.addEventListener('click', function(ev){
+    var del = ev.target.closest('[data-remove]');
+    if (del && inner.contains(del)) {
+      ev.preventDefault();
+      var it = del.closest('.cd-item');
+      if (it) it.classList.add('saliendo');
+      setTimeout(function(){ cambiar(parseInt(del.dataset.remove,10),0); },180);
+      return;
+    }
+    var b = ev.target.closest('[data-qty]');
+    if (!b || !inner.contains(b)) return;
+    ev.preventDefault();
+    var it = b.closest('.cd-item');
+    if (!it) return;
+    var campo = it.querySelector('[data-qty-val]');
+    var val = campo ? (parseInt(campo.textContent,10)||1) : 1;
+    var nueva = b.dataset.qty === 'inc' ? val + 1 : val - 1;
+    var linea = parseInt(b.dataset.line,10);
+    if (nueva < 1) {
+      it.classList.add('saliendo');
+      setTimeout(function(){ cambiar(linea,0); },180);
+      return;
+    }
+    cambiar(linea, nueva);
+  });
+
+  function bind(){ /* conservada por compatibilidad: ya no engancha nada */ }
+  bind();
+  window.ekuCartRefresh=refresh;
+})();
+</script>
+
+
+</div>
+
+  <div class="toast" id="toast"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span>Producto agregado a tu solicitud</span></div>
+
+  <script>
+  /* Reveal on scroll */
+  (function(){
+    var els=[].slice.call(document.querySelectorAll('.reveal'));
+    if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in');});return;}
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    els.forEach(function(el){io.observe(el);});
+    requestAnimationFrame(function(){els.forEach(function(el){var r=el.getBoundingClientRect();if(r.top<(window.innerHeight||document.documentElement.clientHeight)){el.classList.add('in');io.unobserve(el);}});});
+    setTimeout(function(){els.forEach(function(el){el.classList.add('in');});},1400);
+  })();
+  /* Toast feedback (para quick-add AJAX opcional) */
+  function ekuToast(){var t=document.getElementById('toast');if(!t)return;t.classList.add('show');clearTimeout(window._tt);window._tt=setTimeout(function(){t.classList.remove('show');},1800);}
+  </script>
+
+  <script>
+  /* === Carrito AJAX + diferenciadores visuales de botones (spec Manolo §9.bis) === */
+  (function(){
+    var CHK='<span class="chk"><svg viewBox="0 0 24 24"><path d="M4 12.5l5.2 5.2L20 7"/></svg>Agregado</span>';
+    function toast(msg){
+      var t=document.getElementById('toast'); if(!t) return;
+      var s=t.querySelector('span'); if(s&&msg) s.textContent=msg;
+      t.classList.add('show'); clearTimeout(window._tt);
+      window._tt=setTimeout(function(){t.classList.remove('show');},2200);
+    }
+    function ripple(btn,e){
+      try{
+        var r=btn.getBoundingClientRect(), d=Math.max(r.width,r.height);
+        var s=document.createElement('span'); s.className='rip';
+        s.style.width=s.style.height=d+'px';
+        s.style.left=((e.clientX||r.left+r.width/2)-r.left-d/2)+'px';
+        s.style.top=((e.clientY||r.top+r.height/2)-r.top-d/2)+'px';
+        btn.appendChild(s); setTimeout(function(){s.remove();},640);
+      }catch(_){}
+    }
+    function barra(){
+      var b=document.createElement('div'); b.className='navbar-load';
+      document.body.appendChild(b); setTimeout(function(){b.remove();},900);
+    }
+    var ICO={ok:'<svg viewBox="0 0 24 24"><path d="M4 12.5l5.2 5.2L20 7"/></svg>',
+              no:'<svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>'};
+    /* Burbuja montada en <body> con position:fixed:
+       dentro de la tarjeta la recortaba .card{overflow:hidden} */
+    function burbuja(el,txt,tipo){
+      try{
+        var s=document.createElement('span');
+        s.className='pill-fb '+(tipo||'ok');
+        s.innerHTML='<span class="fb-ico">'+(ICO[tipo]||ICO.ok)+'</span>'+txt;
+        var r=el.getBoundingClientRect();
+        s.style.left=(r.left+r.width/2)+'px';
+        s.style.top=(r.top-6)+'px';
+        document.body.appendChild(s);
+        requestAnimationFrame(function(){
+          /* si no cabe arriba, se muestra debajo */
+          if(r.top-46 < 8){ s.classList.add('below'); s.style.top=(r.bottom+6)+'px'; }
+        });
+        setTimeout(function(){s.remove();},2150);
+      }catch(_){}
+    }
+    /* Chispas que salen del corazón al marcarlo */
+    function chispas(el){
+      try{
+        var r=el.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+        for(var i=0;i<9;i++){
+          var a=(Math.PI*2/9)*i, d=26+Math.random()*16;
+          var s=document.createElement('span'); s.className='spark';
+          s.style.left=cx+'px'; s.style.top=cy+'px';
+          s.style.setProperty('--sx',(Math.cos(a)*d)+'px');
+          s.style.setProperty('--sy',(Math.sin(a)*d)+'px');
+          document.body.appendChild(s);
+          setTimeout((function(n){return function(){n.remove();};})(s),640);
+        }
+      }catch(_){}
+    }
+    /* Destello del propio botón: se ve sobre cualquier fondo */
+    function destello(el){
+      el.classList.remove('tapfx'); void el.offsetWidth; el.classList.add('tapfx');
+      setTimeout(function(){el.classList.remove('tapfx');},580);
+    }
+    function volar(form){
+      try{
+        var card=form.closest('.card')||form.closest('.pdp');
+        var img=card&&card.querySelector('img'); if(!img) return;
+        var dest=document.querySelector('.cart')||document.querySelector('.cart-tab'); if(!dest) return;
+        var a=img.getBoundingClientRect(), b=dest.getBoundingClientRect();
+        var f=img.cloneNode(true); f.className='fly';
+        f.style.left=a.left+'px'; f.style.top=a.top+'px';
+        document.body.appendChild(f);
+        f.animate([{transform:'translate(0,0) scale(1)',opacity:1},
+                   {transform:'translate('+((b.left-a.left)*.5)+'px,'+((b.top-a.top)*.5-90)+'px) scale(.7)',opacity:.9},
+                   {transform:'translate('+(b.left-a.left)+'px,'+(b.top-a.top)+'px) scale(.18)',opacity:0}],
+                  {duration:780,easing:'cubic-bezier(.22,.61,.36,1)'});
+        setTimeout(function(){f.remove();},800);
+      }catch(_){}
+    }
+
+    /* ---- AGREGAR A LA SOLICITUD: 3 estados ---- */
+    document.addEventListener('submit',function(e){
+      var f=e.target;
+      if(!f || !f.matches('form[data-ajax-cart], form[action*="/cart/add"]')) return;
+      e.preventDefault();
+      var btn=f.querySelector('[type=submit]');
+      /* Pitfall #3: evita que doble clic sume varias unidades */
+      if(btn && (btn.classList.contains('loading')||btn.classList.contains('added'))) return;
+      var txt=btn?btn.innerHTML:'';
+      if(btn){ btn.classList.add('loading'); }
+      fetch('/cart/add.js',{method:'POST',
+        headers:{'Accept':'application/json','X-Requested-With':'XMLHttpRequest'},
+        body:new FormData(f)})
+      .then(function(r){ return r.json().then(function(j){ return {ok:r.ok,j:j}; }); })
+      .then(function(res){
+        if(btn) btn.classList.remove('loading');
+        if(!res.ok){ if(btn) btn.innerHTML=txt; toast(res.j.description||'No se pudo agregar'); return; }
+        if(btn){ btn.innerHTML=CHK; btn.classList.add('added');
+          setTimeout(function(){ btn.classList.remove('added'); btn.innerHTML=txt; },1800); }
+        volar(f); toast('Producto agregado a tu solicitud');
+        /* El contador se actualiza SIEMPRE, haya drawer o no: antes dependia
+           de ekuCartRefresh, que solo existe si el drawer esta en la pagina. */
+        if(res.j && typeof res.j.item_count!=='undefined'){
+          document.dispatchEvent(new CustomEvent('eku:cart-updated',
+                                                 {detail:{item_count:res.j.item_count}}));
+        }else{
+          document.dispatchEvent(new CustomEvent('eku:cart-updated'));
+        }
+        if(typeof window.ekuCartRefresh==='function'){ window.ekuCartRefresh(); }
+      })
+      .catch(function(){ if(btn){btn.classList.remove('loading'); btn.innerHTML=txt;} toast('Error de conexión'); });
+    },true);
+
+    /* ---- Resto de diferenciadores (un solo handler delegado: evita duplicados) ---- */
+    document.addEventListener('click',function(e){
+      var el;
+      /* ripple en botones sólidos */
+      if((el=e.target.closest('.qadd,.btn-p,.cd-btn,.cp-btn,.btn-cart,.qview,.add,.megalink,.ctbtn,.ctmap,.cd-verfull'))){ ripple(el,e); destello(el); }
+      /* FAVORITO: late, se llena y confirma */
+      if((el=e.target.closest('.fav'))){
+        e.preventDefault();
+        var on;
+        if(window.ekuFav && el.dataset.handle){
+          on=window.ekuFav.alternar({handle:el.dataset.handle,titulo:el.dataset.titulo,
+              precio:el.dataset.precio,img:el.dataset.img,url:el.dataset.url});
+        } else { on=!el.classList.contains('on'); }
+        el.classList.toggle('on',on);
+        el.classList.remove('beat'); void el.offsetWidth; el.classList.add('beat');
+        el.setAttribute('aria-pressed',on?'true':'false');
+        el.setAttribute('aria-label',on?'Quitar de favoritos':'Guardar en favoritos');
+        destello(el);
+        if(on) chispas(el);
+        burbuja(el,on?'Guardado en favoritos':'Quitado de favoritos',on?'ok':'no');
+        return;
+      }
+      /* NAVEGAR */
+      if((el=e.target.closest('.catA,.mmcta,.verlink,.qview,.add,.megalink'))){
+        (function(n){
+          n.classList.add('going'); destello(n); barra();
+          setTimeout(function(){ n.classList.remove('going'); },900);
+        })(el);
+      }
+      /* WHATSAPP */
+      if((el=e.target.closest('.btn-wa,.wafloat,.ctwa2,.cp-wa,.ctwa'))){
+        (function(n){
+          n.classList.add('calling'); destello(n);
+          try{ if(getComputedStyle(n).position==='static') n.style.position='relative';
+            var ring=document.createElement('span'); ring.className='wa-ring';
+            n.appendChild(ring); setTimeout(function(){ring.remove();},820); }catch(_){}
+          setTimeout(function(){ n.classList.remove('calling'); },720);
+        })(el);
+      }
+      /* ABRIR (carrito / buscar) */
+      if((el=e.target.closest('.cart-tab,.cart,.search button'))){
+        (function(n){
+          n.classList.add('tapped'); destello(n);
+          setTimeout(function(){ n.classList.remove('tapped'); },440);
+        })(el);
+      }
+      /* ELIMINAR */
+      if((el=e.target.closest('.cd-del,.cp-del'))) el.classList.add('removing');
+    },true);
+  })();
+
+    /* ---- Contadores de oferta (un solo intervalo para todos) ---- */
+    (function(){
+      function dos(n){ return n<10 ? '0'+n : ''+n; }
+      function tick(){
+        var els=document.querySelectorAll('.ofc[data-oferta-fin]');
+        if(!els.length) return;
+        var ahora=Date.now();
+        els.forEach(function(c){
+          var fin=parseInt(c.dataset.ofertaFin,10), r=fin-ahora;
+          if(isNaN(fin)) return;
+          if(r<=0){
+            if(!c.classList.contains('terminada')){
+              c.classList.add('terminada'); c.classList.remove('urge');
+              var f=c.querySelector('.ofc-fin'); if(f) f.hidden=false;
+            }
+            return;
+          }
+          var s=Math.floor(r/1000), d=Math.floor(s/86400),
+              h=Math.floor(s%86400/3600), m=Math.floor(s%3600/60), sg=s%60;
+          var q=function(k){return c.querySelector('.ofc-'+k+' b');};
+          if(q('d')) q('d').textContent=dos(d);
+          if(q('h')) q('h').textContent=dos(h);
+          if(q('m')) q('m').textContent=dos(m);
+          if(q('s')) q('s').textContent=dos(sg);
+          /* última hora: urgencia */
+          c.classList.toggle('urge', r < 3600000);
+        });
+      }
+      tick();
+      setInterval(tick,1000);
+      document.addEventListener('DOMContentLoaded',tick);
+    })();
+
+    /* Sincroniza los contadores de la barra móvil */
+    (function(){
+      function pinta(n){
+        /* El badge del menu se dibuja con Liquid y no lleva data-cart-count:
+           sin esto quedaba con el numero viejo hasta recargar la pagina. */
+        var hb = document.getElementById('cartBadge');
+        var objetivos = [].slice.call(document.querySelectorAll('[data-cart-count]'));
+        if (hb) objetivos.push(hb);
+        objetivos.forEach(function(e){
+          if (e === hb) e.hidden = !(n > 0);   // el badge se esconde en cero
+          var antes = e.textContent.trim();
+          /* en cero no se pinta nada: un globo rojo con "0" avisa de nada
+             y el menu ya esconde el suyo */
+          e.textContent = n > 0 ? n : '';
+          e.classList.toggle('hay', n>0);
+          /* El contador late solo cuando el numero CAMBIA de verdad: repintar
+             el mismo valor no es novedad y animarlo distrae. */
+          if (String(n) !== antes) {
+            e.classList.remove('pop');
+            void e.offsetWidth;              // reinicia la animacion
+            e.classList.add('pop');
+            setTimeout(function(){ e.classList.remove('pop'); }, 460);
+          }
+        });
+      }
+      /* PUNTO UNICO de actualizacion de contadores. El drawer tenia su
+         propia escritura (refresh()) que se saltaba las reglas de aqui:
+         dejaba un "0" pegado al vaciar y el badge del menu con el numero
+         correcto pero hidden=true (invisible). Se expone para que TODO
+         el tema pinte por la misma via. */
+      window.ekuPintaCarrito = pinta;
+
+      document.addEventListener('eku:cart-updated',function(ev){
+        if(ev.detail && typeof ev.detail.item_count!=='undefined'){
+          pinta(ev.detail.item_count);
+        }else{
+          /* sin detalle: consultar el carrito real en vez de no hacer nada */
+          fetch('/cart.js',{headers:{'Accept':'application/json'}})
+            .then(function(r){return r.json();})
+            .then(function(c){ pinta(c.item_count); })
+            .catch(function(){});
+        }
+      });
+      document.addEventListener('DOMContentLoaded',function(){
+        if(window.ekuFav){
+          var n=window.ekuFav.contar();
+          document.querySelectorAll('.mbar [data-fav-count]').forEach(function(e){
+            e.textContent=n>0?n:''; e.classList.toggle('hay',n>0);
+          });
+        }
+      });
+    })();
+  </script>
+
+<script>
+/* selector de cantidad en fichas (Manolo 2026-08-27) */
+(function(){
+  function clamp(v){ v=parseInt(v,10); if(isNaN(v)||v<1) v=1; if(v>99) v=99; return v; }
+  function pintar(box){
+    var inp=box.querySelector('input'), menos=box.querySelector('[data-q="-"]');
+    if(menos) menos.disabled = clamp(inp.value)<=1;
+  }
+  /* Un SOLO listener en captura: ajusta la cantidad y frena el enlace de la tarjeta.
+     (Antes habia dos: el de captura cortaba la propagacion y el otro nunca corria.) */
+  document.addEventListener('click',function(ev){
+    var t=ev.target;
+    var b=t.closest ? t.closest('[data-q]') : null;
+    if(b){
+      ev.preventDefault(); ev.stopPropagation();
+      var box=b.closest('[data-qty]'); if(!box) return;
+      var inp=box.querySelector('input');
+      inp.value = clamp(clamp(inp.value) + (b.getAttribute('data-q')==='+' ? 1 : -1));
+      pintar(box);
+      return;
+    }
+    /* tocar el campo de cantidad no debe navegar a la ficha.
+       OJO: solo aplica a las fichas de producto. En el panel del carrito
+       [data-qty] son los botones +/- y cortar aqui su propagacion los
+       dejaba muertos (el clic nunca llegaba al panel). */
+    if(t.closest && t.closest('[data-qty]') && !t.closest('[data-cart-inner]')){
+      ev.stopPropagation();
+    }
+  }, true);
+  document.addEventListener('change',function(ev){
+    var inp=ev.target.closest && ev.target.closest('[data-qty] input');
+    if(!inp) return;
+    inp.value=clamp(inp.value); pintar(inp.closest('[data-qty]'));
+  });
+  function init(){ document.querySelectorAll('[data-qty]').forEach(pintar); }
+  if(document.readyState!=='loading') init(); else document.addEventListener('DOMContentLoaded',init);
+})();
+</script>
+
+<div class="pf-capa" data-pf-capa hidden>
+  <div class="pf-caja" role="dialog" aria-modal="true" aria-labelledby="pf-tit">
+    <button class="pf-x" data-pf-cerrar aria-label="Cerrar">&times;</button>
+
+    <div class="pf-cab">
+      <h2 id="pf-tit">Solicitar proforma</h2>
+      <p>Un asesor revisa tu solicitud, confirma disponibilidad y el costo del
+         envío, y te contacta para cerrar la compra. No se cobra nada en este
+         paso.</p>
+    </div>
+
+    <div class="pf-resumen" data-pf-resumen>
+      <div class="pf-cargando">Cargando tu lista…</div>
+    </div>
+
+    <form class="pf-form" data-pf-form novalidate>
+      <div class="pf-grid">
+        <label class="pf-campo">
+          <span>Nombre completo <i class="pf-req">*</i></span>
+          <input type="text" name="nombre" required autocomplete="name"
+                 value="">
+        </label>
+        <label class="pf-campo">
+          <span>Cédula o RUC <i class="pf-req">*</i></span>
+          <input type="text" name="identificacion" required inputmode="numeric">
+        </label>
+        <label class="pf-campo">
+          <span>Teléfono / WhatsApp <i class="pf-req">*</i></span>
+          <input type="tel" name="telefono" required autocomplete="tel"
+                 value="">
+        </label>
+        <label class="pf-campo">
+          <span>Correo electrónico <i class="pf-req">*</i></span>
+          <input type="email" name="correo" required autocomplete="email"
+                 value="">
+        </label>
+        <label class="pf-campo">
+          <span>Ciudad <i class="pf-req">*</i></span>
+          <input type="text" name="ciudad" required autocomplete="address-level2">
+        </label>
+      </div><fieldset class="pf-entrega">
+        <legend>¿Cómo quieres recibirlo? <i class="pf-req">*</i></legend>
+        <label class="pf-op">
+          <input type="radio" name="entrega" value="Envío a domicilio" required checked>
+          <span><b>Envío a domicilio</b>
+            <small>El costo del envío se cobra aparte y tu asesor te lo confirma
+                   en la proforma, según la ciudad y el tamaño del pedido.</small></span>
+        </label>
+        <label class="pf-op">
+          <input type="radio" name="entrega" value="Retiro en oficina">
+          <span><b>Retiro en nuestras oficinas</b>
+            <small>Sin costo de envío. Tu asesor te indica la dirección y el
+                   horario.</small></span>
+        </label>
+      </fieldset>
+
+      <label class="pf-campo pf-ancho">
+        <span>Razón social <small>(solo si factura a empresa)</small></span>
+        <input type="text" name="razon_social" autocomplete="organization">
+      </label>
+
+      <label class="pf-campo pf-ancho">
+        <span>Comentario para tu asesor <small>(opcional)</small></span>
+        <textarea name="comentario" rows="2"
+                  placeholder="Cantidades, plazos, alguna duda…"></textarea>
+      </label>
+
+      <p class="pf-err" data-pf-err hidden></p>
+
+      <button type="submit" class="pf-enviar" data-pf-enviar>
+        Enviar solicitud al asesor
+      </button>
+      <p class="pf-pie">Al enviar se abre WhatsApp con tu asesor y nos llega una
+         copia por correo. Los precios de la web son de referencia: el valor
+         final, el envío y la disponibilidad se confirman en la proforma.</p>
+    </form><form method="post" action="/contact#pf" id="pf-correo" class="pf-oculto"
+          accept-charset="UTF-8" hidden>
+      <input type="hidden" name="form_type" value="contact">
+      <input type="hidden" name="utf8" value="✓">
+      <input type="hidden" name="contact[nombre]" data-c="nombre">
+      <input type="hidden" name="contact[email]" data-c="correo">
+      <input type="hidden" name="contact[telefono]" data-c="telefono">
+      <input type="hidden" name="contact[identificacion]" data-c="identificacion">
+      <input type="hidden" name="contact[razon_social]" data-c="razon_social">
+      <input type="hidden" name="contact[ciudad]" data-c="ciudad">
+      <input type="hidden" name="contact[entrega]" data-c="entrega">
+      <input type="hidden" name="contact[body]" data-c="cuerpo">
+    </form>
+  </div>
+</div>
+
+<style>
+.pf-capa{position:fixed;inset:0;z-index:9999;background:rgba(14,30,36,.62);
+  display:flex;align-items:center;justify-content:center;padding:16px;
+  overflow-y:auto}
+.pf-capa[hidden]{display:none}
+.pf-caja{background:#fff;border-radius:4px;max-width:680px;width:100%;
+  position:relative;box-shadow:0 18px 60px rgba(0,0,0,.3);
+  max-height:94vh;overflow-y:auto;padding:22px 24px 24px}
+.pf-x{position:absolute;top:8px;right:10px;background:none;border:0;
+  font-size:26px;line-height:1;cursor:pointer;color:#6B7A7D;padding:4px 8px}
+.pf-cab h2{margin:0 0 6px;font-size:21px;color:#0E6E75;letter-spacing:-.2px}
+.pf-cab p{margin:0 0 14px;font-size:13px;color:#56666A;line-height:1.45}
+.pf-resumen{background:#F2F7F8;border:1px solid #DCE8EA;border-radius:4px;
+  padding:10px 12px;margin-bottom:14px;font-size:13px}
+.pf-cargando{color:#6B7A7D}
+.pf-lin{display:flex;justify-content:space-between;gap:10px;padding:3px 0}
+.pf-lin span{color:#2B3A3D}
+.pf-lin b{white-space:nowrap}
+.pf-ref{border-top:1px solid #DCE8EA;margin-top:7px;padding-top:7px;
+  display:flex;justify-content:space-between;font-weight:700;color:#0E6E75}
+.pf-nota-ref{font-size:11.5px;color:#6B7A7D;margin-top:4px;line-height:1.4}
+.pf-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px 12px}
+.pf-campo{display:flex;flex-direction:column;gap:4px;font-size:12.5px}
+.pf-campo.pf-ancho{grid-column:1/-1;margin-top:10px}
+.pf-campo>span{color:#2B3A3D;font-weight:600}
+.pf-campo small{font-weight:400;color:#7A8A8D}
+.pf-req{color:#C8433B;font-style:normal;font-weight:700}
+.pf-campo input,.pf-campo textarea{border:1px solid #CBD9DC;border-radius:3px;
+  padding:8px 9px;font:inherit;font-size:13px;color:#1D1D1B;background:#fff}
+.pf-campo input:focus,.pf-campo textarea:focus{outline:0;border-color:#10ACBA;
+  box-shadow:0 0 0 3px rgba(16,172,186,.15)}
+.pf-campo input[aria-invalid="true"]{border-color:#C8433B;background:#FDF4F3}
+.pf-entrega{border:1px solid #DCE8EA;border-radius:4px;padding:10px 12px;
+  margin:14px 0 0}
+.pf-entrega legend{font-size:12.5px;font-weight:600;color:#2B3A3D;padding:0 5px}
+.pf-op{display:flex;gap:9px;align-items:flex-start;padding:6px 0;cursor:pointer}
+.pf-op input{margin-top:3px;accent-color:#10ACBA}
+.pf-op b{display:block;font-size:13px;color:#1D1D1B}
+.pf-op small{display:block;font-size:11.5px;color:#6B7A7D;line-height:1.4}
+.pf-err{background:#FDF4F3;border:1px solid #F0C9C6;color:#9E342D;
+  border-radius:3px;padding:8px 10px;font-size:12.5px;margin:12px 0 0}
+.pf-enviar{width:100%;margin-top:14px;background:#10ACBA;color:#fff;border:0;
+  border-radius:3px;padding:13px;font:inherit;font-size:15px;font-weight:700;
+  cursor:pointer;letter-spacing:.2px}
+.pf-enviar:hover{background:#0E9AA7}
+.pf-enviar[disabled]{opacity:.6;cursor:default}
+/* En movil el formulario es mas alto que la pantalla y el boton de enviar
+   quedaba fuera de vista: el usuario no veia como enviar. Se fija al pie de
+   la caja, siempre visible. Ojo: un boton fijo TAPA lo que queda debajo, asi
+   que el formulario necesita espacio al pie o se come el ultimo campo. */
+@media(max-width:620px){
+  .pf-form{padding-bottom:4px}
+  .pf-enviar{position:sticky;bottom:0;margin-top:16px;
+    box-shadow:0 -10px 18px rgba(255,255,255,.95)}
+  /* env(safe-area-inset-bottom): en iPhone la barra de gestos se come el
+     borde inferior y se tragaria parte del boton. */
+  .pf-caja{padding-bottom:calc(18px + env(safe-area-inset-bottom, 0px))}
+  /* Menos de 16px hace que iOS acerque la pantalla sola al tocar un campo. */
+  .pf-campo input,.pf-campo textarea{font-size:16px}
+}
+.pf-pie{font-size:11.5px;color:#6B7A7D;line-height:1.45;margin:10px 0 0}
+.pf-oculto{display:none}
+.pf-ok{text-align:center;padding:14px 4px}
+.pf-ok h3{color:#0E6E75;margin:0 0 8px;font-size:19px}
+.pf-ok p{font-size:13.5px;color:#46565A;line-height:1.5;margin:0 0 6px}
+@media(max-width:620px){.pf-grid{grid-template-columns:1fr}
+  .pf-caja{padding:18px 16px 20px}}
+</style>
+
+<script>
+(function(){
+  var capa = document.querySelector('[data-pf-capa]');
+  if(!capa) return;
+  var form = capa.querySelector('[data-pf-form]');
+  var resumen = capa.querySelector('[data-pf-resumen]');
+  var errBox = capa.querySelector('[data-pf-err]');
+  var fCorreo = document.getElementById('pf-correo');
+  var WA = '593939482839';
+  var carrito = null;
+
+  function dinero(c){
+    /* El tema muestra los precios con PUNTO ($90.37). Forzar la coma aqui
+       hacia que el mismo importe se viera distinto en la pagina y en el
+       formulario. Se respeta el formato del tema. */
+    return '$' + (c/100).toFixed(2);
+  }
+
+  /* El carrito se repinta por Ajax, asi que NO se engancha por querySelector
+     al cargar: se delega en document filtrando por [data-proforma]. */
+  document.addEventListener('click', function(ev){
+    var b = ev.target.closest && ev.target.closest('[data-proforma]');
+    if(b){ ev.preventDefault(); abrir(); return; }
+    if(ev.target.closest && ev.target.closest('[data-pf-cerrar]')){ cerrar(); return; }
+    if(ev.target === capa){ cerrar(); }
+  });
+  document.addEventListener('keydown', function(ev){
+    if(ev.key === 'Escape' && !capa.hidden) cerrar();
+  });
+
+  function abrir(){
+    capa.hidden = false;
+    document.body.style.overflow = 'hidden';
+    cargarResumen();
+    var p = form.querySelector('input[name="nombre"]');
+    if(p) setTimeout(function(){ p.focus(); }, 60);
+  }
+  function cerrar(){
+    capa.hidden = true;
+    document.body.style.overflow = '';
+  }
+
+  function cargarResumen(){
+    resumen.innerHTML = '<div class="pf-cargando">Cargando tu lista…</div>';
+    fetch('/cart.js', {headers:{'Accept':'application/json'}})
+      .then(function(r){ return r.text(); })
+      .then(function(t){
+        /* Shopify puede devolver una pagina HTML de verificacion (429):
+           un .json() directo revienta con "Unexpected token '<'". */
+        if(t.charAt(0) === '<') throw new Error('respuesta no JSON');
+        carrito = JSON.parse(t);
+        if(!carrito.items || !carrito.items.length){
+          resumen.innerHTML = '<div class="pf-cargando">Tu lista está vacía. '
+            + 'Agrega productos y vuelve a solicitar tu proforma.</div>';
+          return;
+        }
+        var h = '';
+        carrito.items.forEach(function(it){
+          h += '<div class="pf-lin"><span>' + it.quantity + ' × '
+            + (it.product_title || it.title) + '</span><b>'
+            + dinero(it.line_price) + '</b></div>';
+        });
+        h += '<div class="pf-ref"><span>Total de referencia</span><span>'
+          + dinero(carrito.total_price) + '</span></div>'
+          + '<div class="pf-nota-ref">Valor de referencia con IVA incluido. '
+          + 'No incluye el envío, que se cobra aparte y lo confirma tu asesor.</div>';
+        resumen.innerHTML = h;
+      })
+      .catch(function(){
+        resumen.innerHTML = '<div class="pf-cargando">No pudimos cargar tu '
+          + 'lista, pero puedes enviar la solicitud y tu asesor la revisa.</div>';
+      });
+  }
+
+  function texto(){
+    var d = {};
+    ['nombre','identificacion','telefono','correo','ciudad','razon_social',
+     'comentario'].forEach(function(n){
+      var e = form.querySelector('[name="' + n + '"]');
+      d[n] = e ? e.value.trim() : '';
+    });
+    var ent = form.querySelector('[name="entrega"]:checked');
+    d.entrega = ent ? ent.value : '';
+    var l = ['*SOLICITUD DE PROFORMA — Ekustore*', ''];
+    l.push('Nombre: ' + d.nombre);
+    l.push('Cédula/RUC: ' + d.identificacion);
+    if(d.razon_social) l.push('Razón social: ' + d.razon_social);
+    l.push('Teléfono: ' + d.telefono);
+    l.push('Correo: ' + d.correo);
+    l.push('Ciudad: ' + d.ciudad);
+    l.push('Entrega: ' + d.entrega);
+    l.push('');
+    l.push('*Productos:*');
+    if(carrito && carrito.items){
+      carrito.items.forEach(function(it){
+        l.push('• ' + it.quantity + ' × ' + (it.product_title || it.title)
+          + ' — ' + dinero(it.line_price));
+      });
+      l.push('Total de referencia: ' + dinero(carrito.total_price)
+        + ' (sin envío)');
+    }
+    if(d.comentario){ l.push(''); l.push('Comentario: ' + d.comentario); }
+    return {datos:d, cuerpo:l.join('\n')};
+  }
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    errBox.hidden = true;
+    var faltan = [];
+    form.querySelectorAll('[required]').forEach(function(e){
+      var vacio = (e.type === 'radio')
+        ? !form.querySelector('[name="' + e.name + '"]:checked')
+        : !e.value.trim();
+      if(vacio){
+        faltan.push(e);
+        e.setAttribute('aria-invalid', 'true');
+      } else {
+        e.removeAttribute('aria-invalid');
+      }
+    });
+    if(faltan.length){
+      errBox.textContent = 'Falta llenar los campos marcados con asterisco '
+        + 'rojo (*).';
+      errBox.hidden = false;
+      /* Llevar la vista al campo: en movil el error puede quedar fuera de
+         pantalla y el usuario no entiende por que no se envia. */
+      if(faltan[0].scrollIntoView){
+        faltan[0].scrollIntoView({block:'center', behavior:'smooth'});
+      }
+      faltan[0].focus();
+      return;
+    }
+    var t = texto();
+    var btn = form.querySelector('[data-pf-enviar]');
+    btn.disabled = true;
+    btn.textContent = 'Enviando…';
+
+    /* WhatsApp PRIMERO: el envio del formulario navega fuera de la pagina y
+       si va antes, el window.open no llega a ejecutarse. */
+    if(WA){
+      window.open('https://wa.me/' + WA + '?text='
+        + encodeURIComponent(t.cuerpo), '_blank');
+    }
+    fCorreo.querySelectorAll('[data-c]').forEach(function(e){
+      var k = e.getAttribute('data-c');
+      e.value = (k === 'cuerpo') ? t.cuerpo : (t.datos[k] || '—');
+    });
+    capa.querySelector('.pf-caja').innerHTML =
+      '<div class="pf-ok"><h3>Solicitud enviada</h3>'
+      + '<p>Un asesor de Ekustore revisa tu lista, confirma la '
+      + 'disponibilidad y el costo del envío, y te contacta.</p>'
+      + '<p>Si no se abrió WhatsApp, escríbenos al '
+      + '<b>' + WA + '</b>.</p></div>';
+    setTimeout(function(){
+      HTMLFormElement.prototype.submit.call(fCorreo);
+    }, 400);
+  });
+})();
+</script>
+
+<script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
+</body>
+</html>

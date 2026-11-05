@@ -1,0 +1,451 @@
+[
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "China",
+    "prioridad": 1,
+    "tienda": "Alibaba",
+    "dominio": "alibaba.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V alibaba.com",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "China",
+    "prioridad": 1,
+    "tienda": "AliExpress",
+    "dominio": "aliexpress.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V aliexpress.com",
+    "resultados": [
+      {
+        "title": "360W UPS 12V 30A Switching Power Supply - AliExpress",
+        "content": "360W UPS power supply with 12V 30A output, 350W battery charger, 13.8V backup, CE certified, 1-year warranty, for lead acid or lithium batteries.",
+        "url": "https://www.aliexpress.com/item/32930632577.html",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 1.0,
+        "puntaje_bm25": 1.72609,
+        "posicion_region": 1
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Estados Unidos",
+    "prioridad": 2,
+    "tienda": "Amazon",
+    "dominio": "amazon.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V amazon.com",
+    "resultados": [
+      {
+        "title": "APC SMART-UPS 750VA LCD 120V, EE. UU - amazon.com",
+        "content": "Este APC Smart-UPS está diseñado para profesionales de TI o administradores de red para mantener el tiempo de actividad y la continuidad del negocio. El UPS de torre interactiva de línea de 750 VA proporciona potencia de onda sinusoidal pura para admitir la electrónica crítica durante interrupciones de energía.",
+        "url": "https://www.amazon.com/-/es/APC-SMART-UPS-750VA-LCD-120V/dp/B0B3F42VG4",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 1.0,
+        "puntaje_bm25": 2.03007,
+        "posicion_region": 2
+      },
+      {
+        "title": "Soporte de ahorro de energía de 750VA UPS - Amazon.com",
+        "content": "Descripción del producto Tripplite Eco750Ups - Soporte de ahorro de energía Us750Va 120V Informar de un problema con este producto o vendedor",
+        "url": "https://www.amazon.com/-/es/Soporte-ahorro-energ%C3%ADa-750VA-UPS/dp/B00DG4DZ6S",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.5,
+        "puntaje_bm25": 1.08986,
+        "posicion_region": 3
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Estados Unidos",
+    "prioridad": 2,
+    "tienda": "eBay",
+    "dominio": "ebay.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V ebay.com",
+    "resultados": [
+      {
+        "title": "APC UPS: 750VA 120V SUA750 for sale online | eBay",
+        "content": "Find many great new & used options and get the best deals for APC UPS: 750VA 120V SUA750 at the best online prices at eBay! Free shipping for many products!",
+        "url": "https://www.ebay.com/p/129656926",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 1.0,
+        "puntaje_bm25": 3.56153,
+        "posicion_region": 1
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Tecnit",
+    "dominio": "tecnit.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V tecnit.com.ec",
+    "resultados": [
+      {
+        "title": "UPS CON REGULADOR FORZA HT-750LCD DE 750VA 375W 12 ... - TECNIT",
+        "content": "El UPS Forza HT-750LCD combina respaldo de energía y regulación de voltaje para proteger tus equipos ante cortes y variaciones eléctricas. Cuenta con 750VA/375W, 12 tomas, puerto USB y protección para líneas RJ11 y coaxial, ideal para hogar y oficina.",
+        "url": "https://tecnit.com.ec/producto/ups-con-regulador-forza-ht-750lcd-de-750va-375w-12-tomas-usb-rj11-coaxial-120v/",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.5,
+        "puntaje_bm25": 3.51775,
+        "posicion_region": 4
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Tecnomega Store",
+    "dominio": "tecnomegastore.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V tecnomegastore.ec",
+    "resultados": [
+      {
+        "title": "Búsqueda de productos | ups - TecnoMega Store",
+        "content": "UPS APC BVG700-LM INTERACTIVOS 120V 4 TOMAS 700VA-360W Código: UPSAPCBVG700-LM Precio incluye iva $58.45 Comprar",
+        "url": "https://tecnomegastore.ec/searchi/1/ups",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.5,
+        "puntaje_bm25": 3.75056,
+        "posicion_region": 3
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Grupo Electrostore",
+    "dominio": "grupoelectrostore.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V grupoelectrostore.com",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Megatrónica",
+    "dominio": "megatronica.cc",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V megatronica.cc",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "MundoTek",
+    "dominio": "mundotek.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V mundotek.com.ec",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "EkuStore",
+    "dominio": "ekustore.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V ekustore.com",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "AV Electronics",
+    "dominio": "avelectronics.cc",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V avelectronics.cc",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Setcom",
+    "dominio": "setcom.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V setcom.com.ec",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Tecnosmart",
+    "dominio": "tecnosmart.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V tecnosmart.com.ec",
+    "resultados": [
+      {
+        "title": "UPS CDP R-UPR 758 al Mejor Precio | Tecnosmart",
+        "content": "Compra UPS CDP R-UPR 758 en Tecnosmart, tienda lider en hardware potente. Stock real, garantia oficial y envio a todo Ecuador. UPS CDP R-Upr758 750Va 375W In-Out 120V 60Hz",
+        "url": "https://www.tecnosmart.com.ec/producto/ups-cdp-r-upr758-750va-375w-in-out-120v-60hz/",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.3333333333333333,
+        "puntaje_bm25": 2.06753,
+        "posicion_region": 5
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Steren Ecuador",
+    "dominio": "steren.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V steren.com.ec",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Siglo 21",
+    "dominio": "siglo21.net",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V siglo21.net",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Computron",
+    "dominio": "computron.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V computron.com.ec",
+    "resultados": [
+      {
+        "title": "Ups Ez Power 750VA 375W 8 Tomas 120V Ezpower - COMPUTRON",
+        "content": "Ups Ez Power 750VA 375W 8 Tomas 120V Ezpower UPS Interactiva. Capacidad: 750VA/375W. Topología: Interactiva. Forma de onda: Onda senoidal simulada. Voltaje: 120VAC. Rango de voltaje 84~150 VAC.",
+        "url": "https://www.computron.com.ec/producto/ups-ez-power-750va-375w-8-tomas-120v/",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.5,
+        "puntaje_bm25": 6.36856,
+        "posicion_region": 1
+      },
+      {
+        "title": "Ups 750VA / 375W 6 Tomas RJ11 Forza - COMPUTRON",
+        "content": "Ups 750VA / 375W 6 Tomas RJ11 Forza Nivel de Protección 5. UPS Interactiva. Capacidad: 750VA/375W. Topología: Interactiva. Forma de onda: Onda senoidal simulada. Voltaje: 120V.",
+        "url": "https://www.computron.com.ec/producto/ups-forza-750va-120v-6-tomas-rj11-4/",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 1.0,
+        "puntaje_bm25": 3.98605,
+        "posicion_region": 2
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Tecnomade",
+    "dominio": "tecnomade.com.ec",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V tecnomade.com.ec",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "NoviComPu",
+    "dominio": "novicompu.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V novicompu.com",
+    "resultados": [
+      {
+        "title": "Novicompu",
+        "content": "Este modelo cuenta con una capacidad de 800VA/450W, ofreciendo un respaldo confiable en caso de cortes de energía. Su diseño metálico garantiza durabilidad y resistencia.",
+        "url": "https://www.novicompu.com/ups-800va-480w-metalico-/p",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 1.0,
+        "puntaje_bm25": 1.25182,
+        "posicion_region": 6
+      },
+      {
+        "title": "Novicompu",
+        "content": "Asegura la continuidad de tus dispositivos electrónicos con el UPS 800VA, ideal para proteger tu equipo de cortes de energía. Este modelo cuenta con una entrada y salida de 110-120 V, garantizando un rendimiento óptimo en condiciones de voltaje estándar.",
+        "url": "https://www.novicompu.com/ups-800va-/p",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.3333333333333333,
+        "puntaje_bm25": 0.18088,
+        "posicion_region": 7
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "ElectronicaJNC",
+    "dominio": "electronicajnc.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V electronicajnc.com",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  },
+  {
+    "numero_item": 1,
+    "nombre_item": "UPS respaldo eléctrico 750VA 360W 120V",
+    "mercado": "Nacionales",
+    "prioridad": 3,
+    "tienda": "Elelctrimundo",
+    "dominio": "electrimundodyd.com",
+    "consulta": "UPS respaldo eléctrico 750VA 360W 120V electrimundodyd.com",
+    "resultados": [],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  }
+]

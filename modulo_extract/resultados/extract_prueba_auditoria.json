@@ -1,0 +1,41 @@
+{
+  "estado_validacion": "revision_requerida",
+  "advertencias": [
+    "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+    "PRECIO_ALTERNATIVOS_REVISAR",
+    "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+    "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+  ],
+  "candidatos_localizados": {
+    "nombre": 5,
+    "precio": 3,
+    "disponibilidad": 1,
+    "descripcion": 4,
+    "especificaciones": 3
+  },
+  "candidatos_evaluados": 16,
+  "grupos": 12,
+  "grupos_seleccionados": {
+    "nombre": [
+      "G0001"
+    ],
+    "precio": [
+      "G0004"
+    ],
+    "disponibilidad": [
+      "G0006"
+    ],
+    "descripcion": [
+      "G0007"
+    ],
+    "especificaciones": [
+      "G0010"
+    ]
+  },
+  "fetch": {
+    "url_original": "https://www.raspipc.es/2042",
+    "url_final": "https://www.raspipc.es/2042",
+    "status_code": 200,
+    "tool": "httpx"
+  }
+}

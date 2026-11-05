@@ -1,0 +1,25 @@
+FROM ruby:3.3-slim
+
+# Dependencias necesarias
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    git ca-certificates build-essential && \
+    rm -rf /var/lib/apt/lists/*
+
+# Descargar WhatWeb 0.6.4 desde GitHub
+RUN git clone --depth 1 --branch v0.6.4 \
+    https://github.com/urbanadventurer/WhatWeb.git \
+    /opt/whatweb
+
+WORKDIR /opt/whatweb
+
+# Instalar dependencias Ruby
+RUN bundle config set --local without \
+    'development test mongo rchardet' && \
+    bundle install --jobs 2 --retry 3
+
+# Comprobar instalación durante la construcción
+RUN bundle exec ruby ./whatweb --version
+
+ENTRYPOINT ["bundle", "exec", "ruby", "./whatweb"]
+
