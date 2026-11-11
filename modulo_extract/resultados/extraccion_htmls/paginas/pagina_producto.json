@@ -1,0 +1,43 @@
+{
+  "archivo": "pagina_producto.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/pagina_producto.html",
+  "url": null,
+  "campos": {
+    "nombre": "ESP32 DevKit V1",
+    "precio": "5,90 €",
+    "disponibilidad": "disponible",
+    "descripcion": "La ESP32 DevKit V1 es la placa de desarrollo de referencia para quien empieza con el ESP32 y también para el maker que quiere una base fiable en producción. Este formato, conocido como NodeMCU ESP32 , integra en una sola placa el módulo WROOM-32, la conectividad WiFi y Bluetooth, el conversor USB a serie CP2102 y una doble hilera de 30 pines pensada para pinchar directamente en una protoboard. La versión que ofrecemos incorpora conector USB-C , más cómodo y reversible que el antiguo micro USB. Qué es la ESP32 DevKit V1 DevKit V1 es el nombre del formato de placa: una PCB de 30 pines con el módulo ESP32-WROOM-32 soldado, regulador de tensión a bordo, botones de EN (reset) y BOOT, y el chip CP2102 que gestiona la comunicación entre el ordenador y el microcontrolador por USB. Es la placa que la mayoría de tutoriales, cursos y librerías toman como referencia, así que casi cualquier ejemplo que encuentres funcionará sin adaptaciones. Se alimenta por el propio USB-C o por el pin VIN (5V), y ofrece salidas reguladas de 3.3V para tus sensores y módulos. Conectividad WiFi y Bluetooth para IoT El corazón de la placa es el módulo WROOM-32, con doble núcleo y radio WiFi 802.11 b/g/n más Bluetooth Classic y BLE. Esa combinación es lo que hace de esta placa la opción natural para el Internet de las Cosas: estaciones meteorológicas conectadas, domótica, paneles de control por app móvil, sensores que publican datos en la nube, mandos BLE o pasarelas entre dispositivos. Todo con un consumo contenido y modos de bajo consumo (deep sleep) para proyectos a batería. Pinout y pines GPIO La ESP32 DevKit V1 expone 30 pines repartidos en dos hileras. Además de alimentación (VIN, 3V3, GND), dispone de numerosos GPIO multifunción: entradas analógicas (ADC), salidas PWM, dos buses I2C, cuatro SPI, varios UART, pines táctiles capacitivos y salidas DAC. Conviene tener a mano el pinout de la placa, porque algunos pines tienen usos reservados durante el arranque. Con esta placa cubres desde un simple parpadeo de LED hasta control de motores, lectura de múltiples sensores o manejo de pantallas. Programación con el IDE de Arduino La placa es totalmente compatible con el entorno de Arduino : basta con instalar el soporte de placas ESP32 y seleccionar \"DevKit V1\". Gracias al chip CP2102, la subida de programas es directa por USB-C, normalmente sin pulsar botones manualmente. También es compatible con MicroPython, ESP-IDF y PlatformIO, de modo que la placa crece contigo a medida que tus proyectos se vuelven más ambiciosos. Datos técnicos ESP32 DevKit V1 Formato: DevKit V1 / NodeMCU ESP32, 30 pines Módulo: ESP32-WROOM-32 (doble núcleo Xtensa LX6 de 32 bits) Conector: USB-C Chip USB a serie: CP2102 Conectividad: WiFi 802.11 b/g/n + Bluetooth Classic y BLE Memoria: 448 KB ROM, 520 KB SRAM, flash SPI 4 MB Alimentación: USB-C 5V o pin VIN; salida regulada 3.3V ADC: SAR de 12 bits, hasta 18 canales DAC: 2 conversores de 8 bits Sensores táctiles capacitivos: 10 Buses: 2 x I2C, 4 x SPI, 2 x I2S, 3 x UART PWM: control de motores y hasta 16 canales LED Extras: sensor Hall, sensor de temperatura interno, CAN 2.0, Ethernet MAC Aplicaciones habituales Estaciones meteorológicas conectadas, domótica y control por app, robótica WiFi, registradores de datos en la nube, mandos y sensores Bluetooth de bajo consumo, paneles con pantalla, proyectos de aula y prototipos IoT. Si buscas una versión más pequeña para integrar en espacios reducidos, tienes la ESP32-S2 Mini ; y si quieres empezar con todo lo necesario, echa un vistazo al Kit IoT ESP32 .",
+    "especificaciones": "La\nESP32 DevKit V1\nes la placa de desarrollo\nNodeMCU ESP32\nmás popular para proyectos IoT: 30 pines, conector USB-C, WiFi y Bluetooth integrados. Monta el módulo WROOM-32 y el chip CP2102 para programación directa desde el IDE de Arduino sin drivers complicados. Alimentación por USB o pin VIN y doble hilera de pines lista para protoboard."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [],
+    "titulo_referencia": "ESP32 DevKit V1",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 18,
+      "especificaciones": 16
+    },
+    "candidatos_evaluados": 48,
+    "grupos": 36,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0007"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0024"
+      ]
+    }
+  }
+}

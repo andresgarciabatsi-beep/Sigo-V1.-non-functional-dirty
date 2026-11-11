@@ -1,0 +1,48 @@
+{
+  "archivo": "N047_robocraze.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N047_robocraze.html",
+  "url": null,
+  "campos": {
+    "nombre": "Waveshare RoArm-M1 5-DOF Robotic Arm Kit (ESP32) - Robocraze",
+    "precio": "36184",
+    "disponibilidad": "disponible",
+    "descripcion": "Description Waveshare 5-DOF High-Torque Serial Bus Servo Desktop Robotic Arm Kit based on ESP32 The Waveshare RoArm-M1 is a versatile 5-DOF robotic arm designed for makers, developers, and educators looking to explore robotics and automation. Powered by the ESP32 microcontroller, this robotic arm supports both Wi-Fi and Bluetooth connectivity, allowing for remote control and easy integration into IoT projects. With high-torque metal gear servos and a sturdy aluminum alloy frame, the RoArm-M1 offers precise and powerful movements for various applications, from educational demonstrations to practical robotics tasks. Features: High-Torque Serial Bus Servo Desktop Robotic Arm ESP32-based, capable of UART and Wi-Fi connection, provides a cross-platform web application with a variety of motion models. accommodates numerous host PCs High Strength X Light Weight Aluminum body, carbon fiber arm, and stainless-steel gripper. The Main Control Module for ESP32-WROOM-32 Multiple wireless communication methods are supported, including ESP-NOW, Bluetooth 4.2, and 2.4G Wi-Fi. Adaptable Control Techniques The servo torque lock can be turned on or off, and once it is off, an outside force can rotate the servo. Greater Flexibility in Motion Control with the Leading-Following Control Mode The Robot Arm May Cycle in Steps and Record its Present Position Multiple Host Computer Support A USB cable can be used to connect the robotic arm to a Raspberry Pi, Jetson Nano, PC, or other host computer. Completely Open-Source Other Features: RoArm-M1 is a serial robotic arm with 5-DOF in total, including the clamping freedom of the gripper Two control methods in demo: Angle control and Coordinate control Supports Leading-following mode based on ESP-NOW Supports motion recording and replaying control mode Based on ESP32, supports WIFI and UART communication, provides multiple motion model demos and cross-platform Web application Supports multiple host computers, provides ROS 2 demo and other rich learning resources",
+    "especificaciones": "Package includes:\n1x RoArm-M1 and package box\n1x OPTIONS 12V 5A power supply\nSpecifications:\nParameter\nSpecification\nDegrees of Freedom (DOF)\n5-DOF (Degrees of Freedom)\nController\nESP32 microcontroller with WiFi and Bluetooth support\nServos\n5x High-torque metal gear servos\nFrame Material\nAluminum alloy with sandblasted oxidation surface\nPower Supply\n7.4V to 12V DC (via power adapter or battery)\nControl Interface\nWiFi, Bluetooth, and Serial (UART)\nCommunication Protocol\nI2C for servo control, Serial for command input\nServo Voltage\n5V for each servo\nServo Torque\n2.5kg·cm (min) for each metal gear servo\nServo Speed\n0.1s/60° (at 5V)\nMounting Dimensions\n250mm x 200mm x 220mm (approx.)\nSoftware Support\nPython, Arduino, and ESP32 development tools\nDevelopment Resources\nIncludes example code and documentation (Python/Arduino)\nWeight\nApprox. 500g (without battery)\nOperating Temperature\n0°C to 50°C\nAdditional Features\nEasy assembly, expansion support for sensors and cameras\nSpecifications:\n\nDescription\nWaveshare 5-DOF High-Torque Serial Bus Servo Desktop Robotic Arm Kit based on ESP32\nThe Waveshare RoArm-M1 is a versatile 5-DOF robotic arm designed for makers, developers, and educators looking to explore robotics and automation. Powered by the ESP32 microcontroller, this robotic arm supports both Wi-Fi and Bluetooth connectivity, allowing for remote control and easy integration into IoT projects. With high-torque metal gear servos and a sturdy aluminum alloy frame, the RoArm-M1 offers precise and powerful movements for various applications, from educational demonstrations to practical robotics tasks.\nFeatures:\nHigh-Torque Serial Bus Servo Desktop Robotic Arm\nESP32-based, capable of UART and Wi-Fi connection, provides a cross-platform web application with a variety of motion models.\naccommodates numerous host PCs\nHigh Strength X Light Weight\nAluminum body, carbon fiber arm, and stainless-steel gripper.\nThe Main Control Module for ESP32-WROOM-32\nMultiple wireless communication methods are supported, including ESP-NOW, Bluetooth 4.2, and 2.4G Wi-Fi.\nAdaptable Control Techniques\nThe servo torque lock can be turned on or off, and once it is off, an outside force can rotate the servo.\nGreater Flexibility in Motion Control with the Leading-Following Control Mode\nThe Robot Arm May Cycle in Steps and Record its Present Position\nMultiple Host Computer Support\nA USB cable can be used to connect the robotic arm to a Raspberry Pi, Jetson Nano, PC, or other host computer.\nCompletely Open-Source\nOther Features:\nRoArm-M1 is a serial robotic arm with 5-DOF in total, including the clamping freedom of the gripper\nTwo control methods in demo: Angle control and Coordinate control\nSupports Leading-following mode based on ESP-NOW\nSupports motion recording and replaying control mode\nBased on ESP32, supports WIFI and UART communication, provides multiple motion model demos and cross-platform Web application\nSupports multiple host computers, provides ROS 2 demo and other rich learning resources"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Waveshare RoArm-M1 5-DOF Robotic Arm Kit (ESP32) - Robocraze",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 14,
+      "disponibilidad": 1,
+      "descripcion": 7,
+      "especificaciones": 6
+    },
+    "candidatos_evaluados": 35,
+    "grupos": 25,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0018"
+      ],
+      "descripcion": [
+        "G0019"
+      ],
+      "especificaciones": [
+        "G0022",
+        "G0023"
+      ]
+    }
+  }
+}

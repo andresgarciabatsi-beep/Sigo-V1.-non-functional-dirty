@@ -1,0 +1,50 @@
+{
+  "archivo": "N003_pimoroni.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N003_pimoroni.html",
+  "url": null,
+  "campos": {
+    "nombre": "Raspberry Pi 5",
+    "precio": "43.2",
+    "disponibilidad": "agotado",
+    "descripcion": "Raspberry Pi 5 is the latest generation of Raspberry Pi’s hugely popular single-board computer, with a faster 2.4GHz quad-core processor. It’s available with 1GB, 2GB, 4GB, 8GB or 16GB RAM, so there’s a Pi 5 for everything from small embedded projects to desktop computing and more demanding builds.",
+    "especificaciones": "Raspberry Pi 5 is the latest generation of Raspberry Pi’s hugely popular single-board computer, with a faster 2.4GHz quad-core processor. It’s available with 1GB, 2GB, 4GB, 8GB or 16GB RAM, so there’s a Pi 5 for everything from small embedded projects to desktop computing and more demanding builds.\n\nRaspberry Pi 5 with 1GB, 2GB, 4GB, 8GB or 16GB RAM. A powerful single-board computer with a 2.4GHz quad-core CPU, dual 4K display support and PCIe."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": null,
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 10,
+      "disponibilidad": 5,
+      "descripcion": 5,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 27,
+    "grupos": 14,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0009"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0013",
+        "G0014"
+      ]
+    }
+  }
+}

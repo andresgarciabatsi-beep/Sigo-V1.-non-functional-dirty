@@ -1,0 +1,47 @@
+{
+  "archivo": "N045_kubii.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N045_kubii.html",
+  "url": null,
+  "campos": {
+    "nombre": "Touch Maker Lab pour Raspberry Pi by Kubii",
+    "precio": "19,92 €",
+    "disponibilidad": "disponible",
+    "descripcion": "Caractéristiques Carte d’extension pour Raspberry Pi 6 connecteurs jack stéréo 3,5 mm 2 GPIO + GND disponibles sur chaque connecteur Jusqu’à 12 GPIO accessibles via les connecteurs jack GPIO 16 à 21 : entrées/sorties principales associées aux pads tactiles GPIO 22 à 27 : entrées/sorties secondaires accessibles via les jacks stéréo 6 pads tactiles capacitifs intégrés 6 LED témoins associées aux pads tactiles Utilisation des pads tactiles sans programmation spécifique de la détection capacitive GPIO configurables en entrée ou en sortie Résistance pull-up de 10 kΩ sur les GPIO 16 à 21 Résistance de protection de 470 Ω en série sur les GPIO 16 à 27 Accès direct aux GPIO des bus I²C, SPI et UART Présentation La Touch Maker Lab est une carte d'extension pour Raspberry Pi, pensée par des makers pour des makers, pour faciliter la connexion et la programmation des entrées/sorties GPIO. Elle est née d'un besoin rencontré par Sarah Lacaze (SLmédiation) dans ses projets et animations avec Scratch et Raspberry Pi. Pour simplifier les branchements, Frédéric Jelmoni (F-ROBOTICS.FR) imagine et développe alors la Touch Maker Lab. Grâce à ses 6 pads tactiles capacitifs, il est possible de commencer à programmer immédiatement, sans montage électronique. Ses 6 connecteurs jack 3,5 mm permettent ensuite de raccorder rapidement boutons, LED, relais et autres périphériques, avec jusqu'à 12 GPIO disponibles. Adaptée à l'apprentissage de la programmation et de l'électronique, la Touch Maker Lab s'utilise aussi bien avec Scratch qu'avec Python. Pour aller plus loin, découvrez les ressources qui accompagnent la carte: tutoriels, exemples de programmes, fiches pédagogiques et projets de démonstration. Fini la prise de tête avec le câblage : branchez, codez, expérimentez ! Ressources utiles Documentation et tutoriels F-ROBOTICS.FR Dépôt des ressources et exemples Scratch et Python",
+    "especificaciones": "Caractéristiques\nCarte d’extension pour Raspberry Pi\n6 connecteurs jack stéréo 3,5 mm\n2 GPIO + GND disponibles sur chaque connecteur\nJusqu’à 12 GPIO accessibles via les connecteurs jack\nGPIO 16 à 21 : entrées/sorties principales associées aux pads tactiles\nGPIO 22 à 27 : entrées/sorties secondaires accessibles via les jacks stéréo\n6 pads tactiles capacitifs intégrés\n6 LED témoins associées aux pads tactiles\nUtilisation des pads tactiles sans programmation spécifique de la détection capacitive\nGPIO configurables en entrée ou en sortie\nRésistance pull-up de 10 kΩ sur les GPIO 16 à 21\nRésistance de protection de 470 Ω en série sur les GPIO 16 à 27\nAccès direct aux GPIO des bus I²C, SPI et UART\nPrésentation\nLa Touch Maker Lab est une carte d'extension pour Raspberry Pi, pensée par des makers pour des makers, pour faciliter la connexion et la programmation des entrées/sorties GPIO. Elle est née d'un besoin rencontré par Sarah Lacaze (SLmédiation) dans ses projets et animations avec Scratch et Raspberry Pi. Pour simplifier les branchements, Frédéric Jelmoni (F-ROBOTICS.FR) imagine et développe alors la Touch Maker Lab.\nGrâce à ses 6 pads tactiles capacitifs, il est possible de commencer à programmer immédiatement, sans montage électronique. Ses 6 connecteurs jack 3,5 mm permettent ensuite de raccorder rapidement boutons, LED, relais et autres périphériques, avec jusqu'à 12 GPIO disponibles. Adaptée à l'apprentissage de la programmation et de l'électronique, la Touch Maker Lab s'utilise aussi bien avec Scratch qu'avec Python.\nPour aller plus loin, découvrez les ressources qui accompagnent la carte: tutoriels, exemples de programmes, fiches pédagogiques et projets de démonstration. Fini la prise de tête avec le câblage : branchez, codez, expérimentez !\nRessources utiles\nDocumentation et tutoriels\nF-ROBOTICS.FR\nDépôt des ressources et exemples Scratch et Python"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Touch Maker Lab pour Raspberry Piby Kubii",
+    "candidatos_localizados": {
+      "nombre": 13,
+      "precio": 28,
+      "disponibilidad": 17,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 67,
+    "grupos": 53,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0011"
+      ],
+      "precio": [
+        "G0013"
+      ],
+      "disponibilidad": [
+        "G0046"
+      ],
+      "descripcion": [
+        "G0048"
+      ],
+      "especificaciones": [
+        "G0052"
+      ]
+    }
+  }
+}

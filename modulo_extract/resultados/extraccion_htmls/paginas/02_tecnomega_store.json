@@ -1,0 +1,46 @@
+{
+  "archivo": "02_tecnomega_store.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/02_tecnomega_store.html",
+  "url": null,
+  "campos": {
+    "nombre": "NUC ASUS 14 Essential INTEL N150 EXP-DDR5-4800 A 16GB M.2 WIFI HDMI LAN USB-C USB-A",
+    "precio": "226.15",
+    "disponibilidad": "disponible",
+    "descripcion": "NUC ASUS 14 Essential INTEL N150 EXP-DDR5-4800 A 16GB M.2 WIFI HDMI LAN USB-C USB-A",
+    "especificaciones": "NUC ASUS 14 Essential INTEL N150 EXP-DDR5-4800 A 16GB M.2 WIFI HDMI LAN USB-C USB-A"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "NUC ASUS 14 Essential INTEL N150 EXP-DDR5-4800 A 16GB M.2 WIFI HDMI LAN USB-C USB-A",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 18,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0007"
+      ],
+      "especificaciones": [
+        "G0009"
+      ]
+    }
+  }
+}

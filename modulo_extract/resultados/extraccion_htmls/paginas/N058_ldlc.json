@@ -1,0 +1,43 @@
+{
+  "archivo": "N058_ldlc.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N058_ldlc.html",
+  "url": null,
+  "campos": {
+    "nombre": "Sony DualSense Limited Edition (Wolverine)",
+    "precio": "89€ 90",
+    "disponibilidad": "disponible",
+    "descripcion": "Décuplez vos sensations Avec la manette sans fil Sony DualSense , vous êtes certain de vivre une expérience de jeu toujours plus immersive. Elle offre notamment un retour haptique immersif, des gâchettes adaptatives dynamiques et un microphone intégré. Ce n'est pas tout, utilisez la touche Create pour capturer et diffuser vos moments de gaming les plus épiques. La manette Sony DualSense possède un design bicolore évolué qui combine une disposition emblématique et intuitive avec des sticks améliorés et une barre lumineuse revisitée. Ressentez l'action Vivez une expérience de jeu incroyablement profonde et immersive grâce à la nouvelle manette Sony DualSense, dotée du retour tactile et d'effets gâchette dynamiques . Le premier, remplace les moteurs de vibration traditionnels. Dans vos mains, ces vibrations dynamiques peuvent simuler des interactions avec l'environnement ainsi que le recul de diverses armes. Le second offre différents niveaux de force et tension lorsque vous interagissez avec votre équipement et les environnements dans les jeux . De la sensation de bander un arc à celle d'écraser les freins dans une voiture de course, vous sentirez un lien physique avec vos actions à l'écran. La manette sans fil DualSense comprend également un microphone intégré , le tout intégré dans un design iconique et confortable. Caractéristiques principales : Manette sans fil pour Playstation 5 Retour haptique pour simuler des interactions avec l'environnement ainsi que le recul de diverses armes Gâchettes adaptatives permettant différents niveaux de force et tension lorsque vous interagissez avec votre équipement et les environnements dans les jeux Sticks améliorés Barre lumineuse revisitée Touche Create capturer et diffuser vos moments de gaming les plus épiques Haut-parleur Microphone intégré et sortie casque Détection de mouvement grâce à l'accéléromètre et au gyroscope intégrés Batterie intégrée",
+    "especificaciones": "Informations générales\nDésignation\nSony DualSense Limited Edition (Wolverine)\nMarque\nSony Interactive Entertainment\nSony Interactive Entertainment\nModèle\n0711719072034\nSpécifications techniques\nType périphérique de jeux\nManette\nReconnaissance de mouvements\nOui\nConnecteur\nCasque (Jack 3.5mm Femelle)\nUSB Type C Femelle\nRetour de force\nOui\nCouleur\nJaune\nCompatibilité\nPC\nPlayStation\nSans-fil\nOui\nType de batterie / pile\nBatterie Lithium\nGaranties\nGarantie commerciale\n2 ans vendeur\nGarantie légale\nVoir les modalités\nNotice harmonisée de la garantie légale\nInformation sur la sécurité\nPersonne responsable\nSony Interactive Entertainment Deutschland GmbH\nAdresse postale\nTaunusstraße 23, 80807 München, Allemagne"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [],
+    "titulo_referencia": "Sony DualSense Limited Edition (Wolverine)",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 27,
+      "disponibilidad": 3,
+      "descripcion": 5,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 46,
+    "grupos": 37,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0006"
+      ],
+      "disponibilidad": [
+        "G0032"
+      ],
+      "descripcion": [
+        "G0033"
+      ],
+      "especificaciones": [
+        "G0035"
+      ]
+    }
+  }
+}

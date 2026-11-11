@@ -1,0 +1,47 @@
+{
+  "archivo": "N026_kubii.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N026_kubii.html",
+  "url": null,
+  "campos": {
+    "nombre": "Contrôleur Arcade 8BitDo by 8BitDo",
+    "precio": "79,80 €",
+    "disponibilidad": "disponible",
+    "descripcion": "Caractéristiques Type : contrôleur arcade tout-boutons / leverless Compatibilité : Windows 10 version 1903 ou ultérieure Compatibilité : Nintendo Switch 3.0.0 ou ultérieure Compatibilité : Nintendo Switch 2 20.1.1 ou ultérieure Connexion 2,4 GHz : Windows Connexion Bluetooth : Nintendo Switch Connexion filaire : Windows / Nintendo Switch Switches : 16 switches mécaniques low-profile Kailh Wizard PCB : hot-swappable Boutons programmables : 4 (P1, P2, P3, P4) Fonctions : Fast Mapping, SOCD Cleaning, Tournament Lock Logiciel : 8BitDo Ultimate Software V2 Fonctions logicielles : mapping, macros, réglage des modes SOCD, mise à jour du firmware Batterie : Li-ion rechargeable 1 000 mAh Autonomie : jusqu’à 20 heures en Bluetooth ou 2,4 GHz Temps de charge : environ 3 heures Dimensions : 301 × 201 × 22 mm Poids : 1 097 g Face avant : verre trempé résistant aux traces de doigts Pieds : métalliques, magnétiques et rabattables Surface inférieure : tapis antidérapant en silicone Contenu : Arcade Controller, adaptateur 2,4 GHz, 4 caches de verrouillage pour boutons programmables, câble et manuel.",
+    "especificaciones": "Caractéristiques\nType : contrôleur arcade tout-boutons / leverless\nCompatibilité : Windows 10 version 1903 ou ultérieure\nCompatibilité : Nintendo Switch 3.0.0 ou ultérieure\nCompatibilité : Nintendo Switch 2 20.1.1 ou ultérieure\nConnexion 2,4 GHz : Windows\nConnexion Bluetooth : Nintendo Switch\nConnexion filaire : Windows / Nintendo Switch\nSwitches : 16 switches mécaniques low-profile Kailh Wizard\nPCB : hot-swappable\nBoutons programmables : 4 (P1, P2, P3, P4)\nFonctions : Fast Mapping, SOCD Cleaning, Tournament Lock\nLogiciel : 8BitDo Ultimate Software V2\nFonctions logicielles : mapping, macros, réglage des modes SOCD, mise à jour du firmware\nBatterie : Li-ion rechargeable 1 000 mAh\nAutonomie : jusqu’à 20 heures en Bluetooth ou 2,4 GHz\nTemps de charge : environ 3 heures\nDimensions : 301 × 201 × 22 mm\nPoids : 1 097 g\nFace avant : verre trempé résistant aux traces de doigts\nPieds : métalliques, magnétiques et rabattables\nSurface inférieure : tapis antidérapant en silicone\nContenu : Arcade Controller, adaptateur 2,4 GHz, 4 caches de verrouillage pour boutons programmables, câble et manuel."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Contrôleur Arcade 8BitDoby 8BitDo",
+    "candidatos_localizados": {
+      "nombre": 13,
+      "precio": 28,
+      "disponibilidad": 17,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 67,
+    "grupos": 54,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0011"
+      ],
+      "precio": [
+        "G0013"
+      ],
+      "disponibilidad": [
+        "G0047"
+      ],
+      "descripcion": [
+        "G0049"
+      ],
+      "especificaciones": [
+        "G0053"
+      ]
+    }
+  }
+}

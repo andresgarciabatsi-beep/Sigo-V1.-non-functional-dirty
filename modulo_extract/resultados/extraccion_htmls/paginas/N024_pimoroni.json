@@ -1,0 +1,49 @@
+{
+  "archivo": "N024_pimoroni.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N024_pimoroni.html",
+  "url": null,
+  "campos": {
+    "nombre": "Inky Impression",
+    "precio": "39.6",
+    "disponibilidad": "disponible",
+    "descripcion": "Beautiful, colour E Ink® / ePaper displays for use with Raspberry Pi computers.",
+    "especificaciones": "Beautiful, colour E Ink® / ePaper displays for use with Raspberry Pi computers."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_CONTRADICTORIA_O_VARIANTES",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": null,
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 6,
+      "disponibilidad": 3,
+      "descripcion": 5,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 21,
+    "grupos": 13,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0007"
+      ],
+      "descripcion": [
+        "G0010"
+      ],
+      "especificaciones": [
+        "G0012"
+      ]
+    }
+  }
+}

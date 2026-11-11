@@ -1,0 +1,45 @@
+{
+  "archivo": "N051_soldered.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N051_soldered.html",
+  "url": null,
+  "campos": {
+    "nombre": "Li-Po Battery 2100mAh 3.7V 903759 JST",
+    "precio": "€7,88",
+    "disponibilidad": "disponible",
+    "descripcion": "This lithium-polymer battery is small, light and durable. Through standard JST 2mm female connector, it will yield 3.7V which will supply your projects for a whole day (and night!). Furthermore, the battery has an implemented protection system, which prevents high voltages (prevents over-charging), undervoltage and short circuit. That way it protects the battery, increases its lifetime and protects you from possible accidents!DISCLAIMER: This battery has to be charged with a special charger that uses CC/CV principle. Li-Po batteries are dangerous! Read our tutorial (link under Resources & Documentation) before use.",
+    "especificaciones": "This lithium-polymer battery is small, light and durable. Through standard JST 2mm female connector, it will yield 3.7V which will supply your projects for a whole day (and night!). Furthermore, the battery has an implemented protection system, which prevents high voltages (prevents over-charging), undervoltage and short circuit. That way it protects the battery, increases its lifetime and protects you from possible accidents!DISCLAIMER: This battery has to be charged with a special charger that uses CC/CV principle. Li-Po batteries are dangerous! Read our tutorial (link under Resources & Documentation) before use."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Li-Po Battery 2100mAh 3.7V 903759 JST",
+    "candidatos_localizados": {
+      "nombre": 9,
+      "precio": 7,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 25,
+    "grupos": 14,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0008"
+      ],
+      "disponibilidad": [
+        "G0010"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0013"
+      ]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "archivo": "32_ifixit.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/32_ifixit.html",
+  "url": null,
+  "campos": {
+    "nombre": "Dell XPS 13 9300 and 9310 Battery",
+    "precio": "109.99",
+    "disponibilidad": "disponible",
+    "descripcion": "Replace a 52 Watt Hous (Wh) battery compatible with Dell XPS 13 9300 and 9310 model laptops.",
+    "especificaciones": "Part Number\n722KK\nManufacturer\nAftermarket\nVoltage\n7.6 V\nWatt Hours\n52 Wh\nMilliamp Hours\n6500 mAh\nCompatible Part Numbers\n2XXFW, FP86V, WN0N0, CN-0FP86V, CN-02XXFW, CN-0WN0N0\niFixit Part Number\nIF328-018-2\n\nReplace a 52 Watt Hous (Wh) battery compatible with Dell XPS 13 9300 and 9310 model laptops."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Dell XPS 13 9300 and 9310 Battery",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 19,
+    "grupos": 8,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0007",
+        "G0008"
+      ]
+    }
+  }
+}

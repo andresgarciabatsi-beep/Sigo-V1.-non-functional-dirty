@@ -1,0 +1,46 @@
+{
+  "archivo": "N008_m5stack.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N008_m5stack.html",
+  "url": null,
+  "campos": {
+    "nombre": "TriviaPOD",
+    "precio": "$49.00",
+    "disponibilidad": "disponible",
+    "descripcion": "Hello from Etermax\nLoading model…\nAuto rotating\nA tiny trivia machine built for real family play. No phone. No ads. No endless scrolling. Just grab it, spin it, and answer.\n10,000+ questions in your pocket\nTriviaPOD comes loaded with over 10,000 trivia questions across 8 languages — ready to play straight out of the box. Connect to Wi‑Fi to download new packs and keep the trivia going.\nYour Pod, your crew.\nMeet familiar faces from the Trivia Crack universe. Play Trivia Pet to help Willy grow, unlock rewards, and collect characters as your Pod fills with life. 7 characters to evolve. Multiple scenes to complete.\nPlay Together\nConnect two TriviaPOD devicesand challenge other players\nThe Specs.\nCategory\nSpecifications\nDisplay\n1.75\" round display · 466 × 466 px AMOLED\nSuper bright · Touch screen\nControls\nTwo main side buttons\nDedicated power button\nStorage\n32 MB flash\nRoom for downloadable trivia packs\nWireless\nWi‑Fi 2.4 GHz\nBluetooth / BLE\nSpeaker\nSmall speaker\nSimple sounds for play feedback\nCharging\nUSB‑C charging cable\nCable included\nBattery\n450mAh\nLanguages\n8 languages included(more to come)\nEN · ES · FR · DE · IT · PT· ZH· JA\nIncluded\nTriviaPOD device · Wrist lanyard\nUSB‑C cable* · Quick Start guide*\nRecommended age\nFrom 8 to 99+\nFun for the whole family\nWhat’s in the box\nYour TriviaPOD device\nUSB-C charging cable\nWrist lanyard\n→ Documents\nWell done!\nWhat color is the Eiffel Tower painted?\nRedBlackBrownGray\nEntertainment\nWrong!\nWhat color is the Eiffel Tower painted?\nRedBlackBrownGray\nEntertainment\nWell done!\nHow many planets are in our solar system?\n78910\nScience",
+    "especificaciones": "Hello from Etermax\nLoading model…\nAuto rotating\nA tiny trivia machine built for real family play. No phone. No ads. No endless scrolling. Just grab it, spin it, and answer.\n10,000+ questions in your pocket\nTriviaPOD comes loaded with over 10,000 trivia questions across 8 languages — ready to play straight out of the box. Connect to Wi‑Fi to download new packs and keep the trivia going.\nYour Pod, your crew.\nMeet familiar faces from the Trivia Crack universe. Play Trivia Pet to help Willy grow, unlock rewards, and collect characters as your Pod fills with life. 7 characters to evolve. Multiple scenes to complete.\nPlay Together\nConnect two TriviaPOD devicesand challenge other players\nThe Specs.\nCategory\nSpecifications\nDisplay\n1.75\" round display · 466 × 466 px AMOLED\nSuper bright · Touch screen\nControls\nTwo main side buttons\nDedicated power button\nStorage\n32 MB flash\nRoom for downloadable trivia packs\nWireless\nWi‑Fi 2.4 GHz\nBluetooth / BLE\nSpeaker\nSmall speaker\nSimple sounds for play feedback\nCharging\nUSB‑C charging cable\nCable included\nBattery\n450mAh\nLanguages\n8 languages included(more to come)\nEN · ES · FR · DE · IT · PT· ZH· JA\nIncluded\nTriviaPOD device · Wrist lanyard\nUSB‑C cable* · Quick Start guide*\nRecommended age\nFrom 8 to 99+\nFun for the whole family\nWhat’s in the box\nYour TriviaPOD device\nUSB-C charging cable\nWrist lanyard\n→ Documents\nWell done!\nWhat color is the Eiffel Tower painted?\nRedBlackBrownGray\nEntertainment\nWrong!\nWhat color is the Eiffel Tower painted?\nRedBlackBrownGray\nEntertainment\nWell done!\nHow many planets are in our solar system?\n78910\nScience"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "TriviaPOD",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 9,
+      "disponibilidad": 3,
+      "descripcion": 9,
+      "especificaciones": 6
+    },
+    "candidatos_evaluados": 35,
+    "grupos": 23,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0006"
+      ],
+      "disponibilidad": [
+        "G0011"
+      ],
+      "descripcion": [
+        "G0015"
+      ],
+      "especificaciones": [
+        "G0021"
+      ]
+    }
+  }
+}

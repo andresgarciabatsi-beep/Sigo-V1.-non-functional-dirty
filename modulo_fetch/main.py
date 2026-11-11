@@ -2,7 +2,8 @@
 from pathlib import Path
 import httpx
 import json
-
+from urllib.parse import urlparse
+import re
 from src.get_html import get_html_httpx, get_html_crawling
 
 
@@ -95,10 +96,10 @@ def fetch_get_url(url: str) -> dict:
     )
 
 
-# DEBUGGING
+# # DEBUGGING
 # if __name__ == "__main__":
 
-#     url = "https://www.raspipc.es/2042"
+#     url = "https://tecnomegastore.ec/searchi/1/ups"
 
 #     resultado = fetch_get_url(url)
 
@@ -138,3 +139,116 @@ def fetch_get_url(url: str) -> dict:
 #     print("Éxito:", resultado["exito"])
 #     print("Error:", resultado["error"])
 #     print("Caracteres descargados:", len(resultado["html"]))
+
+
+if __name__ == "__main__":
+
+    # 1. Rutas
+    BASE = Path(__file__).resolve().parent
+
+    ARCHIVO_URLS = BASE / "experiments" / "resources" / "enlaces.json"
+
+    CARPETA_HTML = BASE / "experiments"/ "results"/ "htmls_adicionales"
+
+    CARPETA_HTML.mkdir(parents=True, exist_ok=True)
+
+    ARCHIVO_REPORTE = BASE / "experiments"/ "results"/ "htmls_adicionales"/ "reporte_fetch.json"
+
+    # 2. Leer URLs
+    with ARCHIVO_URLS.open("r", encoding="utf-8") as archivo:
+        urls = json.load(archivo)
+
+    if not isinstance(urls, list):
+        raise ValueError(
+            "urls_externas.json debe contener una lista de URLs."
+        )
+
+    # 3. Recorrer URLs
+    reporte = []
+
+    for indice, url in enumerate(urls, start=1):
+
+        if not isinstance(url, str) or not url.startswith(
+            ("https://", "http://")
+        ):
+            raise ValueError(f"URL inválida en posición {indice}: {url}")
+
+        print(f"\n{'=' * 60}")
+        print(f"[{indice}/{len(urls)}] {url}")
+        print(f"{'=' * 60}")
+
+        # Nombre del archivo basado en el dominio
+        dominio = urlparse(url).netloc.lower()
+        dominio = re.sub(r"[^a-z0-9]+", "_", dominio).strip("_")
+
+        nombre_archivo = f"{indice:02d}_{dominio}.html"
+        ruta_salida = CARPETA_HTML / nombre_archivo
+
+        # 4. Ejecutar Fetch
+        try:
+            resultado = fetch_get_url(url)
+
+        except Exception as error:
+            resultado = {
+                "url_original": url,
+                "url_final": url,
+                "html": "",
+                "status_code": None,
+                "tool": "desconocido",
+                "exito": False,
+                "error": str(error)
+            }
+
+        # 5. Guardar HTML si la extracción tuvo éxito
+        if resultado["exito"]:
+
+            ruta_salida.write_text(
+                resultado["html"],
+                encoding="utf-8"
+            )
+
+            print(f"HTML guardado: {ruta_salida}")
+
+        else:
+            print(
+                f"Error al descargar: {resultado['error']}"
+            )
+
+            # Evitar conservar una descarga antigua
+            # como resultado de esta ejecución fallida.
+            if ruta_salida.exists():
+                ruta_salida.unlink()
+
+        # 6. Registrar resultado sin duplicar el HTML
+        reporte.append({
+            "url_original": resultado["url_original"],
+            "url_final": resultado["url_final"],
+            "archivo": nombre_archivo if resultado["exito"] else None,
+            "status_code": resultado["status_code"],
+            "tool": resultado["tool"],
+            "exito": resultado["exito"],
+            "error": resultado["error"]
+        })
+
+    # 7. Guardar reporte
+    ARCHIVO_REPORTE.write_text(
+        json.dumps(
+            reporte,
+            indent=2,
+            ensure_ascii=False
+        ),
+        encoding="utf-8"
+    )
+
+    # 8. Resumen
+    exitosos = sum(1 for item in reporte if item["exito"])
+    fallidos = len(reporte) - exitosos
+
+    print(f"\n{'=' * 60}")
+    print("RESUMEN FETCH")
+    print(f"{'=' * 60}")
+    print(f"URLs procesadas: {len(reporte)}")
+    print(f"HTML descargados: {exitosos}")
+    print(f"Fallidos:         {fallidos}")
+    print(f"Carpeta HTML:     {CARPETA_HTML}")
+    print(f"Reporte:          {ARCHIVO_REPORTE}")

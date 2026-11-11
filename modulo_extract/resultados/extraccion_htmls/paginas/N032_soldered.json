@@ -1,0 +1,44 @@
+{
+  "archivo": "N032_soldered.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N032_soldered.html",
+  "url": null,
+  "campos": {
+    "nombre": "NULA Max RP2350",
+    "precio": "€24,95",
+    "disponibilidad": null,
+    "descripcion": "The NULA Max RP2350 features a dual Cortex-M33 processor, DVI output, and WiFi/Bluetooth, perfect for robotics, IoT, and display-driven projects.",
+    "especificaciones": "The NULA Max RP2350 features a dual Cortex-M33 processor, DVI output, and WiFi/Bluetooth, perfect for robotics, IoT, and display-driven projects."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": "NULA Max RP2350",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 5,
+      "disponibilidad": 0,
+      "descripcion": 3,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 17,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0007"
+      ],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0009"
+      ],
+      "especificaciones": [
+        "G0010"
+      ]
+    }
+  }
+}

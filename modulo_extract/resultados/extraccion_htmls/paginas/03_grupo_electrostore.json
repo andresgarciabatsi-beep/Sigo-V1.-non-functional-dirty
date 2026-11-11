@@ -1,0 +1,45 @@
+{
+  "archivo": "03_grupo_electrostore.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/03_grupo_electrostore.html",
+  "url": null,
+  "campos": {
+    "nombre": "CABLE HDMI A MINI HDMI 1M",
+    "precio": "$ 3.49",
+    "disponibilidad": "disponible",
+    "descripcion": "Cable Mini HDMI de alta velocidad; Mini HDMI a HDMI. Adecuado para televisores de alta definición, cámaras digitales, videocámaras, reproductores de MP3 y otros dispositivos compatibles con Mini HDMI (tipo C). Cumple con los estándares HDMI (video 4K a 30 Hz, 2160p, profundidad de color de 48 bits/px); soporta ancho de banda de hasta 10.2 Gbps. Funciona con versiones anteriores para permitir su uso con una amplia gama de dispositivos habilitados para HDMI. Solo puerto Mini HDMI de 0.413 x 0.098 in; NO compatible con Micro HDMI de 0.236 x 0.091 in, Micro USB o USB Tipo-C. Especificaciones. Longitud: 1m Tipo de cable: HDMI estándar a Mini HDMI Dispositivos compatibles: Videocámara Mini HDMI, Laptop, Ordenador personal, Monitor, Portátil, Televisión, Proyector, Tablet, Cámara Calidad de la imagen: 1440p, 1080p, 1080i, 720p, 480p Velocidad de transferencia de datos: 10,2 Gigabits por segundo",
+    "especificaciones": "Especificaciones.\nLongitud:\n1m\nTipo de cable:\nHDMI estándar a Mini HDMI\nDispositivos compatibles:\nVideocámara Mini HDMI, Laptop, Ordenador personal, Monitor, Portátil, Televisión, Proyector, Tablet, Cámara\nCalidad de la imagen:\n1440p, 1080p, 1080i, 720p, 480p\nVelocidad de transferencia de datos:\n10,2 Gigabits por segundo"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "CABLE HDMI A MINI HDMI 1M",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 25,
+      "disponibilidad": 6,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 46,
+    "grupos": 25,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0018"
+      ],
+      "descripcion": [
+        "G0022"
+      ],
+      "especificaciones": [
+        "G0024"
+      ]
+    }
+  }
+}

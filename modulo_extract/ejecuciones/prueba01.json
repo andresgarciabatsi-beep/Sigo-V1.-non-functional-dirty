@@ -1,0 +1,583 @@
+{
+  "archivo": "01_tecnit.html",
+  "ruta": "recursos\\htmls_ampliado\\01_tecnit.html",
+  "url": null,
+  "campos": {
+    "nombre": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+    "precio": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+    "disponibilidad": "disponible",
+    "descripcion": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+    "especificaciones": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+    "candidatos_localizados": {
+      "nombre": 4,
+      "precio": 1,
+      "disponibilidad": 1,
+      "descripcion": 2,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 12,
+    "grupos": 11,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0008"
+      ]
+    },
+    "candidatos": [
+      {
+        "id": "C0001",
+        "campo": "nombre",
+        "fuente": "opengraph",
+        "patron": "og:title",
+        "indice": 1,
+        "prioridad_patron": 75,
+        "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "contexto": "sin_contexto_dom",
+        "ruta_dom": null,
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 5,
+        "motivo": "nombre_plausible",
+        "puntaje": 15
+      },
+      {
+        "id": "C0002",
+        "campo": "nombre",
+        "fuente": "html",
+        "patron": "h1",
+        "indice": 1,
+        "prioridad_patron": 60,
+        "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h1[1]",
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 5,
+        "motivo": "nombre_plausible",
+        "puntaje": 79
+      },
+      {
+        "id": "C0003",
+        "campo": "nombre",
+        "fuente": "meta",
+        "patron": "title",
+        "indice": 1,
+        "prioridad_patron": 35,
+        "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "contexto": "sin_contexto_dom",
+        "ruta_dom": null,
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 5,
+        "motivo": "nombre_plausible",
+        "puntaje": 8
+      },
+      {
+        "id": "C0004",
+        "campo": "nombre",
+        "fuente": "html",
+        "patron": "title",
+        "indice": 1,
+        "prioridad_patron": 34,
+        "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "contexto": "sin_contexto_dom",
+        "ruta_dom": "-document[1]/html[1]/head[1]/title[1]",
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 5,
+        "motivo": "nombre_plausible",
+        "puntaje": 15
+      },
+      {
+        "id": "C0005",
+        "campo": "precio",
+        "fuente": "html",
+        "patron": "span.electro-price",
+        "indice": 1,
+        "prioridad_patron": 95,
+        "valor_original": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+        "valor_limpio": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]",
+        "interpretacion": {
+          "importe": "19.99",
+          "moneda": null,
+          "iva": "incluido",
+          "simbolo_dolar_ambiguo": true
+        },
+        "valido": true,
+        "puntos_contenido": 6,
+        "motivo": "importe_interpretable",
+        "puntaje": 61
+      },
+      {
+        "id": "C0006",
+        "campo": "disponibilidad",
+        "fuente": "html",
+        "patron": "div.tecnit-disponibilidad",
+        "indice": 1,
+        "prioridad_patron": 95,
+        "valor_original": "✓ Disponible Envío inmediato",
+        "valor_limpio": "✓ Disponible Envío inmediato",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+        "interpretacion": {
+          "estado": "disponible",
+          "cantidad": null
+        },
+        "valido": true,
+        "puntos_contenido": 6,
+        "motivo": "estado_interpretable",
+        "puntaje": 61
+      },
+      {
+        "id": "C0007",
+        "campo": "descripcion",
+        "fuente": "html",
+        "patron": ".woocommerce-product-details__short-description",
+        "indice": 1,
+        "prioridad_patron": 88,
+        "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]",
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 2,
+        "motivo": "descripcion_plausible",
+        "puntaje": 65
+      },
+      {
+        "id": "C0008",
+        "campo": "descripcion",
+        "fuente": "opengraph",
+        "patron": "og:description",
+        "indice": 1,
+        "prioridad_patron": 65,
+        "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "contexto": "sin_contexto_dom",
+        "ruta_dom": null,
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 2,
+        "motivo": "descripcion_plausible",
+        "puntaje": 19
+      },
+      {
+        "id": "C0009",
+        "campo": "especificaciones",
+        "fuente": "html",
+        "patron": "#especificaciones",
+        "indice": 1,
+        "prioridad_patron": 105,
+        "valor_original": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+        "valor_limpio": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[2]",
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 10,
+        "motivo": "bloque_tecnico_probable",
+        "puntaje": 84
+      },
+      {
+        "id": "C0010",
+        "campo": "especificaciones",
+        "fuente": "html",
+        "patron": ".tecnit-spec-list",
+        "indice": 1,
+        "prioridad_patron": 105,
+        "valor_original": "– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+        "valor_limpio": "– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[2]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]",
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 10,
+        "motivo": "bloque_tecnico_probable",
+        "puntaje": 84
+      },
+      {
+        "id": "C0011",
+        "campo": "especificaciones",
+        "fuente": "html",
+        "patron": ".woocommerce-product-details__short-description",
+        "indice": 1,
+        "prioridad_patron": 72,
+        "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "contexto": "principal_probable",
+        "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]",
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 10,
+        "motivo": "bloque_tecnico_probable",
+        "puntaje": 64
+      },
+      {
+        "id": "C0012",
+        "campo": "especificaciones",
+        "fuente": "opengraph",
+        "patron": "og:description",
+        "indice": 1,
+        "prioridad_patron": 45,
+        "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "contexto": "sin_contexto_dom",
+        "ruta_dom": null,
+        "interpretacion": null,
+        "valido": true,
+        "puntos_contenido": 10,
+        "motivo": "bloque_tecnico_probable",
+        "puntaje": -6
+      }
+    ],
+    "grupos_detalle": [
+      {
+        "id": "G0001",
+        "campo": "nombre",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "candidatos": [
+          {
+            "id": "C0001",
+            "campo": "nombre",
+            "fuente": "opengraph",
+            "patron": "og:title",
+            "indice": 1,
+            "prioridad_patron": 75,
+            "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+            "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+            "contexto": "sin_contexto_dom",
+            "ruta_dom": null,
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 5,
+            "motivo": "nombre_plausible",
+            "puntaje": 15
+          },
+          {
+            "id": "C0003",
+            "campo": "nombre",
+            "fuente": "meta",
+            "patron": "title",
+            "indice": 1,
+            "prioridad_patron": 35,
+            "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+            "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+            "contexto": "sin_contexto_dom",
+            "ruta_dom": null,
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 5,
+            "motivo": "nombre_plausible",
+            "puntaje": 8
+          }
+        ],
+        "valido": true,
+        "puntaje": 15,
+        "total_coincidencias": 2
+      },
+      {
+        "id": "G0002",
+        "campo": "nombre",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+        "candidatos": [
+          {
+            "id": "C0002",
+            "campo": "nombre",
+            "fuente": "html",
+            "patron": "h1",
+            "indice": 1,
+            "prioridad_patron": 60,
+            "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+            "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/h1[1]",
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 5,
+            "motivo": "nombre_plausible",
+            "puntaje": 79
+          }
+        ],
+        "valido": true,
+        "puntaje": 79,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0003",
+        "campo": "nombre",
+        "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+        "candidatos": [
+          {
+            "id": "C0004",
+            "campo": "nombre",
+            "fuente": "html",
+            "patron": "title",
+            "indice": 1,
+            "prioridad_patron": 34,
+            "valor_original": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+            "valor_limpio": "BASE ENFRIADORA ARGOM PARA LAPTOP 17\" USB INCLINABLE 5 NIVELES CON 1 VENT. LED - TECNIT",
+            "contexto": "sin_contexto_dom",
+            "ruta_dom": "-document[1]/html[1]/head[1]/title[1]",
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 5,
+            "motivo": "nombre_plausible",
+            "puntaje": 15
+          }
+        ],
+        "valido": true,
+        "puntaje": 15,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0004",
+        "campo": "precio",
+        "valor_limpio": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+        "candidatos": [
+          {
+            "id": "C0005",
+            "campo": "precio",
+            "fuente": "html",
+            "patron": "span.electro-price",
+            "indice": 1,
+            "prioridad_patron": 95,
+            "valor_original": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+            "valor_limpio": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[1]/div[1]/div[1]/div[1]/span[1]",
+            "interpretacion": {
+              "importe": "19.99",
+              "moneda": null,
+              "iva": "incluido",
+              "simbolo_dolar_ambiguo": true
+            },
+            "valido": true,
+            "puntos_contenido": 6,
+            "motivo": "importe_interpretable",
+            "puntaje": 61
+          }
+        ],
+        "valido": true,
+        "puntaje": 61,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0005",
+        "campo": "disponibilidad",
+        "valor_limpio": "✓ Disponible Envío inmediato",
+        "candidatos": [
+          {
+            "id": "C0006",
+            "campo": "disponibilidad",
+            "fuente": "html",
+            "patron": "div.tecnit-disponibilidad",
+            "indice": 1,
+            "prioridad_patron": 95,
+            "valor_original": "✓ Disponible Envío inmediato",
+            "valor_limpio": "✓ Disponible Envío inmediato",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/section[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]",
+            "interpretacion": {
+              "estado": "disponible",
+              "cantidad": null
+            },
+            "valido": true,
+            "puntos_contenido": 6,
+            "motivo": "estado_interpretable",
+            "puntaje": 61
+          }
+        ],
+        "valido": true,
+        "puntaje": 61,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0006",
+        "campo": "descripcion",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "candidatos": [
+          {
+            "id": "C0007",
+            "campo": "descripcion",
+            "fuente": "html",
+            "patron": ".woocommerce-product-details__short-description",
+            "indice": 1,
+            "prioridad_patron": 88,
+            "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]",
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 2,
+            "motivo": "descripcion_plausible",
+            "puntaje": 65
+          }
+        ],
+        "valido": true,
+        "puntaje": 65,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0007",
+        "campo": "descripcion",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "candidatos": [
+          {
+            "id": "C0008",
+            "campo": "descripcion",
+            "fuente": "opengraph",
+            "patron": "og:description",
+            "indice": 1,
+            "prioridad_patron": 65,
+            "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "contexto": "sin_contexto_dom",
+            "ruta_dom": null,
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 2,
+            "motivo": "descripcion_plausible",
+            "puntaje": 19
+          }
+        ],
+        "valido": true,
+        "puntaje": 19,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0008",
+        "campo": "especificaciones",
+        "valor_limpio": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+        "candidatos": [
+          {
+            "id": "C0009",
+            "campo": "especificaciones",
+            "fuente": "html",
+            "patron": "#especificaciones",
+            "indice": 1,
+            "prioridad_patron": 105,
+            "valor_original": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+            "valor_limpio": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[2]",
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 10,
+            "motivo": "bloque_tecnico_probable",
+            "puntaje": 84
+          }
+        ],
+        "valido": true,
+        "puntaje": 84,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0009",
+        "campo": "especificaciones",
+        "valor_limpio": "– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+        "candidatos": [
+          {
+            "id": "C0010",
+            "campo": "especificaciones",
+            "fuente": "html",
+            "patron": ".tecnit-spec-list",
+            "indice": 1,
+            "prioridad_patron": 105,
+            "valor_original": "– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+            "valor_limpio": "– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[2]/div[1]/div[2]/div[1]/div[2]/div[1]/ul[1]",
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 10,
+            "motivo": "bloque_tecnico_probable",
+            "puntaje": 84
+          }
+        ],
+        "valido": true,
+        "puntaje": 84,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0010",
+        "campo": "especificaciones",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "candidatos": [
+          {
+            "id": "C0011",
+            "campo": "especificaciones",
+            "fuente": "html",
+            "patron": ".woocommerce-product-details__short-description",
+            "indice": 1,
+            "prioridad_patron": 72,
+            "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "contexto": "principal_probable",
+            "ruta_dom": "-document[1]/html[1]/body[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[2]/section[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[1]",
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 10,
+            "motivo": "bloque_tecnico_probable",
+            "puntaje": 64
+          }
+        ],
+        "valido": true,
+        "puntaje": 64,
+        "total_coincidencias": 1
+      },
+      {
+        "id": "G0011",
+        "campo": "especificaciones",
+        "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+        "candidatos": [
+          {
+            "id": "C0012",
+            "campo": "especificaciones",
+            "fuente": "opengraph",
+            "patron": "og:description",
+            "indice": 1,
+            "prioridad_patron": 45,
+            "valor_original": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "valor_limpio": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+            "contexto": "sin_contexto_dom",
+            "ruta_dom": null,
+            "interpretacion": null,
+            "valido": true,
+            "puntos_contenido": 10,
+            "motivo": "bloque_tecnico_probable",
+            "puntaje": -6
+          }
+        ],
+        "valido": true,
+        "puntaje": -6,
+        "total_coincidencias": 1
+      }
+    ]
+  }
+}

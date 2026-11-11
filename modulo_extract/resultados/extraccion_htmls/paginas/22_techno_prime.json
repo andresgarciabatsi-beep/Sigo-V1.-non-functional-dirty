@@ -1,0 +1,48 @@
+{
+  "archivo": "22_techno_prime.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/22_techno_prime.html",
+  "url": null,
+  "campos": {
+    "nombre": "Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15″, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY",
+    "precio": "$ 1,000.00",
+    "disponibilidad": "disponible",
+    "descripcion": "Procesador y sistema operativo: Procesador: Intel Core i5 de 11.ª generación Sistema operativo: Windows 11 Pro preinstalado Memoria y almacenamiento: Memoria RAM: 8 GB DDR4 Almacenamiento: SSD de 256 GB Pantalla: Tamaño: 15 pulgadas Tecnología: TFT LED con retroiluminación Resolución: 1024 × 768 píxeles Tecnología táctil: Pantalla táctil capacitiva proyectiva Salidas de video: HDMI: 1 puerto para configuración i3 e i5 VGA: 1 puerto para configuraciones J1900, i3 e i5 Puertos USB: 4 puertos USB para configuraciones i3 e i5 6 puertos USB para configuración J1900 Puertos y conectividad: Puertos COM: 2 LAN: 1 × Gigabit Ethernet RJ45 Salida de línea de audio: 1 Entrada de micrófono: 1 Alimentación: Entrada de alimentación: CA 100–240 V / 50–60 Hz Salida de potencia: CC 12 V / 5 A Adaptador de corriente: 12 V / 5 A Características opcionales: Pantalla para cliente: 9,7 pulgadas Puerto para cajón de efectivo: 1 × RJ11 Lector de tarjetas magnéticas: ISO Track 1, 2 y 3 Conectividad inalámbrica: WiFi 802.11 b/g/n de 2,4 GHz, canal único Bluetooth: 4.0 Montaje: Compatibilidad VESA: 75 × 75 mm Descarga la ficha técnica aqui",
+    "especificaciones": "Procesador y sistema operativo:\nProcesador: Intel Core i5 de 11.ª generación\nSistema operativo: Windows 11 Pro preinstalado\nMemoria y almacenamiento:\nMemoria RAM: 8 GB DDR4\nAlmacenamiento: SSD de 256 GB\nPantalla:\nTamaño: 15 pulgadas\nTecnología: TFT LED con retroiluminación\nResolución: 1024 × 768 píxeles\nTecnología táctil: Pantalla táctil capacitiva proyectiva\nSalidas de video:\nHDMI: 1 puerto para configuración i3 e i5\nVGA: 1 puerto para configuraciones J1900, i3 e i5\nPuertos USB:\n4 puertos USB para configuraciones i3 e i5\n6 puertos USB para configuración J1900\nPuertos y conectividad:\nPuertos COM: 2\nLAN: 1 × Gigabit Ethernet RJ45\nSalida de línea de audio: 1\nEntrada de micrófono: 1\nAlimentación:\nEntrada de alimentación: CA 100–240 V / 50–60 Hz\nSalida de potencia: CC 12 V / 5 A\nAdaptador de corriente: 12 V / 5 A\nCaracterísticas opcionales:\nPantalla para cliente: 9,7 pulgadas\nPuerto para cajón de efectivo: 1 × RJ11\nLector de tarjetas magnéticas: ISO Track 1, 2 y 3\nConectividad inalámbrica: WiFi 802.11 b/g/n de 2,4 GHz, canal único\nBluetooth: 4.0\nMontaje:\nCompatibilidad VESA: 75 × 75 mm\nDescarga la ficha técnica aqui\n\nLa pantalla AllMax-900W, número de parte AO-AO-1011-PTY, es un terminal profesional todo en uno, moderno, robusto y funcional, diseñado para ofrecer un rendimiento eficiente en puntos de venta y diferentes entornos comerciales. Incorpora un potente procesador Intel Core i5 de 11.ª generación, acompañado de 8 GB de memoria RAM DDR4 y un rápido SSD de 256 GB, proporcionando una operación ágil, estable y confiable. Su pantalla TFT LED de 15 pulgadas, con resolución de 1024 × 768, integra tecnología táctil capacitiva proyectiva para brindar una interacción precisa e intuitiva. El equipo incluye Windows 11 Pro preinstalado y una amplia variedad de conexiones, entre ellas HDMI, VGA, cuatro puertos USB, dos puertos COM, Gigabit Ethernet y conexiones de audio. Además, admite diferentes características opcionales como pantalla para cliente de 9,7 pulgadas, lector de tarjetas magnéticas, puerto RJ11 para cajón de efectivo, WiFi y Bluetooth 4.0. Su compatibilidad con montaje VESA 75 × 75 mm aporta mayor flexibilidad para diferentes instalaciones profesionales."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Pantalla Táctil Aon AllMax-900W, Terminal Todo en Uno, 15″, Intel Core i5 Gen11, 8 GB DDR4, SSD 256 GB, Pantalla Táctil, Windows 11 Pro, AO-AO-1011-PTY",
+    "candidatos_localizados": {
+      "nombre": 4,
+      "precio": 7,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 20,
+    "grupos": 11,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0003"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0009",
+        "G0010"
+      ]
+    }
+  }
+}

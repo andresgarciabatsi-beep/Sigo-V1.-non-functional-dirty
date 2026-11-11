@@ -1,0 +1,49 @@
+{
+  "archivo": "N022_adafruit.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N022_adafruit.html",
+  "url": null,
+  "campos": {
+    "nombre": "Adafruit CP2105 Friend - USB to Dual UART Serial Converters",
+    "precio": "$6.95",
+    "disponibilidad": "disponible",
+    "descripcion": "Description On our first Pentium 120 tower ( purchased at PCs for Everyone on Thorndike st in Cambridge Mass ) came with two DE-9 serial ports on the back: COM1 and COM2. Perfect for connecting a mouse and maybe a modem. Nowadays, long gone are the days of parallel ports and serial ports. Now the USB port reigns supreme! But USB is hard, and you just want to transfer your every-day serial data hither & thither from two serial ports to a single USB port without the complexity of a hub. What now? Enter the Adafruit CP2105 Friend ! The CP2105 is very similar to the CP2102N . Except, instead of having a single serial UART port, it has two . One is 'standard' and one is 'enhanced' - you'll get both enumerated when plugging in this device, without any hub required! The Enhanced port can do: Data formats supported: - Data bits: 5, 6, 7, and 8 - Stop bits: 1, 1.5, and 2 - Parity: odd, even, mark, space, no parity Baud rates: 300 bps to 2.0 Mbps 320 Byte receive and transmit buffers Modem control signals: CTS, RTS, DTR, DSR and RI The Standard port can do: Data format: 8 data bits, 1 Stop bit Parity: Even, Odd, No parity Baud rates: 2400 bps to 921600 bps 288 Byte receive and transmit buffers Modem control signals: CTS, RTS, DTR, DSR and RI Please note: we have pre-programmed this board with the \"modem signal\" one-time fuse so those modem signals will 'just work' but you cannot use them as GPIOs like a fresh-from-the-reel chip. Like the CP2102N breakout, we have USB C connector and the same overall shape, but there are some significant changes. The pins are going to be totally different because we have two UARTs, one on either 'side' of the board. The left side is the Enhanced port, right side is the Standard port. We don't have extra GPIO pads and no indicator LEDs. Also the bottom row is a 'minimal' output of just the two RX/TX pads and power pins. We like the CP210x series because it has better driver support than the CH340 and can do very high speeds, and variable speeds without stability issues. Compared to the FT232RL and FT231X, the CP210x has the same capabilities or better, at a great price! Each order comes with a fully assembled and tested board. We give you some pin header strip, solder it in to plug it into a breadboard and get access to all the pins. For Linux you won't need a driver. For Windows, it will automatically grab the driver from Windows Update. For Mac OS X you can check out SiLabs driver page for the latest and greatest .",
+    "especificaciones": "Specifications:\nStandards USB 2.0\nVoltage - Supply: 1.8V, 3V ~ 3.6V\nCurrent - Supply: 17mA\nOperating Temperature: -40°C ~ 85°C\nPackage / Case: 24-WFQFN Exposed Pad\nSupplier Device Package: 24-QFN (4x4)\nCP210x USB to UART Bridge VCP Drivers\nSerial Communications Guide For The CP210x\nProduct Dimensions: 28.9mm x 17.8mm x 5.1mm / 1.1\" x 0.7\" x 0.2\"\nProduct Weight: 2.4g / 0.1oz\nDatasheet\n\nOn our first Pentium 120 tower (purchased at PCs for Everyone on Thorndike st in Cambridge Mass) came with two DE-9 serial ports on the back: COM1 and COM2. Perfect for connecting a mouse and maybe a modem. Nowadays, long gone are the days of parallel ports and serial ports. Now the USB port reigns supreme! But USB is hard, and you just want to transfer your every-day serial data hither & thither from two serial ports to a single USB port without the complexity of a hub. What now? Enter the Adafruit CP2105 Friend!"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Adafruit CP2105 Friend - USB to Dual UART Serial Converters",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 5,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 24,
+    "grupos": 18,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0008"
+      ],
+      "disponibilidad": [
+        "G0009"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0014",
+        "G0017"
+      ]
+    }
+  }
+}

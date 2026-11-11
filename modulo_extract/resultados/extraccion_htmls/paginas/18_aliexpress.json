@@ -1,0 +1,45 @@
+{
+  "archivo": "18_aliexpress.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/18_aliexpress.html",
+  "url": null,
+  "campos": {
+    "nombre": "Nuevos auriculares Walkie Talkie con micrófono de 2 pines para Baofeng UV-5R 888S accesorios KSUN X-30 Retevis UV-82 PUXING TYT - AliExpress 509",
+    "precio": null,
+    "disponibilidad": null,
+    "descripcion": "Smarter Shopping, Better Living! Aliexpress.com",
+    "especificaciones": "Smarter Shopping, Better Living! Aliexpress.com"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_SIN_CANDIDATO_VALIDO",
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "CAMPO_FALTANTE:precio",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": null,
+    "candidatos_localizados": {
+      "nombre": 1,
+      "precio": 0,
+      "disponibilidad": 0,
+      "descripcion": 1,
+      "especificaciones": 1
+    },
+    "candidatos_evaluados": 3,
+    "grupos": 3,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0002"
+      ],
+      "especificaciones": [
+        "G0003"
+      ]
+    }
+  }
+}

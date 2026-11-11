@@ -1,0 +1,45 @@
+{
+  "archivo": "N030_elecrow.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N030_elecrow.html",
+  "url": null,
+  "campos": {
+    "nombre": "Elecrow nRFLR2021 Wireless Module-with nRF52840 & LR2021 Multi-Band & Multi-Protocol",
+    "precio": "$14.90",
+    "disponibilidad": "disponible",
+    "descripcion": "nRFLR2021 LoRa Module–nRF52840 & LR2021 for Multi-Band IoT Connectivity The nRFLR2021 is a high-performance multi-protocol LoRa module that combines the Nordic nRF52840 MCU with Semtech’s fourth-generation LR2021 LoRa transceiver . It supports Sub-GHz, 2.4 GHz ISM, and licensed S-band connectivity for flexible terrestrial and satellite IoT applications . The module supports LoRaWAN 1.0.4 Class A, B, and C , as well as Amazon Sidewalk, Sigfox, Wi-SUN FSK, W-MBUS, and Z-Wave , while the nRF52840 adds Bluetooth LE, BLE Mesh , NFC, Thread, and Zigbee connectivity. With FLRC speeds up to 2.6 Mbps , built-in AT commands, SDK support, UART connectivity , and low-power operation, the nRFLR2021 is ideal for global IoT, remote sensing, asset tracking, industrial applications, and emergency communication. Feature LoRa Transceiver : Semtech fourth-generation LR2021 with Sub-GHz, 2.4 GHz ISM, and licensed S-band support Multi-Protocol Support : LoRaWAN 1.0.4 Class A/B/C, Amazon Sidewalk, Sigfox, Wi-SUN FSK, W-MBUS, and Z-Wave Wireless Connectivity: nRF52840 with Bluetooth LE, BLE Mesh, NFC, Thread, and Zigbee High-Speed Communication: FLRC modulation with data rates up to 2.6 Mbps LoRa Modulation: Supports LoRa, (G)FSK, LR-FHSS, and FLRC modulation Frequency Range: Sub-GHz 150–960 MHz, 2.4 GHz ISM, and licensed S-band 1900–2200 MHz Long-Range Connectivity: Typical communication range of 5–8 km, with over 12 km possible under line-of-sight conditions Low Power: Chip-level sleep current as low as 470 nA and Sub-GHz receive current of 5.7 mA Easy Development: Built-in AT command firmware, SDK support, and UART interface for quick integration Industrial Grade: Operating temperature from -40°C to +85°C Certifications: FCC ID and CE (RED) Specification Processor nRF52840 processor, dual-core 32-bit, 64MHz main frequency, RF chip Semtech LR2021 Chip LoRa Specification Transmit P ower TX 22 dBm@Max(SUB-GHz), 12dBm(2.4 GHz) Receiving S ensitivity -141.5dBm @SF12/BW=125kHz Link Budget Demodulator Support LoRa/(G)FSK signal modulation ，SF5~SF1 2 ; Support 150MHz-960MHz configuration; Data T ransfer R ate LoRa 0.0458–125 kbps; FLRC 260 kbps–2.6 Mbps Other Frequency Sub-GHz 850–930 MHz, 2.4 GHz ISM, and S-band 1900–2200 MHz Communication Interface SPI(0~10Mbps) Lead P in S uch as SPI signal, VCC, multiple GND pins, NRST, ANT (Sub-GHz), ANT (2.4 GHz), multiple DIO pins, TX control, RX control, BUSY state, etc. Antenna SMT pins, impedance @50 Ω (Sub-GHz antenna pin + 2.4 GHz antenna pin) Reference Power Consumption Sleep power consumption: 1.4 µA Standby power consumption: 1.16mA Receive power consumption (including MCU) 2.4GHz: 6.10mA 868/915MHz: 5.75mA Transmit power consumption (including MCU) 868MHz: 16.5mA 2.4GHz: 30.5mA 915MHz: 101mA Communication D istance 6 ~ 8 km, m aximum over 1 5 km LoRaWAN P rotocol Class A/B/C (compliant with LoRaWAN 1.0. 4 specification) Operating Voltage 1.8~3.7V Operating Temperature -40℃~+85℃, Industrial standard design Package S ize 20*20*3.5mm, 80-Pin, SMT surface mount, LGA package, 1mm board thickness Weight 3g Application scenarios Wireless video and image transmission Smart cities Smart agriculture Industrial automation Environmental monitoring Logistics management Meter reading Satellite IoT Marine monitoring Cross-border tracking Mesh networks Internet of Things (IoT) Pin Definition Package List 1x nRFLR2021 Wireless Transceiver Module Wiki & External links Wiki Datasheet",
+    "especificaciones": "nRFLR2021 LoRa Module–nRF52840 & LR2021 for Multi-Band IoT Connectivity\nThe nRFLR2021 is a high-performance\nmulti-protocol LoRa module\nthat combines the\nNordic nRF52840 MCU\nwith Semtech’s fourth-generation\nLR2021 LoRa transceiver\n. It supports\nSub-GHz, 2.4 GHz ISM, and licensed S-band\nconnectivity for flexible terrestrial and\nsatellite IoT applications\n. The module\nsupports LoRaWAN 1.0.4 Class A, B, and C\n, as well as\nAmazon Sidewalk, Sigfox, Wi-SUN FSK, W-MBUS, and Z-Wave\n, while the nRF52840 adds\nBluetooth LE, BLE Mesh\n,\nNFC, Thread, and Zigbee\nconnectivity. With\nFLRC speeds up to 2.6 Mbps\n, built-in\nAT commands, SDK support, UART connectivity\n, and low-power operation, the nRFLR2021 is ideal for global IoT, remote sensing, asset tracking, industrial applications, and emergency communication.\nFeature\nLoRa Transceiver\n: Semtech fourth-generation LR2021 with Sub-GHz, 2.4 GHz ISM, and licensed S-band support\nMulti-Protocol Support\n: LoRaWAN 1.0.4 Class A/B/C, Amazon Sidewalk, Sigfox, Wi-SUN FSK, W-MBUS, and Z-Wave\nWireless Connectivity:\nnRF52840 with Bluetooth LE, BLE Mesh, NFC, Thread, and Zigbee\nHigh-Speed Communication:\nFLRC modulation with data rates up to 2.6 Mbps\nLoRa Modulation:\nSupports LoRa, (G)FSK, LR-FHSS, and FLRC modulation\nFrequency Range:\nSub-GHz 150–960 MHz, 2.4 GHz ISM, and licensed S-band 1900–2200 MHz\nLong-Range Connectivity:\nTypical communication range of 5–8 km, with over 12 km possible under line-of-sight conditions\nLow Power:\nChip-level sleep current as low as 470 nA and Sub-GHz receive current of 5.7 mA\nEasy Development:\nBuilt-in AT command firmware, SDK support, and UART interface for quick integration\nIndustrial Grade:\nOperating temperature from -40°C to +85°C\nCertifications:\nFCC ID and CE (RED)\nSpecification\nProcessor\nnRF52840 processor, dual-core 32-bit, 64MHz main frequency,\nRF chip\nSemtech LR2021\nChip\nLoRa Specification\nTransmit\nP\nower TX\n22 dBm@Max(SUB-GHz), 12dBm(2.4 GHz)\nReceiving\nS\nensitivity\n-141.5dBm @SF12/BW=125kHz\nLink Budget\nDemodulator\nSupport LoRa/(G)FSK signal modulation\n，SF5~SF1\n2\n; Support 150MHz-960MHz configuration;\nData\nT\nransfer\nR\nate\nLoRa 0.0458–125 kbps; FLRC 260 kbps–2.6 Mbps\nOther\nFrequency\nSub-GHz 850–930 MHz, 2.4 GHz ISM, and S-band 1900–2200 MHz\nCommunication Interface\nSPI(0~10Mbps)\nLead\nP\nin\nS\nuch as SPI signal, VCC, multiple GND pins, NRST, ANT (Sub-GHz), ANT (2.4 GHz), multiple DIO pins, TX control, RX control, BUSY state, etc.\nAntenna\nSMT pins, impedance @50 Ω (Sub-GHz antenna pin + 2.4 GHz antenna pin)\nReference Power Consumption\nSleep power consumption: 1.4 µA\nStandby power consumption: 1.16mA\nReceive power consumption (including MCU)\n2.4GHz: 6.10mA\n868/915MHz: 5.75mA\nTransmit power consumption (including MCU)\n868MHz: 16.5mA\n2.4GHz: 30.5mA\n915MHz: 101mA\nCommunication\nD\nistance\n6\n~\n8\nkm,\nm\naximum over 1\n5\nkm\nLoRaWAN\nP\nrotocol\nClass A/B/C (compliant with LoRaWAN 1.0.\n4\nspecification)\nOperating Voltage\n1.8~3.7V\nOperating Temperature\n-40℃~+85℃, Industrial standard design\nPackage\nS\nize\n20*20*3.5mm, 80-Pin, SMT surface mount, LGA package, 1mm board thickness\nWeight\n3g\nApplication scenarios\nWireless video and image transmission\nSmart cities\nSmart agriculture\nIndustrial automation\nEnvironmental monitoring\nLogistics management\nMeter reading\nSatellite IoT\nMarine monitoring\nCross-border tracking\nMesh networks\nInternet of Things (IoT)\nPin Definition\nPackage List\n1x nRFLR2021 Wireless Transceiver Module\nWiki & External links\nWiki\nDatasheet"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "Elecrow nRFLR2021 Wireless Module-with nRF52840 & LR2021 Multi-Band & Multi-Protocol",
+    "candidatos_localizados": {
+      "nombre": 9,
+      "precio": 48,
+      "disponibilidad": 8,
+      "descripcion": 8,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 78,
+    "grupos": 38,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0028"
+      ],
+      "descripcion": [
+        "G0033"
+      ],
+      "especificaciones": [
+        "G0037"
+      ]
+    }
+  }
+}

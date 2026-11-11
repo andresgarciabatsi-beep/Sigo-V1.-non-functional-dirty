@@ -1,0 +1,47 @@
+{
+  "archivo": "07_av_electronics.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/07_av_electronics.html",
+  "url": null,
+  "campos": {
+    "nombre": "Heltec ESP32 915MHz LoRa",
+    "precio": "39.99",
+    "disponibilidad": "disponible",
+    "descripcion": "Módulo ESP32 con LoRa a 915MHz para comunicación inalámbrica.",
+    "especificaciones": "Módulo ESP32 con LoRa a 915MHz para comunicación inalámbrica."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Heltec ESP32 915MHz LoRa",
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 3,
+      "disponibilidad": 1,
+      "descripcion": 3,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 14,
+    "grupos": 7,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0007"
+      ]
+    }
+  }
+}

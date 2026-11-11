@@ -1,0 +1,46 @@
+{
+  "archivo": "N037_steren_mexico.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N037_steren_mexico.html",
+  "url": null,
+  "campos": {
+    "nombre": "Android TV Box Google* Certificado",
+    "precio": "1390.00",
+    "disponibilidad": "disponible",
+    "descripcion": "Convierte tu pantalla en una verdadera Smart TVOS Google certificado: Sistema operativo fluido y seguro con la versión más actualizada de AndroidChrome Cast:…",
+    "especificaciones": "Convierte tu pantalla en una verdadera Smart TVOS Google certificado: Sistema operativo fluido y seguro con la versión más actualizada de AndroidChrome Cast:…"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Android TV Box Google* Certificado",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 23,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 38,
+    "grupos": 19,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0016"
+      ],
+      "descripcion": [
+        "G0018"
+      ],
+      "especificaciones": [
+        "G0019"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "archivo": "08_setcom.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/08_setcom.html",
+  "url": null,
+  "campos": {
+    "nombre": "BANDEJA DE DISTRIBUCIÓN ODF 24P COMPLETA INCLUYE ADAPTADORES Y PIGTAIL SC/ UPC",
+    "precio": "$ 50.00 No incluye impuestos",
+    "disponibilidad": "disponible",
+    "descripcion": "ODF (Optical Distribution Frame) de 12 y 24 puertos (12P y 24P) es un marco de distribución óptica utilizado en instalaciones de fibra óptica para organizar, proteger y gestionar las conexiones de fibra DIO 12FO – con riel. Incluye:\nBandejas, kit de accesorios para montaje en rack,\n12 adaptadores SC/UPC,\n12 pigtails SC/UPC, G657A2, 900 μm, LSZH (cubierta amarilla), LSZH (con búfer ajustado), 1 metro.",
+    "especificaciones": "ODF (Optical Distribution Frame) de 12 y 24 puertos (12P y 24P)\nes un marco de distribución óptica utilizado en instalaciones de fibra óptica para organizar, proteger y gestionar las conexiones de fibra\nDIO 12FO – con riel. Incluye:\nBandejas, kit de accesorios para montaje en rack,\n12 adaptadores SC/UPC,\n12 pigtails SC/UPC, G657A2, 900 μm, LSZH (cubierta amarilla), LSZH (con búfer ajustado), 1 metro."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "BANDEJA DE DISTRIBUCIÓN ODF 24P COMPLETA INCLUYE ADAPTADORES Y PIGTAIL SC/ UPC",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 7,
+      "disponibilidad": 1,
+      "descripcion": 6,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 26,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0007"
+      ],
+      "especificaciones": [
+        "G0009"
+      ]
+    }
+  }
+}

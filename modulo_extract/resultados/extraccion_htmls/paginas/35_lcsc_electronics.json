@@ -1,0 +1,45 @@
+{
+  "archivo": "35_lcsc_electronics.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/35_lcsc_electronics.html",
+  "url": null,
+  "campos": {
+    "nombre": "TOOLS,EQUIP,HRDWR & ENCLOS",
+    "precio": null,
+    "disponibilidad": "agotado",
+    "descripcion": "TOOLS,EQUIP,HRDWR & ENCLOS",
+    "especificaciones": "RA-15U-750-C Racks by MEAN WELL. From $726.3009, Out of Stock. Datasheet available."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_SIN_CANDIDATO_VALIDO",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "CAMPO_FALTANTE:precio"
+    ],
+    "titulo_referencia": "TOOLS,EQUIP,HRDWR & ENCLOS",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 3,
+      "disponibilidad": 1,
+      "descripcion": 4,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 18,
+    "grupos": 11,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0007"
+      ],
+      "especificaciones": [
+        "G0011"
+      ]
+    }
+  }
+}

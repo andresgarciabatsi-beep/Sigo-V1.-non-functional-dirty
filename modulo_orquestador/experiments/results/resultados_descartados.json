@@ -1,0 +1,89 @@
+[
+  {
+    "numero_item": 1,
+    "nombre_item": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s",
+    "mercado": "Nacionales",
+    "prioridad": 1,
+    "tienda": "Tecnomega Store",
+    "dominio": "tecnomegastore.ec",
+    "consulta": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s tecnomegastore.ec",
+    "resultados": [
+      {
+        "title": "TecnoMega Store | Busqueda: 1tb",
+        "content": "SSD ADATA LEGEND 900 1TB M.2 PCIE GEN4X4 MVME 7000MB-S COMP.",
+        "url": "https://tecnomegastore.ec/searchi/1/1tb",
+        "engines": [
+          "brave"
+        ],
+        "score": 1.0,
+        "puntaje_bm25": 3.40222,
+        "posicion_region": 3,
+        "descarte": {
+          "etapa": "puerta_3",
+          "motivo": "coleccion_detectada_en_html",
+          "status_code": 200,
+          "error": null,
+          "url_final": "https://tecnomegastore.ec/searchi/1/1tb"
+        }
+      },
+      {
+        "title": "adaptador quasad sataiii ssd for laptop interno",
+        "content": "Encuentra los productos en stock",
+        "url": "https://tecnomegastore.ec/searchi/1/Ssd",
+        "engines": [
+          "brave"
+        ],
+        "score": 0.1,
+        "puntaje_bm25": 0.7839,
+        "posicion_region": 4,
+        "descarte": {
+          "etapa": "puerta_3",
+          "motivo": "coleccion_detectada_en_html",
+          "status_code": 200,
+          "error": null,
+          "url_final": "https://tecnomegastore.ec/searchi/1/Ssd"
+        }
+      }
+    ],
+    "motores_no_disponibles": []
+  },
+  {
+    "numero_item": 3,
+    "nombre_item": "Monitor curvo 31.5 pulgadas QHD 2560x1440 VA 180Hz",
+    "mercado": "Nacionales",
+    "prioridad": 1,
+    "tienda": "Tecnomega Store",
+    "dominio": "tecnomegastore.ec",
+    "consulta": "Monitor curvo 31.5 pulgadas QHD 2560x1440 VA 180Hz tecnomegastore.ec",
+    "resultados": [
+      {
+        "title": "Búsqueda de productos | monitores - TecnoMega Store",
+        "content": "Conoce los últimos productos añadidos a la tienda.",
+        "url": "https://tecnomegastore.ec/searchi/1/monitores",
+        "engines": [
+          "bing"
+        ],
+        "score": 0.125,
+        "puntaje_bm25": 0.0,
+        "posicion_region": 2,
+        "descarte": {
+          "etapa": "puerta_3",
+          "motivo": "coleccion_detectada_en_html",
+          "status_code": 200,
+          "error": null,
+          "url_final": "https://tecnomegastore.ec/searchi/1/monitores"
+        }
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ],
+      [
+        "google cse",
+        "Suspended: too many requests"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "archivo": "N059_sparkfun.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N059_sparkfun.html",
+  "url": null,
+  "campos": {
+    "nombre": "SparkFun Thing Plus - RP2350",
+    "precio": "$30.95",
+    "disponibilidad": "disponible",
+    "descripcion": "The SparkFun RP2350 Thing Plus is a powerful wireless IoT board featuring the selectable-core RP2350, WiFi 4, Bluetooth 5.2, LiPo battery charging, and a Qwiic connector.",
+    "especificaciones": "The SparkFun RP2350 Thing Plus is a powerful wireless IoT board featuring the selectable-core RP2350, WiFi 4, Bluetooth 5.2, LiPo battery charging, and a Qwiic connector."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "SparkFun Thing Plus - RP2350",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 54,
+      "disponibilidad": 52,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 122,
+    "grupos": 64,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0032"
+      ],
+      "descripcion": [
+        "G0060"
+      ],
+      "especificaciones": [
+        "G0063"
+      ]
+    }
+  }
+}

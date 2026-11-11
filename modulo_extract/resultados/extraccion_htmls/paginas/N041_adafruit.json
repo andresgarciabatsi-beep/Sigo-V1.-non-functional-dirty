@@ -1,0 +1,48 @@
+{
+  "archivo": "N041_adafruit.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N041_adafruit.html",
+  "url": null,
+  "campos": {
+    "nombre": "Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m - STEMMA QT / Qwiic",
+    "precio": "12.5",
+    "disponibilidad": "disponible",
+    "descripcion": "Description The Adafruit TMF8806 Time of Flight Sensor is a great Time of Flight distance sensor from ams Osram in the TMF series of chips. The TMF8806 in particular can do 20mm to 5 meters at up to 30 Hz update rate, and a dedicated low-power 200mm mode. It also has a wider field-of-view The sensor contains a very tiny invisible laser source and a matching sensor. The TMF8806 can detect the \"time of flight\", or how long the light has taken to bounce back to the sensor. Since it uses a narrow light source, it is good for determining distance of only the surface directly in front of it. Unlike sonars that bounce ultrasonic waves, the 'cone' of sensing is narrower, in this case about 30° short range (under 200mm) and 21° above. Unlike IR distance sensors that try to measure the amount of light bounced, the TMF is much more precise and doesn't have linearity problems or 'double imaging' where you can't tell if an object is very far or very close. One nice thing about this sensor is that while it does not require a firmware 'patch' on boot for 5 meter mode and the SRAM usage is also much lighter, so it fits easily in small memory boards like the ATmega328. You can use it on many 8-bit microcontroller devices. There is a 10 meter mode that does require a firmware patch but its only 3K and will also fit if you want it! Please note: The TMF8806 datasheet/firmware implies it can do 10 meter ranging but we weren't able to get results past 5 meter even after the firmware upload step, and there may be an undocumented calibration step required. Either way, we would call this a 5m distance sensor and not a 10m. The sensor is small and easy to use in any robotics or interactive project. Since it needs 3.3V power and logic we put the little fellow on a breakout board with a regulator and level shifting. You can use it with any 3-5V power or logic microcontroller with no worries. Works great with the 3.3V logic level of a Feather, or the 5V level of a ATmega , this breakout is ready to work with most common microcontrollers or SBCs. and since it speaks I2C, you can easily connect it up with two data wires plus power and ground. As if that weren't enough, we've also added SparkFun qwiic compatible STEMMA QT connectors for the I2C bus so you don't even need to solder. Just wire up to your favorite micro with a plug-and-play cable to get ToF data ASAP. For a no-solder experience, just wire up to your favorite micro using a STEMMA QT adapter cable. The Stemma QT connectors also mean the TMF8806 can be used with our various associated accessories. QT Cable is not included, but we have a variety in the shop Communicating to the sensor is done over I2C, check out our Arduino and CircuitPython/Python code to get started fast and read data over I2C in a jiffy. Play video: JP’s Product Pick of the Week 9/29/26",
+    "especificaciones": "Specifications:\ndToF technology with high sensitivity SPAD detection\nFast Time-to-Digital Converter (TDC) architecture\nSub-nanosecond light pulse\n1 – 500cm distance sensing\nOn-chip histogram processing\n940nm VCSEL Class 1 Eye Safety\nDelivers high SNR, wide dynamic range and no multi-path reflections\nEnables dark and sunlight environment distance measurement within ±5%\nProvides best-in-class resolution ranging mode detection sensing\nEnables accurate distance measurements\ncalibration, dirt or smudge removal and crosstalk compensation\nEye-safety circuitry stops VCSEL driver if VCSEL fault occurs\nConnects to a wide range of host processors\nReduce board space requirements, enables low-profile system designs in\nProduct Dimensions: 25.5mm x 17.7mm x 4.8mm / 1.0\" x 0.7\" x 0.2\"\nProduct Weight: 1.7g / 0.1oz\nDatasheet\n\nThe Adafruit TMF8806 Time of Flight Sensor is a great Time of Flight distance sensor from ams Osram in the TMF series of chips. The TMF8806 in particular can do 20mm to 5 meters at up to 30 Hz update rate, and a dedicated low-power 200mm mode. It also has a wider field-of-view"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Adafruit TMF8806 Time of Flight Distance Sensor - 10mm to 5m - STEMMA QT / Qwiic",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 5,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 24,
+    "grupos": 18,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0006"
+      ],
+      "disponibilidad": [
+        "G0009"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0014",
+        "G0017"
+      ]
+    }
+  }
+}

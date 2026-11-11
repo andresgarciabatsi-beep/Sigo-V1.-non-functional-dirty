@@ -1,0 +1,47 @@
+{
+  "archivo": "N056_steren_mexico.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N056_steren_mexico.html",
+  "url": null,
+  "campos": {
+    "nombre": "Control remoto universal",
+    "precio": "99.00",
+    "disponibilidad": "disponible",
+    "descripcion": "Descripción Añade o reemplaza el control de tu TV o pantalla Compatible con la mayoría de las marcas de pantallas Con botón “guión” (dash) para canales HD 2 modos de programación: Por botones programados o código Usa este control remoto universal de configuración rápida y sencilla, para reemplazar el de tu TV o pantalla. Funciona con TV digital, gracias a que incorpora la tecla especial \"guion\" para ingresar canales de alta definición. Tiene 2 formas de programación: Con botones preprogramados Estos tienen códigos de las marcas más populares en el mercado; solo debes identificar la marca de tu equipo en una lista, para conocer cuál es el botón de programación que le corresponde. Con combinación de botones Si la marca de tu pantalla no está asignada a alguno de los botones del control, consulta la lista anexa y realiza una sencilla combinación de teclas para programarlo. Por su amplia variedad de botones, permite acceder a las diferentes funciones 1 de la pantalla y controlarla de manera adecuada. Además, su diseño ergonómico y ultradelgado hace que sea muy cómodo usarlo. Es compatible con las marcas de pantallas y televisores más populares en el mercado, como LG * , Panasonic * , Sanyo * , Toshiba * , JVC * , Philips * y más. 1 Las funciones de los botones pueden variar, dependiendo de la marca de la TV o pantalla. ¿Qué incluye la caja? Instructivo en español e inglés",
+    "especificaciones": "Añade o reemplaza el control de tu TV o pantalla Compatible con la mayoría de las marcas de pantallas Con botón “guión” (dash) para canales HD 2 modos de pro…"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Control remoto universal",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 23,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 38,
+    "grupos": 20,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0017"
+      ],
+      "descripcion": [
+        "G0018"
+      ],
+      "especificaciones": [
+        "G0020"
+      ]
+    }
+  }
+}

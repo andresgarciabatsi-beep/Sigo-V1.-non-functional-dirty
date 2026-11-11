@@ -1,0 +1,46 @@
+{
+  "archivo": "N005_kubii.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N005_kubii.html",
+  "url": null,
+  "campos": {
+    "nombre": "Kit robot HP Otto Starter Builder by HP Robots",
+    "precio": "148,95 €",
+    "disponibilidad": "disponible",
+    "descripcion": "Vidéo de présentation Caractéristiques Général Type de kit : Kit robot éducatif Starter Builder pour débutants Public cible : Enfants dès 8 ans (sous surveillance), adolescents et adultes Usage recommandé : Apprentissage STEM+A (sciences, technologie, ingénierie, mathématiques et arts) en classe ou à la maison Conçu pour une prise en main intuitive, sans compétences techniques préalables Solution clé en main : tout le nécessaire inclus pour construire et programmer un robot fonctionnel Électronique et composants Carte principale : Carte de circuit imprimé intégrée pour le contrôle des mouvements et capteurs Moteurs : 4 micro-servomoteurs à engrenages métalliques pour des mouvements précis Capteurs intégrés : Capteur à ultrasons pour la détection d’obstacles et capteurs infrarouges pour le suivi de ligne Éclairage : 13 LED RVB adressables pour des effets visuels personnalisables (yeux, corps) Audio : Buzzer intégré pour émettre des sons et des mélodies Alimentation : Batterie lithium rechargeable 3,7 V 1800 mAh avec câble USB-C pour une autonomie optimale Programmation et connectivité Langages de programmation : Python, C++ et programmation par blocs (Scratch/Blockly) Environnements compatibles : Thonny IDE, Arduino IDE et interface web intuitive Fonctionnalités de l’application : Contrôle des mouvements, gestes, sons et expressions émotionnelles via Bluetooth ou Wi-Fi Contrôle à distance : Compatible avec des projets IoT pour une interaction avancée Générateur de code Python intégré pour une transition fluide entre les blocs et le code textuel Widgets d’entrée/sortie personnalisables pour adapter les projets aux besoins des utilisateurs Interactivité et apprentissage Fonctionnalités interactives : Marche, danse, évitement d’obstacles, suivi de ligne et expression d’émotions via les LED RVB Ressources éducatives : Manuel imprimé, vidéos d’assemblage et leçons gratuites en ligne pour guider les utilisateurs Activités proposées : Conception, impression 3D, construction et programmation pour développer des compétences variées Adapté aux projets scolaires ou aux passionnés de robotique en quête d’un kit évolutif Extensibilité et personnalisation Compatible avec des capteurs et modules supplémentaires pour étendre les fonctionnalités du robot Possibilité d’imprimer en 3D des pièces personnalisées pour modifier l’apparence ou ajouter des accessoires Idéal pour les makers souhaitant explorer des projets avancés en robotique et IoT Assemblage et conception Méthode d’assemblage : Sans soudure, connecteurs à enclenchement rapide pour un montage simple et sécurisé Matériaux : Pièces en plastique imprimées en 3D (PLA) pour le corps, les jambes et les pieds Poids total : 805 g, léger et facile à manipuler Design modulaire et extensible pour ajouter des fonctionnalités ou personnaliser le robot Pièces robustes et adaptées à une utilisation répétée en milieu éducatif Contenu",
+    "especificaciones": "Vidéo de présentation\nCaractéristiques\nGénéral\nType de kit : Kit robot éducatif Starter Builder pour débutants\nPublic cible : Enfants dès 8 ans (sous surveillance), adolescents et adultes\nUsage recommandé : Apprentissage STEM+A (sciences, technologie, ingénierie, mathématiques et arts) en classe ou à la maison\nConçu pour une prise en main intuitive, sans compétences techniques préalables\nSolution clé en main : tout le nécessaire inclus pour construire et programmer un robot fonctionnel\nÉlectronique et composants\nCarte principale : Carte de circuit imprimé intégrée pour le contrôle des mouvements et capteurs\nMoteurs : 4 micro-servomoteurs à engrenages métalliques pour des mouvements précis\nCapteurs intégrés : Capteur à ultrasons pour la détection d’obstacles et capteurs infrarouges pour le suivi de ligne\nÉclairage : 13 LED RVB adressables pour des effets visuels personnalisables (yeux, corps)\nAudio : Buzzer intégré pour émettre des sons et des mélodies\nAlimentation : Batterie lithium rechargeable 3,7 V 1800 mAh avec câble USB-C pour une autonomie optimale\nProgrammation et connectivité\nLangages de programmation : Python, C++ et programmation par blocs (Scratch/Blockly)\nEnvironnements compatibles : Thonny IDE, Arduino IDE et interface web intuitive\nFonctionnalités de l’application : Contrôle des mouvements, gestes, sons et expressions émotionnelles via Bluetooth ou Wi-Fi\nContrôle à distance : Compatible avec des projets IoT pour une interaction avancée\nGénérateur de code Python intégré pour une transition fluide entre les blocs et le code textuel\nWidgets d’entrée/sortie personnalisables pour adapter les projets aux besoins des utilisateurs\nInteractivité et apprentissage\nFonctionnalités interactives : Marche, danse, évitement d’obstacles, suivi de ligne et expression d’émotions via les LED RVB\nRessources éducatives : Manuel imprimé, vidéos d’assemblage et leçons gratuites en ligne pour guider les utilisateurs\nActivités proposées : Conception, impression 3D, construction et programmation pour développer des compétences variées\nAdapté aux projets scolaires ou aux passionnés de robotique en quête d’un kit évolutif\nExtensibilité et personnalisation\nCompatible avec des capteurs et modules supplémentaires pour étendre les fonctionnalités du robot\nPossibilité d’imprimer en 3D des pièces personnalisées pour modifier l’apparence ou ajouter des accessoires\nIdéal pour les makers souhaitant explorer des projets avancés en robotique et IoT\nAssemblage et conception\nMéthode d’assemblage : Sans soudure, connecteurs à enclenchement rapide pour un montage simple et sécurisé\nMatériaux : Pièces en plastique imprimées en 3D (PLA) pour le corps, les jambes et les pieds\nPoids total : 805 g, léger et facile à manipuler\nDesign modulaire et extensible pour ajouter des fonctionnalités ou personnaliser le robot\nPièces robustes et adaptées à une utilisation répétée en milieu éducatif\nContenu"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Kit robot HP Otto Starter Builderby HP Robots",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 4,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 20,
+    "grupos": 15,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0006"
+      ],
+      "disponibilidad": [
+        "G0008"
+      ],
+      "descripcion": [
+        "G0010"
+      ],
+      "especificaciones": [
+        "G0014"
+      ]
+    }
+  }
+}

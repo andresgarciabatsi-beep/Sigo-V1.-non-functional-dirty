@@ -1,0 +1,49 @@
+{
+  "archivo": "04_megatronica.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/04_megatronica.html",
+  "url": null,
+  "campos": {
+    "nombre": "Arduino UNO Q ABX00162 Qualcomm QRB2210 con Linux, IA, WiFi, Bluetooth y STM32",
+    "precio": "99.53",
+    "disponibilidad": "disponible",
+    "descripcion": "El Arduino UNO Q ABX00162 es una placa de desarrollo avanzada que combina la facilidad de uso del ecosistema Arduino con la potencia de procesamiento necesaria para aplicaciones modernas.\nSu arquitectura híbrida integra dos unidades de procesamiento independientes:\nUn procesador Qualcomm QRB2210 capaz de ejecutar Linux Debian, procesamiento de datos, aplicaciones avanzadas e inteligencia artificial.\nUn microcontrolador STM32U585 basado en ARM Cortex-M33, encargado del control preciso de sensores, motores y dispositivos electrónicos en tiempo real.\nEsta combinación permite desarrollar proyectos donde se necesita potencia informática y control electrónico al mismo tiempo, sin la necesidad de utilizar múltiples placas.\nEs una excelente opción para desarrolladores, estudiantes, ingenieros y fabricantes que buscan crear soluciones de nueva generación en robótica, automatización, IoT y sistemas inteligentes.",
+    "especificaciones": "El Arduino UNO Q ABX00162 es una placa de desarrollo avanzada que combina la facilidad de uso del ecosistema Arduino con la potencia de procesamiento necesaria para aplicaciones modernas.\nSu arquitectura híbrida integra dos unidades de procesamiento independientes:\nUn procesador Qualcomm QRB2210 capaz de ejecutar Linux Debian, procesamiento de datos, aplicaciones avanzadas e inteligencia artificial.\nUn microcontrolador STM32U585 basado en ARM Cortex-M33, encargado del control preciso de sensores, motores y dispositivos electrónicos en tiempo real.\nEsta combinación permite desarrollar proyectos donde se necesita potencia informática y control electrónico al mismo tiempo, sin la necesidad de utilizar múltiples placas.\nEs una excelente opción para desarrolladores, estudiantes, ingenieros y fabricantes que buscan crear soluciones de nueva generación en robótica, automatización, IoT y sistemas inteligentes.\n\nArduino UNO Q ABX00162 con procesador Qualcomm QRB2210, STM32 Cortex-M33, Linux Debian, WiFi y Bluetooth Disponible en Megatronica Ecuador"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Arduino UNO Q ABX00162 Qualcomm QRB2210 con Linux, IA, WiFi, Bluetooth y STM32",
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 3,
+      "disponibilidad": 1,
+      "descripcion": 4,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 16,
+    "grupos": 9,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0008",
+        "G0009"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "carpeta_htmls": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado",
+  "html_encontrados": 71,
+  "html_procesados": 71,
+  "html_con_error": 0,
+  "campos_llenos_total": 341,
+  "campos_posibles_total": 355,
+  "segundos_total": 52.527,
+  "salida": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/resultados/extraccion_htmls"
+}

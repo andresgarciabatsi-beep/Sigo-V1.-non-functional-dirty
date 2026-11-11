@@ -1,0 +1,43 @@
+{
+  "archivo": "N055_naylamp.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N055_naylamp.html",
+  "url": null,
+  "campos": {
+    "nombre": "SSD SAMSUNG 990 PRO PCIe 4.0 x4 NVMe M.2 1TB",
+    "precio": "S/ 1.250,00",
+    "disponibilidad": "agotado",
+    "descripcion": "INFO SSD Samsung 990 PRO PCIe 4.0 NVMe M.2 de 1TB: Rendimiento Extremo y Tecnología de Última Generación. Es una solución de almacenamiento ultrarrápida diseñada para usuarios exigentes que buscan velocidades extremas, eficiencia energética y confiabilidad. Ideal para gaming, edición de video, y aplicaciones profesionales, este SSD de última generación garantiza un rendimiento excepcional para tareas intensivas y multitarea. VENTAJAS Velocidad de Lectura y Escritura Excepcional Ofrece velocidades de lectura de hasta 7,450 MB/s y escritura de hasta 6,900 MB/s, aprovechando al máximo la tecnología PCIe 4.0 para reducir tiempos de carga y transferencias de archivos. Tecnología de Controlador Avanzada Equipado con el controlador Samsung V-NAND de última generación, este SSD optimiza la eficiencia y estabilidad, asegurando un rendimiento consistente bajo cargas de trabajo intensas. Diseño Compacto M.2 Su formato M.2 2280 permite una integración sencilla en PCs, laptops y estaciones de trabajo compatibles con PCIe 4.0. Eficiencia Energética Mejorada Consume hasta un 50% menos energía en comparación con modelos anteriores, lo que se traduce en menor calor generado y mayor durabilidad del hardware. Soporte para Samsung Magician La herramienta de software Samsung Magician facilita la gestión del almacenamiento, incluyendo monitoreo de rendimiento, actualizaciones de firmware y opciones de optimización. BENEFICIOS CLAVE Velocidades ultrarrápidas: Ideal para gaming, edición profesional y cargas intensivas de datos. Eficiencia energética: Reduce el consumo de energía mientras mantiene un rendimiento máximo. Confiabilidad líder en la industria: Resistencia y durabilidad respaldadas por la tecnología de Samsung. Instalación flexible: Compatible con una amplia gama de dispositivos con ranuras PCIe M.2. APLICACIONES Gaming de alto rendimiento: Minimiza los tiempos de carga y mejora la experiencia de juego. Edición de video y diseño gráfico: Transfiere archivos pesados y renderiza contenido de manera ultrarrápida. Almacenamiento profesional: Perfecto para estaciones de trabajo que requieren velocidad y confiabilidad constantes. ESPECIFICACIONES TÉCNICAS Fabricante: Samsung Modelo: 990 PRO Número de parte: MZ-V9P1T0B/AM Capacidad memoria: 1 TB Interfaz 2280 PCIe 4.0×4 NVMe Velocidad de lectura: 7450 MB/s Velocidad de escritura: 6900 MB/s Formato: M.2 2280 Tipo de chip: V-NAND FLASH MEMORY Dimensiones: 80*22*2.3 mm (Anc*Alt*Prof) Peso: 9.0 gramos LINKS Datasheet Brochure Lee mas Show less",
+    "especificaciones": "INFO\nSSD Samsung 990 PRO PCIe 4.0 NVMe M.2 de 1TB: Rendimiento Extremo y Tecnología de Última Generación. Es una solución de almacenamiento ultrarrápida diseñada para usuarios exigentes que buscan velocidades extremas, eficiencia energética y confiabilidad. Ideal para gaming, edición de video, y aplicaciones profesionales, este SSD de última generación garantiza un rendimiento excepcional para tareas intensivas y multitarea.\nVENTAJAS\nVelocidad de Lectura y Escritura Excepcional\nOfrece velocidades de lectura de hasta 7,450 MB/s y escritura de hasta 6,900 MB/s, aprovechando al máximo la tecnología PCIe 4.0 para reducir tiempos de carga y transferencias de archivos.\nTecnología de Controlador Avanzada\nEquipado con el controlador Samsung V-NAND de última generación, este SSD optimiza la eficiencia y estabilidad, asegurando un rendimiento consistente bajo cargas de trabajo intensas.\nDiseño Compacto M.2\nSu formato M.2 2280 permite una integración sencilla en PCs, laptops y estaciones de trabajo compatibles con PCIe 4.0.\nEficiencia Energética Mejorada\nConsume hasta un 50% menos energía en comparación con modelos anteriores, lo que se traduce en menor calor generado y mayor durabilidad del hardware.\nSoporte para Samsung Magician\nLa herramienta de software Samsung Magician facilita la gestión del almacenamiento, incluyendo monitoreo de rendimiento, actualizaciones de firmware y opciones de optimización.\nBENEFICIOS CLAVE\nVelocidades ultrarrápidas: Ideal para gaming, edición profesional y cargas intensivas de datos.\nEficiencia energética: Reduce el consumo de energía mientras mantiene un rendimiento máximo.\nConfiabilidad líder en la industria: Resistencia y durabilidad respaldadas por la tecnología de Samsung.\nInstalación flexible: Compatible con una amplia gama de dispositivos con ranuras PCIe M.2.\nAPLICACIONES\nGaming de alto rendimiento: Minimiza los tiempos de carga y mejora la experiencia de juego.\nEdición de video y diseño gráfico: Transfiere archivos pesados y renderiza contenido de manera ultrarrápida.\nAlmacenamiento profesional: Perfecto para estaciones de trabajo que requieren velocidad y confiabilidad constantes.\nESPECIFICACIONES TÉCNICAS\nFabricante: Samsung\nModelo: 990 PRO\nNúmero de parte: MZ-V9P1T0B/AM\nCapacidad memoria: 1 TB\nInterfaz 2280 PCIe 4.0×4 NVMe\nVelocidad de lectura: 7450 MB/s\nVelocidad de escritura: 6900 MB/s\nFormato: M.2 2280\nTipo de chip: V-NAND FLASH MEMORY\nDimensiones: 80*22*2.3 mm (Anc*Alt*Prof)\nPeso: 9.0 gramos\nLINKS\nDatasheet\nBrochure\nLee mas\nShow less"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [],
+    "titulo_referencia": "SSD SAMSUNG 990 PRO PCIe 4.0 x4 NVMe M.2 1TB",
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 6,
+      "disponibilidad": 3,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 23,
+    "grupos": 16,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0007"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0015"
+      ]
+    }
+  }
+}

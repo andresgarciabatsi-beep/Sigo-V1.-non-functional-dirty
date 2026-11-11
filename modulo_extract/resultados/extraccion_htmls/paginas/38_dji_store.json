@@ -1,0 +1,46 @@
+{
+  "archivo": "38_dji_store.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/38_dji_store.html",
+  "url": null,
+  "campos": {
+    "nombre": "DJI Air 3 (DJI RC-N2)",
+    "precio": "1099",
+    "disponibilidad": "agotado",
+    "descripcion": "Shop the DJI Air 3 - camera drone with high-resolution image quality, long flight time and compact, travel-friendly design. Available at the official DJI Store.",
+    "especificaciones": "Shop the DJI Air 3 - camera drone with high-resolution image quality, long flight time and compact, travel-friendly design. Available at the official DJI Store."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "DJI Air 3 (DJI RC-N2)",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 4,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 16,
+    "grupos": 8,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0007"
+      ],
+      "especificaciones": [
+        "G0008"
+      ]
+    }
+  }
+}

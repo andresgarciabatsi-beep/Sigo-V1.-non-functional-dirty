@@ -1,0 +1,48 @@
+{
+  "archivo": "10_steren_ecuador.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/10_steren_ecuador.html",
+  "url": null,
+  "campos": {
+    "nombre": "Cable de alimentación y señal para CCTV de 18 m",
+    "precio": "USD$14.98",
+    "disponibilidad": "disponible",
+    "descripcion": "Conecta tus cámaras de seguridad al DVR con este cable que tiene 2 líneas de transmisión. Incorpora 1 conector macho BNC en ambos extremos para video, así como plug y jack invertidos para alimentación. Su longitud es de 18 m, por lo que podrás hacer el tendido del cable cómodamente al realizar la instalación.",
+    "especificaciones": "Conecta tus cámaras de seguridad al DVR con este cable que tiene 2 líneas de transmisión.\nIncorpora 1 conector macho BNC en ambos extremos para video, así como plug y jack invertidos para alimentación.\nSu longitud es de 18 m, por lo que podrás hacer el tendido del cable cómodamente al realizar la instalación.\n\nEspecificaciones\nDescripción técnica\nConectores BNC\nPlug y jack invertidos\nTransmite alimentación y señal de video\n\nConecta tus cámaras de seguridad, fácil, hasta 18 m\nTransmite alimentación eléctrica y video\nPlugs BNC en ambos extremos\nJack invertido 2,1 mm en un extremo\nPlug invertido 2,1 mm en el otro extremo"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Cable de alimentación y señal para CCTV de 18 m",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 6,
+      "disponibilidad": 2,
+      "descripcion": 7,
+      "especificaciones": 6
+    },
+    "candidatos_evaluados": 29,
+    "grupos": 20,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0008"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0017",
+        "G0015",
+        "G0019"
+      ]
+    }
+  }
+}

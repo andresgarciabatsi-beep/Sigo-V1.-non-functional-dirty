@@ -1,0 +1,49 @@
+{
+  "archivo": "N007_robocraze.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N007_robocraze.html",
+  "url": null,
+  "campos": {
+    "nombre": "BBC micro:bit V2.2 Go Kit - Robocraze",
+    "precio": "2187",
+    "disponibilidad": "disponible",
+    "descripcion": "Description BBC Micro:Bit V2.2 Go Kit If you are looking to start programming or would like an exciting device to get young people interested in coding, then the BBC micro:bit V2.2 is perfect for you. The micro:bit Go box contains the micro:bit computer along with a USB cable and AAA battery holder so you can start creating immediately. For those researching the micro bit V2 go kit specifications and features for beginners, this kit offers everything needed to begin hands-on learning. Created by the BBC in partnership with leading technology brands, the micro:bit is a compact programmable computer designed to inspire children and beginners through practical STEM learning. It is widely regarded as the best micro bit kit for coding and STEM education projects, thanks to its simplicity and versatility. This single-board computer features an ARM Cortex-M4 processor and 512KB flash memory, making it powerful for its size. It includes programmable inputs and outputs such as a 5×5 LED matrix, buttons, built-in speaker, and microphone. Additionally, it comes with sensors like temperature, accelerometer, and a touch-sensitive logo. With access to multiple free online editors and programming languages, learners can explore coding at their own pace. If you're planning to buy BBC micro bit V2 starter kit online India, this kit provides an ideal starting point with all essential components included. Why Choose This Micro:Bit Kit? The BBC micro:bit V2.2 GO Kit stands out as the best micro bit kit for coding and STEM education projects, offering a balance of simplicity and powerful features. Whether you are a student, educator, or hobbyist, this kit enables you to build interactive projects like games, sensors, and IoT prototypes with ease. Its plug-and-play nature makes it especially suitable for beginners who want to explore programming without complex setup. If you're comparing options or checking the BBC micro bit V2 go kit price in India, this kit delivers excellent value with all essential components included. Video Tutorial of Microbit V2 Go Kit: Key Features: 25 LED matrix on the board where you can scroll messages or display numbers Accelerometer to detect movement or tilting Compass Bluetooth connection to interact with the internet or other devices 2 user input buttons Micro USB connection to use with PC for programming Port for a battery pack ARM Cortex-M4 CPU Built-in speaker and microphone 20-pin edge connector along the bottom of the board Covers all essential micro bit V2 go kit specifications and features for beginners Applications: Digital watch Fitness tracker Games console Use Cases: STEM education and classroom learning Beginner coding and programming practice DIY electronics and IoT projects Robotics and automation experiments Creative projects like games, music, and wearable tech This versatility makes it the best micro bit kit for coding and STEM education projects across different learning levels.",
+    "especificaciones": "Package Includes:\nBBC Micro:Bit V2.2\nUSB cable\nBattery holder\n2x AAA batteries\nUser guide\nSpecifications:\nBrand\nBBC Micro:Bit\nModel\nMicro:Bit V2.2\nProcessor\nNordic Semiconductor nRF52833 processor\nCore Variant\nArm Cortex-M4 32bit processor with FPU\nFlash Memory\n512KB Flash\nRAM\n128KB RAM\nPins\n25\nSpeed\n64MHz\nDimensions(LXB)\n40 x 50mm\nWeight\n120 grams\n\nDescription\nBBC Micro:Bit V2.2 Go Kit\nIf you are looking to start programming or would like an exciting device to get young people interested in coding, then the BBC micro:bit V2.2 is perfect for you. The micro:bit Go box contains the micro:bit computer along with a USB cable and AAA battery holder so you can start creating immediately. For those researching the micro bit V2 go kit specifications and features for beginners, this kit offers everything needed to begin hands-on learning.\nCreated by the BBC in partnership with leading technology brands, the micro:bit is a compact programmable computer designed to inspire children and beginners through practical STEM learning. It is widely regarded as the best micro bit kit for coding and STEM education projects, thanks to its simplicity and versatility.\nThis single-board computer features an ARM Cortex-M4 processor and 512KB flash memory, making it powerful for its size. It includes programmable inputs and outputs such as a 5×5 LED matrix, buttons, built-in speaker, and microphone. Additionally, it comes with sensors like temperature, accelerometer, and a touch-sensitive logo.\nWith access to multiple free online editors and programming languages, learners can explore coding at their own pace. If you're planning to buy BBC micro bit V2 starter kit online India, this kit provides an ideal starting point with all essential components included.\nWhy Choose This Micro:Bit Kit?\nThe BBC micro:bit V2.2 GO Kit stands out as the best micro bit kit for coding and STEM education projects, offering a balance of simplicity and powerful features. Whether you are a student, educator, or hobbyist, this kit enables you to build interactive projects like games, sensors, and IoT prototypes with ease.\nIts plug-and-play nature makes it especially suitable for beginners who want to explore programming without complex setup. If you're comparing options or checking the BBC micro bit V2 go kit price in India, this kit delivers excellent value with all essential components included.\nVideo Tutorial of Microbit V2 Go Kit:\nKey Features:\n25 LED matrix on the board where you can scroll messages or display numbers\nAccelerometer to detect movement or tilting\nCompass\nBluetooth connection to interact with the internet or other devices\n2 user input buttons\nMicro USB connection to use with PC for programming\nPort for a battery pack\nARM Cortex-M4 CPU\nBuilt-in speaker and microphone\n20-pin edge connector along the bottom of the board\nCovers all essential micro bit V2 go kit specifications and features for beginners\nApplications:\nDigital watch\nFitness tracker\nGames console\nUse Cases:\nSTEM education and classroom learning\nBeginner coding and programming practice\nDIY electronics and IoT projects\nRobotics and automation experiments\nCreative projects like games, music, and wearable tech\nThis versatility makes it the best micro bit kit for coding and STEM education projects across different learning levels.\n\nBBC micro:bit V2.2 Go kit with board, battery pack and USB cable. Built-in speaker, mic and LEDs for coding in MakeCode and Python. Rated 5.0."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "BBC micro:bit V2.2 Go Kit - Robocraze",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 14,
+      "disponibilidad": 1,
+      "descripcion": 7,
+      "especificaciones": 6
+    },
+    "candidatos_evaluados": 35,
+    "grupos": 25,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0018"
+      ],
+      "descripcion": [
+        "G0019"
+      ],
+      "especificaciones": [
+        "G0022",
+        "G0023",
+        "G0025"
+      ]
+    }
+  }
+}

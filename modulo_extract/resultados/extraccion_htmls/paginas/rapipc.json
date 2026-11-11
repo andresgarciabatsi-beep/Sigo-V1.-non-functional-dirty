@@ -1,0 +1,47 @@
+{
+  "archivo": "rapipc.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/rapipc.html",
+  "url": null,
+  "campos": {
+    "nombre": "Raspberry Pi 5 8GB",
+    "precio": "161.30",
+    "disponibilidad": "disponible",
+    "descripcion": "Demos la bienvenida a la ultima generación de Raspberry Pi: el ordenador para todo. La máxima versión 8GB de RAM para que pueda con todo. Equipada con un procesador de 64-bits y cuatro núcleos Arm Cortex-A76 a una velocidad de 2.4GHz, la Raspberry Pi 5 mejora el rendimiento de la CPU entre 2 y 3 veces frente a la generación anterior, Raspberry Pi 4.",
+    "especificaciones": "Demos la bienvenida a la ultima generación de Raspberry Pi: el ordenador para todo. La máxima versión 8GB de RAM para que pueda con todo. Equipada con un procesador de 64-bits y cuatro núcleos Arm Cortex-A76 a una velocidad de 2.4GHz, la Raspberry Pi 5 mejora el rendimiento de la CPU entre 2 y 3 veces frente a la generación anterior, Raspberry Pi 4."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": null,
+    "candidatos_localizados": {
+      "nombre": 4,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 3,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 12,
+    "grupos": 9,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0008"
+      ]
+    }
+  }
+}

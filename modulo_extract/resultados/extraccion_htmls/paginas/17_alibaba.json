@@ -1,0 +1,48 @@
+{
+  "archivo": "17_alibaba.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/17_alibaba.html",
+  "url": null,
+  "campos": {
+    "nombre": "Fuentes de alimentación UPS offline Smart Line de 650va, 800va, 1000va, 1200va, 1500va y 2000va, 50HZ/60HZ, para PC y ordenador",
+    "precio": "14",
+    "disponibilidad": "disponible",
+    "descripcion": "Fuentes De Alimentación Ups Offline Smart Line De 650va,800va,1000va,1200va,1500va Y 2000va,50hz/60hz,Para Pc Y Ordenador , Encuentra detalles completos sobre Fuentes De Alimentación Ups Offline Smart Line De 650va,800va,1000va,1200va,1500va Y 2000va,50hz/60hz,Para Pc Y Ordenador,de Gt Power Co., Ltd. proveedor o fabricante en Alibaba.com",
+    "especificaciones": "Características clave\nMolde privado\nNO\nNúmero de modelo\n600va\nLugar de origen\nGuangdong, China\nNombre de la marca\nOEM\nBatería\nBatería de plomo-ácido\nCertificado\nCE ROHS\nNombre del producto\nUPS interactivo de línea\nModelo\n600VA/360W\nEmpaque y entrega\nUnidades de venta\nArtículo individual\n\nFuentes De Alimentación Ups Offline Smart Line De 650va,800va,1000va,1200va,1500va Y 2000va,50hz/60hz,Para Pc Y Ordenador , Encuentra detalles completos sobre Fuentes De Alimentación Ups Offline Smart Line De 650va,800va,1000va,1200va,1500va Y 2000va,50hz/60hz,Para Pc Y Ordenador,de Gt Power Co., Ltd. proveedor o fabricante en Alibaba.com"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Fuentes de alimentación UPS offline Smart Line de 650va, 800va, 1000va, 1200va, 1500va y 2000va, 50HZ/60HZ, para PC y ordenador",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 4,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 21,
+    "grupos": 14,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0007"
+      ],
+      "descripcion": [
+        "G0009"
+      ],
+      "especificaciones": [
+        "G0011",
+        "G0013"
+      ]
+    }
+  }
+}

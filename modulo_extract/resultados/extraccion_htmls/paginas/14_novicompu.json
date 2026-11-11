@@ -1,0 +1,48 @@
+{
+  "archivo": "14_novicompu.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/14_novicompu.html",
+  "url": null,
+  "campos": {
+    "nombre": "Laptop ENV Book Pro Max N4020 | 14.1 pulgadas FHD 1920 x 1080, 8 GB RAM, 256 GB SSD",
+    "precio": "360.39",
+    "disponibilidad": null,
+    "descripcion": "Laptop ENV Book Pro Max 14.1\" Full HD: ligera y accesible\nTen una laptop con pantalla Full HD a un precio accesible. La laptop ENV Book Pro Max trae Intel Celeron N4020 , 8 GB de RAM , SSD de 256 GB y pantalla de 14.1\" Full HD .\nTiene Wi-Fi 5 , USB-C y cámara de 2 MP para clases y videollamadas. Se entrega sin licencia de Windows , para que instales el sistema que prefieras. Portátil, práctica y lista para tus tareas.\nCaracterísticas destacadas\nPantalla de 14.1\" Full HD: imágenes nítidas en formato portátil.\n8 GB de RAM: fluidez en tareas cotidianas.\nSSD de 256 GB: arranque y carga rápidos.\nWi-Fi 5: conexión inalámbrica estable.\nCámara de 2 MP: lista para clases virtuales.\nFicha técnica\nMarca: ENV\nModelo: Book Pro Max\nProcesador: Intel Celeron N4020 (2 núcleos, hasta 2.8 GHz)\nMemoria RAM: 8 GB\nAlmacenamiento: SSD de 256 GB\nPantalla: 14.1\" Full HD (1920 x 1080)\nSistema operativo: No incluye licencia de Windows\nCámara: 2 MP\nConectividad: Wi-Fi 5\nPuertos: USB-C (datos)\nBatería: 7.6 V / 5000 mAh\nCargador: 12 V / 3 A",
+    "especificaciones": "name: Laptops C2\noriginalName: Laptops C2\nspecifications: Bluetooth (Laptops): json: No\nCapacidad de disco SSD (Laptops): json: 256 GB\nCapacidad total del módulo de memoria RAM (Laptops): json: 8 GB\nCámara web (Laptops): json: Sí\nLector de huella digital (Laptops): json: No\nMarca (Laptops): json: ENV\nMarca del procesador (Laptops): json: Intel\nModelo (Laptops): json: Book Pro Max N4020\nModelo del procesador (Laptops): json: N4020\nPantalla táctil (Laptops): json: No\nResolución de la pantalla (Laptops): json: FHD 1920 x 1080\nTamaño de la pantalla (Laptops): json: 14.1\nname: allSpecifications\noriginalName: allSpecifications\nspecifications: Bluetooth (Laptops): json: No\nCapacidad de disco SSD (Laptops): json: 256 GB\nCapacidad total del módulo de memoria RAM (Laptops): json: 8 GB\nCámara web (Laptops): json: Sí\nLector de huella digital (Laptops): json: No\nMarca (Laptops): json: ENV\nMarca del procesador (Laptops): json: Intel\nModelo (Laptops): json: Book Pro Max N4020\nModelo del procesador (Laptops): json: N4020\nPantalla táctil (Laptops): json: No\nResolución de la pantalla (Laptops): json: FHD 1920 x 1080\nTamaño de la pantalla (Laptops): json: 14.1\n\nLaptop ENV Book Pro Max 14.1\" Full HD: ligera y accesible\nTen una laptop con pantalla Full HD a un precio accesible. La laptop ENV Book Pro Max trae Intel Celeron N4020 , 8 GB de RAM , SSD de 256 GB y pantalla de 14.1\" Full HD .\nTiene Wi-Fi 5 , USB-C y cámara de 2 MP para clases y videollamadas. Se entrega sin licencia de Windows , para que instales el sistema que prefieras. Portátil, práctica y lista para tus tareas.\nCaracterísticas destacadas\nPantalla de 14.1\" Full HD: imágenes nítidas en formato portátil.\n8 GB de RAM: fluidez en tareas cotidianas.\nSSD de 256 GB: arranque y carga rápidos.\nWi-Fi 5: conexión inalámbrica estable.\nCámara de 2 MP: lista para clases virtuales.\nFicha técnica\nMarca: ENV\nModelo: Book Pro Max\nProcesador: Intel Celeron N4020 (2 núcleos, hasta 2.8 GHz)\nMemoria RAM: 8 GB\nAlmacenamiento: SSD de 256 GB\nPantalla: 14.1\" Full HD (1920 x 1080)\nSistema operativo: No incluye licencia de Windows\nCámara: 2 MP\nConectividad: Wi-Fi 5\nPuertos: USB-C (datos)\nBatería: 7.6 V / 5000 mAh\nCargador: 12 V / 3 A"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": null,
+    "candidatos_localizados": {
+      "nombre": 3,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 2,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 11,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0008",
+        "G0009"
+      ]
+    }
+  }
+}

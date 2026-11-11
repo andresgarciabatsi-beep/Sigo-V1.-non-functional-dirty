@@ -1,0 +1,48 @@
+{
+  "archivo": "N042_pololu.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N042_pololu.html",
+  "url": null,
+  "campos": {
+    "nombre": "12V, 100mA Isolated Step-Up Voltage Regulator U5Z6F12",
+    "precio": "8.95",
+    "disponibilidad": "disponible",
+    "descripcion": "This step-up voltage regulator consists of an isolated DC-to-DC power module in front of a step-up (boost) regulator. This enables up to 100 mA continuous at 12 V out from a 5 V input with full galvanic isolation between the input and output. The 5 V, 300 mA output of the isolation IC is also available.\nInput voltage\nOutput voltages\nMax continuous output current\nSize\n4.5 V to 5.5 V\n12 V\n100 mA*\n0.4″ × 1.0″\n5 V\n300 mA*\n* Max current per channel when the other channel current is zero.",
+    "especificaciones": "Side\nPin\nDescription\nInput\nVIN\n5 V input power supply. The regulator operates from 4.5 V to 5.5 V. Note that the input current will need to be around 500 mA to get 100 mA out at 12 V.\nGNDI\nGround connection for VIN. GNDI is\nNOT\nconnected to GNDO.\nEN/FLT\nUCC33420 multi-function enable input and fault output. This connects directly to the EN/FLT pin on the input side of the UCC33420 and is pulled up to VIN through a 100 kΩ resistor.\n• Enable input: Driving this pin low disables the regulator and puts it into a low power state where it draws under 230 µA. The default state of this pin is high, which enables the regulator.\n• Fault output: The UCC33420 pulls this pin low for 200 µs if an output under-voltage or thermal protection fault occurs.\nOutput\nVOUT\nRegulated and isolated 12V output.\n5V (out)\nThis pin provides direct access to the UCC33420 isolated 5V (VCC) output, which is also used as the input to the output-side boost regulator.\nGNDO\nGround connection for VOUT and 5V (out). GNDO is\nNOT\nconnected to GNDI.\n\nThis step-up voltage regulator consists of an isolated DC-to-DC power module in front of a step-up (boost) regulator. This enables up to 100 mA continuous at 12 V out from a 5 V input with full galvanic isolation between the input and output. The 5 V, 300 mA output of the isolation IC is also available.\nInput voltage\nOutput voltages\nMax continuous output current\nSize\n4.5 V to 5.5 V\n12 V\n100 mA*\n0.4″ × 1.0″\n5 V\n300 mA*\n* Max current per channel when the other channel current is zero."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "12V, 100mA Isolated Step-Up Voltage Regulator U5Z6F12",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 6,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 20,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0008"
+      ],
+      "especificaciones": [
+        "G0009",
+        "G0010"
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "archivo": "N011_soldered.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N011_soldered.html",
+  "url": null,
+  "campos": {
+    "nombre": "Inkplate 10",
+    "precio": "€189,95",
+    "disponibilidad": null,
+    "descripcion": "Powered by ESP32, Inkplate 10 has a stunning 9.7\" inch e-paper display with refresh rate of 1.61s, greyscale mode, and partial updates support.",
+    "especificaciones": "Powered by ESP32, Inkplate 10 has a stunning 9.7\" inch e-paper display with refresh rate of 1.61s, greyscale mode, and partial updates support."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": "Inkplate 10",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 5,
+      "disponibilidad": 0,
+      "descripcion": 3,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 17,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0007"
+      ],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0009"
+      ],
+      "especificaciones": [
+        "G0010"
+      ]
+    }
+  }
+}

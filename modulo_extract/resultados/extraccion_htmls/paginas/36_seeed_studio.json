@@ -1,0 +1,46 @@
+{
+  "archivo": "36_seeed_studio.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/36_seeed_studio.html",
+  "url": null,
+  "campos": {
+    "nombre": "BeagleBoard PocketBeagle 2",
+    "precio": "$59.90",
+    "disponibilidad": "disponible",
+    "descripcion": "Created by BeagleBoard.org Foundation, BeagleBoard PocketBeagle 2 is an upgraded version of the popular BeagleBoard PocketBeagle, designed as an ultra-compact, low-cost, and powerful single-board computer (SBC). Powered by Texas Instruments AM6254 SoC, it delivers high performance, advanced security, extensive connectivity, and advanced capabilities for developers, students, and hobbyists and innovators.",
+    "especificaciones": "Created by BeagleBoard.org Foundation, BeagleBoard PocketBeagle 2 is an upgraded version of the popular BeagleBoard PocketBeagle, designed as an ultra-compact, low-cost, and powerful single-board computer (SBC). Powered by Texas Instruments AM6254 SoC, it delivers high performance, advanced security, extensive connectivity, and advanced capabilities for developers, students, and hobbyists and innovators."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "BeagleBoard PocketBeagle 2",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 9,
+      "disponibilidad": 4,
+      "descripcion": 2,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 24,
+    "grupos": 14,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0009"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0013"
+      ]
+    }
+  }
+}

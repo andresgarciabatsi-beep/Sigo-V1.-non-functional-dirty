@@ -1,0 +1,47 @@
+{
+  "archivo": "N016_steren_mexico.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N016_steren_mexico.html",
+  "url": null,
+  "campos": {
+    "nombre": "Adaptador inalámbrico Carplay*/Android auto*",
+    "precio": "595.00",
+    "disponibilidad": "agotado",
+    "descripcion": "Descripción Olvídate de cables y haz inalámbrico tu CarPlay* o Android Auto* Incluye adaptador USB a USB C Acceso total a funciones principales Plug&Play: Conecta y usa Olvídate de enredos y cables Con este adaptador inalámbrico Carplay/Android auto tu coche se vuelve más inteligente, conectándose automáticamente con tu celular al encenderlo, permitiéndote usar el asistente de voz, navegación, música, llamadas y apps compatibles sin depender del cable. Compatibilidad total con USB y USB C Puedes conectarlo al puerto USB o Tipo C de tu vehículo, lo que lo hace compatible con la mayoría de las unidades que ya tienen Carplay/Android auto por cable. Funciones completas Tendrás acceso a todas las funciones principales, como mapas, mensajes, llamadas, apps de música y control por voz, tal como lo hace Carplay o Android auto tradicionales. También tendrás compatibilidad con micrófonos del vehículo, pantallas touch, perillas, botones y controles al volante. Conexión automática tras el primer emparejamiento Solo necesitas emparejarlo una vez; después actúa como plug & play, reconectándose automáticamente cada vez que entras al coche.",
+    "especificaciones": "Olvídate de cables y haz inalámbrico tu CarPlay* o Android Auto* Incluye adaptador USB a USB C Acceso total a funciones principales Plug&Play: Conecta y usa"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "Adaptador inalámbrico Carplay*/Android auto*",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 18,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 33,
+    "grupos": 16,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0013"
+      ],
+      "descripcion": [
+        "G0014"
+      ],
+      "especificaciones": [
+        "G0016"
+      ]
+    }
+  }
+}

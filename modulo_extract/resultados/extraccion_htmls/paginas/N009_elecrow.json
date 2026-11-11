@@ -1,0 +1,45 @@
+{
+  "archivo": "N009_elecrow.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N009_elecrow.html",
+  "url": null,
+  "campos": {
+    "nombre": "Elecrow LR2021 LoRa Module-150-960MHz Sub-GHz Full-Band LoRa Module",
+    "precio": "$6.90",
+    "disponibilidad": "disponible",
+    "descripcion": "LR2021 LoRa Module LR2021 is a compact wireless communication module powered by Semtech’s 4th-generation LR2021 LoRa chip . It supports Sub-GHz, 2.4 GHz ISM, and S-band (1900–2200 MHz) , enabling flexible terrestrial and satellite communication. With up to 2.6 Mbps FLRC , -141.5 dBm sensitivity, and +22 dBm Sub-GHz transmit power, LR2021 delivers reliable long-range and high-speed connectivity. Its single-antenna multi-band design reduces BOM cost and PCB space, while the 10×10 mm compact package makes integration easy. Supporting LoRaWAN, Amazon Sidewalk, Wi-SUN, W-MBUS, Z-Wave, Thread, and Zigbee , LR2021 is ideal for global IoT, smart metering, asset tracking, industrial automation, and satellite-enabled applications. Feature Fourth-generation LoRa technology: Utilizes the Semtech LR2021, offering approximately 4.5 dB improvement in Sub-GHz sensitivity and supporting up to 2.6 Mbps FLRC. Multi-band support: Supports Sub-GHz (150–960 MHz), 2.4 GHz, and S-band (1900–2200 MHz), covering both terrestrial and satellite communications. High-performance RF: Maximum +22 dBm transmit power in Sub-GHz and +12 dBm in 2.4 GHz, with sensitivity as low as -141.5 dBm. Single-antenna design: Supports multi-band switching, eliminating the need for an external RF switch, reducing BOM costs and saving PCB space. Low power consumption and long range: Sleep current as low as 470 nA, typical communication range of 6–8 km, and line-of-sight exceeding 15 km. Multi-protocol compatibility: Supports LoRaWAN, Amazon Sidewalk, Wi-SUN, W-MBUS, Z-Wave, Thread, and Zigbee. Compact and easy to integrate: Utilizes a 10×10 mm, 20-pin surface-mount stamp hole package, suitable for space-constrained embedded devices. Industry-grade reliability: Supports operating temperatures from -40°C to +85°C and is FCC ID and CE (RED) certified. FCC, CE certification Specification RF chip Semtech LR2021 Chip LoRa Specification Transmit P ower TX +22 dBm @max (Sub-GHz), +12 dBm (2.4 GHz); Receiving S ensitivity -141.5dBm, @SF12/BW=125 kHz Link Budget Support 151db link budget Demodulator Supports LoRa/(G)FSK/OOK/O-QPSK/LR-FHSS/FLRC signal modulation; SF5~SF12; Support 150MHz-960MHz configuration; Supports Sub-GHz (850~930 MHz) + 2.4 GHz + S band (1900–2200 MHz) Data T ransfer R ate 0.0458–125 kbps (LoRa), 260 kbps–2.6 Mbps (FLRC) Other Frequency Sub-GHz: 850~930 MHz (applicable to 868/915 MHz); 2.4 GHz ISM (2400–2483 MHz); Licensed S-band (1900–2200 MHz, satellite communications); Communication Interface SPI(0~10Mbps) Lead P in Such as SPI signal, VCC, multiple GND pins, NRST, ANT (Sub-GHz), ANT (2.4 GHz), multiple DIO pins, TX control, RX control, BUSY state, etc. Antenna SMT pins, impedance @50 Ω (Sub-GHz antenna pin + 2.4 GHz antenna pin) Reference Power Consumption Sleep power consumption: 0.54 µA Standby power consumption: 1.15mA Receive power consumption 2.4GHz: 6.10mA 868MHz: 5.74mA 915MHz: 5.75mA Transmit power consumption 868MHz: 15.8mA 2.4GHz: 28.8mA 915MHz: 101mA Communication D istance 6 ~ 8 km, m aximum over 1 5 km Crystal T yp e Industrial grade 32MHz TCX 0 Operating Voltage 1.8~3.7V Operating Temperature -40℃~+85℃，Industrial standard design Package S ize 10*10*3.5mm, 20-Pin, SMT assembly, stamp hole; Weight 3g Application scenarios Smart city Smart agriculture Industrial automation Environmental monitoring Smart home Logistics management Medical health Pin Definition Package List 1x LR2021 LoRa Module Wiki & External links Wiki Datasheet",
+    "especificaciones": "LR2021 LoRa Module\nLR2021 is a compact wireless communication module powered by\nSemtech’s 4th-generation LR2021 LoRa chip\n. It supports\nSub-GHz, 2.4 GHz ISM, and S-band (1900–2200 MHz)\n, enabling flexible terrestrial and satellite communication.\nWith up to 2.6 Mbps FLRC\n,\n-141.5 dBm sensitivity, and +22 dBm\nSub-GHz transmit power, LR2021 delivers reliable long-range and high-speed connectivity. Its single-antenna multi-band design reduces BOM cost and PCB space, while the\n10×10 mm compact package\nmakes integration easy. Supporting\nLoRaWAN, Amazon Sidewalk, Wi-SUN, W-MBUS, Z-Wave, Thread, and Zigbee\n, LR2021 is ideal for global IoT, smart metering, asset tracking, industrial automation, and satellite-enabled applications.\nFeature\nFourth-generation LoRa technology:\nUtilizes the Semtech LR2021, offering approximately 4.5 dB improvement in Sub-GHz sensitivity and supporting up to 2.6 Mbps FLRC.\nMulti-band support:\nSupports Sub-GHz (150–960 MHz), 2.4 GHz, and S-band (1900–2200 MHz), covering both terrestrial and satellite communications.\nHigh-performance RF:\nMaximum +22 dBm transmit power in Sub-GHz and +12 dBm in 2.4 GHz, with sensitivity as low as -141.5 dBm.\nSingle-antenna design:\nSupports multi-band switching, eliminating the need for an external RF switch, reducing BOM costs and saving PCB space.\nLow power consumption and long range:\nSleep current as low as 470 nA, typical communication range of 6–8 km, and line-of-sight exceeding 15 km.\nMulti-protocol compatibility:\nSupports LoRaWAN, Amazon Sidewalk, Wi-SUN, W-MBUS, Z-Wave, Thread, and Zigbee.\nCompact and easy to integrate:\nUtilizes a 10×10 mm, 20-pin surface-mount stamp hole package, suitable for space-constrained embedded devices.\nIndustry-grade reliability:\nSupports operating temperatures from -40°C to +85°C and is FCC ID and CE (RED) certified.\nFCC, CE certification\nSpecification\nRF chip\nSemtech LR2021\nChip\nLoRa Specification\nTransmit\nP\nower TX\n+22 dBm @max (Sub-GHz), +12 dBm (2.4 GHz);\nReceiving\nS\nensitivity\n-141.5dBm, @SF12/BW=125 kHz\nLink Budget\nSupport 151db link budget\nDemodulator\nSupports LoRa/(G)FSK/OOK/O-QPSK/LR-FHSS/FLRC signal modulation;\nSF5~SF12; Support 150MHz-960MHz configuration;\nSupports Sub-GHz (850~930 MHz) + 2.4 GHz + S band (1900–2200 MHz)\nData\nT\nransfer\nR\nate\n0.0458–125 kbps (LoRa), 260 kbps–2.6 Mbps (FLRC)\nOther\nFrequency\nSub-GHz: 850~930 MHz (applicable to 868/915 MHz);\n2.4 GHz ISM (2400–2483 MHz);\nLicensed S-band (1900–2200 MHz, satellite communications);\nCommunication Interface\nSPI(0~10Mbps)\nLead\nP\nin\nSuch as SPI signal, VCC, multiple GND pins, NRST, ANT (Sub-GHz), ANT (2.4 GHz), multiple DIO pins, TX control, RX control, BUSY state, etc.\nAntenna\nSMT pins, impedance @50 Ω (Sub-GHz antenna pin + 2.4 GHz antenna pin)\nReference Power Consumption\nSleep power consumption: 0.54 µA\nStandby power consumption: 1.15mA\nReceive power consumption\n2.4GHz: 6.10mA\n868MHz: 5.74mA\n915MHz: 5.75mA\nTransmit power consumption\n868MHz: 15.8mA\n2.4GHz: 28.8mA\n915MHz: 101mA\nCommunication\nD\nistance\n6\n~\n8\nkm,\nm\naximum over 1\n5\nkm\nCrystal\nT\nyp\ne\nIndustrial grade 32MHz TCX\n0\nOperating Voltage\n1.8~3.7V\nOperating Temperature\n-40℃~+85℃，Industrial standard design\nPackage\nS\nize\n10*10*3.5mm, 20-Pin, SMT assembly, stamp hole;\nWeight\n3g\nApplication scenarios\nSmart city\nSmart agriculture\nIndustrial automation\nEnvironmental monitoring\nSmart home\nLogistics management\nMedical health\nPin Definition\nPackage List\n1x LR2021 LoRa Module\nWiki & External links\nWiki\nDatasheet"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "Elecrow LR2021 LoRa Module-150-960MHz Sub-GHz Full-Band LoRa Module",
+    "candidatos_localizados": {
+      "nombre": 9,
+      "precio": 46,
+      "disponibilidad": 4,
+      "descripcion": 8,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 72,
+    "grupos": 35,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0027"
+      ],
+      "descripcion": [
+        "G0030"
+      ],
+      "especificaciones": [
+        "G0034"
+      ]
+    }
+  }
+}

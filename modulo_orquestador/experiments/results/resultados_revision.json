@@ -1,0 +1,37 @@
+[
+  {
+    "numero_item": 1,
+    "nombre_item": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s",
+    "mercado": "Estados Unidos",
+    "prioridad": 2,
+    "tienda": "eBay",
+    "dominio": "ebay.com",
+    "consulta": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s ebay.com",
+    "resultados": [
+      {
+        "title": "XS1000 USB 3.2 Gen 2 Disco Duro Externo De Estado ... - eBay",
+        "content": "Jul 12, 2026 · Con velocidades de almacenamiento y transferencia de alta capacidad de hasta 1.050 MB/s, el XS1000 es la solución perfecta para una copia de seguridad sin problemas y almacenar documentos importantes, recuerdos apreciados y datos valiosos.",
+        "url": "https://www.ebay.com/itm/136596601125",
+        "engines": [
+          "yahoo"
+        ],
+        "score": 0.25,
+        "puntaje_bm25": 4.56182,
+        "posicion_region": 1,
+        "revision": {
+          "etapa": "puerta_2",
+          "motivo": "acceso_denegado",
+          "status_code": 403,
+          "error": "HTTP 403",
+          "url_final": "https://www.ebay.com/itm/136596601125"
+        }
+      }
+    ],
+    "motores_no_disponibles": [
+      [
+        "brave",
+        "Suspended: too many requests"
+      ]
+    ]
+  }
+]

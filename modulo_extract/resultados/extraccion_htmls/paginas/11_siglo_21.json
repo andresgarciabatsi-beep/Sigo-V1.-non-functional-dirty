@@ -1,0 +1,46 @@
+{
+  "archivo": "11_siglo_21.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/11_siglo_21.html",
+  "url": null,
+  "campos": {
+    "nombre": "MONITOR ASUS/XG27AQDMES ROG STRIX OLED 27PULG QHD 2560X1440 240HZ HDMI 90LM0C80-B011I1",
+    "precio": "536.63",
+    "disponibilidad": "disponible",
+    "descripcion": "Pantalla:\n27 PULG\nResolución:\n2560x1440\nCurvo:\nNA\nPuerto USB:\nNA\nPuerto Vga:\nNA\nPuerto HDMI:\nSI\nAccesorios que incluye:\nNA\nDimensiones(L/Al/An):\n47x78x18.6 CM\nPeso:\n9 KG",
+    "especificaciones": "Pantalla:\n27 PULG\nResolución:\n2560x1440\nCurvo:\nNA\nPuerto USB:\nNA\nPuerto Vga:\nNA\nPuerto HDMI:\nSI\nAccesorios que incluye:\nNA\nDimensiones(L/Al/An):\n47x78x18.6 CM\nPeso:\n9 KG"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "MONITOR ASUS/XG27AQDMES ROG STRIX OLED  27PULG QHD 2560X1440 240HZ HDMI 90LM0C80-B011I1",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 3,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 19,
+    "grupos": 12,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0008"
+      ],
+      "especificaciones": [
+        "G0011"
+      ]
+    }
+  }
+}

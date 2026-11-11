@@ -1,0 +1,45 @@
+{
+  "archivo": "01_tecnit.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/01_tecnit.html",
+  "url": null,
+  "campos": {
+    "nombre": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+    "precio": "$ 19.99 Incl. IVA Precio en efectivo o transferencia",
+    "disponibilidad": "disponible",
+    "descripcion": "La base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.",
+    "especificaciones": "Descripción del producto\nLa base para computador portátil es la solución práctica y efectiva para aumentar la comodidad mientras utilizas tu portátil. La base levanta la pantalla del computador de tal forma de dejarlo ajustado justo a la altura de los ojos, su diseño ergonómico contribuye a reducir la tensión en las muñecas y en el cuello.\nEspecificaciones\n– Consta de 1 ventilador de 140mm\n– Conexión por puerto USB 2.0\n– Inclinable a 10cm con dos patas en la parte baja de la Base\n– Superficie con malla metálica antideslizante\n– Compatible con portátiles de 10″ hasta 17″\n– Flujo de aire: 70 CFM\n– Velocidad: 1200 +- 10% RPM y 1400 +- 10% RPM\n– Velocidad del ventilador: Hasta 1400 RPM\n– Ruido: 15 dBA\n– Corriente: 0.35A / Voltaje: DC 5V / Energía: 1.75W"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "BASE ENFRIADORA ARGOM PARA LAPTOP 17″ USB INCLINABLE 5 NIVELES CON 1 VENT. LED",
+    "candidatos_localizados": {
+      "nombre": 4,
+      "precio": 1,
+      "disponibilidad": 1,
+      "descripcion": 2,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 12,
+    "grupos": 11,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0008"
+      ]
+    }
+  }
+}

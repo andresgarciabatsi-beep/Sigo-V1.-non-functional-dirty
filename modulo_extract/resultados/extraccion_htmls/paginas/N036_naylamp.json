@@ -1,0 +1,43 @@
+{
+  "archivo": "N036_naylamp.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N036_naylamp.html",
+  "url": null,
+  "campos": {
+    "nombre": "Módulo IMU MPU6500 + BMP280: Acelerómetro, Giroscopio, Altímetro I2C",
+    "precio": "S/ 50,00",
+    "disponibilidad": "disponible",
+    "descripcion": "INFO El módulo GY-91 integra el IMU MPU6500 y el barómetro BMP280 , logrando un total de 7 grados de libertad (DoF) y contiene todo lo necesario para realizar rastreo de movimiento espacial de un Drone o UAV. Combina un giroscopio de 3 ejes, un acelerómetro de 3 ejes y un altímetro en un mismo chip. El IMU MPU6500 integra un DMP (Procesador digital de movimiento) capaz de realizar complejos algoritmos de captura de movimiento de 6 ejes. Para una captura precisa de movimiento rápido y lento, posee un rango de escala programable de 250/500/1000/2000 grados/seg para el giroscopio, 2g/4g/8g/16g para el acelerómetro. El sensor de presión barométrica BMP280 (evolución del BMP180) posee alta precisión y un bajo consumo de energía. Ofrece un rango de medición de 300 a 1100 hPa (Hecto Pascal). Basado en tecnología BOSCH piezo-resistiva con gran robustez EMC, alta precisión y linealidad, así como con estabilidad a largo plazo. Presenta diversas mejoras respecto al sensor BMP180 como: mejor resolución de presión y temperatura, mejor precisión, mejores filtros digitales y un menor consumo de energía. Los sensores MPU6500 y BMP280 comparten el mismo bus de comunicación I2C. La integración con Arduino a nivel de software es muy sencilla pues existen librerías listas para ser usadas. A nivel de hardware el modulo incluye un regulador de 3.3V en placa, además de resistencias pull-up en el bus I2C. El módulo GY-91 posee alta integración y precisión, ideal para ser utilizado en Drones, solo basta añadir un Módulo GPS y podremos construir un sistema de navegación autónoma. ESPECIFICACIONES TÉCNICAS Módulo GY-91: MPU6500 + BMP280 Voltaje de operación: 3V/3.3V~5V DC Interfaz de comunicación: I2C y SPI Comunicación compatible con 3.3V o 5V Sensor IMU: MPU6500 Rango Acelerómetro: ±2g, ±4g, ±8g, ±16g Rango Giroscopio: ±250Grad/Seg, ±500Grad/Seg, ±1000Grad/Seg, ±2000Grad/Seg Conversor AD: 16 Bits (salida digital) Grados de libertad (DoF): 6 Dirección I2C: 0x68 (pin ADO a GND) / 0x69 (pin ADO a VCC) Sensor BARÓMETRO: BMP280 Rango de Presión: 300 a 1100 hPa Resolución: 0.16 Pa Precisión absoluta: 1 hPa Medición de temperatura incluida Resolución de temperatura: 0.01°C Precisión Temperatura: 1°C Frecuencia de Muestreo: 157 Hz (máx.) Dirección I2C: 0x76 Regulador de voltaje integrado en placa Ultra-bajo consumo de energía Completamente calibrado Dimensiones: 20*14*3 mm CONEXIÓN VIN: Alimentación voltaje 5V 3V3: Salida 3.3V GND: 0V Tierra SCL: I2C Clock / SPI Clock SDA: I2C Data / SPI Data Input SDO/SAO: SPI Data output / I2C Slave Address configuration pin NCS: Chip Select for SPI mode only for MPU6500 CSB: Chip Select for BMP280 LINKS Datasheet MPU6500 MPU6500 Manual de Registros Datasheet BMP280 Esquemático GY91: MPU6500 + BMP28 Librería Arduino: MPU9250 con algoritmo AHRS Librería Arduino: Fake MPU9250: MPU6500/MPU6050 Página oficial (BOSCH) BMP280 Lee mas Show less",
+    "especificaciones": "INFO\nEl\nmódulo GY-91\nintegra el\nIMU MPU6500\ny el barómetro\nBMP280\n, logrando un total de 7 grados de libertad (DoF) y contiene todo lo necesario para realizar rastreo de movimiento espacial de un Drone o UAV. Combina un giroscopio de 3 ejes, un acelerómetro de 3 ejes y un altímetro en un mismo chip.\nEl IMU MPU6500 integra un DMP (Procesador digital de movimiento) capaz de realizar complejos algoritmos de captura de movimiento de 6 ejes. Para una captura precisa de movimiento rápido y lento, posee un rango de escala programable de 250/500/1000/2000 grados/seg para el giroscopio, 2g/4g/8g/16g para el acelerómetro.\nEl sensor de presión barométrica BMP280 (evolución del BMP180) posee alta precisión y un bajo consumo de energía. Ofrece un rango de medición de 300 a 1100 hPa (Hecto Pascal). Basado en tecnología BOSCH piezo-resistiva con gran robustez EMC, alta precisión y linealidad, así como con estabilidad a largo plazo. Presenta diversas mejoras respecto al sensor BMP180 como: mejor resolución de presión y temperatura, mejor precisión, mejores filtros digitales y un menor consumo de energía.\nLos sensores MPU6500 y BMP280 comparten el mismo bus de comunicación I2C. La integración con Arduino a nivel de software es muy sencilla pues existen librerías listas para ser usadas. A nivel de hardware el modulo incluye un regulador de 3.3V en placa, además de resistencias pull-up en el bus I2C.\nEl módulo GY-91 posee alta integración y precisión, ideal para ser utilizado en Drones, solo basta añadir un\nMódulo GPS\ny podremos construir un sistema de navegación autónoma.\nESPECIFICACIONES TÉCNICAS\nMódulo GY-91: MPU6500 + BMP280\nVoltaje de operación: 3V/3.3V~5V DC\nInterfaz de comunicación: I2C y SPI\nComunicación compatible con 3.3V o 5V\nSensor IMU: MPU6500\nRango Acelerómetro: ±2g, ±4g, ±8g, ±16g\nRango Giroscopio: ±250Grad/Seg, ±500Grad/Seg, ±1000Grad/Seg, ±2000Grad/Seg\nConversor AD: 16 Bits (salida digital)\nGrados de libertad (DoF): 6\nDirección I2C: 0x68 (pin ADO a GND) / 0x69 (pin ADO a VCC)\nSensor BARÓMETRO: BMP280\nRango de Presión: 300 a 1100 hPa\nResolución: 0.16 Pa\nPrecisión absoluta: 1 hPa\nMedición de temperatura incluida\nResolución de temperatura: 0.01°C\nPrecisión Temperatura: 1°C\nFrecuencia de Muestreo: 157 Hz (máx.)\nDirección I2C: 0x76\nRegulador de voltaje integrado en placa\nUltra-bajo consumo de energía\nCompletamente calibrado\nDimensiones: 20*14*3 mm\nCONEXIÓN\nVIN:\nAlimentación voltaje 5V\n3V3:\nSalida 3.3V\nGND:\n0V Tierra\nSCL:\nI2C Clock / SPI Clock\nSDA:\nI2C Data / SPI Data Input\nSDO/SAO:\nSPI Data output / I2C Slave Address configuration pin\nNCS:\nChip Select for SPI mode only for MPU6500\nCSB:\nChip Select for BMP280\nLINKS\nDatasheet MPU6500\nMPU6500 Manual de Registros\nDatasheet BMP280\nEsquemático GY91: MPU6500 + BMP28\nLibrería Arduino: MPU9250 con algoritmo AHRS\nLibrería Arduino: Fake MPU9250: MPU6500/MPU6050\nPágina oficial (BOSCH) BMP280\nLee mas\nShow less"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [],
+    "titulo_referencia": "Módulo IMU MPU6500 + BMP280: Acelerómetro, Giroscopio, Altímetro I2C",
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 6,
+      "disponibilidad": 3,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 23,
+    "grupos": 16,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0007"
+      ],
+      "descripcion": [
+        "G0011"
+      ],
+      "especificaciones": [
+        "G0015"
+      ]
+    }
+  }
+}

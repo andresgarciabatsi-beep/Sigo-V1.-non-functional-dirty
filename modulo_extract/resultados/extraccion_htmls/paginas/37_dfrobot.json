@@ -1,0 +1,49 @@
+{
+  "archivo": "37_dfrobot.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/37_dfrobot.html",
+  "url": null,
+  "campos": {
+    "nombre": "Fermion: VL6180X ToF Distance Ranging Sensor (5-100mm) (Breakout)",
+    "precio": "9.5",
+    "disponibilidad": "disponible",
+    "descripcion": "The sensor uses FlightSense™ technology for accurate distance measurement (5-100mm, up to 200mm) and includes an ambient light sensor. It features strong anti-interference.",
+    "especificaciones": "Specification\nPower Supply Voltage: 3.3V~5V\nOperating Current: ＜5mA\nMeasuring Distance: 5-100mm\nEmitter: 940nm invisible laser (VCSEL)\nI2C Address: 0x29\nOperating Temperature Range: -20℃~85℃\nProduct Size: 19*18mm / 0.75*0.71 inch\n\nThe sensor uses FlightSense™ technology for accurate distance measurement (5-100mm, up to 200mm) and includes an ambient light sensor. It features strong anti-interference.\n\nUncover the precision of VL6180X sensor with up to 200mm ranging capability. Combines distance and ambient light measurement in one package!"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Fermion: VL6180X ToF Distance Ranging Sensor (5-100mm) (Breakout)",
+    "candidatos_localizados": {
+      "nombre": 9,
+      "precio": 3,
+      "disponibilidad": 1,
+      "descripcion": 6,
+      "especificaciones": 6
+    },
+    "candidatos_evaluados": 25,
+    "grupos": 15,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0006"
+      ],
+      "disponibilidad": [
+        "G0007"
+      ],
+      "descripcion": [
+        "G0008"
+      ],
+      "especificaciones": [
+        "G0011",
+        "G0013",
+        "G0014"
+      ]
+    }
+  }
+}

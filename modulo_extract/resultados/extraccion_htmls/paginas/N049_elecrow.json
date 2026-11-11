@@ -1,0 +1,45 @@
+{
+  "archivo": "N049_elecrow.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N049_elecrow.html",
+  "url": null,
+  "campos": {
+    "nombre": "PiTower Gen 2 Mini PC Case with 2.8” IPS Screen | Dual SSD Slot Designed for Raspberry Pi 5",
+    "precio": "$69.90",
+    "disponibilidad": "disponible",
+    "descripcion": "All-in-one Mini PC case for Pi 5 with aluminum chassis, transparent side panel, 2.8\" monitoring LCD, dual M.2 SSD slots, programmable RGB, and semi-preassembled structure. Shop Now.",
+    "especificaciones": "All-in-one Mini PC case for Pi 5 with aluminum chassis, transparent side panel, 2.8\" monitoring LCD, dual M.2 SSD slots, programmable RGB, and semi-preassembled structure. Shop Now."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "PiTower Gen 2 Mini PC Case with 2.8” IPS Screen | Dual SSD Slot Designed for Raspberry Pi 5",
+    "candidatos_localizados": {
+      "nombre": 9,
+      "precio": 44,
+      "disponibilidad": 4,
+      "descripcion": 8,
+      "especificaciones": 5
+    },
+    "candidatos_evaluados": 70,
+    "grupos": 34,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0026"
+      ],
+      "descripcion": [
+        "G0030"
+      ],
+      "especificaciones": [
+        "G0034"
+      ]
+    }
+  }
+}

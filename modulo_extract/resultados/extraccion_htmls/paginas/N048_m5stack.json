@@ -1,0 +1,45 @@
+{
+  "archivo": "N048_m5stack.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N048_m5stack.html",
+  "url": null,
+  "campos": {
+    "nombre": "M5Stack Stopwatch Dev Kit (ESP32-S3)",
+    "precio": "$45.00",
+    "disponibilidad": "agotado",
+    "descripcion": "Description\nStopWatch is a round AMOLED touch development board designed for portable and interactive scenarios. It features an ESP32-S3R8 main controller with 16MB Flash and 8MB PSRAM, and supports 2.4GHz Wi-Fi wireless communication. The device integrates a 1.75\" AMOLED round touch display, programmable buttons, and vibration feedback to provide an intuitive human-machine interaction experience. It also provides audio input/output, IMU attitude sensing, RTC timekeeping, and multiple expansion interfaces. Together with the M5PM1 multi-level power management system and a 450mAh battery, it can meet diverse development needs such as portable smart control, wearable human-machine interaction, and lightweight IoT terminals.\nFeatures\nESP32-S3R8 core controller:\n16MB Flash + 8MB PSRAM\n2.4GHz Wi-Fi\nInteractive experience:\n1.75\" AMOLED round touch display\n2 x programmable buttons, 1 x power button\nBuilt-in vibration motor\n6-axis IMU BMI270\nAudio system:\nES8311 Audio Codec\nMEMS MIC\nAW8737A amplifier\nRTC clock chip RX8130CE\nExpansion capability:\nHY2.0-4P expansion interface\nRear expansion bus (2.54-7P, 2.54-6P)\nLanyard hole design\nRear magnetic attachment design\nPower system:\nM5PM1 multi-level power management system\nBuilt-in 450mAh battery\nBalances battery life and low-power operation\nIncludes\n1 x StopWatch\nApplications\nPortable smart devices\nElectronic badges\nLightweight IoT terminals\nSpecifications\nSpecification\nParameter\nSoC\nESP32-S3R8 dual-core Xtensa LX7, up to 240MHz\nFlash\n16MB\nPSRAM\n8MB\nWireless\n2.4GHz Wi-Fi\nDisplay\n1.75\" AMOLED round touch display, 466x466 resolution, CO5300 driver chip, QSPI interface\nTouch\nCST820B driver chip\nButtons\n2 x programmable buttons + 1 x power button\nVibration Feedback\nBuilt-in vibration motor\nAudio Codec\nES8311\nMicrophone\nMEMS MIC\nAudio Amplifier\nAW8737A\nIMU\nBMI270\nRTC\nRX8130CE\nExpansion Interface\nHY2.0-4P\nRear Expansion Bus\n2.54-7P, 2.54-6P\nBody Structure\nLanyard hole\nPower Management\nM5PM1 multi-level power management\nBattery Capacity\n450mAh\nInput Power\nUSB Type-C DC 5V\nProduct Size\n52.0 x 52.0 x 15.5mm\nProduct Weight\n39.0g\nPackage Size\n70.0 x 70.0 x 23.6mm\nGross Weight\n49.5g\nLearn and Documents\n→ DOCUMENTS",
+    "especificaciones": "Description\nStopWatch is a round AMOLED touch development board designed for portable and interactive scenarios. It features an ESP32-S3R8 main controller with 16MB Flash and 8MB PSRAM, and supports 2.4GHz Wi-Fi wireless communication. The device integrates a 1.75\" AMOLED round touch display, programmable buttons, and vibration feedback to provide an intuitive human-machine interaction experience. It also provides audio input/output, IMU attitude sensing, RTC timekeeping, and multiple expansion interfaces. Together with the M5PM1 multi-level power management system and a 450mAh battery, it can meet diverse development needs such as portable smart control, wearable human-machine interaction, and lightweight IoT terminals.\nFeatures\nESP32-S3R8 core controller:\n16MB Flash + 8MB PSRAM\n2.4GHz Wi-Fi\nInteractive experience:\n1.75\" AMOLED round touch display\n2 x programmable buttons, 1 x power button\nBuilt-in vibration motor\n6-axis IMU BMI270\nAudio system:\nES8311 Audio Codec\nMEMS MIC\nAW8737A amplifier\nRTC clock chip RX8130CE\nExpansion capability:\nHY2.0-4P expansion interface\nRear expansion bus (2.54-7P, 2.54-6P)\nLanyard hole design\nRear magnetic attachment design\nPower system:\nM5PM1 multi-level power management system\nBuilt-in 450mAh battery\nBalances battery life and low-power operation\nIncludes\n1 x StopWatch\nApplications\nPortable smart devices\nElectronic badges\nLightweight IoT terminals\nSpecifications\nSpecification\nParameter\nSoC\nESP32-S3R8 dual-core Xtensa LX7, up to 240MHz\nFlash\n16MB\nPSRAM\n8MB\nWireless\n2.4GHz Wi-Fi\nDisplay\n1.75\" AMOLED round touch display, 466x466 resolution, CO5300 driver chip, QSPI interface\nTouch\nCST820B driver chip\nButtons\n2 x programmable buttons + 1 x power button\nVibration Feedback\nBuilt-in vibration motor\nAudio Codec\nES8311\nMicrophone\nMEMS MIC\nAudio Amplifier\nAW8737A\nIMU\nBMI270\nRTC\nRX8130CE\nExpansion Interface\nHY2.0-4P\nRear Expansion Bus\n2.54-7P, 2.54-6P\nBody Structure\nLanyard hole\nPower Management\nM5PM1 multi-level power management\nBattery Capacity\n450mAh\nInput Power\nUSB Type-C DC 5V\nProduct Size\n52.0 x 52.0 x 15.5mm\nProduct Weight\n39.0g\nPackage Size\n70.0 x 70.0 x 23.6mm\nGross Weight\n49.5g\nLearn and Documents\n→ DOCUMENTS"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "M5Stack Stopwatch Dev Kit (ESP32-S3)",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 7,
+      "disponibilidad": 3,
+      "descripcion": 10,
+      "especificaciones": 7
+    },
+    "candidatos_evaluados": 35,
+    "grupos": 23,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0007"
+      ],
+      "disponibilidad": [
+        "G0010"
+      ],
+      "descripcion": [
+        "G0015"
+      ],
+      "especificaciones": [
+        "G0021"
+      ]
+    }
+  }
+}

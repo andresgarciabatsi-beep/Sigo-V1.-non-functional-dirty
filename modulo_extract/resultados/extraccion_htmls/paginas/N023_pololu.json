@@ -1,0 +1,46 @@
+{
+  "archivo": "N023_pololu.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N023_pololu.html",
+  "url": null,
+  "campos": {
+    "nombre": "4.4:1 Metal Gearmotor 25Dx48L mm HP 24V",
+    "precio": "32.95",
+    "disponibilidad": "disponible",
+    "descripcion": "This gearmotor consists of a high-power, 24 V brushed DC motor combined with a 4.4:1 metal spur gearbox. The gearmotor is cylindrical, with a diameter just under 25 mm, and the D-shaped output shaft is 4 mm in diameter and extends 12.5 mm from the face plate of the gearbox. This gearmotor is also available with an integrated encoder.\nKey specifications:\nvoltage\nno-load performance\nstall extrapolation\n24 V\n2300 RPM, 80 mA\n2.0 kg⋅cm (28 oz⋅in), 2.7 A",
+    "especificaciones": "This gearmotor consists of a high-power, 24 V brushed DC motor combined with a 4.4:1 metal spur gearbox. The gearmotor is cylindrical, with a diameter just under 25 mm, and the D-shaped output shaft is 4 mm in diameter and extends 12.5 mm from the face plate of the gearbox. This gearmotor is also available with an integrated encoder.\nKey specifications:\nvoltage\nno-load performance\nstall extrapolation\n24 V\n2300 RPM, 80 mA\n2.0 kg⋅cm (28 oz⋅in), 2.7 A"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "4.4:1 Metal Gearmotor 25Dx48L mm HP 24V",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 7,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 21,
+    "grupos": 9,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0003"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0008"
+      ],
+      "especificaciones": [
+        "G0009"
+      ]
+    }
+  }
+}

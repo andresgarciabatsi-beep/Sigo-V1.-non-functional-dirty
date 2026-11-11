@@ -1,0 +1,48 @@
+{
+  "archivo": "19_nomadaware.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/19_nomadaware.html",
+  "url": null,
+  "campos": {
+    "nombre": "LAPTOP ENV BOOK LITE 1EENV5095",
+    "precio": "330",
+    "disponibilidad": "disponible",
+    "descripcion": "Descripción » Modelo : ENV Book Lite 1EENV5095 » Sistema operativo : Windows 11 Home » Procesador : Intel® Celeron® N5095 (frecuencia base de 2.0 GHz, frecuencia de ráfaga de hasta 2.9 GHz, 4 MB de caché Intel® Smart Cache, 4 núcleos) » RAM : 8GB DDR4-2666MHz SDRAM SO-DIMM – 1 ranura SO-DIMM – 1 ranura en uso – Capacidad máxima de expansión: 16GB » Almacenamiento : 256GB SSD SATA 3.0 Lifelog QM500 M.2 2280 » Gráficos integrados : Intel® UHD Graphics » Pantalla : 15.6″ – Resolución Full HD (1920 x 1080) – Panel IPS – Frecuencia de actualización: 60 Hz » Sistema de altavoces : – 2 altavoces estéreo de 1.5W – Potencia total: 3W » Cámara : Cámara web integrada de 0.3MP – Resolución: 640 x 480 – Relación de aspecto: 4:3 – Micrófono digital integrado » Conectividad : Intel® Dual Band Wireless-AC 7265 – Wi-Fi 5 (802.11ac) – Bluetooth® 4.2 » Puertos y Ranuras : – 2x USB 3.0 Type-A (velocidad de hasta 5Gbps) – 1x USB Type-C® SuperSpeed (velocidad de hasta 5Gbps, datos) – 1x USB 2.0 Type-A – 1x HDMI – 1x lector de tarjetas microSD – 1x conector combinado para auriculares y micrófono – 1x ranura de seguridad Kensington® Standard » Teclado : Español con teclado numérico » Batería : 5000 mAh » Adaptador de corriente : 12V / 3A » Duración de batería : (valores aproximados) – 4 a 6 horas en tareas de ofimática, navegación web y reproducción multimedia con brillo moderado – 2 a 4 horas con multitarea constante, videollamadas o brillo elevado » Color : Gris metálico mate » Dimensiones : 32.4 x 22.5 x 1.79 cm » Peso : Aproximadamente 1.46 kg (3.21 lb) EN LA CAJA »Laptop ENV Book Lite 1EENV5095 »Cargador de batería 12V / 3A »Manual de usuario",
+    "especificaciones": "Descripción\n»\nModelo\n: ENV Book Lite 1EENV5095\n»\nSistema operativo\n: Windows 11 Home\n»\nProcesador\n: Intel® Celeron® N5095 (frecuencia base de 2.0 GHz, frecuencia de ráfaga de hasta 2.9 GHz, 4 MB de caché Intel® Smart Cache, 4 núcleos)\n»\nRAM\n: 8GB DDR4-2666MHz SDRAM SO-DIMM\n– 1 ranura SO-DIMM\n– 1 ranura en uso\n– Capacidad máxima de expansión: 16GB\n»\nAlmacenamiento\n: 256GB SSD SATA 3.0 Lifelog QM500 M.2 2280\n»\nGráficos integrados\n: Intel® UHD Graphics\n»\nPantalla\n: 15.6″\n– Resolución Full HD (1920 x 1080)\n– Panel IPS\n– Frecuencia de actualización: 60 Hz\n»\nSistema de altavoces\n:\n– 2 altavoces estéreo de 1.5W\n– Potencia total: 3W\n»\nCámara\n: Cámara web integrada de 0.3MP\n– Resolución: 640 x 480\n– Relación de aspecto: 4:3\n– Micrófono digital integrado\n»\nConectividad\n: Intel® Dual Band Wireless-AC 7265\n– Wi-Fi 5 (802.11ac)\n– Bluetooth® 4.2\n»\nPuertos y Ranuras\n:\n– 2x USB 3.0 Type-A (velocidad de hasta 5Gbps)\n– 1x USB Type-C® SuperSpeed (velocidad de hasta 5Gbps, datos)\n– 1x USB 2.0 Type-A\n– 1x HDMI\n– 1x lector de tarjetas microSD\n– 1x conector combinado para auriculares y micrófono\n– 1x ranura de seguridad Kensington® Standard\n»\nTeclado\n: Español con teclado numérico\n»\nBatería\n: 5000 mAh\n»\nAdaptador de corriente\n: 12V / 3A\n»\nDuración de batería\n:\n(valores aproximados)\n– 4 a 6 horas en tareas de ofimática, navegación web y reproducción multimedia con brillo moderado\n– 2 a 4 horas con multitarea constante, videollamadas o brillo elevado\n»\nColor\n: Gris metálico mate\n»\nDimensiones\n: 32.4 x 22.5 x 1.79 cm\n»\nPeso\n: Aproximadamente 1.46 kg (3.21 lb)\nEN LA CAJA\n»Laptop ENV Book Lite 1EENV5095\n»Cargador de batería 12V / 3A\n»Manual de usuario\n\nLa ENV Book Lite es una laptop práctica y funcional, ideal para estudiar, trabajar y realizar las tareas esenciales del día a día con comodidad. Equipada con Intel® Celeron® N5095, 8GB de RAM DDR4 y SSD de 256GB, ofrece un desempeño ágil para navegación, ofimática, clases virtuales, videollamadas y reproducción multimedia. Su pantalla Full HD IPS de 15,6 pulgadas, teclado numérico en español y conectividad Wi-Fi 5 + Bluetooth 4.2 la convierten en una excelente opción para estudiantes, oficinas y usuarios que buscan un equipo sencillo y confiable. Además, incluye Windows 11 Home y un diseño liviano de aproximadamente 1,46 kg, ideal para llevarla fácilmente a cualquier lugar."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "LAPTOP ENV BOOK LITE 1EENV5095",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 7,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 25,
+    "grupos": 11,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0008"
+      ],
+      "especificaciones": [
+        "G0010",
+        "G0011"
+      ]
+    }
+  }
+}

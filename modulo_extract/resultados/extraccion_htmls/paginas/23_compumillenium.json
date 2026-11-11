@@ -1,0 +1,44 @@
+{
+  "archivo": "23_compumillenium.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/23_compumillenium.html",
+  "url": null,
+  "campos": {
+    "nombre": "COMPUTADOR ASUS NUC CORE 3 100U DDR5 5600MHZ M.2 WIFI7 BT 5.4 SLIM 90AR00R2-M00220",
+    "precio": null,
+    "disponibilidad": null,
+    "descripcion": "Tipo de computadora: NUC Procesador: CORE 3 100U Memoria RAM: 96GB Puerto USB: SI Sistema Operativo: BARBONE SYSTEM Dimensiones(L/Al/An): 11.7x11.2x5.4 cm Tamaño disco: NA Salida de video: NA Peso: 0.3 KG Disco Duro: NA",
+    "especificaciones": "Tipo de computadora: NUC Procesador: CORE 3 100U Memoria RAM: 96GB Puerto USB: SI Sistema Operativo: BARBONE SYSTEM Dimensiones(L/Al/An): 11.7x11.2x5.4 cm Tamaño disco: NA Salida de video: NA Peso: 0.3 KG Disco Duro: NA"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_SIN_CANDIDATO_VALIDO",
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "CAMPO_FALTANTE:precio",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": "COMPUTADOR ASUS NUC CORE 3 100U DDR5 5600MHZ M.2 WIFI7 BT 5.4 SLIM 90AR00R2-M00220",
+    "candidatos_localizados": {
+      "nombre": 5,
+      "precio": 0,
+      "disponibilidad": 0,
+      "descripcion": 3,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 10,
+    "grupos": 6,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0005"
+      ],
+      "especificaciones": [
+        "G0006"
+      ]
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "archivo": "06_ekustore.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/06_ekustore.html",
+  "url": null,
+  "campos": {
+    "nombre": "LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS",
+    "precio": "$551.00",
+    "disponibilidad": null,
+    "descripcion": "Pantalla 15,6\", Procesador AMD Ryzen 3 R3-7320U, 8GB RAM LPDDR5-5500Mhz, 256GB SSD, FreeDOS 3.0, batería 11h 15min",
+    "especificaciones": "Pantalla 15,6\", Procesador AMD Ryzen 3 R3-7320U, 8GB RAM LPDDR5-5500Mhz, 256GB SSD, FreeDOS 3.0, batería 11h 15min"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": "LAPTOP 15.6\" AMD RYZEN 3 7320U 8GB LPDDR5 256GB SSD FREEDOS",
+    "candidatos_localizados": {
+      "nombre": 4,
+      "precio": 1,
+      "disponibilidad": 1,
+      "descripcion": 1,
+      "especificaciones": 1
+    },
+    "candidatos_evaluados": 8,
+    "grupos": 7,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0006"
+      ],
+      "especificaciones": [
+        "G0007"
+      ]
+    }
+  }
+}

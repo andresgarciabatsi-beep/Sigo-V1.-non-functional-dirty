@@ -1,0 +1,45 @@
+{
+  "archivo": "N021_sparkfun.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N021_sparkfun.html",
+  "url": null,
+  "campos": {
+    "nombre": "SparkFun Allband GNSS RTK Breakout - ZED-X20P (Qwiic)",
+    "precio": "$299.95",
+    "disponibilidad": "disponible",
+    "descripcion": "The SparkFun Allband GNSS RTK Breakout - ZED-X20P (Qwiic) features the latest GNSS engine from u-blox; the X20 is a successor to their popular F9 engine.",
+    "especificaciones": "The SparkFun Allband GNSS RTK Breakout - ZED-X20P (Qwiic) features the latest GNSS engine from u-blox; the X20 is a successor to their popular F9 engine."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "SparkFun Allband GNSS RTK Breakout - ZED-X20P (Qwiic)",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 54,
+      "disponibilidad": 52,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 122,
+    "grupos": 64,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0032"
+      ],
+      "descripcion": [
+        "G0060"
+      ],
+      "especificaciones": [
+        "G0063"
+      ]
+    }
+  }
+}

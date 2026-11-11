@@ -1,0 +1,46 @@
+{
+  "archivo": "15_amazon.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/15_amazon.html",
+  "url": null,
+  "campos": {
+    "nombre": "HP Portátil diario 2026, CPU Intel, almacenamiento de 128 GB, IA Copilot",
+    "precio": null,
+    "disponibilidad": null,
+    "descripcion": "Amazon.com: HP Portátil diario 2026, CPU Intel, almacenamiento de 128 GB, IA Copilot | Almacenamiento en la nube de 1 TB, Windows 11, carga rápida, WiFi 6, batería de larga duración, ligera y portátil : Electrónica",
+    "especificaciones": "Sobre este artículo\nPROCESADOR INTEL N150 CUATRO NÚCLEOS EFICIENTE: El procesador Intel N150 con 4 núcleos (hasta 3.6 GHz con Intel Turbo Boost, 6MB de caché L3) ofrece un rendimiento confiable para la computación diaria, navegación web, streaming, videollamadas y tareas de productividad. Intel Graphics maneja la reproducción de vídeo HD sin problemas. Perfecto para estudiantes, usuarios domésticos y profesionales que manejan documentos, correos electrónicos y aprendizaje en línea.\nALMACENAMIENTO RÁPIDO Y MULTITAREAS SUAVE: La RAM LPDDR5-4800 MT/s de 4GB asegura multitareas receptivas para varias pestañas del navegador y aplicaciones. El almacenamiento UFS de 128 GB proporciona tiempos de arranque rápidos, lanzamientos instantáneos de aplicaciones y acceso rápido a archivos. Windows 11 Home con la integración de Microsoft Copilot AI ofrece asistencia inteligente con solo tocar la tecla Copilot para mejorar la productividad y la creatividad.\nCONFERENCIAS DE VÍDEO CON CLAREZA CRISTALINA Y BATERÍA DURANTE TODO EL DÍA: La cámara HP True Vision 720p HD con reducción de ruido temporal y micrófono digital de doble matriz ofrece videollamadas nítidas y claras para Zoom, Teams y Google Meet. La reducción de ruido con IA filtra el ruido de fondo para conversaciones más claras. Los altavoces duales proporcionan un audio claro. Hasta 11 horas de duración de la batería (reproducción de video) te mantiene productivo todo el día.\nCONECTIVIDAD MODERNA Y ALMACENAMIENTO EXPANDIBLE: Wi-Fi 6 (2x2) con Bluetooth 5.4 asegura conectividad inalámbrica rápida y confiable. 1 USB tipo C (10 Gbps con DisplayPort 1.2), 2 USB tipo A (5 Gbps), HDMI 1.4b para pantallas externas, conector combinado de auriculares/micrófono y lector de tarjetas SD multiformato para almacenamiento ampliable. El adaptador de corriente alterna de 45 W proporciona una carga eficiente durante todo el día.\nDISEÑO ELEGANTE Y ULTRAPORTÁTIL CON MICROSOFT 365: Peso ligero de solo 1.47 kg con perfil delgado de 1.8 cm en impresionante acabado mate en color Oro Rosa Pálido con cubierta de teclado plateada natural y patrón de cepillado vertical. Pantalla antirreflejos HD de 14 pulgadas con microborde (250 nits, 62.5% sRGB, 79% de relación pantalla-cuerpo) perfecta para el trabajo y el entretenimiento. Incluye 1 año de suscripción a Microsoft 365 Personal (Word, Excel, PowerPoint, OneDrive). Ideal para estudiantes, trabajadores remotos, familias y viajeros.\n›\nVer los detalles del producto\n\nAmazon.com: HP Portátil diario 2026, CPU Intel, almacenamiento de 128 GB, IA Copilot | Almacenamiento en la nube de 1 TB, Windows 11, carga rápida, WiFi 6, batería de larga duración, ligera y portátil : Electrónica"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_SIN_CANDIDATO_VALIDO",
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS",
+      "CAMPO_FALTANTE:precio",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": "HP Portátil diario 2026, CPU Intel, almacenamiento de 128 GB, IA Copilot",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 6,
+      "disponibilidad": 0,
+      "descripcion": 1,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 16,
+    "grupos": 15,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0012"
+      ],
+      "especificaciones": [
+        "G0014",
+        "G0015"
+      ]
+    }
+  }
+}

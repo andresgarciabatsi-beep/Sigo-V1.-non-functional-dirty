@@ -1,0 +1,47 @@
+{
+  "archivo": "21_pc_actual_ecuador.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/21_pc_actual_ecuador.html",
+  "url": null,
+  "campos": {
+    "nombre": "MONITOR 32UR500KB LG 31.5INCH LED ULTRAWIDE 3840X2160 4K HDMI DP 60HZ FREESYNC SPEAKERS BLACK",
+    "precio": "$ 420,00 Sin Iva.",
+    "disponibilidad": "agotado",
+    "descripcion": "Tamaño de pantalla 31.5 Inch Resolución 3840 x 2160 Relación de Aspecto 16:9 Pixel Pitch 0.06053 x 0.18159 Brillo (Min.) / (Typ.) 200 cd/m² / 250nits Gama de Colores (Typ.) DCI-P3 90% (CIE1976) Profundidad de Color (número de colores) 1.07B Relación de contraste (Min.) 2100:1 Relación de contraste (Typ.) 3000:1 Tiempo de respuesta (ms) 4ms (GtG at Faster) Angulo de Visión (CR≥10) 178º(R/L), 178º(U/D) Tasa de actualización (Max) Hz 60",
+    "especificaciones": "Tamaño de pantalla\n31.5 Inch\nResolución\n3840 x 2160\nRelación de Aspecto\n16:9\nPixel Pitch\n0.06053 x 0.18159\nBrillo (Min.) / (Typ.)\n200 cd/m² / 250nits\nGama de Colores (Typ.)\nDCI-P3 90% (CIE1976)\nProfundidad de Color (número de colores)\n1.07B\nRelación de contraste (Min.)\n2100:1\nRelación de contraste (Typ.)\n3000:1\nTiempo de respuesta (ms)\n4ms (GtG at Faster)\nAngulo de Visión (CR≥10)\n178º(R/L), 178º(U/D)\nTasa de actualización (Max) Hz\n60"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "MONITOR 32UR500KB  LG 31.5INCH LED ULTRAWIDE 3840X2160 4K HDMI DP 60HZ FREESYNC SPEAKERS BLACK",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 7,
+      "disponibilidad": 4,
+      "descripcion": 3,
+      "especificaciones": 2
+    },
+    "candidatos_evaluados": 22,
+    "grupos": 16,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0010"
+      ],
+      "descripcion": [
+        "G0013"
+      ],
+      "especificaciones": [
+        "G0015"
+      ]
+    }
+  }
+}

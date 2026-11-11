@@ -1,0 +1,45 @@
+{
+  "archivo": "25_tecnologia_en_linea.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/25_tecnologia_en_linea.html",
+  "url": null,
+  "campos": {
+    "nombre": "Tinta Epson EcoTank T664120 Negro 70ml",
+    "precio": "$ 7,00",
+    "disponibilidad": null,
+    "descripcion": "Descripción Botella de tinta Epson original modelo T664120 color negro (Black) de 70ml, compatible con impresoras Epson EcoTank serie 664. Ofrece impresión de alta calidad con textos nítidos y negros intensos, ideal para documentos profesionales y uso de oficina o hogar. Alto rendimiento por botella con sistema de recarga fácil, limpio y eficiente que reduce costos de impresión.",
+    "especificaciones": "Descripción\nBotella de tinta Epson original modelo T664120 color negro (Black) de 70ml, compatible con impresoras Epson EcoTank serie 664. Ofrece impresión de alta calidad con textos nítidos y negros intensos, ideal para documentos profesionales y uso de oficina o hogar. Alto rendimiento por botella con sistema de recarga fácil, limpio y eficiente que reduce costos de impresión."
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "DISPONIBILIDAD_NO_INTERPRETABLE",
+      "CAMPO_FALTANTE:disponibilidad"
+    ],
+    "titulo_referencia": "Tinta Epson EcoTank T664120 Negro 70ml",
+    "candidatos_localizados": {
+      "nombre": 4,
+      "precio": 2,
+      "disponibilidad": 0,
+      "descripcion": 4,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 13,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [],
+      "descripcion": [
+        "G0005"
+      ],
+      "especificaciones": [
+        "G0008"
+      ]
+    }
+  }
+}

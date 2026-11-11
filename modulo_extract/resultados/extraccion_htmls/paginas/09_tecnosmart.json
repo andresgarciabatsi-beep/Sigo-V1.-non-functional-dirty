@@ -1,0 +1,47 @@
+{
+  "archivo": "09_tecnosmart.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/09_tecnosmart.html",
+  "url": null,
+  "campos": {
+    "nombre": "Laptop Acer Aspire A15-51M-99W4 | Core i9-13900H | 16GB DDR5 | 512GB | 15.6″ | Grist",
+    "precio": "1050.99",
+    "disponibilidad": "disponible",
+    "descripcion": "Pantalla: 15.6 pulgadas – 1920 x 1080 – IPS Procesador: Intel Core i9 13900H Memoria: 16GB DDR5 Gráficos: Iris® Xe Graphics Disco SSD: 512GB M.2 NVME Sistema Operativo: Windows 11 Conectividad: Intel Wi-Fi 6E AX211 (2×2) Bluetooth 5.3 USB-C Thunderbolt 4 1.77 Kg",
+    "especificaciones": "Pantalla:\n15.6 pulgadas – 1920 x 1080 – IPS\nProcesador:\nIntel Core i9 13900H\nMemoria:\n16GB DDR5\nGráficos:\nIris® Xe Graphics\nDisco SSD:\n512GB M.2 NVME\nSistema Operativo:\nWindows 11\nConectividad:\nIntel Wi-Fi 6E AX211 (2×2) Bluetooth 5.3\nUSB-C Thunderbolt 4\n1.77 Kg\n\nP/N: NX.JQYAL.002\nProcesador Intel Core i9-13900H\nRam 16GB RAM DDR5\nAlmacenamiento 512GB SSD\nPantalla 15.6″ FHD LED LCD\nWindows y Office instalado (No incluye licencias)\nColor Gris Acero"
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Laptop Acer Aspire A15-51M-99W4 | Core i9-13900H | 16GB DDR5 | 512GB | 15.6″ | Grist",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 19,
+      "disponibilidad": 11,
+      "descripcion": 8,
+      "especificaciones": 6
+    },
+    "candidatos_evaluados": 51,
+    "grupos": 31,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0014"
+      ],
+      "descripcion": [
+        "G0022"
+      ],
+      "especificaciones": [
+        "G0027",
+        "G0028"
+      ]
+    }
+  }
+}

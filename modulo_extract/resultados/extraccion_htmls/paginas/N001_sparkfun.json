@@ -1,0 +1,45 @@
+{
+  "archivo": "N001_sparkfun.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/N001_sparkfun.html",
+  "url": null,
+  "campos": {
+    "nombre": "SparkFun RTK Facet",
+    "precio": "$739.95",
+    "disponibilidad": "disponible",
+    "descripcion": "The SparkFun RTK Facet is an easy-to-use, all-in-one surveying solution that delivers NGS-calibrated, centimeter-grade accuracy to your phone or GIS device over Bluetooth, complete with a built-in L1/L2 antenna and ZED-F9P module.",
+    "especificaciones": "The SparkFun RTK Facet is an easy-to-use, all-in-one surveying solution that delivers NGS-calibrated, centimeter-grade accuracy to your phone or GIS device over Bluetooth, complete with a built-in L1/L2 antenna and ZED-F9P module."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA"
+    ],
+    "titulo_referencia": "SparkFun RTK Facet",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 54,
+      "disponibilidad": 53,
+      "descripcion": 5,
+      "especificaciones": 4
+    },
+    "candidatos_evaluados": 123,
+    "grupos": 65,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0032"
+      ],
+      "descripcion": [
+        "G0061"
+      ],
+      "especificaciones": [
+        "G0064"
+      ]
+    }
+  }
+}

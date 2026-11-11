@@ -1,0 +1,48 @@
+{
+  "archivo": "13_tecnomade.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/13_tecnomade.html",
+  "url": null,
+  "campos": {
+    "nombre": "Monitor AOC 20\" HDMI LED",
+    "precio": "65.00",
+    "disponibilidad": "disponible",
+    "descripcion": "Marca AOC\nModelo 20E1H\nTipo de Pantalla: LED\nTamaño de Pantalla: 19.5″\nTipo de Panel TN\nResolución Máxima: 1600 x 900\nRelación de Aspecto: 16:9\nAngulo de Visión H = 170, V = 160\nColores Desplegables: 16.7 M\nContraste Dinámico: 20000000:1\nBrillo; 250 cd/m\nTiempo de Respuesta: 5 ms\nFrecuencia de Actualización: 60Hz\nContraste: 1000:1\nEntrada HDMI: 1\nEntrada VGA: 1\nSalida de Audio (3.5mm): 1",
+    "especificaciones": "Marca AOC\nModelo 20E1H\nTipo de Pantalla: LED\nTamaño de Pantalla: 19.5″\nTipo de Panel TN\nResolución Máxima: 1600 x 900\nRelación de Aspecto: 16:9\nAngulo de Visión H = 170, V = 160\nColores Desplegables: 16.7 M\nContraste Dinámico: 20000000:1\nBrillo; 250 cd/m\nTiempo de Respuesta: 5 ms\nFrecuencia de Actualización: 60Hz\nContraste: 1000:1\nEntrada HDMI: 1\nEntrada VGA: 1\nSalida de Audio (3.5mm): 1\n\nMarca AOC Modelo 20E1H Tipo de Pantalla: LED Tamaño de Pantalla: 19.5″ Tipo de Panel TN Resolución Máxima: 1600 x 900 Relación de Aspecto: 16:9 Angul… Envío a todo Ecuador y pago contra entrega."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Monitor AOC 20\" HDMI LED",
+    "candidatos_localizados": {
+      "nombre": 7,
+      "precio": 2,
+      "disponibilidad": 1,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 18,
+    "grupos": 10,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0002"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [
+        "G0007"
+      ],
+      "especificaciones": [
+        "G0009",
+        "G0010"
+      ]
+    }
+  }
+}

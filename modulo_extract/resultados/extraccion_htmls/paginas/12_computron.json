@@ -1,0 +1,50 @@
+{
+  "archivo": "12_computron.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/12_computron.html",
+  "url": null,
+  "campos": {
+    "nombre": "Laptop CI3-100U 1.2GHZ-8GB-512GB Ssd-natural SILVER-15.6″FHD-W11 HP",
+    "precio": "$ 719,99",
+    "disponibilidad": "disponible",
+    "descripcion": "Detalles del Producto Laptop CI3-100U 1.2GHZ-8GB-512GB Ssd-natural SILVER-15.6\"FHD-W11 HP Pantalla: 15.6″ FHD IPS, antirreflejante, 1920 × 1080, 250 nits. Procesador: Intel® Core™ 3 100U, hasta 4.7 GHz, 6 núcleos, 8 hilos, 10 MB de caché L3. Gráficos integrada: Intel. Memoria RAM: 8 GB DDR4-3200 MHz (1 × 8 GB). Disco duro: SSD de 512 GB PCIe® NVMe™ M.2. Cámara: HP True Vision FHD de 1080p con reducción de ruido temporal y micrófonos digitales de doble matriz. Sistema Operativo: Windows 11 Home. Bluetooth: 5.4. Tarjeta inalámbrica Realtek Wi-Fi: Wi-Fi 6 (2×2). Puertos : 2 × USB Tipo-A (5 Gbps), 1 × USB Tipo-C (10 Gbps, Power Delivery, DisplayPort™ 1.4b y HP Sleep and Charge), 1 × HDMI 1.4b, 1 × combo de auriculares/micrófono, 1 × AC Smart Pin. Dimensiones: 35,98 × 23,6 × 1,86 cm. Garantia: 1 Año.",
+    "especificaciones": "Peso\n2780 kg\nDimensiones\n30 × 48,5 × 6,5 cm\nTamaño de Pantalla\n15.6\nAlmacenamiento\n512GB\nProcesador\nINTEL CORE I3\nTipo\nLAPTOPS\nMemoria RAM\n8GB\n\nDetalles del Producto\nLaptop CI3-100U 1.2GHZ-8GB-512GB Ssd-natural SILVER-15.6\"FHD-W11 HP\nPantalla: 15.6″ FHD IPS, antirreflejante, 1920 × 1080, 250 nits.\nProcesador: Intel® Core™ 3 100U, hasta 4.7 GHz, 6 núcleos, 8 hilos, 10 MB de caché L3.\nGráficos integrada: Intel.\nMemoria RAM: 8 GB DDR4-3200 MHz (1 × 8 GB).\nDisco duro: SSD de 512 GB PCIe® NVMe™ M.2.\nCámara: HP True Vision FHD de 1080p con reducción de ruido temporal y micrófonos digitales de doble matriz.\nSistema Operativo: Windows 11 Home.\nBluetooth: 5.4.\nTarjeta inalámbrica Realtek Wi-Fi: Wi-Fi 6 (2×2).\nPuertos : 2 × USB Tipo-A (5 Gbps), 1 × USB Tipo-C (10 Gbps, Power Delivery, DisplayPort™ 1.4b y HP Sleep and Charge), 1 × HDMI 1.4b, 1 × combo de auriculares/micrófono, 1 × AC Smart Pin.\nDimensiones: 35,98 × 23,6 × 1,86 cm.\nGarantia: 1 Año.\n\npa_screen_size: 15.6\npa_storage: 512GB\npa_processor: INTEL CORE I3\npa_asset_type: LAPTOPS\npa_ram_memory: 8GB"
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_ALTERNATIVOS_REVISAR",
+      "PRECIO_MONEDA_DOLAR_NO_CONFIRMADA",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "ESPECIFICACIONES_BLOQUES_COMPLEMENTARIOS_COMBINADOS"
+    ],
+    "titulo_referencia": "Laptop CI3-100U 1.2GHZ-8GB-512GB Ssd-natural SILVER-15.6″FHD-W11 HP",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 9,
+      "disponibilidad": 2,
+      "descripcion": 8,
+      "especificaciones": 7
+    },
+    "candidatos_evaluados": 34,
+    "grupos": 19,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0008"
+      ],
+      "descripcion": [
+        "G0010"
+      ],
+      "especificaciones": [
+        "G0014",
+        "G0016",
+        "G0015"
+      ]
+    }
+  }
+}

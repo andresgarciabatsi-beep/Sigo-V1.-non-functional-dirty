@@ -1,0 +1,46 @@
+{
+  "archivo": "05_mundotek.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/05_mundotek.html",
+  "url": null,
+  "campos": {
+    "nombre": "Camara 360 CS-H8C-R100-1J4WH8C 1080p PANTILT EXTERIOR EZVIZ L 4MM",
+    "precio": "80",
+    "disponibilidad": "disponible",
+    "descripcion": null,
+    "especificaciones": null
+  },
+  "diagnostico": {
+    "estado_validacion": "revision_requerida",
+    "advertencias": [
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DESCRIPCION_SIN_CANDIDATO_VALIDO",
+      "ESPECIFICACIONES_SIN_CANDIDATO_VALIDO",
+      "CAMPO_FALTANTE:descripcion",
+      "CAMPO_FALTANTE:especificaciones"
+    ],
+    "titulo_referencia": "Camara  360 CS-H8C-R100-1J4WH8C 1080p PANTILT EXTERIOR EZVIZ L 4MM",
+    "candidatos_localizados": {
+      "nombre": 8,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 0,
+      "especificaciones": 0
+    },
+    "candidatos_evaluados": 14,
+    "grupos": 7,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0005"
+      ],
+      "disponibilidad": [
+        "G0006"
+      ],
+      "descripcion": [],
+      "especificaciones": []
+    }
+  }
+}

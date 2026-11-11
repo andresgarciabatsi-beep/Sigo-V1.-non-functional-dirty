@@ -1,0 +1,47 @@
+{
+  "archivo": "24_essential_store.html",
+  "ruta": "/mnt/c/Users/pberm/Desktop/Voltix/Proyecto SIGO/modulo_extract/recursos/htmls_ampliado/24_essential_store.html",
+  "url": null,
+  "campos": {
+    "nombre": "PROCESADOR INTEL CORE I3-12100F 4 NUCLEOS/8 HILOS 4.3GHZ 12VA LGA1700 - Essential Store",
+    "precio": "168",
+    "disponibilidad": "disponible",
+    "descripcion": "Encuentra el Procesador Intel Core I3-12100F 4 Nucleos/8 Hilos 4.3Ghz 12V... al mejor precio en Essential Store. Optimiza tu PC gamer con componentes de alta...",
+    "especificaciones": "Encuentra el Procesador Intel Core I3-12100F 4 Nucleos/8 Hilos 4.3Ghz 12V... al mejor precio en Essential Store. Optimiza tu PC gamer con componentes de alta..."
+  },
+  "diagnostico": {
+    "estado_validacion": "provisional",
+    "advertencias": [
+      "NOMBRE_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL",
+      "DISPONIBILIDAD_SIN_CONFIRMACION_DOM_PRINCIPAL"
+    ],
+    "titulo_referencia": "PROCESADOR INTEL CORE I3-12100F 4 NUCLEOS/8 HILOS 4.3GHZ 12VA LGA1700",
+    "candidatos_localizados": {
+      "nombre": 6,
+      "precio": 4,
+      "disponibilidad": 2,
+      "descripcion": 5,
+      "especificaciones": 3
+    },
+    "candidatos_evaluados": 20,
+    "grupos": 8,
+    "grupos_seleccionados": {
+      "nombre": [
+        "G0001"
+      ],
+      "precio": [
+        "G0004"
+      ],
+      "disponibilidad": [
+        "G0005"
+      ],
+      "descripcion": [
+        "G0007"
+      ],
+      "especificaciones": [
+        "G0008"
+      ]
+    }
+  }
+}
