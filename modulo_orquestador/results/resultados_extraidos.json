@@ -4,26 +4,8 @@
     "resultados": [
       {
         "tienda": "Tecnomega Store",
-        "url": "https://tecnomegastore.ec/product/disco-duro-duro-western-digital-ssd-my-passport-2tb-usb-3.2-gen-2-type-c-externo-gray-WDBAGF0020BGY-WESN?code=HDDWDIBAGF020BG",
-        "nombre": "TecnoMega Store | Tienda de tecnología en linea",
-        "precio": null,
-        "disponibilidad": null,
-        "descripcion": "Descubre y compra online: Impresora, Computadora, Laptop, Disco duro, Celular, Procesador y Tablet. Envío a todo el Ecuador.",
-        "especificaciones": "Descubre y compra online: Impresora, Computadora, Laptop, Disco duro, Celular, Procesador y Tablet. Envío a todo el Ecuador."
-      },
-      {
-        "tienda": "Tecnomega Store",
         "url": "https://tecnomegastore.ec/searchi/1/1tb",
         "nombre": "TecnoMega Store | Busqueda: 1tb",
-        "precio": null,
-        "disponibilidad": null,
-        "descripcion": "Conoce los últimos productos añadidos a la tienda.",
-        "especificaciones": "Conoce los últimos productos añadidos a la tienda."
-      },
-      {
-        "tienda": "Tecnomega Store",
-        "url": "https://tecnomegastore.ec/searchi/1/Ssd",
-        "nombre": "TecnoMega Store | Busqueda: Ssd",
         "precio": null,
         "disponibilidad": null,
         "descripcion": "Conoce los últimos productos añadidos a la tienda.",
@@ -33,26 +15,62 @@
         "tienda": "Tecnosmart",
         "url": "https://www.tecnosmart.com.ec/producto/ssd-externo-kingston-xs1000-1tb-usb-3-2-gen-2-1050mb-s-read-1000mb-s-write-sxs1000-1000g/",
         "nombre": "SSD EXTERNO KINGSTON XS1000 1TB USB 3.2 GEN 2 – 1050MB/S READ – 1000MB/S WRITE (SXS1000/1000G)",
-        "precio": "$ 178.99 + IVA",
+        "precio": "USD 178.99",
         "disponibilidad": "agotado",
         "descripcion": "Compra SSD EXTERNO KINGSTON XS1000 1TB USB 3.2 GEN 2 - 1050MB/S READ - 1000MB/S WRITE (SXS1000/1000G) en Tecnosmart Ecuador. Precio competitivo, garantia oficial, envio a todo el pais. Stock real verificado.",
-        "especificaciones": "Brand\nKingston\nModelo\nN/D\nColor\nN/D\nNúmero de parte\nN/D\n\nCompra SSD EXTERNO KINGSTON XS1000 1TB USB 3.2 GEN 2 - 1050MB/S READ - 1000MB/S WRITE (SXS1000/1000G) en Tecnosmart Ecuador. Precio competitivo, garantia oficial, envio a todo el pais. Stock real verificado."
+        "especificaciones": "Brand\nKingston\nModelo\nN/D\nColor\nN/D\nNúmero de parte\nN/D"
       },
       {
-        "tienda": "Alibaba",
-        "url": "https://www.alibaba.com/product-detail/Ssd-hard-disk-1TB-up-to_1601971517489.html",
-        "nombre": "Disco Duro SSD de 1 TB, hasta 600 MB/s, USB 3.2 Gen 2, Unidad de Estado Sólido Externa para Juegos, Estudiantes y Profesionales",
-        "precio": "9.89",
+        "tienda": "NomadaWare",
+        "url": "https://nomadaware.com.ec/producto/1tb-ssd-externo-kingston-xs1000-usb-c/",
+        "nombre": "1TB SSD EXTERNO KINGSTON XS1000 USB 3.2 USB C",
+        "precio": "USD 200",
+        "disponibilidad": "agotado",
+        "descripcion": "El SSD externo Kingston XS1000 es una solución para disponer de copias de seguridad de archivos bastante práctica. Por su estilizado y compacto factor de forma, ha sido diseñada para encajar perfectamente en su estilo de vida, permitiéndole llevarla consigo con facilidad. Alcance velocidades de lectura/escritura de hasta 1.050 MB/s1, con retrocompatibilidad con USB 3.2 Gen 1, lo cual posibilita una perfecta compatibilidad con dispositivos más antiguos",
+        "especificaciones": "Descripción\n»\nInterfaz\n: USB 3.2 Gen 2\n»\nVelocidad\n: Hasta 1.050 MB/s en lectura y 1.000 MB/s en escritura\n»\nNAND\n: 3D\n»\nCapacidades\n: 1TB\n»\nMaterial de la carcasa\n: Metal + plástico\n»\nIncluye cable\n: USB-C a USB-A de 12”\n»\nTemperatura de servicio\n: 0 °C ~ 40 °C\n»\nTemperatura de almacenamiento\n: -20 °C ~ 85 °C\n»\nCompatible\n: Windows® 11, 10, macOS (v.10.15.x +), Linux (v. 4.4.x +), Chrome OS™, Android™, iOS/iPadOS® (v.13+)\n»\nDimensiones\n: 69,54 x 32,58 x 13,5 mm\n»\nPeso\n: 28,7 g\nEN LA CAJA\n»SSD externo Kingston XS1000\n»Manual de usuario"
+      },
+      {
+        "tienda": "NomadaWare",
+        "url": "https://nomadaware.com.ec/producto/1tb-ssd-externo-kingston-xs1000r/",
+        "nombre": "1TB SSD EXTERNO KINGSTON XS1000R",
+        "precio": "USD 200",
+        "disponibilidad": "agotado",
+        "descripcion": "El SSD externo Kingston XS1000R es una solución para disponer de copias de seguridad de archivos bastante práctica. Por su estilizado y compacto factor de forma, ha sido diseñada para encajar perfectamente en su estilo de vida, permitiéndole llevarla consigo con facilidad. Alcance velocidades de lectura/escritura de hasta 1.050 MB/s1, con retrocompatibilidad con USB 3.2 Gen 1, lo cual posibilita una perfecta compatibilidad con dispositivos más antiguos",
+        "especificaciones": "Descripción\n»\nInterfaz\n: USB 3.2 Gen 2\n»\nVelocidad\n: Hasta 1.050 MB/s en lectura y 1.000 MB/s en escritura\n»\nNAND\n: 3D\n»\nCapacidades\n: 1TB\n»\nMaterial de la carcasa\n: Metal + plástico\n»\nIncluye cable\n: USB-C a USB-A de 12”\n»\nTemperatura de servicio\n: 0 °C ~ 40 °C\n»\nTemperatura de almacenamiento\n: -20 °C ~ 85 °C\n»\nCompatible\n: Windows® 11, 10, macOS (v.10.15.x +), Linux (v. 4.4.x +), Chrome OS™, Android™, iOS/iPadOS® (v.13+)\n»\nDimensiones\n: 69,54 x 32,58 x 13,5 mm\n»\nPeso\n: 28,7 g\nEN LA CAJA\n»SSD externo Kingston XS1000R\n»Manual de usuario"
+      },
+      {
+        "tienda": "eBay",
+        "url": "https://www.ebay.com/itm/136596601125",
+        "nombre": "XS1000 USB 3.2 Gen 2 Disco Duro Externo De Estado Sólido, 1TB - SXS1000/1000G",
+        "precio": "USD 386.83",
         "disponibilidad": "disponible",
-        "descripcion": "Disco Duro Ssd De 1 Tb,Hasta 600 Mb/s,Usb 3.2 Gen 2,Unidad De Estado Sólido Externa Para Juegos,Estudiantes Y Profesionales , Encuentra detalles completos sobre Disco Duro Ssd De 1 Tb,Hasta 600 Mb/s,Usb 3.2 Gen 2,Unidad De Estado Sólido Externa Para Juegos,Estudiantes Y Profesionales,de Shenzhen Starsen Electronics Technology Co., Ltd. proveedor o fabricante en Alibaba.com",
-        "especificaciones": "Características clave\nTipo\nExterno\nEstilo\nssd\nAplicación\nOrdenador portátil\nTamaño\n\"2,5\"\"\"\nTipo de interfaz\nUSB\nCapacidad del disco duro\n1TB\nVelocidad de lectura\n501-600 MB/S\nVelocidad de escritura\n501-600 MB/S\nVelocidad\n5400r/min\nCaché\n512MB\nEstado del producto\nNuevo\nMarca\nsummerdawn\nTiempo medio de búsqueda\n3.4 ms\nVelocidad de interfaz\n600 MB/S\nNúmero de puertos HD\n1 unid\nEstado del producto\nNuevo\nMaterial de la carcasa\nDe aleación de aluminio\nCuenta con fuente de alimentación externa\nSí\nPuerto de expansión\nUsb PLUS\nMolde privado\nSí\nPeso (paquete incluido)\n100g\nCapacidad de disco individual\n0.1 GB\nInalámbrico\nSí\nEmbalaje\nSí\nNivel de ruido\n1.5 Gb/s\nLugar de origen\nGuangdong, China\nNúmero de modelo\nQP-3-004\nEmpaque y entrega\nUnidades de venta\nArtículo individual\nTamaño del paquete\n15X8X3 cm\nPeso bruto\n0.2 kg\n\nDisco Duro Ssd De 1 Tb,Hasta 600 Mb/s,Usb 3.2 Gen 2,Unidad De Estado Sólido Externa Para Juegos,Estudiantes Y Profesionales , Encuentra detalles completos sobre Disco Duro Ssd De 1 Tb,Hasta 600 Mb/s,Usb 3.2 Gen 2,Unidad De Estado Sólido Externa Para Juegos,Estudiantes Y Profesionales,de Shenzhen Starsen Electronics Technology Co., Ltd. proveedor o fabricante en Alibaba.com"
+        "descripcion": "Kingston \"S XS1000 SSD externo es una solución de copia de seguridad de archivos increíblemente conveniente. Su diseño elegante y de bolsillo se ajusta perfectamente a su estilo de vida, lo que le permite llevarlo a cualquier lugar con facilidad. Con velocidades de almacenamiento y transferencia de alta capacidad de hasta 1.050 MB/s, el XS1000 es la solución perfecta para una copia de seguridad sin problemas y almacenar documentos importantes, recuerdos apreciados y datos valiosos. La unidad se conecta con el cable USB-A a USB-C incluido para una conectividad perfecta con dispositivos heredados. Nos enorgullecemos de asegurarnos de que todos y cada uno de los clientes estén satisfechos antes, durante y después de que se complete una venta. Si tiene alguna pregunta sobre cualquiera de nuest.",
+        "especificaciones": "Estado del artículo: Nuevo\nMarca: Kingston\nCódigo de artículo del fabricante: SXS1000/1000G\nModelo: KINGSTON SXS1000/1000G\nNúmero de modelo del fabricante: SXS1000/1000G\nTipo: Informática\nUPC: 740617338515\nEAN: No aplicable"
+      },
+      {
+        "tienda": "Best Buy",
+        "url": "https://www.bestbuy.com/site/searchpage.jsp?browsedCategory=pcmcat201300050005&id=pcat17071&qp=harddrivesizerange_facet%3DStorage%20Capacity~1TB&st=categoryid$pcmcat201300050005",
+        "nombre": "Choose a country.",
+        "precio": null,
+        "disponibilidad": null,
+        "descripcion": "Shop online at Best Buy in your country and language of choice. Best Buy provides online shopping in a number of countries and languages.",
+        "especificaciones": "Shop online at Best Buy in your country and language of choice. Best Buy provides online shopping in a number of countries and languages."
+      },
+      {
+        "tienda": "Newegg",
+        "url": "https://www.newegg.com/kingston-sxs1000-1tb-usb-3-2-gen-2x2-type-c/p/N82E16820242838",
+        "nombre": "Kingston External SXS1000 1TB USB 3.2 Gen 2x2 Type-C 3D NAND Solid State Disk",
+        "precio": "$261.99",
+        "disponibilidad": "disponible",
+        "descripcion": "Buy Kingston External SXS1000 1TB USB 3.2 Gen 2x2 Type-C 3D NAND Solid State Disk with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "especificaciones": "Brand: Kingston\nSeries: SXS1000\nModel: SXS1000/1000G\n\nCapacity: 1TB\nMemory Components Memory Components: 3D NAND\nInterface: USB 3.2 Gen 2x2 Type-C\nColor: Black\n\nWidth: 69.54 mm\nDepth: 32.58 mm\nHeight: 13.5 mm\nWeight: 28.9g"
       },
       {
         "tienda": "Alibaba",
         "url": "https://www.alibaba.com/countrysearch/CN/1tb-ssd.html",
         "nombre": "1tb ssd",
         "precio": null,
-        "disponibilidad": null,
+        "disponibilidad": "disponible",
         "descripcion": null,
         "especificaciones": null
       },
@@ -74,43 +92,61 @@
         "tienda": "Steren Ecuador",
         "url": "https://www.steren.com.ec/memoria-microsd-de-512-gb-sandisk-clase-u3-v30-a2.html",
         "nombre": "Memoria microSD de 512 GB SanDisk*, clase U3, V30, A2",
-        "precio": "USD$290.00",
-        "disponibilidad": "disponible",
+        "precio": "USD 290.00",
+        "disponibilidad": "agotado",
         "descripcion": "La microSD Canvas Select Plus de Kingston es compatible con dispositivos Android y está diseñada para un rendimiento potente, con velocidad y durabilidad. Capacidad XC: 512 GB de almacenamiento. Velocidad de escritura/lectura clase U3: Velocidad mínima de escritura de 130 MB/s y velocidad de lectura de 190 MB/s. Velocidad para videos clase V30: Ideal para videos en ultraalta definición 4K o Full HD, sin congelamientos ni microcortes, además, tendrá una respuesta rápida en las cámaras deportivas o drones. Mayor velocidad en apps clase A2: El estándar A2 identifica la velocidad con la que correrán las apps almacenadas en la memoria, mejorando el rendimiento y flujo de trabajo. Adaptador SD: Incluye un adaptador SD con interruptor de bloqueo para proteger la información contra cualquier borrado accidental.",
-        "especificaciones": "La microSD Canvas Select Plus de Kingston es compatible con dispositivos Android y está diseñada para un rendimiento potente, con velocidad y durabilidad.\nCapacidad XC:\n512 GB de almacenamiento.\nVelocidad de escritura/lectura clase U3:\nVelocidad mínima de escritura de 130 MB/s y velocidad de lectura de 190 MB/s.\nVelocidad para videos clase V30:\nIdeal para videos en ultraalta definición 4K o Full HD, sin congelamientos ni microcortes, además, tendrá una respuesta rápida en las cámaras deportivas o drones.\nMayor velocidad en apps clase A2:\nEl estándar A2 identifica la velocidad con la que correrán las apps almacenadas en la memoria, mejorando el rendimiento y flujo de trabajo.\nAdaptador SD:\nIncluye un adaptador SD con interruptor de bloqueo para proteger la información contra cualquier borrado accidental.\n\nIdeal para video 4K UHD, fotos de alta resolución y almacenamiento de apps\nXC: Xtreme Capacity (capacidad extrema) 512 GB\nClase U3: Velocidad mínima de escritura 130 MB/s, velocidad mínima de lectura de 190 MB/s\nClase V30: Ideal para videos 4K UHD y fotos en modo ráfaga\nClase A2: Optimizada para almacenamiento de apps\nIncluye adaptador SD"
+        "especificaciones": "La microSD Canvas Select Plus de Kingston es compatible con dispositivos Android y está diseñada para un rendimiento potente, con velocidad y durabilidad.\nCapacidad XC:\n512 GB de almacenamiento.\nVelocidad de escritura/lectura clase U3:\nVelocidad mínima de escritura de 130 MB/s y velocidad de lectura de 190 MB/s.\nVelocidad para videos clase V30:\nIdeal para videos en ultraalta definición 4K o Full HD, sin congelamientos ni microcortes, además, tendrá una respuesta rápida en las cámaras deportivas o drones.\nMayor velocidad en apps clase A2:\nEl estándar A2 identifica la velocidad con la que correrán las apps almacenadas en la memoria, mejorando el rendimiento y flujo de trabajo.\nAdaptador SD:\nIncluye un adaptador SD con interruptor de bloqueo para proteger la información contra cualquier borrado accidental."
       },
       {
         "tienda": "Steren Ecuador",
         "url": "https://www.steren.com.ec/memoria-microsd-xc-de-512-gb-clase-u3-v30-a2-con-adaptador-sd.html",
         "nombre": "Memoria microSD XC de 512 GB, clase U3, V30, A2, con adaptador SD",
-        "precio": "USD$204.99",
-        "disponibilidad": "disponible",
+        "precio": "USD 204.99",
+        "disponibilidad": "agotado",
         "descripcion": "Esta memoria microSD está diseñada para un rendimiento potente, con velocidad y durabilidad. Capacidad XC: 512 GB de almacenamiento. Velocidad escritura / lectura clase U3: Tiene una velocidad de lectura de 90 MB/s y una de escritura de 50 MB/s. Velocidad para videos clase V30 : Ideal para videos en ultra alta definición 4K o Full HD, sin congelamientos ni micro cortes, además, tendrá una respuesta rápida en las cámaras deportivas o drones. Mayor velocidad en apps clase A2: El estándar A2 identifica la velocidad con la que correrán las apps almacenadas en la memoria, así se acelera el flujo de trabajo con un mayor rendimiento. Adaptador SD: Incluye un adaptador SD que incorpora interruptor de bloqueo, para proteger la información contra cualquier borrado accidental.",
-        "especificaciones": "Esta memoria microSD está diseñada para un rendimiento potente, con velocidad y durabilidad.\nCapacidad XC:\n512 GB de almacenamiento.\nVelocidad escritura / lectura clase U3:\nTiene una velocidad de lectura de 90 MB/s y una de escritura de 50 MB/s.\nVelocidad para videos clase V30\n: Ideal para videos en ultra alta definición 4K o Full HD, sin congelamientos ni micro cortes, además, tendrá una respuesta rápida en las cámaras deportivas o drones.\nMayor velocidad en apps clase A2:\nEl estándar A2 identifica la velocidad con la que correrán las apps almacenadas en la memoria, así se acelera el flujo de trabajo con un mayor rendimiento.\nAdaptador SD:\nIncluye un adaptador SD que incorpora interruptor de bloqueo, para proteger la información contra cualquier borrado accidental.\n\nIdeal para video 4K y Full HD y fotos de alta resolución y almacenamiento de apps\nXC: Xtreme Capacitiy (capacidad extrema) 512 GB\nClase U3: Velocidad mínima de escritura/lectura: 30 MB/s\nClase V30: Ideal para videos 4K o Full HD y fotos en modo ráfaga\nClase A2: Perfecta para almacenamiento y performance de apps\nIncluye adaptador SD"
+        "especificaciones": "Esta memoria microSD está diseñada para un rendimiento potente, con velocidad y durabilidad.\nCapacidad XC:\n512 GB de almacenamiento.\nVelocidad escritura / lectura clase U3:\nTiene una velocidad de lectura de 90 MB/s y una de escritura de 50 MB/s.\nVelocidad para videos clase V30\n: Ideal para videos en ultra alta definición 4K o Full HD, sin congelamientos ni micro cortes, además, tendrá una respuesta rápida en las cámaras deportivas o drones.\nMayor velocidad en apps clase A2:\nEl estándar A2 identifica la velocidad con la que correrán las apps almacenadas en la memoria, así se acelera el flujo de trabajo con un mayor rendimiento.\nAdaptador SD:\nIncluye un adaptador SD que incorpora interruptor de bloqueo, para proteger la información contra cualquier borrado accidental."
+      },
+      {
+        "tienda": "Amazon",
+        "url": "https://www.amazon.com/PNY-512GB-Premier-X-microSDXC-Memory/dp/B09R9B9XCJ",
+        "nombre": "Amazon.com",
+        "precio": null,
+        "disponibilidad": null,
+        "descripcion": null,
+        "especificaciones": null
       },
       {
         "tienda": "Amazon",
         "url": "https://www.amazon.com/SanDisk-Extreme-microSDXC-Memory-Adapter/dp/B07P7M6K35",
-        "nombre": "Amazon.com",
-        "precio": null,
-        "disponibilidad": null,
-        "descripcion": null,
-        "especificaciones": null
+        "nombre": "SanDisk SDSQXA1-512G-GN6MA - Tarjeta de memoria microSDXC UHS-I de 512 GB Extreme con adaptador, hasta 160 MB/s, C10, U3, V30, 4K, A2, Micro SD",
+        "precio": "US$116.88",
+        "disponibilidad": "disponible",
+        "descripcion": "Amazon.com: SanDisk SDSQXA1-512G-GN6MA - Tarjeta de memoria microSDXC UHS-I de 512 GB Extreme con adaptador, hasta 160 MB/s, C10, U3, V30, 4K, A2, Micro SD : Electrónica",
+        "especificaciones": "Marca: SANDISK\nNombre del modelo: Extremo\nTipo de memoria: Micro SD, Micro SDHC, Micro SDXC\nCapacidad de almacenamiento de memoria: 512 GB\nDispositivos compatibles: Cámara, Smartphone"
       },
       {
-        "tienda": "Amazon",
-        "url": "https://www.amazon.com/-/es/SanDisk-SDSQXA1-512G-GN6MA-Tarjeta-microSDXC-adaptador/dp/B07P7M6K35",
-        "nombre": "Amazon.com",
-        "precio": null,
-        "disponibilidad": null,
-        "descripcion": null,
-        "especificaciones": null
+        "tienda": "Newegg",
+        "url": "https://www.newegg.com/sandisk-512gb-microsdxc-uhs-i-u3-class-10-a2-v30/p/N82E16820173615",
+        "nombre": "SanDisk 512GB Extreme microSDXC UHS-I/U3 A2 Micro SD Card with Adapter, Speed Up to 190MB/s (SDSQXAV-512G-GN6MA)",
+        "precio": "$120.19",
+        "disponibilidad": "disponible",
+        "descripcion": "Buy SanDisk 512GB Extreme microSDXC UHS-I/U3 A2 Micro SD Card with Adapter, Speed Up to 190MB/s (SDSQXAV-512G-GN6MA) with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "especificaciones": "Capacity Capacity: 512GB\nSpeed Class Rating Speed Class Rating: UHS-I / U3 / Class 10 / A2 / V30\nRead Speed: 190MB/s\nWrite Speed: 130MB/s\nBrand: SanDisk\nSeries: Extreme\nModel: SDSQXAV-512G-GN6MA\nType: microSDXC"
+      },
+      {
+        "tienda": "Newegg",
+        "url": "https://www.newegg.com/sandisk-512gb-microsdxc/p/0DF-0005-01V15",
+        "nombre": "SanDisk 512GB Extreme PRO A2 microSDXC Card UHS-I U3 V30 Read Speed up to 200MB/s for 4K UHD Video (SDSQXCD-512G-GN6MA)",
+        "precio": "Our store offers 100% genuine products.",
+        "disponibilidad": "disponible",
+        "descripcion": "Buy SanDisk 512GB Extreme PRO A2 microSDXC Card UHS-I U3 V30 Read Speed up to 200MB/s for 4K UHD Video (SDSQXCD-512G-GN6MA) with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "especificaciones": "Brand: SanDisk\nCard type: MicroSD\nSeries: Extreme Pro\nModel: SDSQXCD-512G-GN6MA\nPart Number: SDSQXCD-128G-GN6MA\nType: microSDXC\nCapacity Capacity: 512GB\nSpeed Class Rating Speed Class Rating: A2 / Class 10 / U3 / UHS-I / V30\nSpeed Class Rating Speed Class Rating: Class 10\nRead Speed: Up to 200 MB/S\nWrite Speed: Up to 90 MB/S"
       },
       {
         "tienda": "Alibaba",
         "url": "https://www.alibaba.com/product-detail/Best-Selling-512GB-Micro-SDXC-UHS_11000035099113.html",
         "nombre": "Product Not Available",
-        "precio": "0.99",
+        "precio": "USD 0.99",
         "disponibilidad": "disponible",
         "descripcion": "Product Not Available",
         "especificaciones": null
@@ -119,15 +155,24 @@
         "tienda": "Alibaba",
         "url": "https://www.alibaba.com/product-detail/512GB-Superior-Micro-SDXC-UHS-I_1601925846035.html",
         "nombre": "Tarjeta Micro SDXC UHS-I (U3) 4K A2 de 512 GB de Alta Velocidad, Fabricada en China, Compatible con Cámaras",
-        "precio": "57.86",
+        "precio": "USD 57.86",
         "disponibilidad": "disponible",
         "descripcion": "Tarjeta Micro Sdxc Uhs-i (u3) 4k A2 De 512 Gb De Alta Velocidad,Fabricada En China,Compatible Con Cámaras , Encuentra detalles completos sobre Tarjeta Micro Sdxc Uhs-i (u3) 4k A2 De 512 Gb De Alta Velocidad,Fabricada En China,Compatible Con Cámaras,de Shenzhen Youlen Electronics Co., Ltd. proveedor o fabricante en Alibaba.com",
-        "especificaciones": "Características clave\nVelocidad\nA2\nTipo\nTarjeta del microsdxc\nCompatible\nCámara, NO compatible con Switch2, Smartphone\nMaterial\nPlástico\nColor\nNegro, Azul\nLugar del origen\nChina\nNúmero de Modelo\nSU001TBSTXDA2V20AC\nEmpaque y entrega\nUnidades de venta\nArtículo individual\nTamaño del paquete\n13X9X2 cm\nPeso bruto\n0.02 kg\n\nTarjeta Micro Sdxc Uhs-i (u3) 4k A2 De 512 Gb De Alta Velocidad,Fabricada En China,Compatible Con Cámaras , Encuentra detalles completos sobre Tarjeta Micro Sdxc Uhs-i (u3) 4k A2 De 512 Gb De Alta Velocidad,Fabricada En China,Compatible Con Cámaras,de Shenzhen Youlen Electronics Co., Ltd. proveedor o fabricante en Alibaba.com"
+        "especificaciones": "Tipo\nTarjeta del microsdxc\nCompatible\nCámara, NO compatible con Switch2, Smartphone\nNúmero de Modelo\nSU001TBSTXDA2V20AC\nLugar del origen\nChina\nVelocidad\nA2\nMaterial\nPlástico\nMás análisis e investigación sobre este producto\nCalcular el costo y el margen"
       },
       {
         "tienda": "AliExpress",
-        "url": "https://es.aliexpress.com/item/1005007468963303.html?gatewayAdapt=glo2esp",
-        "nombre": "Tarjeta de Memoria SanDisk Extreme PRO MicroSDXC UHS-I V30 A2 Micro SD de 32GB 64GB 128GB 256GB 512GB 1TB con Velocidad de hasta 200Mb/s, Tarjeta Flash TF - AliExpress 7",
+        "url": "https://es.aliexpress.com/item/1005007159236900.html?gatewayAdapt=glo2esp",
+        "nombre": "Tarjeta MicroSD SanDisk 1TB A2 U3 V30",
+        "precio": null,
+        "disponibilidad": null,
+        "descripcion": "Smarter Shopping, Better Living! Aliexpress.com",
+        "especificaciones": "Smarter Shopping, Better Living! Aliexpress.com"
+      },
+      {
+        "tienda": "AliExpress",
+        "url": "https://es.aliexpress.com/item/1005004675586712.html?gatewayAdapt=glo2esp",
+        "nombre": "Tarjeta Extreme Pro 512GB tarjeta Micro SD SDXC UHS-I 128GB 256GB 64GB 1TB U3 V30 TF tarjetas Flash adaptador de tarjeta de memoria para cámara DJI - AliExpress 7",
         "precio": null,
         "disponibilidad": null,
         "descripcion": "Smarter Shopping, Better Living! Aliexpress.com",
@@ -139,26 +184,17 @@
     "item": 3,
     "resultados": [
       {
-        "tienda": "Tecnomega Store",
-        "url": "https://tecnomegastore.ec/searchi/1/monitores",
-        "nombre": "TecnoMega Store | Busqueda: monitores",
-        "precio": null,
-        "disponibilidad": null,
-        "descripcion": "Conoce los últimos productos añadidos a la tienda.",
-        "especificaciones": "Conoce los últimos productos añadidos a la tienda."
-      },
-      {
         "tienda": "NoviComPu",
         "url": "https://www.novicompu.com/tecnologia/computacion/monitores",
         "nombre": "MONITOR ONE 19\" Pulgadas, 60 HZ",
-        "precio": "55",
+        "precio": "USD 55",
         "disponibilidad": null,
         "descripcion": "Juega como los competitivos con el monitor gamer curvo ENV de 27 pulgadas . Su frecuencia de 240 Hz muestra cada movimiento con una fluidez superior, ideal para juegos de disparos, carreras y eSports , donde cada fracción de segundo cuenta.\nSu pantalla curva rodea tu campo de visión para una experiencia más inmersiva , y su resolución Full HD mantiene la imagen nítida en partidas, series y trabajo. Su tamaño de 27\" te da más espacio en pantalla sin perder detalle.\n¡Tu setup gamer al siguiente nivel con ENV!\nCaracterísticas destacadas\n240 Hz: movimiento ultrafluido para gaming competitivo.\nPantalla curva: mayor inmersión en tus juegos.\n27 pulgadas: más espacio de pantalla para jugar y trabajar.\nFull HD 1920 x 1080: imagen nítida.\nUso versátil: gaming, streaming, series y trabajo.\nFicha técnica\nMarca: ENV\nTipo: monitor gamer curvo\nTamaño: 27\"\nResolución: Full HD (1920 x 1080)\nFrecuencia de actualización: 240 Hz",
-        "especificaciones": "Monitor ONE 19\": compacto y económico para tu escritorio\nSuma una pantalla a tu escritorio a un precio muy accesible. El monitor ONE de 19\" tiene resolución 1440 x 900 , 5 ms de respuesta y conexión HDMI .\nPesa solo 1.8 kg con base, se inclina para tu comodidad y se puede montar en pared (VESA 75 x 75) . Ideal para oficina, caja o punto de venta.\nCaracterísticas destacadas\nPantalla de 19\": compacta para cualquier escritorio.\nHDMI: conexión sencilla.\nInclinación ajustable: de -5° a +15°.\nMontaje VESA: instálalo en la pared.\nLigero: 1.8 kg con base.\nFicha técnica\nMarca: ONE\nPantalla: 19\"\nResolución: 1440 x 900, 16:10\nFrecuencia: 60 Hz\nTiempo de respuesta: 5 ms\nPuertos: HDMI\nInclinación: -5° a +15°\nMontaje: VESA 75 x 75 mm\nPeso: 1.8 kg con base\nMedidas con base: 43.8 x 35.7 x 14 cm\nColor: Negro\n\nMonitor ENV Tech 20\" HD+: económico y práctico para tu escritorio\nSuma una pantalla a tu escritorio a un precio accesible. El monitor ENV Tech de 20\" tiene resolución HD+ (1600 x 900) y 5 ms de respuesta para una imagen ágil.\nEs ideal para documentos, hojas de cálculo, clases virtuales y videos , y su respuesta rápida acompaña el gaming casual. Una pantalla práctica para tu día a día.\nCaracterísticas destacadas\nPantalla de 20\": tamaño cómodo para el escritorio.\nHD+ (1600 x 900): imagen clara para oficina.\n5 ms de respuesta: movimiento ágil.\nUso versátil: oficina, estudio y entretenimiento.\nFicha técnica\nMarca: ENV Tech\nPantalla: 20\", plana\nResolución: 1600 x 900\nPanel: TN\nFrecuencia: 60 Hz\nBrillo: 200 nits\nContraste: 600:1\nTiempo de respuesta: 5 ms\n\nMonitor Gamer ENV Tech 22\" 120 Hz: fluidez para tus partidas\nJuega con más fluidez sin gastar de más. El monitor gamer ENV Tech de 22\" tiene resolución Full HD , 120 Hz , 1 ms de respuesta y panel VA con contraste de 4000:1 .\nSu ángulo de visión de 178° y sus puertos DisplayPort y HDMI lo hacen ideal para PC gamer y consolas. Rendimiento gamer a un precio que sí cuadra.\nCaracterísticas destacadas\n120 Hz: partidas más fluidas.\n1 ms: respuesta instantánea.\nPanel VA: contraste de 4000:1.\nDisplayPort y HDMI: para PC y consolas.\nÁngulo de 178°: imagen uniforme.\nFicha técnica\nMarca: ENV Tech\nPantalla: 22\", plana\nResolución: Full HD (1920 x 1080)\nPanel: VA\nFrecuencia: 120 Hz\nTiempo de respuesta: 1 ms\nBrillo: 230 nits\nContraste: 4000:1\nÁngulo de visión: 178° / 178°\nPuertos: DisplayPort, HDMI\nColor: Negro\n\nJuega como los competitivos con el monitor gamer curvo ENV de 27 pulgadas . Su frecuencia de 240 Hz muestra cada movimiento con una fluidez superior, ideal para juegos de disparos, carreras y eSports , donde cada fracción de segundo cuenta.\nSu pantalla curva rodea tu campo de visión para una experiencia más inmersiva , y su resolución Full HD mantiene la imagen nítida en partidas, series y trabajo. Su tamaño de 27\" te da más espacio en pantalla sin perder detalle.\n¡Tu setup gamer al siguiente nivel con ENV!\nCaracterísticas destacadas\n240 Hz: movimiento ultrafluido para gaming competitivo.\nPantalla curva: mayor inmersión en tus juegos.\n27 pulgadas: más espacio de pantalla para jugar y trabajar.\nFull HD 1920 x 1080: imagen nítida.\nUso versátil: gaming, streaming, series y trabajo.\nFicha técnica\nMarca: ENV\nTipo: monitor gamer curvo\nTamaño: 27\"\nResolución: Full HD (1920 x 1080)\nFrecuencia de actualización: 240 Hz\n\nPantalla Gaming FHD IPS 144Hz\nMarca ENV\nResolución 1920x1080 max\nPanel VA\n180Hz VA\nBrillo 300 nits\nContraste 4000:1\nTiempo de respuesta 1ms\nÁngulo de visión 178° (H) 178° (V)\nTipo de entrada: DP/HDMI\nDP 1.4 X 1; HDMI 2.0 X 1; Earphone x 1\nClasificación de potencia 100-240V - 50/60Hz"
+        "especificaciones": "Monitor ONE 19\": compacto y económico para tu escritorio\nSuma una pantalla a tu escritorio a un precio muy accesible. El monitor ONE de 19\" tiene resolución 1440 x 900 , 5 ms de respuesta y conexión HDMI .\nPesa solo 1.8 kg con base, se inclina para tu comodidad y se puede montar en pared (VESA 75 x 75) . Ideal para oficina, caja o punto de venta.\nCaracterísticas destacadas\nPantalla de 19\": compacta para cualquier escritorio.\nHDMI: conexión sencilla.\nInclinación ajustable: de -5° a +15°.\nMontaje VESA: instálalo en la pared.\nLigero: 1.8 kg con base.\nFicha técnica\nMarca: ONE\nPantalla: 19\"\nResolución: 1440 x 900, 16:10\nFrecuencia: 60 Hz\nTiempo de respuesta: 5 ms\nPuertos: HDMI\nInclinación: -5° a +15°\nMontaje: VESA 75 x 75 mm\nPeso: 1.8 kg con base\nMedidas con base: 43.8 x 35.7 x 14 cm\nColor: Negro"
       },
       {
         "tienda": "Amazon",
-        "url": "https://www.amazon.com/Monitor-FreeSync-Refresh-ED323QU-P2bmiipx/dp/B0FJS6DJVX",
+        "url": "https://www.amazon.com/GIGABYTE-GS32QCA-Advanced-2560x1440-180Hz-FreeSync/dp/B0DKTVJQ5C",
         "nombre": "Amazon.com",
         "precio": null,
         "disponibilidad": null,
@@ -167,12 +203,30 @@
       },
       {
         "tienda": "Amazon",
-        "url": "https://www.amazon.com/Monitor-FreeSync-Speakers-XZ320QU-S3bmiiphx/dp/B0CRF7J5S7",
+        "url": "https://www.amazon.com/-/es/GIGABYTE-GS32QCA-avanzada-2560x1440-180Hz-FreeSync/dp/B0DKTVJQ5C",
         "nombre": "Amazon.com",
         "precio": null,
         "disponibilidad": null,
         "descripcion": null,
         "especificaciones": null
+      },
+      {
+        "tienda": "Newegg",
+        "url": "https://www.newegg.com/msi-mag-321cqf-e18-31-5-qhd-180-hz-rapid-va-metallic-black/p/N82E16824475497",
+        "nombre": "MSI 32\" (31.5\" viewable) QHD 2K 1440P 180Hz AMD FreeSync 0.5ms HDR Ready Low Blue Light Ai Vision 1500R Curved Gaming Computer Monitor MAG 321CQF E18",
+        "precio": "$209.99",
+        "disponibilidad": "disponible",
+        "descripcion": "Buy MSI 32\" (31.5\" viewable) QHD 2K 1440P 180Hz AMD FreeSync 0.5ms HDR Ready Low Blue Light Ai Vision 1500R Curved Gaming Computer Monitor MAG 321CQF E18 with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "especificaciones": "Screen Size Screen Size: 32\"\nGlare Screen: Non-glare\nLED Backlight LED Backlight: Yes\nPanel Panel: Rapid VA\nDisplay Type: QHD\nAdaptive Sync Technology: FreeSync (AMD Adaptive Sync)\nResolution Resolution: 2560 x 1440 (2K)\nViewing Angle Viewing Angle: 178° (H) / 178° (V)\nAspect Ratio Aspect Ratio: 16:9\nBrightness Brightness: 300 cd/m2\nContrast Ratio Contrast Ratio: 3000:1\nResponse Time Response Time: 0.50 ms\nColor Gamut: sRGB 124%\nDisplay Colors Display Colors: 16.7 Million\nMonitor Pixel Density: 0.2724mm x 0.2724mm\nRefresh Rate Refresh Rate: 180Hz\nHDR Standard: HDR Ready\nCurved Surface Screen: Curved\nHDMI HDMI: 2 x HDMI 2.0b\nDisplayPort DisplayPort: 1 x DisplayPort 1.4\nVideo Ports: 1 x DisplayPort 1.4a / 2 x HDMI 2.0b\nHeadphone: 3.5mm headphone jack\nBrand: MSI\nModel: MAG 321CQF E18\nPart Number Part Number: MAG 321CQF E18\nCabinet Color: Metallic Black\nStand Adjustments: Tilt\nBuilt-in Speakers: No\nBuilt-in Webcam: No\nVESA Compatibility - Mountable: 100 x 100mm"
+      },
+      {
+        "tienda": "Newegg",
+        "url": "https://www.newegg.com/msi-ag321cqr-32-wqhd-165-hz-optix-va-black/p/N82E16824475132",
+        "nombre": "MSI Optix AG321CQR 32\" (31.5\" Viewable) QHD 2560 x 1440 (2K) 165Hz HDMI DisplayPort, Tilt Swivel Pivot Height Adjust AMD FreeSync Premium Curved Gaming Monitor",
+        "precio": null,
+        "disponibilidad": "agotado",
+        "descripcion": "Buy MSI Optix AG321CQR 32\" (31.5\" Viewable) QHD 2560 x 1440 (2K) 165Hz HDMI DisplayPort, Tilt Swivel Pivot Height Adjust AMD FreeSync Premium Curved Gaming Monitor with fast shipping and top-rated customer service. Once you know, you Newegg!",
+        "especificaciones": "Screen Size Screen Size: 32\" (31.5\" Viewable)\nWidescreen Widescreen: Yes\nGlare Screen: Non-glare\nLED Backlight LED Backlight: Yes\nPanel Panel: VA\nDisplay Type: WQHD\nAdaptive Sync Technology: FreeSync Premium (AMD Adaptive Sync)\nMaximum Resolution Maximum Resolution: 2560 x 1440\nResolution Resolution: 2560 x 1440 (2K)\nViewing Angle Viewing Angle: 178° (H) / 178° (V)\nAspect Ratio Aspect Ratio: 16:9\nBrightness Brightness: 250 cd/m2\nContrast Ratio Contrast Ratio: 3000:1\nResponse Time Response Time: 1ms (MPRT)\nDisplay Colors Display Colors: 1.07 Billion\nMonitor Pixel Density: 0.2724mm\nRefresh Rate Refresh Rate: 165Hz\nHDR Standard: HDR Ready\nCurved Surface Screen: Curved\nCurvature Radius: 1500R\nPanel Size: 31.8\"\nPanel TYPE: VA PANEL\nAspect Ratio: 16:9\nPanel Resolution: 2560 x 1440 (WQHD)\nRefresh Rate: 165Hz\nResponse Time: 1ms\nInput Video Compatibility: Digital\nConnectors: HDMI, DisplayPort, USB\nVideo Ports: 1 x DisplayPort 1.2a / 2 x HDMI 2.0b\nUSB Ports: 1 x USB 2.0 Type-B Upstream\nUSB 2.0: 1 x USB 2.0 Type-B\nBrand: MSI\nSeries: Optix\nModel: AG321CQR\nCabinet Color: Black\nBezel Design: 3 Sided Frameless"
       }
     ]
   }

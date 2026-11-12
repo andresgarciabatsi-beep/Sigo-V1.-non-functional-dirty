@@ -1,10 +1,10 @@
 
-"""SIGO Extract - filtros integrados para los cinco campos.
+"""Extract - filtros integrados para los cinco campos.
 
 Entrada: JSON de coincidencias brutas en memoria y árbol Lexbor de Selectolax.
 Salida: ficha candidata + diagnósticos. No descarga URLs ni exige archivos.
 
-Funciones usadas por main2.py:
+Funciones usadas por main3.py:
     leer_candidatos_brutos, agrupar_duplicados,
     select_nombre, select_precio, select_stock,
     select_descripcion, select_especificaciones, validar_ficha.
@@ -16,7 +16,7 @@ import html as html_lib
 import json
 import re
 import unicodedata
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
 from html.parser import HTMLParser
 
 CAMPOS = ("nombre", "precio", "disponibilidad", "descripcion", "especificaciones")
@@ -48,7 +48,8 @@ TITULOS = (
 )
 
 CODIGO = re.compile(
-    r"(?:function\s*\(|document\.querySelector\s*\(|window\.[\w$]+|"
+    r"(?:function\s*\([^)]*\)\s*\{|document\.querySelector\s*\(|"
+    r"window\.[\w$]+\s*\(|"
     r"[.#][\w-]+\s*\{\s*[\w-]+\s*:|"
     r"\b(?:display|font-size|background-color|position)\s*:\s*[^;]{1,80};)",
     re.I,
@@ -312,21 +313,115 @@ def _raiz_titulo(titulo):
     return None
 
 
-def _main_titulo(titulo):
+_COMPRA = re.compile(
+    r"add to (?:cart|basket|bag)|buy now|in stock|pre.?order|"
+    r"comprar|añadir al carrito|agregar al carrito|en stock",
+    re.I,
+)
 
-    if titulo is None:
+
+def _es_region_principal(nodo):
+    """Reconoce contenedores semánticos del contenido principal."""
+
+    marcas = {
+        m.lower().replace("_", "-")
+        for m in _marcas(nodo)
+    }
+
+    return (
+        nodo.tag == "main"
+        or str(nodo.attributes.get("role") or "").lower()
+        == "main"
+        or bool(marcas & {"main", "content", "primary"})
+    )
+
+
+def _evidencia_producto(region):
+    """Busca señales de ficha de producto dentro de una región."""
+
+    try:
+        if region.css_first(
+            '[itemtype*="Product"], [itemprop="price"], '
+            '[itemprop="offers"]'
+        ):
+            return 2
+    except Exception:
+        pass
+
+    try:
+        controles = region.css(
+            'form[action*="cart"], a[href*="cart"], '
+            'button, input[type="submit"]'
+        )
+    except Exception:
+        return 0
+
+    for nodo in controles[:40]:
+
+        texto = (
+            nodo.text(strip=True)
+            or nodo.attributes.get("value")
+            or ""
+        )
+
+        if _COMPRA.search(texto):
+            return 1
+
+    return 0
+
+
+def _main_titulo(arbol, titulo):
+    """Elige la región principal aunque no exista un encabezado."""
+
+    regiones = {}
+
+    for nodo in arbol.css(
+        "main, [role=main], #main, #content, #primary"
+    ):
+
+        if nodo.tag in {"html", "body"}:
+            continue
+
+        ruta = _ruta(nodo)
+
+        if ruta and ruta not in regiones:
+            regiones[ruta] = nodo
+
+    if not regiones:
         return None
 
-    for ancestro in _ancestros(titulo.parent):
+    candidatas = list(regiones.values())
 
-        if (
-            ancestro.tag == "main"
-            or ancestro.attributes.get("id")
-            in {"main", "content", "primary"}
-        ):
-            return ancestro
+    if titulo is not None:
 
-    return None
+        contienen = [
+            r
+            for r in candidatas
+            if _contiene(r, titulo)
+        ]
+
+        if contienen:
+            return min(
+                contienen,
+                key=lambda r: len(_ruta(r) or "")
+            )
+
+    con_evidencia = [
+        r
+        for r in candidatas
+        if _evidencia_producto(r)
+    ]
+
+    if con_evidencia:
+        return max(
+            con_evidencia,
+            key=lambda r: len(r.text(strip=True))
+        )
+
+    return max(
+        candidatas,
+        key=lambda r: len(r.text(strip=True))
+    )
 
 
 def _contexto(nodo, titulo, raiz, contenedor):
@@ -445,7 +540,7 @@ def _importe_simple(texto):
 
         if (
             len(partes) == 2
-            and len(partes[1]) in {1, 2}
+            and len(partes[1]) in {1, 2, 4}
         ):
             numero = partes[0] + "." + partes[1]
 
@@ -459,7 +554,13 @@ def _importe_simple(texto):
             return None
 
     try:
-        return format(Decimal(numero), ".2f")
+        return format(
+            Decimal(numero).quantize(
+                Decimal("0.01"),
+                rounding=ROUND_HALF_UP,
+            ),
+            ".2f",
+        )
     except (InvalidOperation, ValueError):
         return None
 
@@ -480,9 +581,16 @@ def _precio(texto):
     elif re.search(r"\bGBP\b|£", texto, re.I):
         moneda = "GBP"
 
+    elif re.search(r"\bINR\b|₹|\bRs\.?\s", texto, re.I):
+        moneda = "INR"
+
+    elif re.search(r"\bS/\s*\d", texto, re.I):
+        moneda = "PEN"
+
     else:
         for iso in (
-            "COP", "MXN", "CLP", "PEN", "ARS", "CAD"
+            "COP", "MXN", "CLP", "PEN", "ARS", "CAD",
+            "AUD", "JPY", "CNY", "CHF",
         ):
             if re.search(rf"\b{iso}\b", texto, re.I):
                 moneda = iso
@@ -529,6 +637,16 @@ def _stock(texto):
         flags=re.I
     )
 
+    # Algunas fichas publican el inventario como cantidad sin etiqueta
+    # (por ejemplo, AvailableQuantity: 84). Un entero positivo indica
+    # unidades disponibles; cero, agotado.
+    if re.fullmatch(r"\d+", texto):
+        cantidad = int(texto)
+        return {
+            "estado": "disponible" if cantidad > 0 else "agotado",
+            "cantidad": cantidad,
+        }
+
     patron_negativo = (
         r"out\s*of\s*stock|sold\s*out|"
         r"unavailable|not\s*available|"
@@ -550,10 +668,10 @@ def _stock(texto):
 
     positivo = bool(
         re.search(
-            r"in\s*stock|available|disponible|"
-            r"dispon[ií]vel|en\s+stock|"
-            r"em\s+estoque|only\s+\d+\s+left|"
-            r"solo\s+quedan\s+\d+",
+            r"\bin\s*stock\b|\bavailable\b|\bdisponibles?\b|"
+            r"\bdispon[ií]vel\b|\ben\s+stock\b|"
+            r"\bem\s+estoque\b|\bonly\s+\d+\s+left\b|"
+            r"\bsolo\s+quedan\s+\d+\b",
             sin_negaciones,
             re.I
         )
@@ -573,7 +691,8 @@ def _stock(texto):
         estado = "preventa"
 
     elif re.search(
-        r"back[- ]?order|bajo\s+pedido",
+        r"\b(?:on\s+)?back[- ]?order(?:ed)?\b(?!s)|"
+        r"\bbajo\s+pedido\b",
         texto,
         re.I
     ):
@@ -600,6 +719,23 @@ def _stock(texto):
 # ============================================================
 # 5. VALIDACIÓN DEL CONTENIDO
 # ============================================================
+
+def _partes_patron(patron):
+    """Separa campo, categoría y selector de un patrón descubierto.
+
+    Formato actual: descubierto::campo::[categoria::]selector.
+    """
+
+    partes = str(patron or "").split("::", 3)
+
+    if len(partes) == 4 and partes[0] == "descubierto":
+        return partes[1], partes[2], partes[3]
+
+    if len(partes) == 3 and partes[0] == "descubierto":
+        return partes[1], None, partes[2]
+
+    return None, None, patron
+
 
 def _validar(c):
 
@@ -664,6 +800,11 @@ def _validar(c):
             "bloque_tecnico_probable"
         )
 
+    # Una lista breve de categorías en mayúsculas no es una descripción
+    # narrativa; conservarla como respaldo, sin privilegiar su fuente.
+    if len(valor) < 80 and valor.isupper() and valor.count(",") >= 2:
+        return True, -15, "descripcion_probable_lista_categorias"
+
     return (
         True,
         min(len(valor) // 150, 10),
@@ -699,8 +840,15 @@ def _puntuar(c):
 
     score += c["puntos_contenido"]
 
-    campo = c["campo"]
     patron = c["patron"].lower()
+
+    if patron.startswith("descubierto::especificaciones::"):
+        score += 20
+
+    elif patron.startswith("descubierto::descripcion::"):
+        score += 10
+
+    campo = c["campo"]
 
     if campo == "nombre":
 
@@ -720,6 +868,31 @@ def _puntuar(c):
 
         if "offers.price" in patron:
             score += 6
+
+        categoria = _partes_patron(patron)[1]
+
+        if categoria:
+            score += {
+                "actual": 10,
+                "cantidad_base": 4,
+                "cantidad_alta": -6,
+                "viejo": -25,
+                "cuota": -35,
+                "descuento": -40,
+                "envio": -45,
+                "fiscal": -50,
+            }.get(categoria, 0)
+
+        # Una oferta estructurada con moneda ISO identifica importe y
+        # divisa de la misma entidad. Prevalece sobre importes visibles
+        # que solo muestran un símbolo ambiguo, salvo que otra regla
+        # detecte un tramo de cantidad distinto del principal.
+        if (
+            c["fuente"] in {"jsonld", "microdata", "json_embebido"}
+            and c["interpretacion"]
+            and c["interpretacion"].get("moneda")
+        ):
+            score += 40
 
         if re.search(
             r"old|regular|compare|tier|bulk",
@@ -753,6 +926,26 @@ def _puntuar(c):
         ):
             score += 8
 
+    if campo == "disponibilidad":
+
+        categoria = _partes_patron(patron)[1]
+
+        if categoria:
+
+            # Una etiqueta de stock junto a un selector de variantes puede
+            # describir solo la variante activa. Se conserva como evidencia,
+            # pero pierde frente a una fuente estructurada del producto.
+            if categoria.startswith("variante_"):
+                score -= 35
+            else:
+                score += {
+                    "agotado": 45,
+                    "preventa": 28,
+                    "bajo_pedido": 16,
+                    "disponible": 18,
+                    "contradictorio": -40,
+                }.get(categoria, 0)
+
     try:
         score += max(
             -5,
@@ -765,6 +958,361 @@ def _puntuar(c):
         pass
 
     return score
+
+
+def _tokens_texto(texto):
+
+    return set(
+        re.findall(
+            r"\w+",
+            clave(texto),
+            re.UNICODE,
+        )
+    )
+
+
+_ENCABEZADO_DESCRIPCION = re.compile(
+    r"^(?:descripci[oó]n(?:\s+(?:del\s+producto|general))?|"
+    r"description|product\s+description)\s*[:»\-–]?\s+",
+    re.I,
+)
+
+_SECCION_TECNICA_DESCRIPCION = re.compile(
+    r"\b(?:especificaciones|ficha\s+t[eé]cnica|"
+    r"technical\s+specifications|specifications|"
+    r"caract[eé]ristiques\s+techniques)\b",
+    re.I,
+)
+
+_RESUMEN_DECLARADO = re.compile(
+    r"short.?descri|short_description|resumen|summary|excerpt|"
+    r"descripci[oó]n\s+corta",
+    re.I,
+)
+
+
+def _sin_encabezado_descripcion(valor):
+    """Quita un encabezado genérico de sección al inicio del texto."""
+
+    if not isinstance(valor, str):
+        return valor
+
+    nuevo = _ENCABEZADO_DESCRIPCION.sub("", valor, count=1)
+
+    if nuevo == valor or len(nuevo.split()) < 8:
+        return valor
+
+    return nuevo
+
+
+def _sin_anexo_tecnico(texto, nodo):
+    """Separa prosa de un anexo rotulado con pares etiqueta: valor.
+
+    Exige un título independiente en el DOM y narración suficiente antes
+    de él; una mención a especificaciones o una tabla sin pares explícitos
+    no basta para recortar la descripción.
+    """
+
+    if nodo is None or not isinstance(texto, str):
+        return texto
+
+    for titulo in nodo.css("h1, h2, h3, h4, h5, h6, p"):
+        rotulo = titulo.text(separator=" ", strip=True)
+        seccion = _SECCION_TECNICA_DESCRIPCION.match(rotulo)
+
+        if seccion is None:
+            continue
+
+        resto = clave(rotulo[seccion.end():].strip(" .:;"))
+        if resto not in {"", "tecnicas", "técnicas"}:
+            continue
+
+        limite = re.search(r"\s+".join(map(re.escape, rotulo.split())), texto)
+        if limite is None:
+            continue
+
+        prosa = texto[:limite.start()].rstrip()
+        anexo = texto[limite.end():]
+        if (
+            len(prosa.split()) >= 40
+            and re.search(r"[.!?…]$", prosa)
+            and len(re.findall(r"[.!?…](?:\s|$)", prosa)) >= 2
+            and len(re.findall(r"[^\n:]{1,60}:\s*\S", anexo)) >= 3
+        ):
+            return prosa
+
+    return texto
+
+
+def _lista_reclamos(texto):
+    """Detecta una lista de frases promocionales o de características.
+
+    Cada línea es una afirmación breve que no termina en puntuación de
+    cierre y no continúa una frase partida por etiquetas en línea. Es el
+    formato habitual de una ficha resumida de características, no el de
+    una descripción narrativa.
+    """
+
+    if not isinstance(texto, str):
+        return False
+
+    lineas = [l.strip() for l in texto.splitlines() if l.strip()]
+
+    if len(lineas) < 3:
+        return False
+
+    primeras = lineas[:8]
+
+    cortas = sum(
+        1
+        for linea in primeras
+        if (
+            len(linea.split()) <= 18
+            and not re.search(r"[.!?…]\s*$", linea)
+        )
+    )
+
+    fragmentos = sum(
+        1
+        for linea in primeras
+        if linea and (
+            linea[0].islower() or linea[0] in ",.;:)!?"
+        )
+    )
+
+    proporcion = cortas / len(primeras)
+    fragmentacion = fragmentos / len(primeras)
+
+    if proporcion < 0.70 or fragmentacion > 0.15:
+        return False
+
+    return not _SECCION_TECNICA_DESCRIPCION.search(
+        "\n".join(lineas[:5])
+    )
+
+
+def _bloque_tecnico_descripcion(texto):
+    """Detecta bloques dominados por pares «etiqueta: valor»."""
+
+    if not isinstance(texto, str):
+        return False
+
+    palabras = len(texto.split())
+
+    if palabras < 12:
+        return False
+
+    pares = len(
+        re.findall(r"[^\n:]{1,60}:\s*\S", texto)
+    )
+
+    if pares < 8 or pares / palabras < 0.05:
+        return False
+
+    return not _SECCION_TECNICA_DESCRIPCION.search(texto)
+
+
+def _ajustar_descripciones(candidatos):
+    """Descuenta bloques descubiertos sin acuerdo con la evidencia global.
+
+    Evita que una sección parcial o de marketing sustituya a una descripción
+    ya corroborada por metadatos o datos estructurados. También separa la
+    narración del producto de las listas de características y de los bloques
+    técnicos, y favorece el resumen declarado por la propia página.
+    """
+
+    referencias = [
+        c["valor_limpio"]
+        for c in candidatos
+        if (
+            c["campo"] == "descripcion"
+            and c["valido"]
+            and c["fuente"] in {
+                "meta", "opengraph", "jsonld",
+                "microdata", "json_embebido",
+            }
+        )
+    ]
+
+    textos = [
+        (
+            c,
+            clave(_sin_encabezado_descripcion(c["valor_limpio"])),
+        )
+        for c in candidatos
+        if c["campo"] == "descripcion" and c["valido"]
+    ]
+
+    if referencias:
+
+        base = set().union(
+            *(_tokens_texto(t) for t in referencias)
+        )
+
+        if len(base) >= 5:
+
+            for c, _ in textos:
+
+                if not c["patron"].lower().startswith(
+                    "descubierto::descripcion::"
+                ):
+                    continue
+
+                tokens = _tokens_texto(c["valor_limpio"])
+                cobertura = len(tokens & base) / len(base)
+
+                if cobertura < 0.45:
+                    c["puntaje"] -= 55
+                    c["motivo"] += "+baja_coincidencia_estructurada"
+
+    for c, texto in textos:
+
+        if not c["patron"].lower().startswith(
+            "descubierto::descripcion::"
+        ):
+            continue
+
+        prefijo = any(
+            otro is not c
+            and len(otro_texto) > len(texto)
+            and otro_texto.startswith(texto)
+            for otro, otro_texto in textos
+        )
+
+        for otro, otro_texto in textos:
+
+            if otro is c or len(otro_texto) < len(texto) * 1.2:
+                continue
+
+            if (
+                not prefijo
+                and len(texto) >= 40
+                and texto in otro_texto
+            ):
+                c["puntaje"] -= 30
+                c["motivo"] += "+contenido_en_bloque_mayor"
+                break
+
+    # --- Narración frente a ficha técnica ---------------------------
+
+    descripciones = [
+        c
+        for c in candidatos
+        if c["campo"] == "descripcion" and c["valido"]
+    ]
+
+    if not descripciones:
+        return
+
+    for c in descripciones:
+        c["valor_limpio"] = _sin_encabezado_descripcion(
+            c["valor_limpio"]
+        )
+
+    reclamos = {
+        c["id"]: (
+            _tokens_texto(c["valor_limpio"]),
+            clave(c["valor_limpio"]),
+        )
+        for c in descripciones
+        if _lista_reclamos(c["valor_limpio"])
+    }
+
+    for c in descripciones:
+
+        texto = c["valor_limpio"]
+
+        if not isinstance(texto, str):
+            continue
+
+        palabras = len(texto.split())
+
+        tecnico = _bloque_tecnico_descripcion(texto)
+        lista = _lista_reclamos(texto)
+
+        if tecnico:
+            c["puntaje"] -= 45
+            c["motivo"] += "+bloque_tecnico"
+
+        elif lista:
+            c["puntaje"] -= 25
+            c["motivo"] += "+lista_reclamos"
+
+        elif (
+            reclamos
+            and c["fuente"] in {"html", "json_embebido"}
+        ):
+            tokens = _tokens_texto(texto)
+
+            if tokens and any(
+                len(tokens & referencia) / len(tokens) >= 0.80
+                and not (
+                    len(referencia_texto) > len(clave(texto))
+                    and referencia_texto.startswith(clave(texto))
+                )
+                for referencia, referencia_texto in reclamos.values()
+            ):
+                c["puntaje"] -= 25
+                c["motivo"] += "+lista_reclamos_duplicada"
+
+        # Una sección declarada como resumen (short description, resumen,
+        # extracto) representa mejor la descripción breve del producto que
+        # una pestaña de descripción extensa.
+        if (
+            _RESUMEN_DECLARADO.search(c["patron"])
+            and not tecnico
+            and 8 <= palabras <= 250
+        ):
+            c["puntaje"] += 20
+            c["motivo"] += "+resumen_declarado"
+
+        # Un titular sin puntuación de cierre no es una descripción
+        # narrativa; cede ante un resumen con oraciones completas.
+        if (
+            palabras < 20
+            and not re.search(r"[.!?…](?:\s|$)", texto)
+            and not _RESUMEN_DECLARADO.search(c["patron"])
+        ):
+            c["puntaje"] -= 15
+            c["motivo"] += "+descripcion_titular"
+
+
+def _ajustar_especificaciones(candidatos):
+    """Evita que un fragmento descubierto sustituya a un bloque mayor."""
+
+    textos = [
+        (c, " ".join(c["valor_limpio"].split()))
+        for c in candidatos
+        if (
+            c["campo"] == "especificaciones"
+            and c["valido"]
+            and isinstance(c["valor_limpio"], str)
+        )
+    ]
+
+    for c, texto in textos:
+
+        if not c["patron"].lower().startswith(
+            "descubierto::especificaciones::"
+        ):
+            continue
+
+        if len(texto.split()) < 40:
+            continue
+
+        for otro, otro_texto in textos:
+
+            if (
+                otro is c
+                or len(otro_texto.split())
+                < len(texto.split()) * 1.15
+            ):
+                continue
+
+            if texto in otro_texto:
+                c["puntaje"] -= 30
+                c["motivo"] += "+contenido_en_bloque_mayor"
+                break
 
 
 # ============================================================
@@ -782,9 +1330,10 @@ def leer_candidatos_brutos(bruto, arbol):
     titulo = _titulo_principal(arbol)
 
     raiz = _raiz_titulo(titulo)
-    contenedor = _main_titulo(titulo)
+    contenedor = _main_titulo(arbol, titulo)
 
     candidatos = []
+    descripciones_dom = []
     errores = []
     cache = {}
 
@@ -800,6 +1349,8 @@ def leer_candidatos_brutos(bruto, arbol):
                 regla.get("patron") or ""
             )
 
+            _, _, selector = _partes_patron(patron)
+
             nodos = []
 
             if fuente == "html":
@@ -807,13 +1358,13 @@ def leer_candidatos_brutos(bruto, arbol):
                 if patron not in cache:
 
                     try:
-                        cache[patron] = arbol.css(patron)
+                        cache[patron] = arbol.css(selector)
 
                     except Exception as error:
                         cache[patron] = []
 
                         errores.append(
-                            f"{campo}/{patron}: {error}"
+                            f"{campo}/{selector}: {error}"
                         )
 
                 nodos = cache[patron]
@@ -894,6 +1445,18 @@ def leer_candidatos_brutos(bruto, arbol):
 
                 candidatos.append(c)
 
+                if campo == "descripcion" and fuente == "html":
+                    descripciones_dom.append((c, nodo))
+
+    _ajustar_descripciones(candidatos)
+    _ajustar_especificaciones(candidatos)
+
+    # Evalúa el acuerdo de fuentes sobre el bloque completo antes de
+    # separar su anexo; los metadatos pueden describir solo dicho anexo.
+    for c, nodo in descripciones_dom:
+        if c["valido"]:
+            c["valor_limpio"] = _sin_anexo_tecnico(c["valor_limpio"], nodo)
+
     return candidatos, {
         "titulo_referencia": (
             titulo.text(strip=True)
@@ -970,7 +1533,7 @@ def agrupar_duplicados(candidatos):
     return list(grupos.values())
 
 
-def _opciones(grupos, campo):
+def _opciones(grupos, campo, incluir_ajenas=False):
 
     opciones = []
 
@@ -984,7 +1547,10 @@ def _opciones(grupos, campo):
             for c in grupo["candidatos"]
             if (
                 c["valido"]
-                and c["contexto"] != "zona_ajena_probable"
+                and (
+                    incluir_ajenas
+                    or c["contexto"] != "zona_ajena_probable"
+                )
             )
         ]
 
@@ -995,6 +1561,38 @@ def _opciones(grupos, campo):
             elegibles,
             key=lambda c: c["puntaje"]
         )
+
+        if (
+            campo != "precio"
+            and mejor["patron"].lower().startswith("descubierto::")
+        ):
+
+            fragmento = mejor["valor_limpio"]
+
+            if isinstance(fragmento, str):
+
+                trozo = " ".join(fragmento.split()).casefold()
+                palabras = len(fragmento.split())
+
+                for candidato in elegibles:
+
+                    texto = candidato["valor_limpio"]
+
+                    if (
+                        candidato is mejor
+                        or not isinstance(texto, str)
+                        or len(texto.split()) <= palabras
+                        or len(texto.split()) > 1.5 * palabras
+                        or candidato["puntaje"]
+                        < mejor["puntaje"] - 15
+                    ):
+                        continue
+
+                    completo = " ".join(texto.split()).casefold()
+
+                    if trozo and trozo in completo:
+                        mejor = candidato
+                        break
 
         familias = {
             c["fuente"]
@@ -1017,6 +1615,37 @@ def _opciones(grupos, campo):
     )
 
 
+def _registrar_competencia(logs, campo, opciones):
+    """Registra margen y discrepancia entre las dos mejores opciones.
+
+    Es información de auditoría: no altera la selección ni se interpreta
+    como probabilidad. Un margen corto indica que la decisión depende de
+    pocos puntos; una discrepancia indica que las fuentes no coinciden en
+    el contenido, aunque una de ellas tenga más prioridad.
+    """
+
+    if len(opciones) < 2:
+        return
+
+    etiqueta = campo.upper()
+    margen = opciones[0][0] - opciones[1][0]
+
+    if margen < 8:
+        logs.append(f"MARGEN_CORTO_{etiqueta}")
+
+    primero = opciones[0][2].get("valor_limpio")
+    segundo = opciones[1][2].get("valor_limpio")
+
+    if not isinstance(primero, str) or not isinstance(segundo, str):
+        return
+
+    a = clave(primero)
+    b = clave(segundo)
+
+    if a and b and a not in b and b not in a:
+        logs.append(f"CANDIDATOS_DISCREPANTES_{etiqueta}")
+
+
 # ============================================================
 # 9. SELECCIÓN DEL NOMBRE
 # ============================================================
@@ -1028,6 +1657,8 @@ def select_nombre(grupos, logs):
     if not opciones:
         logs.append("NOMBRE_SIN_CANDIDATO_VALIDO")
         return None, []
+
+    _registrar_competencia(logs, "nombre", opciones)
 
     _, elegido, candidato = opciones[0]
 
@@ -1076,35 +1707,90 @@ def select_nombre(grupos, logs):
 # 10. SELECCIÓN DEL PRECIO
 # ============================================================
 
+def _mismo_importe(a, b):
+
+    try:
+        return Decimal(str(a)) == Decimal(str(b))
+    except (TypeError, InvalidOperation, ValueError):
+        return a == b
+
+
 def select_precio(grupos, logs):
 
     opciones = _opciones(grupos, "precio")
+    respaldo_ajeno = False
+
+    if not opciones:
+        opciones = _opciones(
+            grupos, "precio", incluir_ajenas=True
+        )
+        respaldo_ajeno = bool(opciones)
+
+        if respaldo_ajeno:
+            logs.append("PRECIO_SOLO_EN_ZONA_AJENA")
 
     if not opciones:
         logs.append("PRECIO_SIN_CANDIDATO_VALIDO")
         return None, []
 
+    _registrar_competencia(logs, "precio", opciones)
+
     _, elegido, candidato = opciones[0]
+
+    # Si la fuente estructurada publica el tramo abierto de cantidad
+    # (por ejemplo, >= 1000 unidades) y la ficha muestra también un
+    # tramo base en rango (500-999), se prefiere este último: el
+    # estructurado está describiendo el mínimo por volumen.
+    tramo_base = None
+    tramos_altos = []
+
+    for _, grupo, otro in opciones:
+
+        categoria = _partes_patron(otro["patron"])[1]
+        importe = otro["interpretacion"].get("importe")
+
+        if importe is None:
+            continue
+
+        if categoria == "cantidad_base" and tramo_base is None:
+            tramo_base = (grupo, otro)
+        elif categoria == "cantidad_alta":
+            tramos_altos.append(importe)
+
+    if (
+        tramo_base is not None
+        and candidato["fuente"] in {
+            "jsonld", "microdata", "json_embebido",
+            "meta", "opengraph",
+        }
+        and any(
+            _mismo_importe(
+                candidato["interpretacion"]["importe"], alto
+            )
+            for alto in tramos_altos
+        )
+        and not _mismo_importe(
+            candidato["interpretacion"]["importe"],
+            tramo_base[1]["interpretacion"]["importe"],
+        )
+    ):
+        elegido, candidato = tramo_base
+        logs.append("PRECIO_TRAMO_BASE_PREFERIDO")
 
     info = candidato["interpretacion"]
     primero = info["importe"]
 
     alternativas = []
 
-    for _, _, otro in opciones[1:]:
+    for _, _, otro in opciones:
+
+        if otro is candidato:
+            continue
 
         importe = otro["interpretacion"]["importe"]
 
-        try:
-            distinto = (
-                Decimal(importe) != Decimal(primero)
-            )
-        except (TypeError, InvalidOperation):
-            distinto = importe != primero
-
-        if (
-            distinto
-            and importe is not None
+        if not _mismo_importe(importe, primero) and (
+            importe is not None
             and importe not in alternativas
         ):
             alternativas.append(importe)
@@ -1122,17 +1808,30 @@ def select_precio(grupos, logs):
             "PRECIO_SIN_CONFIRMACION_DOM_PRINCIPAL"
         )
 
+    original = candidato.get("valor_original")
+
+    if (
+        isinstance(original, str)
+        and re.search(r"\d+[.,]\d{3,}", original)
+    ):
+        original = (
+            f"{info['moneda']} {primero}"
+            if info.get("moneda")
+            else str(primero)
+        )
+
     return {
         "importe": primero,
         "moneda": info["moneda"],
         "iva": info["iva"],
-        "texto_original": candidato["valor_original"],
+        "texto_original": original,
         "estado": (
             "provisional"
             if alternativas else "seleccionado"
         ),
         "alternativas_importe": alternativas[:15],
     }, [elegido["id"]]
+
 
 
 # ============================================================
@@ -1151,6 +1850,10 @@ def select_stock(grupos, logs):
             "DISPONIBILIDAD_NO_INTERPRETABLE"
         )
         return None, []
+
+    _registrar_competencia(
+        logs, "disponibilidad", opciones
+    )
 
     _, elegido, candidato = opciones[0]
 
@@ -1199,6 +1902,10 @@ def select_descripcion(grupos, logs):
         )
         return None, []
 
+    _registrar_competencia(
+        logs, "descripcion", opciones
+    )
+
     _, elegido, candidato = opciones[0]
 
     return (
@@ -1222,6 +1929,97 @@ def _tokens(texto):
     )
 
 
+def _pares_especificaciones(texto):
+    """Cuenta líneas con formato «clave: valor»."""
+
+    return len(
+        re.findall(
+            r"(?m)^\s*[^\n:]{1,80}:\s*\S",
+            texto,
+        )
+    )
+
+
+def _unir_pares(textos, max_lineas=120):
+    """Une bloques, conserva orden y junta etiquetas con su valor."""
+
+    brutas = []
+    vistas = set()
+    deduplicar = len(textos) > 1
+
+    for texto in textos:
+
+        for linea in texto.splitlines():
+
+            linea = " ".join(linea.split())
+
+            if not linea:
+                continue
+
+            marca = linea.casefold()
+
+            if deduplicar and marca in vistas:
+                continue
+
+            vistas.add(marca)
+            brutas.append(linea)
+
+    lineas = []
+    indice = 0
+
+    while indice < len(brutas):
+
+        actual = brutas[indice]
+
+        if (
+            actual.endswith(":")
+            and indice + 1 < len(brutas)
+            and not brutas[indice + 1].endswith(":")
+        ):
+            lineas.append(f"{actual} {brutas[indice + 1]}")
+            indice += 2
+
+        else:
+            lineas.append(actual)
+            indice += 1
+
+        if len(lineas) >= max_lineas:
+            break
+
+    return "\n".join(lineas)
+
+
+def _es_narrativo(candidato):
+    """Detecta bloques de descripción que no aportan pares técnicos."""
+
+    patron = candidato["patron"].lower()
+    texto = candidato["valor_limpio"]
+
+    if not isinstance(texto, str):
+        return False
+
+    if "description" not in patron and "descripcion" not in patron:
+        return False
+
+    if "technical" in patron:
+        return False
+
+    if _pares_especificaciones(texto) >= 3:
+        return False
+
+    lineas = [
+        linea for linea in texto.splitlines()
+        if linea.strip()
+    ]
+
+    if not lineas:
+        return False
+
+    media = len(texto.split()) / len(lineas)
+
+    return len(texto.split()) >= 25 and media >= 8
+
+
 def select_especificaciones(
     grupos,
     logs,
@@ -1239,6 +2037,171 @@ def select_especificaciones(
         )
         return None, []
 
+    estructuradas = [
+        opcion
+        for opcion in opciones
+        if not _es_narrativo(opcion[2])
+    ]
+
+    if estructuradas and len(estructuradas) < len(opciones):
+        logs.append(
+            "ESPECIFICACIONES_NARRATIVA_DESCARTADA"
+        )
+        opciones = estructuradas
+
+    _registrar_competencia(
+        logs, "especificaciones", opciones
+    )
+
+    descubiertos = []
+
+    for puntos, grupo, candidato in opciones:
+
+        patron = candidato["patron"].lower()
+
+        if not patron.startswith(
+            "descubierto::especificaciones::"
+        ):
+            continue
+
+        texto = candidato["valor_limpio"]
+
+        if not isinstance(texto, str):
+            continue
+
+        lineas = [
+            linea for linea in texto.splitlines()
+            if linea.strip()
+        ]
+
+        pares = _pares_especificaciones(texto)
+        densidad = pares / max(1, len(lineas))
+
+        descubiertos.append((
+            puntos,
+            grupo,
+            candidato,
+            pares,
+            len(texto.split()),
+            densidad,
+        ))
+
+    if descubiertos and max(d[4] for d in descubiertos) >= 20:
+
+        seccion_pares = next(
+            (
+                dato for dato in descubiertos
+                if dato[3] >= 8 and dato[5] >= 0.6
+                and dato[2].get("prioridad_patron", 0) < 104
+            ),
+            None,
+        )
+
+        if seccion_pares is not None:
+            logs.append(
+                "ESPECIFICACIONES_SECCION_CON_PARES"
+            )
+            return (
+                _unir_pares([seccion_pares[2]["valor_limpio"]]),
+                [seccion_pares[1]["id"]],
+            )
+
+        tablas = [
+            dato for dato in descubiertos
+            if dato[3] >= 3 and dato[5] >= 0.8
+        ]
+
+        if tablas:
+
+            tablas.sort(key=lambda d: (d[3], d[4]), reverse=True)
+
+            textos = [tablas[0][2]["valor_limpio"]]
+            ids = [tablas[0][1]["id"]]
+
+            for _, otro_grupo, otro, _, _, _ in tablas[1:]:
+
+                nuevas = set(
+                    linea.split(":", 1)[0].casefold()
+                    for linea in _unir_pares(
+                        [otro["valor_limpio"]]
+                    ).splitlines()
+                )
+
+                previas = set(
+                    linea.split(":", 1)[0].casefold()
+                    for linea in _unir_pares(textos).splitlines()
+                )
+
+                if len(nuevas - previas) < 3:
+                    continue
+
+                textos.append(otro["valor_limpio"])
+                ids.append(otro_grupo["id"])
+
+                if len(textos) >= 8:
+                    break
+
+            logs.append(
+                "ESPECIFICACIONES_PARES_ESTRUCTURADOS"
+            )
+
+            return _unir_pares(textos), ids
+
+        mejor = max(descubiertos, key=lambda d: (d[3], d[4]))
+
+        if mejor[3] >= 5:
+            puntos_elegido, grupo, candidato, pares, palabras, dens = (
+                mejor
+            )
+        else:
+            puntos_elegido, grupo, candidato, pares, palabras, dens = (
+                descubiertos[0]
+            )
+
+        fragmento = " ".join(
+            candidato["valor_limpio"].split()
+        ).casefold()
+        cantidad = len(fragmento.split())
+
+        for otros_puntos, otro_grupo, otro in opciones:
+
+            texto = otro["valor_limpio"]
+
+            if (
+                otro is candidato
+                or not isinstance(texto, str)
+                or otros_puntos < puntos_elegido - 15
+            ):
+                continue
+
+            completo = " ".join(texto.split()).casefold()
+
+            if (
+                cantidad <= len(completo.split()) <= 1.5 * cantidad
+                and fragmento in completo
+            ):
+                grupo = otro_grupo
+                candidato = otro
+                pares = _pares_especificaciones(completo)
+                palabras = len(completo.split())
+                break
+
+        prioridad = candidato.get("prioridad_patron", 0)
+
+        if (
+            pares >= 5
+            or prioridad < 104
+            or palabras >= 60
+        ):
+
+            logs.append(
+                "ESPECIFICACIONES_SECCION_DESCUBIERTA"
+            )
+
+            return _unir_pares([candidato["valor_limpio"]]), [
+                grupo["id"]
+            ]
+
     bloques = []
     ids = []
 
@@ -1247,6 +2210,17 @@ def select_especificaciones(
         texto = candidato["valor_limpio"]
 
         if not isinstance(texto, str):
+            continue
+
+        if bloques and _es_narrativo(candidato):
+            continue
+
+        if (
+            bloques
+            and candidato["fuente"] != "html"
+        ):
+            # Los metadatos pueden describir el producto, pero no sustituyen
+            # una sección técnica ya localizada en el documento.
             continue
 
         n = clave(texto)

@@ -128,21 +128,6 @@
       },
       {
         "fuente": "html",
-        "selector": ".priceflex",
-        "prioridad": 95
-      },
-      {
-        "fuente": "html",
-        "selector": "div.tm-source-woo-price",
-        "prioridad": 95
-      },
-      {
-        "fuente": "html",
-        "selector": "span.electro-price",
-        "prioridad": 95
-      },
-      {
-        "fuente": "html",
         "selector": "span.price",
         "prioridad": 95
       },
@@ -209,16 +194,6 @@
       },
       {
         "fuente": "html",
-        "selector": "span.a-offscreen",
-        "prioridad": 85
-      },
-      {
-        "fuente": "html",
-        "selector": "div.module_price",
-        "prioridad": 80
-      },
-      {
-        "fuente": "html",
         "selector": ".price",
         "prioridad": 65
       },
@@ -255,11 +230,6 @@
       },
       {
         "fuente": "html",
-        "selector": "div.tm-source-woo-stock",
-        "prioridad": 100
-      },
-      {
-        "fuente": "html",
         "selector": "p.stock.in-stock",
         "prioridad": 100
       },
@@ -280,16 +250,6 @@
         "prioridad": 95
       },
       {
-        "fuente": "html",
-        "selector": "div.tecnit-disponibilidad",
-        "prioridad": 95
-      },
-      {
-        "fuente": "html",
-        "selector": "p.ast-stock-detail",
-        "prioridad": 95
-      },
-      {
         "fuente": "jsonld",
         "tipo": "Product",
         "ruta": "offers.availability",
@@ -298,11 +258,6 @@
       {
         "fuente": "html",
         "selector": "div.stock",
-        "prioridad": 90
-      },
-      {
-        "fuente": "html",
-        "selector": "span.stockok",
         "prioridad": 90
       },
       {
@@ -378,11 +333,6 @@
       {
         "fuente": "html",
         "selector": "#short_description",
-        "prioridad": 90
-      },
-      {
-        "fuente": "html",
-        "selector": "div.el-content.uk-panel",
         "prioridad": 90
       },
       {
@@ -492,11 +442,6 @@
       },
       {
         "fuente": "html",
-        "selector": ".tecnit-spec-list",
-        "prioridad": 105
-      },
-      {
-        "fuente": "html",
         "selector": ".woocommerce-product-attributes",
         "prioridad": 105,
         "observacion": "Posible mezcla de atributos técnicos y dimensiones de empaque: candidato, no ficha validada."
@@ -524,8 +469,14 @@
       },
       {
         "fuente": "html",
-        "selector": "#productOverview_feature_div",
-        "prioridad": 100
+        "selector": "table.specs-table",
+        "prioridad": 103
+      },
+      {
+        "fuente": "html",
+        "selector": "table.table-specs, .table-specs table",
+        "prioridad": 103,
+        "observacion": "Tablas técnicas identificadas por table-specs en la tabla o en su contenedor."
       },
       {
         "fuente": "jsonld",
@@ -535,20 +486,10 @@
       },
       {
         "fuente": "html",
-        "selector": "#feature-bullets",
-        "prioridad": 98
-      },
-      {
-        "fuente": "html",
         "selector": "#tab-specifications-mobile",
         "prioridad": 96,
         "estado": "pendiente_de_verificacion",
         "observacion": "Robocraze: citado en informe, pero sin coincidencia directa en hallazgos_html_ampliado.json. Puede incluir Package Includes; extraer como texto candidato."
-      },
-      {
-        "fuente": "html",
-        "selector": "div.tm-source-woo-description",
-        "prioridad": 95
       },
       {
         "fuente": "html",

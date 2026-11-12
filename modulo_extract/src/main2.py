@@ -11,11 +11,6 @@ Salida:
 Flujo:
     Fetch -> fuentes -> localizadores -> filtros -> resultado
 
-No utiliza argparse.
-No utiliza prueba_bruta_90.py.
-No descarga páginas.
-No crea archivos intermedios.
-
 Los archivos solamente se utilizan en main() para pruebas locales.
 """
 

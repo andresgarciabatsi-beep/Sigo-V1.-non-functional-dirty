@@ -16,7 +16,7 @@ ORQUESTADOR_DIR = Path(__file__).resolve().parent
 ARCHIVO_ENTRADA = (
     ORQUESTADOR_DIR
     / "resources"
-    / "resultados_filtrados_memorias.json"
+    / "resultados_filtrados_mas_tiendas.json"
 )
 
 # ============================================================
