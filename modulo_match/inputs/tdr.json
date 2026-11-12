@@ -1,0 +1,177 @@
+{
+  "nic": null,
+  "plazo_ejecucion": {
+    "valor": 5,
+    "unidad": "Días",
+    "tipo": "Calendario"
+  },
+  "items": [
+    {
+      "numero_item": 1,
+      "nombre": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s",
+      "cantidad": 2,
+      "unidad_medida": "UNIDAD",
+      "especificaciones_tecnicas": {
+        "grupos": [
+          {
+            "grupo": null,
+            "requisitos": [
+              "Unidad de almacenamiento externo de estado sólido",
+              "Capacidad: mínimo 1 TB",
+              "Tecnología: unidad de estado sólido (SSD)",
+              "Interfaz: USB 3.2 Gen 2 o superior",
+              "Conector principal: USB Tipo C",
+              "Velocidad máxima declarada de lectura secuencial: mínimo 1000 MB/s",
+              "Velocidad máxima declarada de escritura secuencial: mínimo 900 MB/s",
+              "Funcionalidad SMART o herramienta del fabricante que permita consultar el estado, vida útil y actualizaciones de firmware de la unidad",
+              "Compatible para almacenamiento y transferencia de archivos con Windows 11, Linux y macOS",
+              "Formato de fábrica exFAT o posibilidad de formatearse con exFAT",
+              "Garantía mínima de tres años"
+            ]
+          }
+        ],
+        "accesorios_obligatorios": [
+          {
+            "nombre": "Cable USB tipo C a tipo C",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Compatible con USB 3.2 Gen 2 y con las velocidades requeridas"
+            ]
+          },
+          {
+            "nombre": "Cable o adaptador tipo C a tipo A",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Compatible con USB 3.2 Gen 2 y con las velocidades requeridas"
+            ]
+          },
+          {
+            "nombre": "Estuche protector",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Compatible con las dimensiones de la unidad"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "numero_item": 2,
+      "nombre": "Tarjeta microSDXC 512GB UHS-I U3 V30 A2",
+      "cantidad": 2,
+      "unidad_medida": "UNIDAD",
+      "especificaciones_tecnicas": {
+        "grupos": [
+          {
+            "grupo": null,
+            "requisitos": [
+              "Tarjeta de memoria microSDXC",
+              "Capacidad: 512 GB",
+              "Interfaz: UHS-I",
+              "Clase de velocidad: U3",
+              "Clase de velocidad de video: V30 o superior",
+              "Clase de rendimiento de aplicaciones: A2 o superior",
+              "Velocidad de lectura declarada: mínimo 160 MB/s",
+              "Velocidad de escritura declarada: mínimo 90 MB/s",
+              "Formato compatible: exFAT",
+              "Compatibilidad comprobada con el modelo de dron institucional DJI Mavic 3 Multiespectral (Mavic 3M Enterprise)",
+              "Resistencia al agua, según ficha del fabricante",
+              "Resistencia a impactos, según ficha del fabricante",
+              "Resistencia a variaciones de temperatura (0°C a 40°C), según ficha del fabricante",
+              "Resistencia a exposición a rayos X, según ficha del fabricante",
+              "Garantía mínima de cinco años o la garantía estándar del fabricante, si ésta fuera superior"
+            ]
+          }
+        ],
+        "accesorios_obligatorios": [
+          {
+            "nombre": "Adaptador SD",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Cuando sea necesario para alcanzar las velocidades declaradas"
+            ]
+          },
+          {
+            "nombre": "Lector compatible",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Cuando sea necesario para alcanzar las velocidades declaradas"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "numero_item": 3,
+      "nombre": "Monitor curvo 31.5 pulgadas QHD 2560x1440 VA 180Hz",
+      "cantidad": 5,
+      "unidad_medida": "UNIDAD",
+      "especificaciones_tecnicas": {
+        "grupos": [
+          {
+            "grupo": null,
+            "requisitos": [
+              "Tamaño de la pantalla: mínimo 31,5 pulgadas",
+              "Pantalla curva",
+              "Panel VA o tecnología equivalente que cumpla con las demás características requeridas",
+              "Resolución nativa mínima: QHD 2560 x 1440 píxeles",
+              "Relación de aspecto: 16:9",
+              "Cobertura de color: mínimo 99 % sRGB",
+              "Brillo mínimo: 300 cd/m2",
+              "Profundidad de color: mínimo 8 bits, equivalente a 16,7 millones de colores",
+              "Ángulo de visión: mínimo 178° horizontal",
+              "Ángulo de visión: mínimo 178° vertical",
+              "Frecuencia de actualización: mínimo 180 Hz a resolución nativa",
+              "Tratamiento antirreflejo",
+              "Resistencia superficial equivalente a 3H o superior",
+              "Tecnología de sincronización adaptativa mediante frecuencia de actualización variable (VRR)",
+              "Conectividad: al menos un puerto HDMI 2.0 o superior",
+              "Conectividad: al menos un puerto DisplayPort 1.4 o superior",
+              "Soporte ajustable en inclinación",
+              "Soporte preferentemente ajustable también en altura",
+              "Tecnología de reducción de parpadeo",
+              "Garantía técnica mínima de tres años"
+            ]
+          }
+        ],
+        "accesorios_obligatorios": [
+          {
+            "nombre": "Cable de alimentación",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Necesario para operar el monitor"
+            ]
+          },
+          {
+            "nombre": "Cable de video",
+            "cantidad": {
+              "valor": null,
+              "tipo": null
+            },
+            "requisitos": [
+              "Necesario para operar el monitor a la resolución nativa y frecuencia de actualización solicitadas"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "modo": "api_as_fallback_for_specs",
+  "modelo": "gpt-6-luna",
+  "esfuerzo": "low",
+  "items": [
+    {
+      "item": 1,
+      "nombre": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s",
+      "requisitos": [
+        {
+          "r": 1,
+          "texto": "Unidad de almacenamiento externo de estado sólido"
+        },
+        {
+          "r": 2,
+          "texto": "Capacidad: mínimo 1 TB"
+        },
+        {
+          "r": 3,
+          "texto": "Tecnología: unidad de estado sólido (SSD)"
+        },
+        {
+          "r": 4,
+          "texto": "Interfaz: USB 3.2 Gen 2 o superior"
+        },
+        {
+          "r": 5,
+          "texto": "Conector principal: USB Tipo C"
+        },
+        {
+          "r": 6,
+          "texto": "Velocidad máxima declarada de lectura secuencial: mínimo 1000 MB/s"
+        },
+        {
+          "r": 7,
+          "texto": "Velocidad máxima declarada de escritura secuencial: mínimo 900 MB/s"
+        },
+        {
+          "r": 8,
+          "texto": "Funcionalidad SMART o herramienta del fabricante que permita consultar el estado, vida útil y actualizaciones de firmware de la unidad"
+        },
+        {
+          "r": 9,
+          "texto": "Compatible para almacenamiento y transferencia de archivos con Windows 11, Linux y macOS"
+        },
+        {
+          "r": 10,
+          "texto": "Formato de fábrica exFAT o posibilidad de formatearse con exFAT"
+        },
+        {
+          "r": 11,
+          "texto": "Garantía mínima de tres años"
+        },
+        {
+          "r": 12,
+          "texto": "Accesorio exigido: Cable USB tipo C a tipo C; Compatible con USB 3.2 Gen 2 y con las velocidades requeridas"
+        },
+        {
+          "r": 13,
+          "texto": "Accesorio exigido: Cable o adaptador tipo C a tipo A; Compatible con USB 3.2 Gen 2 y con las velocidades requeridas"
+        },
+        {
+          "r": 14,
+          "texto": "Accesorio exigido: Estuche protector; Compatible con las dimensiones de la unidad"
+        }
+      ],
+      "preferencias": [],
+      "resultados": [
+        {
+          "id": "P2",
+          "nombre": "1TB SSD EXTERNO KINGSTON XS1000 USB 3.2 USB C",
+          "tienda": "NomadaWare",
+          "url": "https://nomadaware.com.ec/producto/1tb-ssd-externo-kingston-xs1000-usb-c/",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 50.0,
+          "requisitos_cumplen": 7,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 7,
+          "requisitos_totales": 14,
+          "s": "CCCCCCUUCUUUUU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "SSD externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "especificaciones"
+            },
+            {
+              "r": 3,
+              "v": "NAND 3D",
+              "f": "especificaciones"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "especificaciones"
+            },
+            {
+              "r": 5,
+              "v": "USB-C",
+              "f": "nombre"
+            },
+            {
+              "r": 6,
+              "v": "Hasta 1.050 MB/s en lectura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 7,
+              "v": "Hasta 1.000 MB/s en escritura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "especificaciones"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A; no se especifica compatibilidad con las velocidades requeridas",
+              "f": "especificaciones"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P3",
+          "nombre": "1TB SSD EXTERNO KINGSTON XS1000R",
+          "tienda": "NomadaWare",
+          "url": "https://nomadaware.com.ec/producto/1tb-ssd-externo-kingston-xs1000r/",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 50.0,
+          "requisitos_cumplen": 7,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 7,
+          "requisitos_totales": 14,
+          "s": "CCCCCCUUCUUUUU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "SSD externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "especificaciones"
+            },
+            {
+              "r": 3,
+              "v": "NAND 3D",
+              "f": "especificaciones"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "especificaciones"
+            },
+            {
+              "r": 5,
+              "v": "USB-C",
+              "f": "nombre"
+            },
+            {
+              "r": 6,
+              "v": "Hasta 1.050 MB/s en lectura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 7,
+              "v": "Hasta 1.000 MB/s en escritura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "especificaciones"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A; no se especifica compatibilidad con las velocidades requeridas",
+              "f": "especificaciones"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P1",
+          "nombre": "SSD EXTERNO KINGSTON XS1000 1TB USB 3.2 GEN 2 – 1050MB/S READ – 1000MB/S WRITE (SXS1000/1000G)",
+          "tienda": "Tecnosmart",
+          "url": "https://www.tecnosmart.com.ec/producto/ssd-externo-kingston-xs1000-1tb-usb-3-2-gen-2-1050mb-s-read-1000mb-s-write-sxs1000-1000g/",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 35.71,
+          "requisitos_cumplen": 5,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 9,
+          "requisitos_totales": 14,
+          "s": "CCCCCUUUUUUUUU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "SSD externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "nombre"
+            },
+            {
+              "r": 6,
+              "v": "1050 MB/s de lectura",
+              "f": "nombre"
+            },
+            {
+              "r": 7,
+              "v": "1000 MB/s de escritura",
+              "f": "nombre"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P5",
+          "nombre": "Kingston External SXS1000 1TB USB 3.2 Gen 2x2 Type-C 3D NAND Solid State Disk",
+          "tienda": "Newegg",
+          "url": "https://www.newegg.com/kingston-sxs1000-1tb-usb-3-2-gen-2x2-type-c/p/N82E16820242838",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 28.57,
+          "requisitos_cumplen": 4,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 10,
+          "requisitos_totales": 14,
+          "s": "CCCCUUUUUUUUUU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "Solid State Disk externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "3D NAND Solid State Disk",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2x2",
+              "f": "especificaciones"
+            },
+            {
+              "r": 5,
+              "v": "Type-C",
+              "f": "nombre"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P4",
+          "nombre": "XS1000 USB 3.2 Gen 2 Disco Duro Externo De Estado Sólido, 1TB - SXS1000/1000G",
+          "tienda": "eBay",
+          "url": "https://www.ebay.com/itm/136596601125",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 21.43,
+          "requisitos_cumplen": 3,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 11,
+          "requisitos_totales": 14,
+          "s": "CCCUUUUUUUUUUU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "Disco externo de estado sólido",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "nombre"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P6",
+          "nombre": "Kingston-unidad de estado sólido SSD portátil, disco duro externo XS1000, 1TB, 2TB, máx. 1050 Mb/s, USB3.2, tipo C, para PC, Original - AliExpress 7",
+          "tienda": "AliExpress",
+          "url": "https://es.aliexpress.com/item/1005006744787422.html?gatewayAdapt=glo2esp",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 21.43,
+          "requisitos_cumplen": 3,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 11,
+          "requisitos_totales": 14,
+          "s": "CCCUUUUUUUUUUU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "Unidad de estado sólido SSD portátil",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            }
+          ],
+          "inc": []
+        }
+      ]
+    }
+  ],
+  "advertencias": [],
+  "metricas": {
+    "llamadas_api": 1,
+    "busquedas_web": 0,
+    "acciones_web": 0,
+    "tokens_entrada": 3119,
+    "tokens_entrada_cache": 0,
+    "tokens_salida": 1048,
+    "tokens_razonamiento": 267,
+    "segundos_api": 9.985,
+    "costo_estimado_usd": 0.0008359
+  },
+  "detalle_llamadas": [
+    {
+      "fecha_utc": "2026-11-12T16:25:10+00:00",
+      "item": 1,
+      "etapa": "evaluacion_local",
+      "modelo": "gpt-6-luna",
+      "esfuerzo": "low",
+      "web_habilitada": false,
+      "busquedas_web": 0,
+      "acciones_web_totales": 0,
+      "tokens_entrada": 3119,
+      "tokens_entrada_cache": 0,
+      "tokens_salida": 1048,
+      "tokens_razonamiento": 267,
+      "segundos": 9.985,
+      "costo_estimado_usd": 0.0008359,
+      "respuesta_id": "resp_040955f494c8083c016af5e8a4f9ec87d1a50337f0ab84afc5"
+    }
+  ]
+}

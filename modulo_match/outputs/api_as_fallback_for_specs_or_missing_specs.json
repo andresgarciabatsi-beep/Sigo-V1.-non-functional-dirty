@@ -1,0 +1,54 @@
+{
+  "modo": "api_as_fallback_for_specs_or_missing_specs",
+  "modelo": "gpt-6-luna",
+  "esfuerzo": "low",
+  "items": [],
+  "advertencias": [],
+  "metricas": {
+    "llamadas_api": 2,
+    "busquedas_web": 1,
+    "acciones_web": 1,
+    "tokens_entrada": 19285,
+    "tokens_entrada_cache": 0,
+    "tokens_salida": 3616,
+    "tokens_razonamiento": 1231,
+    "segundos_api": 42.794,
+    "costo_estimado_usd": 0.0137365
+  },
+  "detalle_llamadas": [
+    {
+      "fecha_utc": "2026-11-12T16:25:26+00:00",
+      "item": 1,
+      "etapa": "evaluacion_local",
+      "modelo": "gpt-6-luna",
+      "esfuerzo": "low",
+      "web_habilitada": false,
+      "busquedas_web": 0,
+      "acciones_web_totales": 0,
+      "tokens_entrada": 3137,
+      "tokens_entrada_cache": 0,
+      "tokens_salida": 1539,
+      "tokens_razonamiento": 657,
+      "segundos": 15.913,
+      "costo_estimado_usd": 0.0010832,
+      "respuesta_id": "resp_05b306116374804f016af5e8af6c9487d1bd547fd1df3364cb"
+    },
+    {
+      "fecha_utc": "2026-11-12T16:25:53+00:00",
+      "item": 1,
+      "etapa": "web_requisitos_pendientes",
+      "modelo": "gpt-6-luna",
+      "esfuerzo": "low",
+      "web_habilitada": true,
+      "busquedas_web": 1,
+      "acciones_web_totales": 1,
+      "tokens_entrada": 16148,
+      "tokens_entrada_cache": 0,
+      "tokens_salida": 2077,
+      "tokens_razonamiento": 574,
+      "segundos": 26.881,
+      "costo_estimado_usd": 0.0126533,
+      "respuesta_id": "resp_048e503c92323000016af5e8bf4cd487d1b8aabf19717e14aa"
+    }
+  ]
+}
