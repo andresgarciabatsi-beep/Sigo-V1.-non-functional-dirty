@@ -1,0 +1,64 @@
+{
+  "nic": null,
+  "plazo_ejecucion": {
+    "valor": 30,
+    "unidad": "días",
+    "tipo": "hábiles"
+  },
+  "items": [
+    {
+      "numero_item": 1,
+      "nombre": "UPS respaldo eléctrico 750VA 360W 120V",
+      "cantidad": 9,
+      "unidad_medida": "Unidad",
+      "especificaciones_tecnicas": {
+        "grupos": [
+          {
+            "grupo": "Capacidad y Potencia",
+            "requisitos": [
+              "Capacidad nominal: mínimo 750 VA / 360 W o superior."
+            ]
+          },
+          {
+            "grupo": "Tecnología y Regulación",
+            "requisitos": [
+              "Topología: Line-Interactive o Standby.",
+              "Regulación automática de voltaje (AVR): sistema integrado de corrección de altos y bajos voltajes sin hacer uso de la batería."
+            ]
+          },
+          {
+            "grupo": "Entrada y Salida Eléctrica",
+            "requisitos": [
+              "Voltaje nominal de entrada/salida: 110 V / 120 V AC.",
+              "Rango de operación de entrada recomendado: 85 V – 145 V AC.",
+              "Frecuencia: 50 Hz / 60 Hz (detección automática).",
+              "Tomas de salida: mínimo 4 a 6 tomas tipo NEMA 5-15R, al menos 3 o 4 con respaldo de batería y protección contra sobretensiones."
+            ]
+          },
+          {
+            "grupo": "Batería y Autonomía",
+            "requisitos": [
+              "Tipo de batería: sellada de libre mantenimiento (VRLA / plomo-ácido).",
+              "Tiempo de respaldo estimado: entre 8 y 15 minutos."
+            ]
+          },
+          {
+            "grupo": "Indicadores y Protecciones",
+            "requisitos": [
+              "Indicadores de estado: indicadores LED o pantalla LCD (estado de red, modo batería, falla).",
+              "Protección contra sobrecargas y cortocircuitos.",
+              "Supresión de picos de voltaje y transitorios: mínimo 180 a 300 Joules."
+            ]
+          },
+          {
+            "grupo": "Garantía y Certificaciones",
+            "requisitos": [
+              "Certificaciones: UL, CE o equivalentes de seguridad eléctrica."
+            ]
+          }
+        ],
+        "accesorios_obligatorios": []
+      }
+    }
+  ]
+}

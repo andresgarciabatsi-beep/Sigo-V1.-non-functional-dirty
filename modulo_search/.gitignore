@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Entornos virtuales
+.venv/
+venv/
+
+# Resultados generados
+resultados_searxng.json
+resultados_filtrados.json
+
+# HTML generado
+visualizacion/resultados.html
+
+# Variables y secretos
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/

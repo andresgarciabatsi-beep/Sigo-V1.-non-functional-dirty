@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: white;
+    color: #222;
+}
+
+
+.contenedor-error {
+    max-width: 900px;
+
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+
+.contenedor-error h1 {
+    font-size: 26px;
+}
+
+
+.contenedor-error p {
+    font-size: 16px;
+}
+
+
+.contenedor-error pre {
+    margin-top: 30px;
+    padding: 20px;
+
+    background-color: #f3f3f3;
+
+    border: 1px solid #d0d0d0;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+}

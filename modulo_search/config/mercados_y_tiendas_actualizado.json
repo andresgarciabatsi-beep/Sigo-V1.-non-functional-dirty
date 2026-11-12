@@ -1,0 +1,170 @@
+{
+  "mercados": {
+    "Nacionales": [
+      {
+        "nombre": "Tecnit",
+        "dominio": "tecnit.com.ec"
+      },
+      {
+        "nombre": "Tecnomega Store",
+        "dominio": "tecnomegastore.ec"
+      },
+      {
+        "nombre": "Grupo Electrostore",
+        "dominio": "grupoelectrostore.com"
+      },
+      {
+        "nombre": "Megatrónica",
+        "dominio": "megatronica.cc"
+      },
+      {
+        "nombre": "MundoTek",
+        "dominio": "mundotek.com.ec"
+      },
+      {
+        "nombre": "EkuStore",
+        "dominio": "ekustore.com"
+      },
+      {
+        "nombre": "AV Electronics",
+        "dominio": "avelectronics.cc"
+      },
+      {
+        "nombre": "Setcom",
+        "dominio": "setcom.com.ec"
+      },
+      {
+        "nombre": "Tecnosmart",
+        "dominio": "tecnosmart.com.ec"
+      },
+      {
+        "nombre": "Steren Ecuador",
+        "dominio": "steren.com.ec"
+      },
+      {
+        "nombre": "Siglo 21",
+        "dominio": "siglo21.net"
+      },
+      {
+        "nombre": "Computron",
+        "dominio": "computron.com.ec"
+      },
+      {
+        "nombre": "Tecnomade",
+        "dominio": "tecnomade.com.ec"
+      },
+      {
+        "nombre": "NoviComPu",
+        "dominio": "novicompu.com"
+      },
+      {
+        "nombre": "ElectronicaJNC",
+        "dominio": "electronicajnc.com"
+      },
+      {
+        "nombre": "Elelctrimundo",
+        "dominio": "electrimundodyd.com"
+      },
+      {
+        "nombre": "NomadaWare",
+        "dominio": "nomadaware.com.ec"
+      },
+      {
+        "nombre": "PuntoCom",
+        "dominio": "puntocomstore.ec"
+      },
+      {
+        "nombre": "PC Actual Ecuador",
+        "dominio": "pcactualecuador.com"
+      },
+      {
+        "nombre": "Techno Prime",
+        "dominio": "technoprimec.com"
+      },
+      {
+        "nombre": "Compumillenium",
+        "dominio": "compumillenium.com.ec"
+      },
+      {
+        "nombre": "Essential Store",
+        "dominio": "essentialstore.com.ec"
+      },
+      {
+        "nombre": "Tecnología en Línea",
+        "dominio": "tecnologia-enlinea.com"
+      }
+    ],
+    "Estados Unidos": [
+      {
+        "nombre": "Amazon",
+        "dominio": "amazon.com"
+      },
+      {
+        "nombre": "eBay",
+        "dominio": "ebay.com"
+      },
+      {
+        "nombre": "Best Buy",
+        "dominio": "bestbuy.com"
+      },
+      {
+        "nombre": "Newegg",
+        "dominio": "newegg.com"
+      },
+      {
+        "nombre": "B&H Photo Video",
+        "dominio": "bhphotovideo.com"
+      },
+      {
+        "nombre": "Micro Center",
+        "dominio": "microcenter.com"
+      },
+      {
+        "nombre": "Crutchfield",
+        "dominio": "crutchfield.com"
+      },
+      {
+        "nombre": "Monoprice",
+        "dominio": "monoprice.com"
+      },
+      {
+        "nombre": "iFixit",
+        "dominio": "ifixit.com"
+      }
+    ],
+    "China": [
+      {
+        "nombre": "Alibaba",
+        "dominio": "alibaba.com"
+      },
+      {
+        "nombre": "AliExpress",
+        "dominio": "aliexpress.com"
+      },
+      {
+        "nombre": "Banggood",
+        "dominio": "banggood.com"
+      },
+      {
+        "nombre": "Geekbuying",
+        "dominio": "geekbuying.com"
+      },
+      {
+        "nombre": "LCSC Electronics",
+        "dominio": "lcsc.com"
+      },
+      {
+        "nombre": "Seeed Studio",
+        "dominio": "seeedstudio.com"
+      },
+      {
+        "nombre": "DFRobot",
+        "dominio": "dfrobot.com"
+      },
+      {
+        "nombre": "DJI Store",
+        "dominio": "store.dji.com"
+      }
+    ]
+  }
+}

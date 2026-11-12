@@ -1,0 +1,58 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+
+# --------------------------------------------------------
+# CONFIGURACIÓN DE PYTHON
+# --------------------------------------------------------
+
+#Evita que Python cree archivos en cache
+ENV PYTHONDONTWRITEBYTECODE=1 
+#Los mensajes de salida de Python se muestran en la consola
+ENV PYTHONUNBUFFERED=1
+
+
+# --------------------------------------------------------
+# INSTALAR DEPENDENCIAS
+# --------------------------------------------------------
+
+#Requirements.txt tiene la lista de las dependencias necesarias
+COPY requirements.txt .
+
+#Instalar dependencias de requirements.txt sin guardar nada en cache (--no-cache-dir)
+RUN pip install \
+    --no-cache-dir \
+    -r requirements.txt
+
+
+# --------------------------------------------------------
+# COPIAR CÓDIGO DE SIGO SEARCH
+# --------------------------------------------------------
+
+COPY src ./src
+
+
+# --------------------------------------------------------
+# ENTRADA Y SALIDA DE DATOS CON A TRAVES DE VOLUMENES
+# --------------------------------------------------------
+
+#VOLUMEN PARA ANADIR TIENDAS, CATEGORIAS Y PRODUCTOS
+RUN mkdir -p /app/config
+#VOLUMEN PARA GUARDAR LOS RESULTADOS DE LA BUSQUEDA
+RUN mkdir -p /app/outputs
+
+
+# --------------------------------------------------------
+# PUERTO DE LA API
+# --------------------------------------------------------
+#EL MODULO SEARCH ESCUCHA A TRAVES DE EL PUERTO 5000
+EXPOSE 5000
+
+
+# --------------------------------------------------------
+# INICIAR SIGO SEARCH
+# --------------------------------------------------------
+
+#AL INICIAR EL CONTENEDOR, SE EJECUTA EL SCRIPT DE LA API DEL MODULO SEARCH
+CMD ["python", "src/sigo_search/api.py"]

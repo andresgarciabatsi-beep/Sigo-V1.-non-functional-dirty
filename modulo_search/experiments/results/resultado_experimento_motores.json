@@ -1,0 +1,331 @@
+[
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Bing",
+        "motores": [
+            "!bi"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.99,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "apariciones_por_motor": {},
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Brave",
+        "motores": [
+            "!br"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.97,
+        "resultados_brutos": 24,
+        "resultados_dominio": 11,
+        "urls_unicas_dominio": 11,
+        "apariciones_por_motor": {
+            "brave": 11
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/Clase-pulgadas-85-6-visible-Interactiva/dp/B07ZZMQWHL",
+            "https://www.amazon.com/-/es/JYXOIHUB-interactiva-inteligente-electr%C3%B3nica-conferencias/dp/B0CMQ4J29Q",
+            "https://www.amazon.com/-/es/LINGHUFOX-inteligente-interactiva-micr%C3%B3fonos-Smartboard/dp/B0CP2BD3PM",
+            "https://www.amazon.com/-/es/MX086-V4-Pantalla-interactiva-pantalla-educaci%C3%B3n/dp/B0C4ZXRF86",
+            "https://www.amazon.com/-/es/Newline-exhibici%C3%B3n-pantalla-interactiva-capacitivo/dp/B086MYLCHB",
+            "https://www.amazon.com/-/es/Pantalla-interactiva-pulgadas-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/Pantalla-t%C3%A1ctil-interactiva-LED-pulgadas/dp/B07HF7N171",
+            "https://www.amazon.com/-/es/inteligente-pantalla-pulgadas-interactiva-industrial/dp/B0CBS2P39B",
+            "https://www.amazon.com/-/es/interactiva-dispositivos-certificado-inal%C3%A1mbrico-LH86WAFWLGCXZA/dp/B0FNRWHJ2W",
+            "https://www.amazon.com/TouchWo-Touchscreen-Interactive-Whiteboard-Classroom/dp/B0CK2GQ9GF",
+            "https://www.amazon.com/interactive-display-touch-screen/s?k=interactive+display+touch+screen"
+        ]
+    },
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Yahoo",
+        "motores": [
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.83,
+        "resultados_brutos": 7,
+        "resultados_dominio": 2,
+        "urls_unicas_dominio": 2,
+        "apariciones_por_motor": {
+            "yahoo": 2
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/Samsung-Pantalla-interactiva-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/inteligente-86-interactiva-Smartboard-inal%C3%A1mbrico/dp/B0D5YCD65Y"
+        ]
+    },
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Bing + Brave",
+        "motores": [
+            "!bi",
+            "!br"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.5,
+        "resultados_brutos": 34,
+        "resultados_dominio": 11,
+        "urls_unicas_dominio": 11,
+        "apariciones_por_motor": {
+            "brave": 11
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/Clase-pulgadas-85-6-visible-Interactiva/dp/B07ZZMQWHL",
+            "https://www.amazon.com/-/es/JYXOIHUB-interactiva-inteligente-electr%C3%B3nica-conferencias/dp/B0CMQ4J29Q",
+            "https://www.amazon.com/-/es/LINGHUFOX-inteligente-interactiva-micr%C3%B3fonos-Smartboard/dp/B0CP2BD3PM",
+            "https://www.amazon.com/-/es/MX086-V4-Pantalla-interactiva-pantalla-educaci%C3%B3n/dp/B0C4ZXRF86",
+            "https://www.amazon.com/-/es/Newline-exhibici%C3%B3n-pantalla-interactiva-capacitivo/dp/B086MYLCHB",
+            "https://www.amazon.com/-/es/Pantalla-interactiva-pulgadas-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/Pantalla-t%C3%A1ctil-interactiva-LED-pulgadas/dp/B07HF7N171",
+            "https://www.amazon.com/-/es/inteligente-pantalla-pulgadas-interactiva-industrial/dp/B0CBS2P39B",
+            "https://www.amazon.com/-/es/interactiva-dispositivos-certificado-inal%C3%A1mbrico-LH86WAFWLGCXZA/dp/B0FNRWHJ2W",
+            "https://www.amazon.com/TouchWo-Touchscreen-Interactive-Whiteboard-Classroom/dp/B0CK2GQ9GF",
+            "https://www.amazon.com/interactive-display-touch-screen/s?k=interactive+display+touch+screen"
+        ]
+    },
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Bing + Yahoo",
+        "motores": [
+            "!bi",
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.5,
+        "resultados_brutos": 17,
+        "resultados_dominio": 2,
+        "urls_unicas_dominio": 2,
+        "apariciones_por_motor": {
+            "yahoo": 2
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/Samsung-Pantalla-interactiva-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/TouchWo-inteligente-pantalla-interactiva-industrial/dp/B0CBS2P39B"
+        ]
+    },
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Brave + Yahoo",
+        "motores": [
+            "!br",
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.51,
+        "resultados_brutos": 31,
+        "resultados_dominio": 13,
+        "urls_unicas_dominio": 13,
+        "apariciones_por_motor": {
+            "brave": 11,
+            "yahoo": 2
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/Clase-pulgadas-85-6-visible-Interactiva/dp/B07ZZMQWHL",
+            "https://www.amazon.com/-/es/JYXOIHUB-interactiva-inteligente-electr%C3%B3nica-conferencias/dp/B0CMQ4J29Q",
+            "https://www.amazon.com/-/es/LINGHUFOX-inteligente-interactiva-micr%C3%B3fonos-Smartboard/dp/B0CP2BD3PM",
+            "https://www.amazon.com/-/es/MX086-V4-Pantalla-interactiva-pantalla-educaci%C3%B3n/dp/B0C4ZXRF86",
+            "https://www.amazon.com/-/es/Newline-exhibici%C3%B3n-pantalla-interactiva-capacitivo/dp/B086MYLCHB",
+            "https://www.amazon.com/-/es/Pantalla-interactiva-pulgadas-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/Pantalla-t%C3%A1ctil-interactiva-LED-pulgadas/dp/B07HF7N171",
+            "https://www.amazon.com/-/es/Samsung-Pantalla-interactiva-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/TouchWo-inteligente-pantalla-interactiva-industrial/dp/B0CBS2P39B",
+            "https://www.amazon.com/-/es/inteligente-pantalla-pulgadas-interactiva-industrial/dp/B0CBS2P39B",
+            "https://www.amazon.com/-/es/interactiva-dispositivos-certificado-inal%C3%A1mbrico-LH86WAFWLGCXZA/dp/B0FNRWHJ2W",
+            "https://www.amazon.com/TouchWo-Touchscreen-Interactive-Whiteboard-Classroom/dp/B0CK2GQ9GF",
+            "https://www.amazon.com/interactive-display-touch-screen/s?k=interactive+display+touch+screen"
+        ]
+    },
+    {
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "configuracion": "Bing + Brave + Yahoo",
+        "motores": [
+            "!bi",
+            "!br",
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas amazon.com",
+        "tiempo_segundos": 0.5,
+        "resultados_brutos": 41,
+        "resultados_dominio": 13,
+        "urls_unicas_dominio": 13,
+        "apariciones_por_motor": {
+            "yahoo": 2,
+            "brave": 11
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/Clase-pulgadas-85-6-visible-Interactiva/dp/B07ZZMQWHL",
+            "https://www.amazon.com/-/es/JYXOIHUB-interactiva-inteligente-electr%C3%B3nica-conferencias/dp/B0CMQ4J29Q",
+            "https://www.amazon.com/-/es/LINGHUFOX-inteligente-interactiva-micr%C3%B3fonos-Smartboard/dp/B0CP2BD3PM",
+            "https://www.amazon.com/-/es/MX086-V4-Pantalla-interactiva-pantalla-educaci%C3%B3n/dp/B0C4ZXRF86",
+            "https://www.amazon.com/-/es/Newline-exhibici%C3%B3n-pantalla-interactiva-capacitivo/dp/B086MYLCHB",
+            "https://www.amazon.com/-/es/Pantalla-interactiva-pulgadas-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/Pantalla-t%C3%A1ctil-interactiva-LED-pulgadas/dp/B07HF7N171",
+            "https://www.amazon.com/-/es/Samsung-Pantalla-interactiva-educaci%C3%B3n-3840x2160/dp/B0D6XCSWF1",
+            "https://www.amazon.com/-/es/TouchWo-inteligente-pantalla-interactiva-industrial/dp/B0CBS2P39B",
+            "https://www.amazon.com/-/es/inteligente-pantalla-pulgadas-interactiva-industrial/dp/B0CBS2P39B",
+            "https://www.amazon.com/-/es/interactiva-dispositivos-certificado-inal%C3%A1mbrico-LH86WAFWLGCXZA/dp/B0FNRWHJ2W",
+            "https://www.amazon.com/TouchWo-Touchscreen-Interactive-Whiteboard-Classroom/dp/B0CK2GQ9GF",
+            "https://www.amazon.com/interactive-display-touch-screen/s?k=interactive+display+touch+screen"
+        ]
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Bing",
+        "motores": [
+            "!bi"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.27,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "apariciones_por_motor": {},
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Brave",
+        "motores": [
+            "!br"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.87,
+        "resultados_brutos": 24,
+        "resultados_dominio": 3,
+        "urls_unicas_dominio": 3,
+        "apariciones_por_motor": {
+            "brave": 3
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.ebay.com/b/Touchscreen-Computer-Monitors/80053/bn_2781094",
+            "https://www.ebay.com/itm/227372636445",
+            "https://www.ebay.com/shop/pantalla-interactiva?_nkw=pantalla+interactiva"
+        ]
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Yahoo",
+        "motores": [
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.55,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "apariciones_por_motor": {},
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Bing + Brave",
+        "motores": [
+            "!bi",
+            "!br"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.65,
+        "resultados_brutos": 34,
+        "resultados_dominio": 3,
+        "urls_unicas_dominio": 3,
+        "apariciones_por_motor": {
+            "brave": 3
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.ebay.com/b/Touchscreen-Computer-Monitors/80053/bn_2781094",
+            "https://www.ebay.com/itm/227372636445",
+            "https://www.ebay.com/shop/pantalla-interactiva?_nkw=pantalla+interactiva"
+        ]
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Bing + Yahoo",
+        "motores": [
+            "!bi",
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.48,
+        "resultados_brutos": 17,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "apariciones_por_motor": {},
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Brave + Yahoo",
+        "motores": [
+            "!br",
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.52,
+        "resultados_brutos": 31,
+        "resultados_dominio": 3,
+        "urls_unicas_dominio": 3,
+        "apariciones_por_motor": {
+            "brave": 3
+        },
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.ebay.com/b/Touchscreen-Computer-Monitors/80053/bn_2781094",
+            "https://www.ebay.com/itm/227372636445",
+            "https://www.ebay.com/shop/pantalla-interactiva?_nkw=pantalla+interactiva"
+        ]
+    },
+    {
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "configuracion": "Bing + Brave + Yahoo",
+        "motores": [
+            "!bi",
+            "!br",
+            "!yh"
+        ],
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas ebay.com",
+        "tiempo_segundos": 0.49,
+        "resultados_brutos": 17,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "apariciones_por_motor": {},
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    }
+]

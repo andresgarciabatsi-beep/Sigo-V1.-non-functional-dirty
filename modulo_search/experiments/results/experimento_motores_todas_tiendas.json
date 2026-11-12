@@ -1,0 +1,855 @@
+[
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnit",
+        "dominio": "tecnit.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnit.com.ec",
+        "tiempo_segundos": 0.46,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnit",
+        "dominio": "tecnit.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnit.com.ec",
+        "tiempo_segundos": 0.49,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnit",
+        "dominio": "tecnit.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnit.com.ec",
+        "tiempo_segundos": 1.0,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnomega Store",
+        "dominio": "tecnomegastore.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnomegastore.ec",
+        "tiempo_segundos": 0.24,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnomega Store",
+        "dominio": "tecnomegastore.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnomegastore.ec",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnomega Store",
+        "dominio": "tecnomegastore.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnomegastore.ec",
+        "tiempo_segundos": 0.72,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Grupo Electrostore",
+        "dominio": "grupoelectrostore.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado grupoelectrostore.com",
+        "tiempo_segundos": 0.26,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Grupo Electrostore",
+        "dominio": "grupoelectrostore.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado grupoelectrostore.com",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Grupo Electrostore",
+        "dominio": "grupoelectrostore.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado grupoelectrostore.com",
+        "tiempo_segundos": 0.66,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Megatrónica",
+        "dominio": "megatronica.cc",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado megatronica.cc",
+        "tiempo_segundos": 0.31,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Megatrónica",
+        "dominio": "megatronica.cc",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado megatronica.cc",
+        "tiempo_segundos": 0.02,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Megatrónica",
+        "dominio": "megatronica.cc",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado megatronica.cc",
+        "tiempo_segundos": 0.72,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "MundoTek",
+        "dominio": "mundotek.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado mundotek.com.ec",
+        "tiempo_segundos": 0.25,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "MundoTek",
+        "dominio": "mundotek.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado mundotek.com.ec",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "MundoTek",
+        "dominio": "mundotek.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado mundotek.com.ec",
+        "tiempo_segundos": 0.7,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "EkuStore",
+        "dominio": "ekustore.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado ekustore.com",
+        "tiempo_segundos": 0.53,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "EkuStore",
+        "dominio": "ekustore.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado ekustore.com",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "EkuStore",
+        "dominio": "ekustore.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado ekustore.com",
+        "tiempo_segundos": 0.76,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "AV Electronics",
+        "dominio": "avelectronics.cc",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado avelectronics.cc",
+        "tiempo_segundos": 0.24,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "AV Electronics",
+        "dominio": "avelectronics.cc",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado avelectronics.cc",
+        "tiempo_segundos": 0.03,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "AV Electronics",
+        "dominio": "avelectronics.cc",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado avelectronics.cc",
+        "tiempo_segundos": 0.91,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Setcom",
+        "dominio": "setcom.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado setcom.com.ec",
+        "tiempo_segundos": 0.28,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Setcom",
+        "dominio": "setcom.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado setcom.com.ec",
+        "tiempo_segundos": 0.03,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Setcom",
+        "dominio": "setcom.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado setcom.com.ec",
+        "tiempo_segundos": 0.7,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnosmart",
+        "dominio": "tecnosmart.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnosmart.com.ec",
+        "tiempo_segundos": 0.29,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnosmart",
+        "dominio": "tecnosmart.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnosmart.com.ec",
+        "tiempo_segundos": 0.02,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnosmart",
+        "dominio": "tecnosmart.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnosmart.com.ec",
+        "tiempo_segundos": 0.64,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Steren Ecuador",
+        "dominio": "steren.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado steren.com.ec",
+        "tiempo_segundos": 0.25,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Steren Ecuador",
+        "dominio": "steren.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado steren.com.ec",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Steren Ecuador",
+        "dominio": "steren.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado steren.com.ec",
+        "tiempo_segundos": 0.69,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Siglo 21",
+        "dominio": "siglo21.net",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado siglo21.net",
+        "tiempo_segundos": 0.23,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Siglo 21",
+        "dominio": "siglo21.net",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado siglo21.net",
+        "tiempo_segundos": 0.49,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Siglo 21",
+        "dominio": "siglo21.net",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado siglo21.net",
+        "tiempo_segundos": 0.65,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Computron",
+        "dominio": "computron.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado computron.com.ec",
+        "tiempo_segundos": 0.24,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Computron",
+        "dominio": "computron.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado computron.com.ec",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Computron",
+        "dominio": "computron.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado computron.com.ec",
+        "tiempo_segundos": 0.67,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnomade",
+        "dominio": "tecnomade.com.ec",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnomade.com.ec",
+        "tiempo_segundos": 0.23,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnomade",
+        "dominio": "tecnomade.com.ec",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnomade.com.ec",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "Tecnomade",
+        "dominio": "tecnomade.com.ec",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado tecnomade.com.ec",
+        "tiempo_segundos": 0.64,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "NoviComPu",
+        "dominio": "novicompu.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado novicompu.com",
+        "tiempo_segundos": 0.25,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "NoviComPu",
+        "dominio": "novicompu.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado novicompu.com",
+        "tiempo_segundos": 0.01,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Nacionales",
+        "tienda": "NoviComPu",
+        "dominio": "novicompu.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado novicompu.com",
+        "tiempo_segundos": 0.71,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Estados Unidos",
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado amazon.com",
+        "tiempo_segundos": 0.27,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Estados Unidos",
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado amazon.com",
+        "tiempo_segundos": 0.02,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Estados Unidos",
+        "tienda": "Amazon",
+        "dominio": "amazon.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado amazon.com",
+        "tiempo_segundos": 0.62,
+        "resultados_brutos": 7,
+        "resultados_dominio": 4,
+        "urls_unicas_dominio": 4,
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.amazon.com/-/es/JAV-inteligente-interactiva-certificaci%C3%B3n-operativo/dp/B0DWLCT2GT",
+            "https://www.amazon.com/-/es/inteligente-interactiva-operativo-duplicaci%C3%B3n-conferencias/dp/B0FCFJ5D2L",
+            "https://www.amazon.com/-/es/inteligente-pulgadas-pantalla-interactiva-operativo/dp/B0F7QLSN5L",
+            "https://www.amazon.com/-/es/interactiva-inteligente-operativo-infrarrojo-proyecci%C3%B3n/dp/B0FCFJN9B1"
+        ]
+    },
+    {
+        "mercado": "Estados Unidos",
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado ebay.com",
+        "tiempo_segundos": 0.24,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Estados Unidos",
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado ebay.com",
+        "tiempo_segundos": 0.02,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "Estados Unidos",
+        "tienda": "eBay",
+        "dominio": "ebay.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado ebay.com",
+        "tiempo_segundos": 0.64,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "China",
+        "tienda": "Alibaba",
+        "dominio": "alibaba.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado alibaba.com",
+        "tiempo_segundos": 0.25,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "China",
+        "tienda": "Alibaba",
+        "dominio": "alibaba.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado alibaba.com",
+        "tiempo_segundos": 0.03,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "China",
+        "tienda": "Alibaba",
+        "dominio": "alibaba.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado alibaba.com",
+        "tiempo_segundos": 0.68,
+        "resultados_brutos": 7,
+        "resultados_dominio": 1,
+        "urls_unicas_dominio": 1,
+        "motores_no_disponibles": [],
+        "urls_dominio": [
+            "https://www.alibaba.com/product-detail/86-pulgadas-4-K-led-monitor_300015766666.html"
+        ]
+    },
+    {
+        "mercado": "China",
+        "tienda": "AliExpress",
+        "dominio": "aliexpress.com",
+        "motor": "Bing",
+        "bang": "!bi",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado aliexpress.com",
+        "tiempo_segundos": 0.24,
+        "resultados_brutos": 10,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "China",
+        "tienda": "AliExpress",
+        "dominio": "aliexpress.com",
+        "motor": "Brave",
+        "bang": "!br",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado aliexpress.com",
+        "tiempo_segundos": 0.02,
+        "resultados_brutos": 0,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [
+            [
+                "brave",
+                "Suspended: too many requests"
+            ]
+        ],
+        "urls_dominio": []
+    },
+    {
+        "mercado": "China",
+        "tienda": "AliExpress",
+        "dominio": "aliexpress.com",
+        "motor": "Yahoo",
+        "bang": "!yh",
+        "consulta": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado aliexpress.com",
+        "tiempo_segundos": 0.77,
+        "resultados_brutos": 7,
+        "resultados_dominio": 0,
+        "urls_unicas_dominio": 0,
+        "motores_no_disponibles": [],
+        "urls_dominio": []
+    }
+]

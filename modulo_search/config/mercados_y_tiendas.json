@@ -1,0 +1,30 @@
+{
+  "mercados": {
+    "Nacionales": [
+      {"nombre": "Tecnit", "dominio": "tecnit.com.ec"},
+      {"nombre": "Tecnomega Store", "dominio": "tecnomegastore.ec"},
+      {"nombre": "Grupo Electrostore", "dominio": "grupoelectrostore.com"},
+      {"nombre": "Megatrónica", "dominio": "megatronica.cc"},
+      {"nombre": "MundoTek", "dominio": "mundotek.com.ec"},
+      {"nombre": "EkuStore", "dominio": "ekustore.com"},
+      {"nombre": "AV Electronics", "dominio": "avelectronics.cc"},
+      {"nombre": "Setcom", "dominio": "setcom.com.ec"},
+      {"nombre": "Tecnosmart", "dominio": "tecnosmart.com.ec"},
+      {"nombre": "Steren Ecuador", "dominio": "steren.com.ec"},
+      {"nombre": "Siglo 21", "dominio": "siglo21.net"},
+      {"nombre": "Computron", "dominio": "computron.com.ec"},
+      {"nombre": "Tecnomade", "dominio": "tecnomade.com.ec"},
+      {"nombre": "NoviComPu", "dominio": "novicompu.com"},
+      {"nombre": "ElectronicaJNC", "dominio": "electronicajnc.com"},
+      {"nombre": "Elelctrimundo", "dominio": "electrimundodyd.com"}
+    ],
+    "Estados Unidos": [
+      {"nombre": "Amazon", "dominio": "amazon.com"},
+      {"nombre": "eBay", "dominio": "ebay.com"}
+    ],
+    "China": [
+      {"nombre": "Alibaba", "dominio": "alibaba.com"},
+      {"nombre": "AliExpress", "dominio": "aliexpress.com"}
+    ]
+  }
+}

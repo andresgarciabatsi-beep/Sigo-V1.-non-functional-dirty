@@ -1,0 +1,307 @@
+
+{
+  "nic": null,
+  "plazo_ejecucion": {
+    "valor": 30,
+    "unidad": "Días",
+    "tipo": "Calendario"
+  },
+  "items": [
+    {
+      "numero_item": 1,
+      "nombre": "Pantalla interactiva táctil de 86 pulgadas 4K con sistema operativo integrado",
+      "cantidad": 1,
+      "unidad_medida": "Unidad",
+      "especificaciones_tecnicas": {
+        "grupos": [
+          {
+            "grupo": null,
+            "requisitos": [
+              "Equipo nuevo",
+              "No remanufacturado ni reacondicionado",
+              "Año de fabricación: 2026",
+              "Dentro de su periodo de vida útil",
+              "Marca: especificar",
+              "Modelo: especificar"
+            ]
+          },
+          {
+            "grupo": "CARACTERÍSTICAS PANTALLA TÁCTIL",
+            "requisitos": [
+              "Tamaño: 86 pulgadas",
+              "Resolución: 4K (3840 x 2160 píxeles) o superior",
+              "Tiempo de respuesta de la pantalla: <=8 ms",
+              "Frecuencia de actualización: 60 FPS o 60 Hz",
+              "Contraste mínimo: 1200:1",
+              "Brillo mínimo: 450 cd/m² o 450 nits",
+              "Número de puntos táctiles: 50 puntos simultáneos",
+              "Vida útil o tiempo promedio de fallo: >=50000 horas",
+              "Ángulo de visión de pantalla: 178°",
+              "Alimentación eléctrica: AC 100–240 V, 50/60 Hz"
+            ]
+          },
+          {
+            "grupo": "CARACTERÍSTICAS AUDIO Y MICRÓFONO",
+            "requisitos": [
+              "Altavoces integrados: mínimo 2 x 20 W parlantes + woofer",
+              "Puerto de salida de audio integrado: mínimo 1 salida de audio (Stereo Mini Jack)",
+              "Puerto de salida de audio integrado: mínimo 1 salida de video/audio HDMI (Rear)",
+              "Puerto de entrada de audio integrado: mínimo 1 entrada de audio",
+              "Puerto de entrada de audio integrado: mínimo 3 HDMI entrada de audio",
+              "Puerto de entrada de audio integrado: mínimo 1 Tipo C entrada de audio",
+              "Micrófonos integrados con cancelación de eco y supresión de ruido: mínimo 8",
+              "Alcance de captación de los micrófonos integrados: mínimo 8 m",
+              "Ángulo de captación de audio: mínimo 180° en dirección frontal de la pantalla"
+            ]
+          },
+          {
+            "grupo": "ESPECIFICACIONES CÁMARA INTEGRADA",
+            "requisitos": [
+              "Cámara integrada o accesorio en el marco superior de la pantalla: 1",
+              "Resolución mínima de cámara: 4K",
+              "Micrófono integrado con la cámara o en el marco de la pantalla: 1",
+              "Alcance mínimo del micrófono de la cámara o marco: 6 m"
+            ]
+          },
+          {
+            "grupo": "SISTEMA",
+            "requisitos": [
+              "Sistema operativo integrado necesario para el funcionamiento de la pantalla",
+              "Sistema operativo de última generación liberada por el fabricante al mercado",
+              "Sistema operativo certificado EDLA (Google Play Store)",
+              "Funciones de Inteligencia Artificial embebidas para reconocimiento y búsqueda de contenido",
+              "Funciones de Inteligencia Artificial provistas por el mismo fabricante",
+              "Indicar el sistema operativo ofertado",
+              "CPU mínimo: Octacore (4 núcleos de alto rendimiento + 4 núcleos de eficiencia)",
+              "Indicar marca, modelo y número de cores de CPU",
+              "RAM mínima: 16 GB",
+              "Memoria FLASH integrada mínima: 128 GB",
+              "Puertos HDMI entrada integrados: mínimo 3",
+              "Puertos HDMI salida integrados: mínimo 1",
+              "Puertos USB 3.0 integrados: mínimo 2"
+            ]
+          },
+          {
+            "grupo": "CONECTIVIDAD",
+            "requisitos": [
+              "WiFi integrado mínimo: Dual Band (2,4 y 5 GHz)",
+              "Puerto integrado Ethernet RJ45 10/100/1000 Mbps: mínimo 1"
+            ]
+          },
+          {
+            "grupo": null,
+            "requisitos": [
+              "Garantía técnica mínima de 5 años contra defectos de fabricación",
+              "Garantía técnica contra defectos de fabricación provista por el fabricante del equipo, considerando el reemplazo de partes y piezas",
+              "Tiempo máximo para realizar el cambio: 5 días laborables",
+              "Fabricante localizado en el país",
+              "Puntos de servicio técnico en el país"
+            ]
+          }
+        ],
+        "accesorios_obligatorios": [
+          {
+            "nombre": "Cable de poder",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": [
+              "Compatible con alimentación eléctrica AC 100–240 V, 50/60 Hz"
+            ]
+          },
+          {
+            "nombre": "Lápices ópticos",
+            "cantidad": {
+              "valor": 2,
+              "tipo": "Unidades"
+            },
+            "requisitos": [
+              "Permitir el uso de la función multicolor en pantalla"
+            ]
+          },
+          {
+            "nombre": "Control remoto",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": [
+              "Para mando a distancia",
+              "Con puntero"
+            ]
+          },
+          {
+            "nombre": "Cable HDMI",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": []
+          },
+          {
+            "nombre": "Soporte metálico móvil",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": [
+              "Soporte metálico reforzado",
+              "Móvil de ruedas 360°",
+              "Debe soportar el peso de la pantalla de 86 pulgadas",
+              "Las ruedas deben permitir su bloqueo para evitar que el soporte se desplace libremente"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "numero_item": 2,
+      "nombre": "Pantalla interactiva táctil de 75 pulgadas 4K con sistema operativo integrado",
+      "cantidad": 1,
+      "unidad_medida": "Unidad",
+      "especificaciones_tecnicas": {
+        "grupos": [
+          {
+            "grupo": null,
+            "requisitos": [
+              "Equipo nuevo",
+              "No remanufacturado ni reacondicionado",
+              "Año de fabricación: 2026",
+              "Dentro de su periodo de vida útil",
+              "Marca: especificar",
+              "Modelo: especificar"
+            ]
+          },
+          {
+            "grupo": "CARACTERÍSTICAS PANTALLA TÁCTIL",
+            "requisitos": [
+              "Tamaño: 75 pulgadas",
+              "Resolución: 4K (3840 x 2160 píxeles) o superior",
+              "Tiempo de respuesta de la pantalla: <=8 ms",
+              "Frecuencia de actualización: 60 FPS o 60 Hz",
+              "Contraste mínimo: 1200:1",
+              "Brillo mínimo: 450 cd/m² o 450 nits",
+              "Número de puntos táctiles: 50 puntos simultáneos",
+              "Vida útil o tiempo promedio de fallo: >=50000 horas",
+              "Ángulo de visión de pantalla: 178°",
+              "Alimentación eléctrica: AC 100–240 V, 50/60 Hz"
+            ]
+          },
+          {
+            "grupo": "CARACTERÍSTICAS AUDIO Y MICRÓFONO",
+            "requisitos": [
+              "Altavoces integrados: mínimo 2 x 20 W parlantes + woofer",
+              "Puerto de salida de audio integrado: mínimo 1 salida de audio (Stereo Mini Jack)",
+              "Puerto de salida de audio integrado: mínimo 1 salida de video/audio HDMI (Rear)",
+              "Puerto de entrada de audio integrado: mínimo 1 entrada de audio",
+              "Puerto de entrada de audio integrado: mínimo 3 HDMI entrada de audio",
+              "Puerto de entrada de audio integrado: mínimo 1 Tipo C entrada de audio",
+              "Micrófonos integrados con cancelación de eco y supresión de ruido: mínimo 8",
+              "Alcance de captación de los micrófonos integrados: mínimo 8 m",
+              "Ángulo de captación de audio: mínimo 180° en dirección frontal de la pantalla"
+            ]
+          },
+          {
+            "grupo": "ESPECIFICACIONES CÁMARA INTEGRADA",
+            "requisitos": [
+              "Cámara integrada o accesorio en el marco superior de la pantalla: 1",
+              "Resolución mínima de cámara: 4K",
+              "Micrófono integrado con la cámara o en el marco de la pantalla: 1",
+              "Alcance mínimo del micrófono de la cámara o marco: 6 m"
+            ]
+          },
+          {
+            "grupo": "SISTEMA",
+            "requisitos": [
+              "Sistema operativo integrado necesario para el funcionamiento de la pantalla",
+              "Sistema operativo de última generación liberada por el fabricante al mercado",
+              "Sistema operativo certificado EDLA (Google Play Store)",
+              "Funciones de Inteligencia Artificial embebidas para reconocimiento y búsqueda de contenido",
+              "Funciones de Inteligencia Artificial provistas por el mismo fabricante",
+              "Indicar el sistema operativo ofertado",
+              "CPU mínimo: Octacore (4 núcleos de alto rendimiento + 4 núcleos de eficiencia)",
+              "Indicar marca, modelo y número de cores de CPU",
+              "RAM mínima: 16 GB",
+              "Memoria FLASH integrada mínima: 128 GB",
+              "Puertos HDMI entrada integrados: mínimo 3",
+              "Puertos HDMI salida integrados: mínimo 1",
+              "Puertos USB 3.0 integrados: mínimo 2"
+            ]
+          },
+          {
+            "grupo": "CONECTIVIDAD",
+            "requisitos": [
+              "WiFi integrado mínimo: Dual Band (2,4 y 5 GHz)",
+              "Puerto integrado Ethernet RJ45 10/100/1000 Mbps: mínimo 1"
+            ]
+          },
+          {
+            "grupo": null,
+            "requisitos": [
+              "Garantía técnica mínima de 5 años contra defectos de fabricación",
+              "Garantía técnica contra defectos de fabricación provista por el fabricante del equipo, considerando el reemplazo de partes y piezas",
+              "Tiempo máximo para realizar el cambio: 5 días laborables",
+              "Fabricante localizado en el país",
+              "Puntos de servicio técnico en el país"
+            ]
+          }
+        ],
+        "accesorios_obligatorios": [
+          {
+            "nombre": "Cable de poder",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": [
+              "Compatible con alimentación eléctrica AC 100–240 V, 50/60 Hz"
+            ]
+          },
+          {
+            "nombre": "Lápices ópticos",
+            "cantidad": {
+              "valor": 2,
+              "tipo": "Unidades"
+            },
+            "requisitos": [
+              "Permitir el uso de la función multicolor en pantalla"
+            ]
+          },
+          {
+            "nombre": "Control remoto",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": [
+              "Para mando a distancia",
+              "Con puntero"
+            ]
+          },
+          {
+            "nombre": "Cable HDMI",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": []
+          },
+          {
+            "nombre": "Soporte metálico móvil",
+            "cantidad": {
+              "valor": 1,
+              "tipo": "Unidad"
+            },
+            "requisitos": [
+              "Soporte metálico reforzado",
+              "Móvil de ruedas 360°",
+              "Debe soportar el peso de la pantalla de 75 pulgadas",
+              "Las ruedas deben permitir su bloqueo para evitar que el soporte se desplace libremente"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

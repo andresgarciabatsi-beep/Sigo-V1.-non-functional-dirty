@@ -1,0 +1,398 @@
+/* -------------------------------------------------------
+   CONFIGURACIÓN GENERAL
+------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background-color: #2f67aa;
+
+    color: white;
+}
+
+
+/* -------------------------------------------------------
+   CONTENEDOR PRINCIPAL
+------------------------------------------------------- */
+
+.contenedor {
+    width: 94%;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    padding:
+        25px
+        0
+        70px
+        0;
+}
+
+
+/* -------------------------------------------------------
+   TÍTULO PRINCIPAL
+------------------------------------------------------- */
+
+h1 {
+    margin:
+        0
+        0
+        45px
+        0;
+
+    text-align: center;
+
+    font-size: 17px;
+
+    font-weight: normal;
+}
+
+
+/* -------------------------------------------------------
+   ÍTEM
+------------------------------------------------------- */
+
+.item {
+    margin-bottom: 70px;
+}
+
+
+.item-cabecera {
+    margin-bottom: 25px;
+}
+
+
+.numero-item {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    opacity: 0.8;
+}
+
+
+.item h2 {
+    margin: 0;
+
+    font-size: 20px;
+
+    font-weight: normal;
+
+    line-height: 1.4;
+}
+
+
+/* -------------------------------------------------------
+   MERCADO / REGIÓN
+------------------------------------------------------- */
+
+.mercado {
+    margin-bottom: 35px;
+}
+
+
+.mercado-titulo {
+    display: inline-block;
+
+    padding:
+        8px
+        16px;
+
+    margin-bottom: 8px;
+
+    border-radius: 5px;
+
+    color: #111;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------------------
+   NACIONALES = AMARILLO
+------------------------------------------------------- */
+
+.mercado-titulo.nacionales {
+    background-color: #f4d35e;
+}
+
+
+/* -------------------------------------------------------
+   ESTADOS UNIDOS = VERDE
+------------------------------------------------------- */
+
+.mercado-titulo.estados-unidos {
+    background-color: #75c878;
+}
+
+
+/* -------------------------------------------------------
+   CHINA = MORADO
+------------------------------------------------------- */
+
+.mercado-titulo.china {
+    background-color: #b78bdd;
+}
+
+
+/* -------------------------------------------------------
+   OTRO MERCADO
+------------------------------------------------------- */
+
+.mercado-titulo.otro {
+    background-color: #cccccc;
+}
+
+
+/* -------------------------------------------------------
+   CONTENEDOR DE TABLA
+------------------------------------------------------- */
+
+.tabla-contenedor {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+/* -------------------------------------------------------
+   TABLA
+------------------------------------------------------- */
+
+table {
+    width: 100%;
+
+    min-width: 900px;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+th,
+td {
+    padding: 11px;
+
+    vertical-align: top;
+}
+
+
+th {
+    font-size: 14px;
+
+    font-weight: normal;
+
+    text-align: center;
+}
+
+
+td {
+    font-size: 14px;
+}
+
+
+/* -------------------------------------------------------
+   COLORES DE LAS TABLAS
+------------------------------------------------------- */
+
+
+/* NACIONALES */
+
+.tabla-nacionales th,
+.tabla-nacionales td {
+    border: 2px solid #f4d35e;
+}
+
+
+/* ESTADOS UNIDOS */
+
+.tabla-estados-unidos th,
+.tabla-estados-unidos td {
+    border: 2px solid #75c878;
+}
+
+
+/* CHINA */
+
+.tabla-china th,
+.tabla-china td {
+    border: 2px solid #b78bdd;
+}
+
+
+/* OTROS */
+
+.tabla-otro th,
+.tabla-otro td {
+    border: 2px solid #cccccc;
+}
+
+
+/* -------------------------------------------------------
+   ANCHO DE COLUMNAS
+------------------------------------------------------- */
+
+.columna-tienda {
+    width: 125px;
+}
+
+
+.columna-titulo {
+    width: 32%;
+}
+
+
+.columna-contenido {
+    width: auto;
+}
+
+
+.columna-enlace {
+    width: 55px;
+}
+
+
+/* -------------------------------------------------------
+   TIENDA
+------------------------------------------------------- */
+
+.tienda {
+    text-align: left;
+
+    font-weight: bold;
+}
+
+
+/* -------------------------------------------------------
+   TÍTULO DEL RESULTADO
+------------------------------------------------------- */
+
+.titulo {
+    text-align: left;
+
+    line-height: 1.4;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* -------------------------------------------------------
+   CONTENT DEL RESULTADO
+------------------------------------------------------- */
+
+.contenido {
+    text-align: left;
+
+    font-size: 13px;
+
+    line-height: 1.45;
+
+    overflow-wrap: anywhere;
+
+    opacity: 0.9;
+}
+
+
+/* -------------------------------------------------------
+   ENLACE
+------------------------------------------------------- */
+
+.enlace {
+    padding: 6px;
+
+    text-align: center;
+
+    vertical-align: middle;
+}
+
+
+.enlace a {
+    display: inline-block;
+
+    color: #111;
+
+    font-size: 25px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.15s ease,
+        opacity 0.15s ease;
+}
+
+
+.enlace a:hover {
+    transform: scale(1.2);
+
+    opacity: 0.65;
+}
+
+
+/* -------------------------------------------------------
+   RESULTADOS VACÍOS
+------------------------------------------------------- */
+
+.sin-resultados {
+    padding: 18px;
+
+    text-align: center;
+
+    font-style: italic;
+
+    opacity: 0.75;
+}
+
+
+/* -------------------------------------------------------
+   PANTALLAS PEQUEÑAS
+------------------------------------------------------- */
+
+@media (max-width: 800px) {
+
+    .contenedor {
+        width: 96%;
+    }
+
+
+    .item h2 {
+        font-size: 17px;
+    }
+
+
+    th,
+    td {
+        padding: 8px;
+
+        font-size: 12px;
+    }
+
+
+    .contenido {
+        font-size: 12px;
+    }
+
+
+    .mercado-titulo {
+        font-size: 13px;
+    }
+}

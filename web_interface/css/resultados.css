@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+
+/* --------------------------------------------------------
+   ENCABEZADO
+-------------------------------------------------------- */
+
+.encabezado {
+    background-color: #4a90df;
+    color: white;
+
+    padding: 30px 40px;
+}
+
+
+.encabezado h1 {
+    margin: 0 0 12px 0;
+
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+.resumen {
+    font-size: 14px;
+}
+
+
+/* --------------------------------------------------------
+   CONTENEDOR
+-------------------------------------------------------- */
+
+.contenedor-resultados {
+    max-width: 1400px;
+
+    margin: 30px auto;
+    padding: 0 25px;
+}
+
+
+/* --------------------------------------------------------
+   ITEM
+-------------------------------------------------------- */
+
+.item {
+    margin-bottom: 45px;
+
+    background-color: white;
+
+    border: 1px solid #d7d7d7;
+}
+
+
+.item-titulo {
+    margin: 0;
+
+    padding: 18px 22px;
+
+    background-color: #24496d;
+    color: white;
+
+    font-size: 21px;
+}
+
+
+/* --------------------------------------------------------
+   MERCADO
+-------------------------------------------------------- */
+
+.mercado {
+    padding: 20px 22px;
+}
+
+
+.mercado-titulo {
+    margin: 0 0 15px 0;
+
+    color: #24496d;
+
+    font-size: 19px;
+}
+
+
+/* --------------------------------------------------------
+   TABLA
+-------------------------------------------------------- */
+
+.tabla-contenedor {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+
+th,
+td {
+    padding: 10px;
+
+    border: 1px solid #cccccc;
+
+    text-align: left;
+    vertical-align: top;
+}
+
+
+th {
+    background-color: #eeeeee;
+}
+
+
+.columna-posicion {
+    width: 70px;
+
+    text-align: center;
+}
+
+
+.columna-bm25 {
+    width: 90px;
+
+    text-align: center;
+}
+
+
+.columna-tienda {
+    width: 160px;
+}
+
+
+a {
+    color: #1769aa;
+
+    overflow-wrap: anywhere;
+}
+
+
+.sin-resultados {
+    color: #777;
+    font-style: italic;
+}
+
+
+/* --------------------------------------------------------
+   PIE
+-------------------------------------------------------- */
+
+.pie {
+    display: flex;
+
+    justify-content: center;
+
+    padding: 10px 20px 45px 20px;
+}
+
+
+#boton-nuevo-json {
+    padding: 10px 22px;
+
+    border: 2px solid #222;
+
+    background-color: #e88c95;
+    color: #222;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+#boton-nuevo-json:hover {
+    filter: brightness(0.95);
+}
