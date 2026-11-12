@@ -1,7 +1,0 @@
-﻿arquitectura,item,candidatos,aptos,pendientes,no_aptos,requisitos_sin_evidencia,llamadas_api,tokens_entrada,tokens_salida,tokens_razonamiento,busquedas_web,segundos_api,costo_estimado_usd
-api_driven,1,6,0,0,6,6,,,,,,,
-api_driven,TOTAL_API,6,0,0,6,6,1,14703,3683,519,1,30.747,0.0133118
-api_as_fallback_for_specs,1,6,0,6,0,48,,,,,,,
-api_as_fallback_for_specs,TOTAL_API,6,0,6,0,48,1,3187,1334,601,0,16.2,0.0009857
-api_as_fallback_for_specs_or_missing_specs,1,6,0,6,0,14,,,,,,,
-api_as_fallback_for_specs_or_missing_specs,TOTAL_API,6,0,6,0,14,2,18985,3626,1310,1,37.458,0.0137115
