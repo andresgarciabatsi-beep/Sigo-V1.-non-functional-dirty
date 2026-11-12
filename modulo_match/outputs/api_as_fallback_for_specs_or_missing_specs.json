@@ -2,22 +2,574 @@
   "modo": "api_as_fallback_for_specs_or_missing_specs",
   "modelo": "gpt-6-luna",
   "esfuerzo": "low",
-  "items": [],
+  "items": [
+    {
+      "item": 1,
+      "nombre": "Disco Duro Externo SSD 1TB USB 3.2 Gen 2 1000MB/s",
+      "requisitos": [
+        {
+          "r": 1,
+          "texto": "Unidad de almacenamiento externo de estado sólido"
+        },
+        {
+          "r": 2,
+          "texto": "Capacidad: mínimo 1 TB"
+        },
+        {
+          "r": 3,
+          "texto": "Tecnología: unidad de estado sólido (SSD)"
+        },
+        {
+          "r": 4,
+          "texto": "Interfaz: USB 3.2 Gen 2 o superior"
+        },
+        {
+          "r": 5,
+          "texto": "Conector principal: USB Tipo C"
+        },
+        {
+          "r": 6,
+          "texto": "Velocidad máxima declarada de lectura secuencial: mínimo 1000 MB/s"
+        },
+        {
+          "r": 7,
+          "texto": "Velocidad máxima declarada de escritura secuencial: mínimo 900 MB/s"
+        },
+        {
+          "r": 8,
+          "texto": "Funcionalidad SMART o herramienta del fabricante que permita consultar el estado, vida útil y actualizaciones de firmware de la unidad"
+        },
+        {
+          "r": 9,
+          "texto": "Compatible para almacenamiento y transferencia de archivos con Windows 11, Linux y macOS"
+        },
+        {
+          "r": 10,
+          "texto": "Formato de fábrica exFAT o posibilidad de formatearse con exFAT"
+        },
+        {
+          "r": 11,
+          "texto": "Garantía mínima de tres años"
+        },
+        {
+          "r": 12,
+          "texto": "Accesorio exigido: Cable USB tipo C a tipo C; Compatible con USB 3.2 Gen 2 y con las velocidades requeridas"
+        },
+        {
+          "r": 13,
+          "texto": "Accesorio exigido: Cable o adaptador tipo C a tipo A; Compatible con USB 3.2 Gen 2 y con las velocidades requeridas"
+        },
+        {
+          "r": 14,
+          "texto": "Accesorio exigido: Estuche protector; Compatible con las dimensiones de la unidad"
+        }
+      ],
+      "preferencias": [],
+      "resultados": [
+        {
+          "id": "P1",
+          "nombre": "SSD EXTERNO KINGSTON XS1000 1TB USB 3.2 GEN 2 – 1050MB/S READ – 1000MB/S WRITE (SXS1000/1000G)",
+          "tienda": "Tecnosmart",
+          "url": "https://www.tecnosmart.com.ec/producto/ssd-externo-kingston-xs1000-1tb-usb-3-2-gen-2-1050mb-s-read-1000mb-s-write-sxs1000-1000g/",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 85.71,
+          "requisitos_cumplen": 12,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 2,
+          "requisitos_totales": 14,
+          "s": "CCCCCCCCCCCUCU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "SSD externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "nombre"
+            },
+            {
+              "r": 6,
+              "v": "1050 MB/s de lectura",
+              "f": "nombre"
+            },
+            {
+              "r": 7,
+              "v": "1000 MB/s de escritura",
+              "f": "nombre"
+            },
+            {
+              "r": 5,
+              "v": "Conector de unidad USB Type-C",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 8,
+              "v": "Kingston SSD Manager ofrece información de salud/vida útil y actualización de firmware",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            },
+            {
+              "r": 10,
+              "v": "Puede formatearse con el sistema de archivos elegido",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 11,
+              "v": "Garantía limitada de cinco años",
+              "f": "web",
+              "url": "https://www.kingston.com/en/company/warranty"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A y adaptador USB-A a USB-C",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P2",
+          "nombre": "1TB SSD EXTERNO KINGSTON XS1000 USB 3.2 USB C",
+          "tienda": "NomadaWare",
+          "url": "https://nomadaware.com.ec/producto/1tb-ssd-externo-kingston-xs1000-usb-c/",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 85.71,
+          "requisitos_cumplen": 12,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 2,
+          "requisitos_totales": 14,
+          "s": "CCCCCCCCCCCUCU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "SSD externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "especificaciones"
+            },
+            {
+              "r": 6,
+              "v": "Hasta 1.050 MB/s de lectura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 7,
+              "v": "Hasta 1.000 MB/s de escritura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 9,
+              "v": "Windows 11, macOS y Linux",
+              "f": "especificaciones"
+            },
+            {
+              "r": 5,
+              "v": "Conector de unidad USB Type-C",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            },
+            {
+              "r": 10,
+              "v": "Puede formatearse con el sistema de archivos elegido",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 11,
+              "v": "Garantía limitada de cinco años",
+              "f": "web",
+              "url": "https://www.kingston.com/en/company/warranty"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A y adaptador USB-A a USB-C",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P3",
+          "nombre": "1TB SSD EXTERNO KINGSTON XS1000R",
+          "tienda": "NomadaWare",
+          "url": "https://nomadaware.com.ec/producto/1tb-ssd-externo-kingston-xs1000r/",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 85.71,
+          "requisitos_cumplen": 12,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 2,
+          "requisitos_totales": 14,
+          "s": "CCCCCCCCCCCUCU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "SSD externo",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "especificaciones"
+            },
+            {
+              "r": 6,
+              "v": "Hasta 1.050 MB/s de lectura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 7,
+              "v": "Hasta 1.000 MB/s de escritura",
+              "f": "especificaciones"
+            },
+            {
+              "r": 9,
+              "v": "Windows 11, macOS y Linux",
+              "f": "especificaciones"
+            },
+            {
+              "r": 5,
+              "v": "Conector de unidad USB Type-C",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            },
+            {
+              "r": 10,
+              "v": "Puede formatearse con el sistema de archivos elegido",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 11,
+              "v": "Garantía limitada de cinco años",
+              "f": "web",
+              "url": "https://www.kingston.com/en/company/warranty"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A y adaptador USB-A a USB-C",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P4",
+          "nombre": "XS1000 USB 3.2 Gen 2 Disco Duro Externo De Estado Sólido, 1TB - SXS1000/1000G",
+          "tienda": "eBay",
+          "url": "https://www.ebay.com/itm/136596601125",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 85.71,
+          "requisitos_cumplen": 12,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 2,
+          "requisitos_totales": 14,
+          "s": "CCCCCCCCCCCUCU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "Disco externo de estado sólido",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2",
+              "f": "nombre"
+            },
+            {
+              "r": 5,
+              "v": "Cable USB-A a USB-C incluido",
+              "f": "descripcion"
+            },
+            {
+              "r": 6,
+              "v": "Hasta 1.050 MB/s",
+              "f": "descripcion"
+            },
+            {
+              "r": 7,
+              "v": "Velocidad de escritura secuencial de hasta 1.000 MB/s",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 8,
+              "v": "Kingston SSD Manager ofrece información de salud/vida útil y actualización de firmware",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            },
+            {
+              "r": 10,
+              "v": "Puede formatearse con el sistema de archivos elegido",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 11,
+              "v": "Garantía limitada de cinco años",
+              "f": "web",
+              "url": "https://www.kingston.com/en/company/warranty"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A y adaptador USB-A a USB-C",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P5",
+          "nombre": "Kingston External SXS1000 1TB USB 3.2 Gen 2x2 Type-C 3D NAND Solid State Disk",
+          "tienda": "Newegg",
+          "url": "https://www.newegg.com/kingston-sxs1000-1tb-usb-3-2-gen-2x2-type-c/p/N82E16820242838",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 85.71,
+          "requisitos_cumplen": 12,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 2,
+          "requisitos_totales": 14,
+          "s": "CCCCCCCCCCCUCU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "Solid State Disk",
+              "f": "nombre"
+            },
+            {
+              "r": 2,
+              "v": "1TB",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "3D NAND Solid State Disk",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2 Gen 2x2",
+              "f": "nombre"
+            },
+            {
+              "r": 5,
+              "v": "Type-C",
+              "f": "nombre"
+            },
+            {
+              "r": 6,
+              "v": "Lectura secuencial de hasta 1.050 MB/s",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 7,
+              "v": "Escritura secuencial de hasta 1.000 MB/s",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 8,
+              "v": "Kingston SSD Manager ofrece información de salud/vida útil y actualización de firmware",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            },
+            {
+              "r": 10,
+              "v": "Puede formatearse con el sistema de archivos elegido",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 11,
+              "v": "Garantía limitada de cinco años",
+              "f": "web",
+              "url": "https://www.kingston.com/en/company/warranty"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A y adaptador USB-A a USB-C",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            }
+          ],
+          "inc": []
+        },
+        {
+          "id": "P6",
+          "nombre": "Kingston-unidad de estado sólido SSD portátil, disco duro externo XS1000, 1TB, 2TB, máx. 1050 Mb/s, USB3.2, tipo C, para PC, Original - AliExpress 7",
+          "tienda": "AliExpress",
+          "url": "https://es.aliexpress.com/item/1005006744787422.html?gatewayAdapt=glo2esp",
+          "clasificacion": "PENDIENTE",
+          "puntaje_cumplimiento": null,
+          "verificacion_favorable_pct": 71.43,
+          "requisitos_cumplen": 10,
+          "requisitos_no_cumplen": 0,
+          "requisitos_sin_evidencia": 4,
+          "requisitos_totales": 14,
+          "s": "CUCCCCCUCCCUCU",
+          "ev": [
+            {
+              "r": 1,
+              "v": "Unidad SSD portátil externa",
+              "f": "nombre"
+            },
+            {
+              "r": 3,
+              "v": "SSD",
+              "f": "nombre"
+            },
+            {
+              "r": 4,
+              "v": "USB 3.2",
+              "f": "nombre"
+            },
+            {
+              "r": 5,
+              "v": "Tipo C",
+              "f": "nombre"
+            },
+            {
+              "r": 6,
+              "v": "Máx. 1050 Mb/s",
+              "f": "nombre"
+            },
+            {
+              "r": 7,
+              "v": "Escritura secuencial de hasta 1.000 MB/s",
+              "f": "web",
+              "url": "https://www.kingston.com/en/external-ssd/xs1000-external-solid-state-drive?capacity=1tb"
+            },
+            {
+              "r": 9,
+              "v": "Compatible con Windows 11, macOS y Linux",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            },
+            {
+              "r": 10,
+              "v": "Puede formatearse con el sistema de archivos elegido",
+              "f": "web",
+              "url": "https://www.kingston.com/en/support/technical/products/sxs1000"
+            },
+            {
+              "r": 11,
+              "v": "Garantía limitada de cinco años",
+              "f": "web",
+              "url": "https://www.kingston.com/en/company/warranty"
+            },
+            {
+              "r": 13,
+              "v": "Incluye cable USB-C a USB-A y adaptador USB-A a USB-C",
+              "f": "web",
+              "url": "https://www.kingston.com/datasheets/XS1000_en.pdf"
+            }
+          ],
+          "inc": []
+        }
+      ]
+    }
+  ],
   "advertencias": [],
   "metricas": {
     "llamadas_api": 2,
     "busquedas_web": 1,
     "acciones_web": 1,
-    "tokens_entrada": 19285,
+    "tokens_entrada": 18985,
     "tokens_entrada_cache": 0,
-    "tokens_salida": 3616,
-    "tokens_razonamiento": 1231,
-    "segundos_api": 42.794,
-    "costo_estimado_usd": 0.0137365
+    "tokens_salida": 3626,
+    "tokens_razonamiento": 1310,
+    "segundos_api": 37.458,
+    "costo_estimado_usd": 0.0137115
   },
   "detalle_llamadas": [
     {
-      "fecha_utc": "2026-11-12T16:25:26+00:00",
+      "fecha_utc": "2026-11-12T17:41:23+00:00",
       "item": 1,
       "etapa": "evaluacion_local",
       "modelo": "gpt-6-luna",
@@ -25,16 +577,16 @@
       "web_habilitada": false,
       "busquedas_web": 0,
       "acciones_web_totales": 0,
-      "tokens_entrada": 3137,
+      "tokens_entrada": 3205,
       "tokens_entrada_cache": 0,
-      "tokens_salida": 1539,
-      "tokens_razonamiento": 657,
-      "segundos": 15.913,
-      "costo_estimado_usd": 0.0010832,
-      "respuesta_id": "resp_05b306116374804f016af5e8af6c9487d1bd547fd1df3364cb"
+      "tokens_salida": 1507,
+      "tokens_razonamiento": 771,
+      "segundos": 17.395,
+      "costo_estimado_usd": 0.001074,
+      "respuesta_id": "resp_068a2fae93b740f9016af5fa7a5dcc87d19c67b4d4f6706c61"
     },
     {
-      "fecha_utc": "2026-11-12T16:25:53+00:00",
+      "fecha_utc": "2026-11-12T17:41:43+00:00",
       "item": 1,
       "etapa": "web_requisitos_pendientes",
       "modelo": "gpt-6-luna",
@@ -42,13 +594,13 @@
       "web_habilitada": true,
       "busquedas_web": 1,
       "acciones_web_totales": 1,
-      "tokens_entrada": 16148,
+      "tokens_entrada": 15780,
       "tokens_entrada_cache": 0,
-      "tokens_salida": 2077,
-      "tokens_razonamiento": 574,
-      "segundos": 26.881,
-      "costo_estimado_usd": 0.0126533,
-      "respuesta_id": "resp_048e503c92323000016af5e8bf4cd487d1b8aabf19717e14aa"
+      "tokens_salida": 2119,
+      "tokens_razonamiento": 539,
+      "segundos": 20.063,
+      "costo_estimado_usd": 0.0126375,
+      "respuesta_id": "resp_014783791554ee53016af5fa8bb52487d1a9001fde80955df8"
     }
   ]
 }

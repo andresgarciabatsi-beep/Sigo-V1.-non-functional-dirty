@@ -1,6 +1,6 @@
 """Cliente mínimo de OpenAI Responses API: JSON compacto, web opcional y métricas."""
 from __future__ import annotations
-
+import re
 import json
 import os
 from datetime import datetime, timezone
@@ -86,7 +86,23 @@ class ClienteMatch:
         try:
             if getattr(respuesta, 'status', 'completed') != 'completed':
                 raise ValueError(f'Estado de respuesta: {respuesta.status}')
-            datos = json.loads(bruto)
+            patron = re.compile(
+    r'("s"\s*:\s*)"([CNU\s]+)"\s*\.replace\(\s*" "\s*,\s*""\s*\)'
+)
+            corregido = patron.sub(
+                lambda m: m.group(1) + json.dumps(
+                    ''.join(m.group(2).split())
+                ),
+                bruto
+            )
+
+            if corregido != bruto:
+                print(
+                    f"AVISO: {etapa}: corregido formato JSON sin llamar nuevamente a OpenAI",
+                    flush=True
+                )
+
+            datos = json.loads(corregido)
             if not isinstance(datos, dict):
                 raise ValueError('Se esperaba un objeto JSON')
             return datos

@@ -28,17 +28,17 @@ def guardar_json(ruta: Path, datos: Any) -> None:
 def preparar_items(raiz: Path, item_elegido: int | None = None) -> list[dict]:
     """Une los JSON por número de ítem y prepara una lista ordenada de requisitos."""
     tdr = leer_json(raiz / 'inputs' / 'tdr.json')
-    datos = leer_json(raiz / 'inputs' / 'datos_extraidos.json')
+    datos = leer_json(raiz / 'inputs' / 'productos_candidatos.json')
     if not isinstance(tdr, dict) or not isinstance(tdr.get('items'), list):
         raise ErrorDatos('tdr.json debe tener una lista items')
     if not isinstance(datos, list):
-        raise ErrorDatos('datos_extraidos.json debe ser una lista de ítems')
+        raise ErrorDatos('productos_candidatos.json debe ser una lista de ítems')
 
     por_item: dict[int, list] = {}
     for bloque in datos:
         numero = int(bloque['item'])
         if numero in por_item:
-            raise ErrorDatos(f'Ítem {numero} repetido en datos_extraidos.json')
+            raise ErrorDatos(f'Ítem {numero} repetido en productos_candidatos.json')
         resultados = bloque.get('resultados')
         if not isinstance(resultados, list):
             raise ErrorDatos(f'El ítem {numero} no contiene resultados[]')

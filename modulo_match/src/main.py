@@ -48,24 +48,133 @@ def leer_prompt(raiz: Path, nombre: str) -> str:
     contenido = ruta.read_text(encoding='utf-8-sig')
     # Compatibilidad con versiones de los prompts que mencionaban nombres anteriores.
     return (contenido.replace('tdr_memorias(3).json', 'tdr.json')
-                     .replace('resultados_extraidos(3).json', 'datos_extraidos.json'))
+                     .replace('resultados_extraidos(3).json', 'productos_candidatos.json'))
 
 
 def solicitud(bloque: dict, productos: dict, fase: str, **otros) -> dict:
     return {'tdr.json': entrada_requisitos(bloque),
-            'datos_extraidos.json': productos, 'fase': fase, **otros}
+            'productos_candidatos.json': productos, 'fase': fase, **otros}
+
 
 
 def hacer_consulta(cliente: ClienteMatch, prompt: str, bloque: dict,
                    productos: dict, ids: set[str], fase: str,
                    *, web: bool, forzar: bool = False, instruccion: str = '',
                    solo_web: bool = False, **otros) -> tuple[dict[str, dict], list[str]]:
-    salida = cliente.consultar(prompt + ('\n' + instruccion if instruccion else ''),
-                               solicitud(bloque, productos, fase, **otros),
-                               item=bloque['item'], etapa=fase,
-                               web=web, forzar_busqueda=forzar)
-    return validar_respuesta(salida, bloque, ids, web_habilitada=web,
-                            solo_web=solo_web)
+    """Reintenta una vez solo los candidatos con estados malformados."""
+
+    n = len(bloque['requisitos'])
+
+    prompt_final = (
+        prompt + ('\n' + instruccion if instruccion else '') +
+        f'\nFORMATO OBLIGATORIO: hay exactamente {n} requisitos. '
+        f'Cada cadena s debe contener exactamente {n} letras C, N o U, '
+        'en el orden de r. No copies la longitud de los ejemplos del prompt.'
+    )
+
+    def consultar(lista_productos, etapa, aviso=''):
+        return cliente.consultar(
+            prompt_final + aviso,
+            solicitud(bloque, lista_productos, fase, **otros),
+            item=bloque['item'],
+            etapa=etapa,
+            web=web,
+            forzar_busqueda=forzar
+        )
+
+    def revisar(datos, esperados):
+        if not isinstance(datos, dict) or datos.get('item') != bloque['item']:
+            raise ErrorDatos(f'{fase}: ítem incorrecto en respuesta de OpenAI')
+
+        lista = datos.get('c')
+        if not isinstance(lista, list):
+            raise ErrorDatos(f'{fase}: respuesta sin c[]')
+
+        por_id = {}
+
+        for candidato in lista:
+            if not isinstance(candidato, dict):
+                raise ErrorDatos(f'{fase}: candidato sin estructura válida')
+
+            pid = candidato.get('id')
+
+            if pid not in esperados or pid in por_id:
+                raise ErrorDatos(f'{fase}: candidato duplicado o inesperado: {pid}')
+
+            por_id[pid] = candidato
+
+        errores = esperados - set(por_id)
+
+        for pid, candidato in por_id.items():
+            s = candidato.get('s')
+            normalizada = ''.join(s.split()) if isinstance(s, str) else None
+
+            if (normalizada is None or len(normalizada) != n
+                    or any(c not in 'CNU' for c in normalizada)):
+                print(
+                    f'AVISO: {fase}/{pid}, s={s!r}; '
+                    f'se esperaban {n} C/N/U.',
+                    flush=True
+                )
+                errores.add(pid)
+
+        return por_id, errores
+
+    # Primera evaluación
+    salida = consultar(productos, fase)
+    por_id, errores = revisar(salida, ids)
+
+    if errores:
+        # Repetir únicamente los candidatos con errores.
+        repetidos = [
+            p for p in productos['resultados']
+            if p['id'] in errores
+        ]
+
+        if len(repetidos) != len(errores):
+            raise ErrorDatos(
+                f'{fase}: faltan datos originales de {sorted(errores)}'
+            )
+
+        print(
+            f'Reintentando una sola vez: {sorted(errores)}',
+            flush=True
+        )
+
+        nuevos, pendientes = revisar(
+            consultar(
+                {'item': bloque['item'], 'resultados': repetidos},
+                f'{fase}_reintento_formato',
+                '\nIMPORTANTE: este es el único reintento. '
+                f'Devuelve los {n} estados completos por candidato, '
+                'con evidencias. No inventes estados para rellenar posiciones.'
+            ),
+            errores
+        )
+
+        if pendientes:
+            raise ErrorDatos(
+                f'{fase}: formato inválido tras un reintento: '
+                f'{sorted(pendientes)}'
+            )
+
+        # Conservar respuestas válidas y sustituir solo las erróneas.
+        por_id.update(nuevos)
+
+        salida = {
+            'item': bloque['item'],
+            'c': [
+                por_id[p['id']]
+                for p in productos['resultados']
+            ]
+        }
+
+    return validar_respuesta(
+        salida, bloque, ids,
+        web_habilitada=web,
+        solo_web=solo_web
+    )
+
 
 
 def evaluar_item(cliente: ClienteMatch, bloque: dict, modo: str,
@@ -190,7 +299,7 @@ def ejecutar_modo(modo: str, *, item: int | None = None,
                               'preferencias': b['preferencias'],
                               'fragmento_enviado_inicialmente': {
                                   'tdr.json': entrada_requisitos(b),
-                                  'datos_extraidos.json': entrada_productos(b, modo)}}
+                                  'productos_candidatos.json': entrada_productos(b, modo)}}
                              for b in bloques]}
         guardar_json(raiz / 'outputs' / f'preview_{modo}.json', resumen)
         return resumen

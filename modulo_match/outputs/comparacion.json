@@ -1,0 +1,136 @@
+{
+  "comparacion": [
+    {
+      "arquitectura": "api_driven",
+      "item": 1,
+      "candidatos": 6,
+      "aptos": 0,
+      "pendientes": 0,
+      "no_aptos": 6,
+      "requisitos_sin_evidencia": 6
+    },
+    {
+      "arquitectura": "api_driven",
+      "item": "TOTAL_API",
+      "candidatos": 6,
+      "aptos": 0,
+      "pendientes": 0,
+      "no_aptos": 6,
+      "requisitos_sin_evidencia": 6,
+      "llamadas_api": 1,
+      "tokens_entrada": 14703,
+      "tokens_salida": 3683,
+      "tokens_razonamiento": 519,
+      "busquedas_web": 1,
+      "segundos_api": 30.747,
+      "costo_estimado_usd": 0.0133118
+    },
+    {
+      "arquitectura": "api_as_fallback_for_specs",
+      "item": 1,
+      "candidatos": 6,
+      "aptos": 0,
+      "pendientes": 6,
+      "no_aptos": 0,
+      "requisitos_sin_evidencia": 48
+    },
+    {
+      "arquitectura": "api_as_fallback_for_specs",
+      "item": "TOTAL_API",
+      "candidatos": 6,
+      "aptos": 0,
+      "pendientes": 6,
+      "no_aptos": 0,
+      "requisitos_sin_evidencia": 48,
+      "llamadas_api": 1,
+      "tokens_entrada": 3187,
+      "tokens_salida": 1334,
+      "tokens_razonamiento": 601,
+      "busquedas_web": 0,
+      "segundos_api": 16.2,
+      "costo_estimado_usd": 0.0009857
+    },
+    {
+      "arquitectura": "api_as_fallback_for_specs_or_missing_specs",
+      "item": 1,
+      "candidatos": 6,
+      "aptos": 0,
+      "pendientes": 6,
+      "no_aptos": 0,
+      "requisitos_sin_evidencia": 14
+    },
+    {
+      "arquitectura": "api_as_fallback_for_specs_or_missing_specs",
+      "item": "TOTAL_API",
+      "candidatos": 6,
+      "aptos": 0,
+      "pendientes": 6,
+      "no_aptos": 0,
+      "requisitos_sin_evidencia": 14,
+      "llamadas_api": 2,
+      "tokens_entrada": 18985,
+      "tokens_salida": 3626,
+      "tokens_razonamiento": 1310,
+      "busquedas_web": 1,
+      "segundos_api": 37.458,
+      "costo_estimado_usd": 0.0137115
+    }
+  ],
+  "diferencias": [
+    {
+      "item": 1,
+      "id": "P1",
+      "clasificaciones": {
+        "api_driven": "NO_APTO",
+        "api_as_fallback_for_specs": "PENDIENTE",
+        "api_as_fallback_for_specs_or_missing_specs": "PENDIENTE"
+      }
+    },
+    {
+      "item": 1,
+      "id": "P2",
+      "clasificaciones": {
+        "api_driven": "NO_APTO",
+        "api_as_fallback_for_specs": "PENDIENTE",
+        "api_as_fallback_for_specs_or_missing_specs": "PENDIENTE"
+      }
+    },
+    {
+      "item": 1,
+      "id": "P3",
+      "clasificaciones": {
+        "api_driven": "NO_APTO",
+        "api_as_fallback_for_specs": "PENDIENTE",
+        "api_as_fallback_for_specs_or_missing_specs": "PENDIENTE"
+      }
+    },
+    {
+      "item": 1,
+      "id": "P4",
+      "clasificaciones": {
+        "api_driven": "NO_APTO",
+        "api_as_fallback_for_specs": "PENDIENTE",
+        "api_as_fallback_for_specs_or_missing_specs": "PENDIENTE"
+      }
+    },
+    {
+      "item": 1,
+      "id": "P5",
+      "clasificaciones": {
+        "api_driven": "NO_APTO",
+        "api_as_fallback_for_specs": "PENDIENTE",
+        "api_as_fallback_for_specs_or_missing_specs": "PENDIENTE"
+      }
+    },
+    {
+      "item": 1,
+      "id": "P6",
+      "clasificaciones": {
+        "api_driven": "NO_APTO",
+        "api_as_fallback_for_specs": "PENDIENTE",
+        "api_as_fallback_for_specs_or_missing_specs": "PENDIENTE"
+      }
+    }
+  ],
+  "nota": "Las diferencias entre arquitecturas no miden por sí solas la exactitud; para medirla se necesita una referencia técnica verificada."
+}
